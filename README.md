@@ -1,0 +1,72 @@
+# Heroes III HotA 1.8.0 英雄特长补丁工程
+
+本仓库用于维护《英雄无敌 III》Horn of the Abyss 1.8.0 中文版的英雄特长修改。
+
+当前唯一可信的修改基线是 `Patch_v1.8`。本轮接手已完成外层 ZIP 与包内 12 个文件的 SHA-256 核验，结果全部与交接清单一致。
+
+## 当前状态
+
+- 稳定基线：`Patch_v1.8`
+- 下一版本命名：诊断版 `Patch_v2.4_diagNN`
+- 当前工程目标：Stage 2——乌兰德与阿斯特拉对仍有存活单位的兵队施放 Cure 时，正常治疗后将剩余治疗量交给原生永久复活流程
+- 当前阶段：工程接管和输入核验完成；等待纯净 HotA 1.8.0 运行时文件后进行二进制差异映射与 Cure 真实运行路径诊断
+- 明确未完成：没有生成诊断 Hook，也没有实现或宣称复活功能生效
+
+## 仓库内容
+
+- `AGENTS.md`：不可违反的工程规则和当前里程碑
+- `docs/HOTA_Codex_交接文档.md`：完整交接文档
+- `docs/PROJECT_STATUS.md`：接手后的当前理解、边界和下一步
+- `docs/INGEST_REPORT.md`：附件导入与哈希核验记录
+- `baselines/Patch_v1.8/`：已核验的 12 文件稳定基线
+- `baselines/Patch_v1.8_SHA256.txt`：原始校验清单
+- `tools/verify_baseline.ps1`：可重复执行的基线核验脚本
+- `analysis/`：差异映射、反汇编、运行时证据和调用图工作区
+- `build/`：内部构建工作区
+- `output/`：最小化发布包输出目录
+
+## 核验基线
+
+在仓库根目录运行：
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\tools\verify_baseline.ps1
+```
+
+已验证的原始 `Patch_v1.8.zip` SHA-256：
+
+```text
+13520ef74a9decd28fdcbe21ecf630d046ea04561570a9b16bbddd3b8f76ea52
+```
+
+仓库保存的是该 ZIP 解包后的 12 个文件；脚本逐项核验文件内容。重新压缩会改变 ZIP 容器哈希，不能用重打包文件冒充原始基线。
+
+## 开始下一阶段前需要补充
+
+请从同一套纯净 HotA 1.8.0 + HD Mod 安装目录提供：
+
+```text
+h3hota.exe
+h3hota HD.exe
+HotA.dll
+HD_HOTA.dll
+HW_HOTA.dll
+patcher_x86.dll
+patcher_x86.ini
+HotA_Setup.ini
+HotA_Settings.ini
+```
+
+其中最关键的是纯净版的两个 EXE 和上述运行时 DLL。没有这些输入，不应猜测地址、分配代码洞或制作正式功能补丁。
+
+## 工程门禁
+
+1. 先映射纯净 1.8.0 与 `Patch_v1.8` 的全部二进制差异。
+2. 分别确认标准版和 HD 版的真实 Cure 执行路径，并分析 DLL/patcher 是否运行时覆盖 EXE。
+3. 第一份构建只能是诊断版，只证明乌兰德/阿斯特拉英雄施放 Cure 的真实路径被执行。
+4. 用户实机确认诊断日志出现后，才接入原生 Resurrection 验证器和永久复活函数。
+5. 静态签名、PE 合法性、ZIP 哈希或反汇编本身都不能作为游戏内成功证据。
+
+## 可见性与权利提示
+
+仓库包含第三方游戏二进制和资源，默认保持私有。未经权利审查，不应改为公开仓库或重新分发。

@@ -1,0 +1,23 @@
+# Local editor and OS files
+.idea/
+.vscode/
+Thumbs.db
+Desktop.ini
+*.user
+*.suo
+
+# Temporary and backup files
+*.tmp
+*.bak
+*.orig
+*.rej
+
+# Local scratch directories
+work/
+scratch/
+
+# Build and release contents are opt-in; keep their README files.
+build/*
+!build/README.md
+output/*
+!output/README.md

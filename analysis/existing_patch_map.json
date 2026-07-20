@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "status": "incomplete",
+  "trusted_baseline": {
+    "name": "Patch_v1.8",
+    "source_zip_sha256": "13520ef74a9decd28fdcbe21ecf630d046ea04561570a9b16bbddd3b8f76ea52",
+    "internal_files_verified": 12
+  },
+  "blocked_by": [
+    "clean HotA 1.8.0 h3hota.exe not provided",
+    "clean HotA 1.8.0 h3hota HD.exe not provided",
+    "runtime DLL and patcher inputs not provided"
+  ],
+  "mapped_changes": []
+}
