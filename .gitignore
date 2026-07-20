@@ -15,6 +15,8 @@ Desktop.ini
 # Local scratch directories
 work/
 scratch/
+__pycache__/
+*.py[cod]
 
 # Build and release contents are opt-in; keep their README files.
 build/*
