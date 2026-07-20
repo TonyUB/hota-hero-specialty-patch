@@ -1,0 +1,13 @@
+# User-provided pristine HotA 1.8.0 runtime baseline
+# Imported 2026-07-20
+
+5aaab925f06cccf23bb09814767590a95b84a557eb33d244800520be4f1f18de  h3hota HD.exe
+b5f2f793af0986050fb41df7209c25d861ae0f837af52bb3bd6864ba4de84f41  h3hota.exe
+0a48b6d8e2b1743bdc094f3c0dc5a0b4e995e06165993f07885252905b0be2d1  HotA.dll
+34c22f9ac460b57dd2ffcd205a80d0c118a42cf14005c9e4a042f4030e8e1bde  HD_HOTA.dll
+a806a256f546fedfd3935d17d91756847f98263f5f48b9a74d462f314e9d21be  HW_HOTA.dll
+8c10bae88bf42d30157b66611b045e5e904e14b2dda66988e90163bc0d3626bf  patcher_x86.dll
+e99653bfb1b866c7f5242d77a1ecf3994ea315edfecac0858db00df5c3345ef7  patcher_x86.ini
+# Local-only (not committed: contains a machine-specific user path):
+# 94b91d9c3f8f7211199f6997831cb7c3e1f209fbc6fdc7d178dd9aeb23d8a29e  HotA_Settings.ini
+6b26b9416c4677be9e46321d73dfd2061dacfdd104c105d34847cdf9d90b4b32  HotA_Setup.ini

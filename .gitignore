@@ -18,6 +18,9 @@ scratch/
 __pycache__/
 *.py[cod]
 
+# Imported user-local runtime setting (contains a machine-specific path).
+baselines/hota180_clean/HotA_Settings.ini
+
 # Build and release contents are opt-in; keep their README files.
 build/*
 !build/README.md

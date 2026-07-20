@@ -9,8 +9,8 @@
 - 稳定基线：`Patch_v1.8`
 - 下一版本命名：诊断版 `Patch_v2.4_diagNN`
 - 当前工程目标：Stage 2——乌兰德与阿斯特拉对仍有存活单位的兵队施放 Cure 时，正常治疗后将剩余治疗量交给原生永久复活流程
-- 当前阶段：工程接管和输入核验完成；等待纯净 HotA 1.8.0 运行时文件后进行二进制差异映射与 Cure 真实运行路径诊断
-- 明确未完成：没有生成诊断 Hook，也没有实现或宣称复活功能生效
+- 当前阶段：纯净运行时输入、完整 EXE 差异、DLL 静态覆盖与原生复活接口调用已分析；`Patch_v2.4_diag01` 已生成，等待实机日志
+- 明确未完成：尚未取得运行时命中证据，也没有实现或宣称复活功能生效
 
 ## 仓库内容
 
@@ -20,6 +20,8 @@
 - `docs/INGEST_REPORT.md`：附件导入与哈希核验记录
 - `baselines/Patch_v1.8/`：已核验的 12 文件稳定基线
 - `baselines/Patch_v1.8_SHA256.txt`：原始校验清单
+- `baselines/hota180_clean/`：用户提供的纯净 HotA 1.8.0 运行时基线（本机设置文件除外）
+- `baselines/hota180_clean_SHA256.txt`：纯净运行时哈希
 - `tools/verify_baseline.ps1`：可重复执行的基线核验脚本
 - `analysis/`：差异映射、反汇编、运行时证据和调用图工作区
 - `build/`：内部构建工作区
@@ -41,29 +43,15 @@ powershell -ExecutionPolicy Bypass -File .\tools\verify_baseline.ps1
 
 仓库保存的是该 ZIP 解包后的 12 个文件；脚本逐项核验文件内容。重新压缩会改变 ZIP 容器哈希，不能用重打包文件冒充原始基线。
 
-## 开始下一阶段前需要补充
+## 当前需要的实机输入
 
-请从同一套纯净 HotA 1.8.0 + HD Mod 安装目录提供：
-
-```text
-h3hota.exe
-h3hota HD.exe
-HotA.dll
-HD_HOTA.dll
-HW_HOTA.dll
-patcher_x86.dll
-patcher_x86.ini
-HotA_Setup.ini
-HotA_Settings.ini
-```
-
-其中最关键的是纯净版的两个 EXE 和上述运行时 DLL。没有这些输入，不应猜测地址、分配代码洞或制作正式功能补丁。
+纯净运行时文件已经补齐。现在请按 `docs/DIAG01_TEST.md` 测试诊断包，并回传游戏根目录中的 `hota_cure_diag01.log`。没有该日志前，不接入正式复活逻辑。
 
 ## 工程门禁
 
-1. 先映射纯净 1.8.0 与 `Patch_v1.8` 的全部二进制差异。
-2. 分别确认标准版和 HD 版的真实 Cure 执行路径，并分析 DLL/patcher 是否运行时覆盖 EXE。
-3. 第一份构建只能是诊断版，只证明乌兰德/阿斯特拉英雄施放 Cure 的真实路径被执行。
+1. 纯净 1.8.0 与 `Patch_v1.8` 的全部 EXE 差异已映射。
+2. 标准版和 HD 版的 Cure 静态路径及 DLL/patcher 静态覆盖已分析。
+3. 第一份构建 `Patch_v2.4_diag01` 只记录真实路径，不执行复活。
 4. 用户实机确认诊断日志出现后，才接入原生 Resurrection 验证器和永久复活函数。
 5. 静态签名、PE 合法性、ZIP 哈希或反汇编本身都不能作为游戏内成功证据。
 

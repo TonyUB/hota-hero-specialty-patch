@@ -208,25 +208,20 @@ manager_pointer
 
 诊断目标：证明标准版与 HD 版在真实游戏运行时都进入包装器，并确认 `EAX < 0` 与用户观察到的治疗溢出一致。
 
-## 当前不能生成诊断构建的原因
+## 纯净运行时输入已补齐
 
-1. 缺少纯净 HotA 1.8.0 两个 EXE，尚不能证明 call 点和代码洞是否已被 `Patch_v1.8` 修改。
-2. 缺少 `HotA.dll`、`HD_HOTA.dll`、`HW_HOTA.dll` 和 `patcher_x86.dll`，无法检查启动后是否覆盖 call 点。
-3. `0x00639D00–0x00639D1F` 与 `0x00639D40–0x00639D57` 已被现有功能占用；即使附近有零字节，也不能在完成纯净差异映射前分配。
-4. 日志实现需要先确认可安全调用的文件 I/O/patcher 设施，不能把 CRT/Win32 调用约定当作已知事实。
+用户已提供同一套未修改 HotA 1.8.0 安装目录中的两个 EXE、`HotA.dll`、`HD_HOTA.dll`、`HW_HOTA.dll`、`patcher_x86.dll` 与配置文件。当前新增结论：
 
-## 需要补充的输入
+1. 纯净 EXE → `Patch_v1.8` 仅有 80 个差异字节，分布在 17 个精确区间；标准版与 HD 版修改集合完全一致。
+2. 两处 Cure 调用和 CureCore 在纯净版与 `Patch_v1.8` 中完全相同。
+3. `0x00639D80–0x00639FFC` 在纯净版与 `Patch_v1.8` 中均为可用零区；诊断载荷只使用到 `0x00639FDA`。
+4. 两个 EXE 均从固定 IAT 地址导入 `CreateFileA`、`WriteFile`、`CloseHandle`，且未启用 ASLR。
+5. 四个运行模块中未发现两处 Cure 原始调用的字节签名；`HotA.dll` 则直接调用 `0x005A3FD0` 与 `0x005A7870`，其中两处永久复活调用明确传入 `temporary=0`。
 
-```text
-h3hota.exe                 纯净 HotA 1.8.0
-h3hota HD.exe              纯净 HotA 1.8.0 + 对应 HD 启动文件
-HotA.dll
-HD_HOTA.dll
-HW_HOTA.dll
-patcher_x86.dll
-patcher_x86.ini
-HotA_Setup.ini
-HotA_Settings.ini
-```
+完整证据见 `clean_patch_diff.md`、`runtime_modules.md` 与 `runtime_cure_coverage.md`。
 
-取得这些文件后，下一步是：输入哈希 → 完整差异图 → DLL/patcher 覆盖扫描 → 诊断包装器 → 用户实机日志。此时仍不直接制作复活功能版。
+## 诊断构建已生成
+
+`Patch_v2.4_diag01` 已从唯一可信的 `Patch_v1.8` 构建，只记录尤兰德/阿斯特拉命中的 Cure 上下文，不调用任何复活函数。构建器静态验证了调用目标、PE 大小、其他 10 个包内文件、禁止地址字面量、ZIP CRC 和完整回滚重建。
+
+当前门禁已从“缺输入”推进到“等待实机日志”。只有在用户回传标准/HD 的 `hota_cure_diag01.log` 并确认 `EAX < 0` 与溢出场景一致后，才接入原生资格验证与永久复活调用。
