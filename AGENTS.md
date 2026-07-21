@@ -4,8 +4,9 @@
 
 - The only trusted modified baseline is `Patch_v1.8.zip`.
 - Never build on Patch_v1.9, v2.0, v2.1, v2.2, or v2.3.
-- Historical cure/resurrection test packages remain test or forensic inputs; only
-  `Download/Patch_v2.6.zip` is the current accepted formal release.
+- Historical test packages and failed binaries are no longer retained in the
+  repository. Their conclusions are preserved under `CHANGELOG/` and `analysis/`.
+- `Download/HOTA_NEW_HERO_V1.zip` is the current accepted formal release.
 
 ## Current milestone
 
@@ -24,9 +25,9 @@ presentation/log-order gates passed:
 - The real single-target cast path performs an additional Cure effect/resistance
   check at `0x005A05FA`. For a fully dead specialist target, bypass it only after
   `GetResurrectionTarget(..., context=0)` returns that exact stack again.
-- `Download/Patch_v2.6.zip` is the accepted formal release. Its executables are
-  byte-identical to runtime-accepted TEST13; preserve them unless a later feature
-  explicitly requires a new runtime gate.
+- `Download/HOTA_NEW_HERO_V1.zip` is the accepted formal release. Its Cure and
+  Elf runtime bytes inherit the runtime-accepted v2.6 implementation. Only the
+  exact Adela zero-cost-Bless hook/cave bytes were restored to clean HotA 1.8.0.
 - Astra starting skills remain Basic Wisdom + Basic Water Magic.
 
 Stage 4 development history:
@@ -123,9 +124,10 @@ Stage 4 development history:
   to standing group 2 instead of leaving the creature on group 5 frame zero.
 - The scoped flag is cleared at the native public cleanup entry, including the
   autoresolve/no-animation branch.
-- Formal `Patch_v2.6` keeps the tested TEST13 executables and changes only the
-  two language LOD archives to add the concise HeroSpec sentence
-  `治愈魔法可以永久复活友方单位。`.
+- Formal `HOTA_NEW_HERO_V1` keeps the tested Cure/Elf runtime implementation,
+  restores Adela to native HotA 1.8.0 mana cost, removes the custom Adela line
+  from both HeroSpec archives, and presents Cure as the added resurrection
+  sentence followed by the original `(8-n)` scaling sentence.
 
 ## Non-negotiable rules
 
@@ -144,7 +146,7 @@ Stage 4 development history:
 13. Produce a diagnostic hook first. The user must confirm a runtime log before resurrection logic is added.
 14. Never claim success from PE checks, ZIP integrity, disassembly, or static signatures alone.
 15. Every build must include input hashes, output hashes, changed offsets, original bytes, patched bytes, and rollback bytes.
-16. Keep the accepted `Download/Patch_v2.6.zip` unchanged until a later formal release replaces it.
+16. Keep the accepted `Download/HOTA_NEW_HERO_V1.zip` unchanged until a later formal release replaces it.
 17. Never allocate a code cave from a zero run without checking adjacent strings,
     terminators, tables, and startup data; preserve every semantic boundary byte.
 18. A distributed test build must pass a real startup-to-main-menu smoke test; static
@@ -156,7 +158,8 @@ Stage 4 development history:
 - Elf Queen starts with 25/25/25 Pixies.
 - Ivor starts with 12–24 Centaurs and 6 + 6 Wood Elves.
 - Other heroes use HotA 1.8.0 starting-army ranges.
-- Adela retains native Bless specialty and casts Bless for 0 mana only.
+- Adela is fully native HotA 1.8.0; Bless uses the original mana cost and no
+  custom Adela behavior or README section may be reintroduced.
 - Melodia, Solmyr, and Loynis remain at native HotA 1.8.0 behavior.
 - Preserve D32F 215-frame UN44/UN32 files and Elf Queen frame 141.
 
@@ -188,15 +191,24 @@ Stage 4 development history:
 - Stage 4 observable-native-call log rotation retest: `Patch_v2.6_VISUAL_TEST11`
 - Stage 4 native Cure logger post-append rotation retest: `Patch_v2.6_VISUAL_TEST12`
 - Stage 4 one-run binary log-path diagnostic: `Patch_v2.6_VISUAL_LOGDIAG01`
-- Formal Stage 4 release: `Patch_v2.6`
+- Historical formal Stage 4 release: `Patch_v2.6`
+- Current formal release: `HOTA_NEW_HERO_V1`
 - Do not reuse historical version numbers.
 
 ## GitHub release layout
 
 - Keep Chinese and English in mutually exclusive, same-page `<details name="language">` panels in the root `README.md`; Chinese is open by default and neither language control may navigate to another page.
-- The README must contain only three in-game hero sections per language: Elf Queen; Uland/Astra; Adela. Use the in-game biography followed directly by the specialty effect; include only Elf Queen's 25/25/25 starting army and omit unrelated engineering details.
+- The README must contain exactly three hero sections per language: Elf Queen,
+  Uland, and Astra. Each uses the same template: hero name, biography, specialty
+  effect, starting army. Adela must not appear in the landing README.
+- The Chinese and English large titles belong inside their respective language
+  panels; neither title may appear while the other language is selected.
 - The Download button must point directly to the current ZIP rather than to the `Download/` directory or a GitHub file-preview page.
-- Store diagnostic and gameplay test packages, their instructions, and their manifests in `TEST/`.
+- Do not retain diagnostic ZIPs, extracted test packages, failed binaries, raw
+  runtime logs, or test manifests in the published repository.
 - Keep only the newest formal patch and its release metadata in `Download/`.
-- Before promoting a new formal patch, move the complete previous formal release from `Download/` to `OLD/`; never place test builds in `OLD/`.
+- `OLD/` contains only `Patch_v1.8.zip` and its explanation. Superseded later
+  formal packages are removed after their SHA-256 and conclusions are logged.
+- Every formal change and every diagnostic/test attempt must leave a Markdown
+  log under `CHANGELOG/` describing the change, result, error, and lesson.
 - Do not overwrite an older package with a new payload. Preserve versioned filenames and SHA-256 values.
