@@ -6,6 +6,7 @@
 |---|---|---|
 | `Patch_v2.4_diag01` | 仅记录尤兰德/阿斯特拉单体与群体 Cure 的真实运行路径，不执行复活 | `210a542f140be64606f4b5af3b3768025f5badf3c3061ce0f5e07ff37d63cf40` |
 | `Patch_v2.4_STAGE2_TEST` | 验证存活兵队治疗溢出、原生资格校验与永久复活 | `bcb0a61265b68825ca151b82567fd261d57d49c20d7040ea09ab67b107e3f2bd` |
+| `Patch_v2.5_STAGE3_TEST` | 验证单体治愈选择全灭尸体，以及高级水系群体治愈扫描并复活尸体 | `ccff614ce639415b8da4abc5aaff4a264f19a144e37a7851d520a7e89e29a4b0` |
 
 每个测试版均保留 ZIP、测试说明和 JSON/Markdown 构建清单。重组前的根目录项目说明保存在 `README_before_download_layout.md`。
 

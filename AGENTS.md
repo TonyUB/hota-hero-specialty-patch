@@ -8,16 +8,21 @@
 
 ## Current milestone
 
-Implement only Stage 2:
+Stage 2 is the current stable release. Implement Stage 3 only as a test build until
+the user completes runtime acceptance:
 
-- Uland and Astra cast Cure on a stack that still has at least one living creature.
-- Preserve native Cure and native specialty scaling.
-- Normal healing is applied first.
-- Remaining healing points permanently resurrect casualties in the same stack.
-- Use native Resurrection eligibility restrictions.
-- Do not support fully dead corpse targets yet.
-- Do not scan fully dead stacks during Expert Water Magic mass Cure yet.
-- Astra starting skills must become Basic Wisdom + Basic Water Magic.
+- Preserve all accepted Stage 2 behavior for living stacks.
+- Uland and Astra may target a fully dead friendly stack with single-target Cure
+  only when native Resurrection target lookup accepts that corpse.
+- A fully dead stack receives the complete Cure amount through native permanent
+  resurrection; never call the living-only Cure core on a corpse.
+- Expert Water Magic mass Cure resolves living stacks first, then scans fully
+  dead friendly stacks and applies the same native Resurrection restrictions.
+- Reuse native corpse lookup, placement, occupancy, animation, eligibility, and
+  `ResurrectTarget(..., temporary=0)`.
+- Do not promote Stage 3 to `Download/` or call it successful before the user
+  confirms single targeting, mass enumeration, negative targets, and permanence.
+- Astra starting skills remain Basic Wisdom + Basic Water Magic.
 
 ## Non-negotiable rules
 
@@ -36,6 +41,7 @@ Implement only Stage 2:
 13. Produce a diagnostic hook first. The user must confirm a runtime log before resurrection logic is added.
 14. Never claim success from PE checks, ZIP integrity, disassembly, or static signatures alone.
 15. Every build must include input hashes, output hashes, changed offsets, original bytes, patched bytes, and rollback bytes.
+16. Keep the accepted `Download/Patch_v2.4.zip` unchanged while Stage 3 is under test.
 
 ## Preserve existing Patch_v1.8 behavior
 
@@ -58,6 +64,7 @@ Implement only Stage 2:
 
 - Diagnostic builds: `Patch_v2.4_diagNN`
 - User Stage 2 test: `Patch_v2.4_STAGE2_TEST`
+- User Stage 3 corpse test: `Patch_v2.5_STAGE3_TEST`
 - Do not reuse historical version numbers.
 
 ## GitHub release layout
