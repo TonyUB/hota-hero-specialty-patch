@@ -521,7 +521,9 @@ def patch_visual_hooks(path: Path, stage3_report: dict[str, Any]) -> dict[str, A
 def instructions(report: dict[str, Any]) -> str:
     return f"""# {BUILD_NAME} 测试说明
 
-状态：**TEST7 群体崩溃修正版；仍是测试包，不替换 `Download/Patch_v2.5.zip`。**
+状态：**群体不再崩溃，但日志顺序仍未改变；已由 TEST9 接替。**
+
+后续实机确认群体复活功能正常，但日志仍然先复活、后治愈。静态复核还发现本版 `JECXZ` 的短位移被截断到代码洞外 `0x00639BB5`；正常特长英雄路径未执行该分支。请改用 TEST9。
 
 TEST7 的单体治愈日志顺序已经通过，但群体治愈仍在 `0x005A1B78` 崩溃。该地址处于群体目标索引计算阶段；当时尚未进入尸体扫描、施法记录或日志轮转。由此确认，TEST5–TEST7 对整段群体循环的重编译改变了 HotA/HD Hook 依赖的原始指令地址。
 
@@ -560,7 +562,9 @@ def research_markdown(report: dict[str, Any]) -> str:
     executable = report["executables"][0]
     return f"""# Stage 4 TEST8：保持 TEST4 群体循环原始地址布局
 
-状态：**静态构建、双版本逐字节布局、完整回滚与 ZIP CRC 已验证；等待实机门禁。**
+状态：**群体崩溃已解决，但日志轮转未生效；已由 TEST9 接替。**
+
+实机确认 TEST8 的群体复活不再崩溃，但日志顺序未改变。复核机器码时发现 `JECXZ` 的 8 位位移被 Keystone 截断到洞外 `0x00639BB5`；TEST9 将记录点移到必经的表清空指令，并把安全返回块放入短跳范围。
 
 ## TEST7 崩溃证据
 

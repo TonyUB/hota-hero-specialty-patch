@@ -57,11 +57,17 @@ Stage 4 is an experimental visual-only follow-up:
   the Cure line before the revival line correctly, but mass Cure crashed at
   `0x005A1B78`, inside TEST7's reassembled target-index loop and before its
   corpse helper, cast formatter, or log-rotation helper ran.
-- `TEST/Patch_v2.6_VISUAL_TEST8.zip` restores TEST4's original mass-Cure
-  instruction addresses byte-for-byte from `0x005A1B36` through `0x005A1BFA`.
-  It uses only a six-byte entry trampoline and a five-byte post-formatter
-  trampoline to record and rotate the current cast's log-pointer range.
-- TEST8 keeps the accepted Stage 3 gameplay bytes and routes only Cure-triggered
+- `TEST/Patch_v2.6_VISUAL_TEST8.zip` proved that restoring TEST4's mass-Cure
+  instruction addresses prevents the crash. Mass resurrection passed again,
+  but the Cure cast line still appeared after revival lines, so the record hook
+  at `0x005A1B30` did not produce an effective rotation start. Its compact
+  helper also contained a statically detected wrapped `JECXZ` target outside
+  the cave (`0x00639BB5`); the normal specialist path did not take that branch.
+- `TEST/Patch_v2.6_VISUAL_TEST9.zip` restores TEST4's original instruction at
+  `0x005A1B30`, moves the same-size record hook to the mandatory table-clear
+  count at `0x005A1B36`, preserves all bytes from `0x005A1B3B` through
+  `0x005A1BFA`, and fixes the `JECXZ` target inside the validated cave.
+- TEST9 keeps the accepted Stage 3 gameplay bytes and routes only Cure-triggered
   resurrection calls through a scoped visual flag.
 - Native resurrection state updates, corpse placement, permanence, and the
   resurrection combat-log path remain before the visual gate.
@@ -75,7 +81,7 @@ Stage 4 is an experimental visual-only follow-up:
   to standing group 2 instead of leaving the creature on group 5 frame zero.
 - The scoped flag is cleared at the native public cleanup entry, including the
   autoresolve/no-animation branch.
-- Do not promote TEST8 or replace `Download/Patch_v2.5.zip` until the user
+- Do not promote TEST9 or replace `Download/Patch_v2.5.zip` until the user
   confirms the Cure cast line appears before every revival line in both single
   and mass Cure, while the already accepted TEST4 behavior remains unchanged.
 
@@ -135,6 +141,7 @@ Stage 4 is an experimental visual-only follow-up:
 - Withdrawn Stage 4 two-phase mass Cure retest: `Patch_v2.6_VISUAL_TEST6`
 - Withdrawn Stage 4 post-settlement combat-log rotation retest: `Patch_v2.6_VISUAL_TEST7`
 - Stage 4 TEST4-layout-preserving log rotation retest: `Patch_v2.6_VISUAL_TEST8`
+- Stage 4 mandatory-init log rotation retest: `Patch_v2.6_VISUAL_TEST9`
 - Future formal Stage 4 release after runtime acceptance: `Patch_v2.6`
 - Do not reuse historical version numbers.
 
