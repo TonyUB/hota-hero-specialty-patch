@@ -93,7 +93,9 @@ def relative_branch(source_va: int, target_va: int, opcode: int) -> bytes:
     return bytes([opcode]) + struct.pack("<i", displacement)
 
 
-def assemble_payload() -> tuple[list[tuple[int, bytes]], dict[str, Any], dict[str, int]]:
+def assemble_payload(
+    *, resurrect_entry_va: int = RESURRECT_TARGET_VA
+) -> tuple[list[tuple[int, bytes]], dict[str, Any], dict[str, int]]:
     components: list[tuple[str, int, bytes, int, str]] = []
 
     calc_va = CAVE_VA
@@ -198,7 +200,7 @@ live_overflow_ready:
     push dword ptr [ebp - 0x20]
     push eax
     mov ecx, dword ptr [ebp - 0x08]
-    mov edx, {RESURRECT_TARGET_VA:#x}
+    mov edx, {resurrect_entry_va:#x}
     call edx
 
 live_finish:
@@ -251,7 +253,7 @@ dead_stack:
     push eax
     push dword ptr [ebp - 0x04]
     mov ecx, dword ptr [ebp - 0x08]
-    mov edx, {RESURRECT_TARGET_VA:#x}
+    mov edx, {resurrect_entry_va:#x}
     call edx
 
 dead_finish:
@@ -454,7 +456,7 @@ mass_loop:
     push eax
     push edi
     mov ecx, ebx
-    mov edx, {RESURRECT_TARGET_VA:#x}
+    mov edx, {resurrect_entry_va:#x}
     call edx
 
     mov eax, dword ptr [ebp - 0x08]
@@ -562,7 +564,11 @@ mass_finish:
 
 
 def patch_executable(
-    path: Path, payload_regions: list[tuple[int, bytes]], addresses: dict[str, int]
+    path: Path,
+    payload_regions: list[tuple[int, bytes]],
+    addresses: dict[str, int],
+    *,
+    resurrect_entry_va: int = RESURRECT_TARGET_VA,
 ) -> dict[str, Any]:
     original = path.read_bytes()
     pe = pefile.PE(data=original, fast_load=False)
@@ -703,7 +709,7 @@ def patch_executable(
         "hero spell bonus": HERO_SPELL_BONUS_VA,
         "living target lookup": CELL_LIVING_TARGET_VA,
         "GetResurrectionTarget": GET_RESURRECTION_TARGET_VA,
-        "ResurrectTarget": RESURRECT_TARGET_VA,
+        "ResurrectTarget entry": resurrect_entry_va,
     }
     combined_payload = b"".join(payload for _va, payload in payload_regions)
     for label, address in required_literals.items():
