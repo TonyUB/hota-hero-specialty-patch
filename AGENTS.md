@@ -27,6 +27,18 @@ Stage 3 is the current stable release. All required TEST3 runtime gates passed:
   executable bytes unless a later feature explicitly requires a new runtime gate.
 - Astra starting skills remain Basic Wisdom + Basic Water Magic.
 
+Stage 4 is an experimental visual-only follow-up:
+
+- `TEST/Patch_v2.6_VISUAL_TEST1.zip` keeps the accepted Stage 3 gameplay bytes
+  and routes only Cure-triggered resurrection calls through a scoped visual flag.
+- Native resurrection state updates, corpse placement, permanence, and the
+  resurrection combat-log path remain before the visual gate.
+- The gate at native visual entry `0x005A7A44` skips only the animation block
+  for the scoped Cure calls. Ordinary Resurrection replays the original bytes.
+- Do not promote this build or replace `Download/Patch_v2.5.zip` until the user
+  confirms Cure animation, suppressed Resurrection animation, ordinary
+  Resurrection animation, quantities, and post-battle permanence in game.
+
 ## Non-negotiable rules
 
 1. Prove the runtime execution path before patching gameplay logic.
@@ -75,6 +87,8 @@ Stage 3 is the current stable release. All required TEST3 runtime gates passed:
 - Withdrawn Stage 3 corpse retest: `Patch_v2.5_STAGE3_TEST2` (single target blocked; forensics only)
 - User Stage 3 single-target retest: `Patch_v2.5_STAGE3_TEST3`
 - Formal Stage 3 release: `Patch_v2.5`
+- Stage 4 Cure-animation isolation test: `Patch_v2.6_VISUAL_TEST1`
+- Future formal Stage 4 release after runtime acceptance: `Patch_v2.6`
 - Do not reuse historical version numbers.
 
 ## GitHub release layout

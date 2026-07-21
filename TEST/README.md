@@ -7,6 +7,7 @@
 | `Patch_v2.4_diag01` | 仅记录尤兰德/阿斯特拉单体与群体 Cure 的真实运行路径，不执行复活 | `210a542f140be64606f4b5af3b3768025f5badf3c3061ce0f5e07ff37d63cf40` |
 | `Patch_v2.4_STAGE2_TEST` | 验证存活兵队治疗溢出、原生资格校验与永久复活 | `bcb0a61265b68825ca151b82567fd261d57d49c20d7040ea09ab67b107e3f2bd` |
 | `Patch_v2.5_STAGE3_TEST3` | 修复单体尸体在正式结算前被 Cure 活体效果检查显示为“抵抗魔法”；保留已通过的群体尸体复活 | `11d3d34175b8b15b5de7f8c5af31e9809762cdb76909910704936e2b43fd8c73` |
+| `Patch_v2.6_VISUAL_TEST1` | 仅对治愈触发的复活隐藏转世重生动画；保留治愈动画、复活记录、永久效果和普通转世重生动画 | `82aaeb8983bf585a1a9f5042157f301e8961d79592113023c2f1132f1eb48cc2` |
 
 每个测试版均保留 ZIP、测试说明和 JSON/Markdown 构建清单。重组前的根目录项目说明保存在 `README_before_download_layout.md`。
 
