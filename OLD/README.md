@@ -18,3 +18,11 @@
 ```text
 Patch_v2.4.zip SHA-256 43708d91e192bd7b42eb6f15b21414ecfcda72c1232dd5df277a2b049c35ffde
 ```
+
+## Patch_v2.5
+
+`Patch_v2.5` 是已通过实机验证的 Stage 3 正式版，加入了单体与高级水系群体治愈复活全灭友方兵队。它已由进一步完成治愈演出隔离及单体/群体战斗日志顺序修正的 `Patch_v2.6` 替代；ZIP、说明和完整 JSON/Markdown 清单均原样保留在本目录。
+
+```text
+Patch_v2.5.zip SHA-256 cb7cc074219d0934b90b2fd3d06885786adb56f1f1d0d27f757b1bb2df5193e9
+```

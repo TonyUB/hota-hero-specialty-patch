@@ -144,10 +144,10 @@ def main() -> int:
             raise RuntimeError(f"Diagnostic .rdata padding is not mapped: {name}")
         print(f"{name}: TEST12 delta ranges={len(differences)}; rollback=PASS")
 
-    formal = ROOT / "Download" / "Patch_v2.5.zip"
+    formal = ROOT / "OLD" / "Patch_v2.5.zip"
     formal_hash = hashlib.sha256(formal.read_bytes()).hexdigest()
     if formal_hash != FORMAL_V25_SHA256:
-        raise RuntimeError("Formal Patch_v2.5.zip changed")
+        raise RuntimeError("Archived Patch_v2.5.zip changed")
     diagnostic_hash = hashlib.sha256(first_zip.read_bytes()).hexdigest()
     print("Reproducible build: PASS")
     print("ZIP CRC: PASS")

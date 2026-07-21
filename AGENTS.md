@@ -5,11 +5,12 @@
 - The only trusted modified baseline is `Patch_v1.8.zip`.
 - Never build on Patch_v1.9, v2.0, v2.1, v2.2, or v2.3.
 - Historical cure/resurrection test packages remain test or forensic inputs; only
-  `Download/Patch_v2.5.zip` is the current accepted formal release.
+  `Download/Patch_v2.6.zip` is the current accepted formal release.
 
 ## Current milestone
 
-Stage 3 is the current stable release. All required TEST3 runtime gates passed:
+Stage 4 is the current stable release. All Stage 3 gameplay gates and Stage 4
+presentation/log-order gates passed:
 
 - Preserve all accepted Stage 2 behavior for living stacks.
 - Uland and Astra may target a fully dead friendly stack with single-target Cure
@@ -23,11 +24,12 @@ Stage 3 is the current stable release. All required TEST3 runtime gates passed:
 - The real single-target cast path performs an additional Cure effect/resistance
   check at `0x005A05FA`. For a fully dead specialist target, bypass it only after
   `GetResurrectionTarget(..., context=0)` returns that exact stack again.
-- `Download/Patch_v2.5.zip` is the accepted formal release. Preserve its tested
-  executable bytes unless a later feature explicitly requires a new runtime gate.
+- `Download/Patch_v2.6.zip` is the accepted formal release. Its executables are
+  byte-identical to runtime-accepted TEST13; preserve them unless a later feature
+  explicitly requires a new runtime gate.
 - Astra starting skills remain Basic Wisdom + Basic Water Magic.
 
-Stage 4 is an experimental visual-only follow-up:
+Stage 4 development history:
 
 - `TEST/Patch_v2.6_VISUAL_TEST1.zip` proved that skipping the whole native
   visual block preserves resurrection state, but mass Cure left revived stacks
@@ -103,6 +105,10 @@ Stage 4 is an experimental visual-only follow-up:
   native Cure line append normally, then recreates the original localized
   messages and appends them through native `0x004729D0`. Single Cure and
   ordinary Resurrection tail-jump directly to the original logger.
+- Runtime testing confirmed TEST13: mass Cure now appends the Cure cast line
+  before every revival line, with no regression in resurrection quantity,
+  animation, sound, permanence, or stability. TEST13 was promoted byte-for-byte
+  to formal `Patch_v2.6`.
 - LOGDIAG01 keeps the accepted Stage 3 gameplay bytes and routes only Cure-triggered
   resurrection calls through a scoped visual flag.
 - Native resurrection state updates, corpse placement, permanence, and the
@@ -117,8 +123,9 @@ Stage 4 is an experimental visual-only follow-up:
   to standing group 2 instead of leaving the creature on group 5 frame zero.
 - The scoped flag is cleared at the native public cleanup entry, including the
   autoresolve/no-animation branch.
-- Do not replace `Download/Patch_v2.5.zip` until TEST13 passes the one-run mass
-  Cure ordering gate. Formal v2.5 remains the accepted release meanwhile.
+- Formal `Patch_v2.6` keeps the tested TEST13 executables and changes only the
+  two language LOD archives to add the concise HeroSpec sentence
+  `治愈魔法可以永久复活友方单位。`.
 
 ## Non-negotiable rules
 
@@ -137,7 +144,7 @@ Stage 4 is an experimental visual-only follow-up:
 13. Produce a diagnostic hook first. The user must confirm a runtime log before resurrection logic is added.
 14. Never claim success from PE checks, ZIP integrity, disassembly, or static signatures alone.
 15. Every build must include input hashes, output hashes, changed offsets, original bytes, patched bytes, and rollback bytes.
-16. Keep the accepted `Download/Patch_v2.5.zip` unchanged until a later formal release replaces it.
+16. Keep the accepted `Download/Patch_v2.6.zip` unchanged until a later formal release replaces it.
 17. Never allocate a code cave from a zero run without checking adjacent strings,
     terminators, tables, and startup data; preserve every semantic boundary byte.
 18. A distributed test build must pass a real startup-to-main-menu smoke test; static
@@ -181,7 +188,7 @@ Stage 4 is an experimental visual-only follow-up:
 - Stage 4 observable-native-call log rotation retest: `Patch_v2.6_VISUAL_TEST11`
 - Stage 4 native Cure logger post-append rotation retest: `Patch_v2.6_VISUAL_TEST12`
 - Stage 4 one-run binary log-path diagnostic: `Patch_v2.6_VISUAL_LOGDIAG01`
-- Future formal Stage 4 release after runtime acceptance: `Patch_v2.6`
+- Formal Stage 4 release: `Patch_v2.6`
 - Do not reuse historical version numbers.
 
 ## GitHub release layout

@@ -1,7 +1,9 @@
+<h1 align="center">英雄无敌3-HOTA-新英雄特长开发专栏</h1>
+
 <p align="center">
   <a href="#chinese-content"><img alt="显示中文" src="https://img.shields.io/badge/中文-显示中文-b22222?style=for-the-badge&amp;logo=googletranslate&amp;logoColor=white"></a>
   <a href="#english-content"><img alt="Show English" src="https://img.shields.io/badge/English-Show_English-1f6feb?style=for-the-badge&amp;logo=googletranslate&amp;logoColor=white"></a>
-  <a href="https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/Patch_v2.5.zip"><img alt="Download Patch v2.5" src="https://img.shields.io/badge/Download-Patch_v2.5-2ea44f?style=for-the-badge&amp;logo=github&amp;logoColor=white"></a>
+  <a href="https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/Patch_v2.6.zip"><img alt="Download Patch v2.6" src="https://img.shields.io/badge/Download-Patch_v2.6-2ea44f?style=for-the-badge&amp;logo=github&amp;logoColor=white"></a>
 </p>
 
 <details name="language" open>
@@ -23,7 +25,7 @@
 
 **阿斯特拉：** 阿斯特拉从不急着向别人说起她的往事，以致于很少有人知道她的来历。但谁都知道她为了学到神秘的水系魔法几乎访问了这片大陆所有的地方。后来她成为了海洋女祭司，在这里实现了精通水系魔法的夙愿。
 
-**特长效果：** 施放疗伤或治愈时，英雄等级每增加（8-n）级，效果提高 10%，其中 n 是目标生物的等级。对仍有单位存活且已有阵亡的兵队施放时，完成治疗后的剩余治疗量会永久复活同一兵队中的阵亡单位。此外，治愈术也可以复活已经全部阵亡的己方兵队。
+**特长效果：** 治愈魔法可以永久复活友方单位。
 
 ## 阿德拉
 
@@ -52,7 +54,7 @@ The Elf Queen is the queen of the fairies. For ages, her name existed only in th
 
 **Astra:** Astra never hurries to tell others about her past, so few people know where she came from. Everyone knows, however, that she traveled to nearly every corner of the continent in search of the secrets of Water Magic. She later became an Ocean Priestess and fulfilled her ambition of mastering Water Magic.
 
-**Specialty effect:** When casting Cure, the effect increases by 10% for every (8 − n) hero levels, where n is the target creature's level. When Cure is cast on a stack that still has living creatures but has suffered casualties, any healing left after restoring the living creatures permanently resurrects casualties in that same stack. Cure can also resurrect a friendly stack that has been completely wiped out.
+**Specialty effect:** Cure can permanently resurrect friendly units.
 
 ## Adela
 
