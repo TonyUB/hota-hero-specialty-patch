@@ -29,15 +29,21 @@ Stage 3 is the current stable release. All required TEST3 runtime gates passed:
 
 Stage 4 is an experimental visual-only follow-up:
 
-- `TEST/Patch_v2.6_VISUAL_TEST1.zip` keeps the accepted Stage 3 gameplay bytes
-  and routes only Cure-triggered resurrection calls through a scoped visual flag.
+- `TEST/Patch_v2.6_VISUAL_TEST1.zip` proved that skipping the whole native
+  visual block preserves resurrection state, but mass Cure left revived stacks
+  displayed as corpses until a mouse-over forced a redraw.
+- `TEST/Patch_v2.6_VISUAL_TEST2.zip` supersedes TEST1 for runtime testing. It
+  keeps the accepted Stage 3 gameplay bytes and routes only Cure-triggered
+  resurrection calls through a scoped visual flag.
 - Native resurrection state updates, corpse placement, permanence, and the
   resurrection combat-log path remain before the visual gate.
-- The gate at native visual entry `0x005A7A44` skips only the animation block
-  for the scoped Cure calls. Ordinary Resurrection replays the original bytes.
+- TEST2 temporarily supplies effect id `-1` only to the native circle-effect
+  setup, restores the real effect id at `0x005A7AF5`, and then runs the original
+  sound, creature stand-up frames, redraw loop, and cleanup. Ordinary
+  Resurrection uses the real effect id throughout.
 - Do not promote this build or replace `Download/Patch_v2.5.zip` until the user
-  confirms Cure animation, suppressed Resurrection animation, ordinary
-  Resurrection animation, quantities, and post-battle permanence in game.
+  confirms Cure animation, suppressed circle effect, per-stack stand-up/redraw,
+  ordinary Resurrection visuals, quantities, and post-battle permanence.
 
 ## Non-negotiable rules
 
@@ -88,6 +94,7 @@ Stage 4 is an experimental visual-only follow-up:
 - User Stage 3 single-target retest: `Patch_v2.5_STAGE3_TEST3`
 - Formal Stage 3 release: `Patch_v2.5`
 - Stage 4 Cure-animation isolation test: `Patch_v2.6_VISUAL_TEST1`
+- Stage 4 circle/stand-up split retest: `Patch_v2.6_VISUAL_TEST2`
 - Future formal Stage 4 release after runtime acceptance: `Patch_v2.6`
 - Do not reuse historical version numbers.
 

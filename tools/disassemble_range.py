@@ -48,11 +48,14 @@ def main() -> int:
 
     if args.xrefs:
         print("XREFS")
+        engine.skipdata = True
         for section in pe.sections:
             if not section.Characteristics & 0x20000000:
                 continue
             section_va = image_base + section.VirtualAddress
             for instruction in engine.disasm(section.get_data(), section_va):
+                if instruction.id == 0:
+                    continue
                 targets: list[int] = []
                 for operand in instruction.operands:
                     if operand.type == X86_OP_IMM:
