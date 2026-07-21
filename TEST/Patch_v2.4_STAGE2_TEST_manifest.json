@@ -1,0 +1,1001 @@
+{
+  "schema_version": 1,
+  "build_name": "Patch_v2.4_STAGE2_TEST",
+  "scope": "live_stack_only",
+  "fully_dead_corpse_support": false,
+  "mass_cure_corpse_scan": false,
+  "native_resurrection_validation": true,
+  "permanent_resurrection_argument": 0,
+  "baseline_manifest": "baselines/Patch_v1.8_SHA256.txt",
+  "baseline_file_hashes": {
+    "Data/HPL005EL.PCX": "6a3f6e6957b763cbc8c41935e6b4675cfd2cc07171296e35e03609e15acc60cd",
+    "Data/HPS005EL.PCX": "e8c1a4d872ce344c212b2df15b710d3bddece84eab0daa184668fa1c83858f91",
+    "Data/HotA_l_ext.lod": "0338bac60e92333495e17bd34234c94603e93c0b8c28a9cd7d2e859bd0eef027",
+    "Data/HotA_lng.lod": "6a758db874228594a876d0dd4f5b3712b1d0cfdf4c7818b98c9fa4f19c5c6493",
+    "HotA.dat": "5075795db5878b16c14dd7e438c30a68faa3fb27135815c6237d12099d3fe45b",
+    "_HD3_Data/Compability/#hota15/Files.ini": "2a942fe7b10dd0adc8f1341b301ff2a531d7090a616edfdbcd62252b5ace029a",
+    "_HD3_Data/Compability/#hota15/Pack.ini": "15db9fe45cd4f5ef9ddd5951e8a6772cf62e83226c269c92900f86c20edfe9de",
+    "_HD3_Data/Compability/#hota15/UN32.DEF": "17799a6988f9f37f08fca54e43de22ea6374409a0a477fa778bbde575a65768b",
+    "_HD3_Data/Compability/#hota15/UN44.DEF": "bba48ccbe9ab2dd3a2a822edaa267d47778fe82a33fb79bbca81aa112a40dcb7",
+    "h3hota HD.exe": "7c3c6deca0c3afbb2e751512feefc65da5c5ea47536f337264e1a6cc6da826c2",
+    "h3hota.exe": "3a2de7000a79040c42633dcd512ee76e5568bad260622f5cac8a8c7f6512abf6",
+    "安装说明.txt": "991058d71949c68479390c5a66cfa7d8c166666da7fd38bdb64c9219cd911f87"
+  },
+  "package_file_count": 12,
+  "package_file_hashes": {
+    "_HD3_Data/Compability/#hota15/Files.ini": "2a942fe7b10dd0adc8f1341b301ff2a531d7090a616edfdbcd62252b5ace029a",
+    "_HD3_Data/Compability/#hota15/Pack.ini": "15db9fe45cd4f5ef9ddd5951e8a6772cf62e83226c269c92900f86c20edfe9de",
+    "_HD3_Data/Compability/#hota15/UN32.DEF": "17799a6988f9f37f08fca54e43de22ea6374409a0a477fa778bbde575a65768b",
+    "_HD3_Data/Compability/#hota15/UN44.DEF": "bba48ccbe9ab2dd3a2a822edaa267d47778fe82a33fb79bbca81aa112a40dcb7",
+    "Data/HotA_l_ext.lod": "0338bac60e92333495e17bd34234c94603e93c0b8c28a9cd7d2e859bd0eef027",
+    "Data/HotA_lng.lod": "6a758db874228594a876d0dd4f5b3712b1d0cfdf4c7818b98c9fa4f19c5c6493",
+    "Data/HPL005EL.PCX": "6a3f6e6957b763cbc8c41935e6b4675cfd2cc07171296e35e03609e15acc60cd",
+    "Data/HPS005EL.PCX": "e8c1a4d872ce344c212b2df15b710d3bddece84eab0daa184668fa1c83858f91",
+    "h3hota HD.exe": "4b03cae3868cbe161e8063883bfccb2967a7937f4c89e2c8b11584609d6ddbec",
+    "h3hota.exe": "d712654471b06e6cf36e2cd5209e6f4ea744ab32af7d75ee08813b0334016bd2",
+    "HotA.dat": "5075795db5878b16c14dd7e438c30a68faa3fb27135815c6237d12099d3fe45b",
+    "安装说明.txt": "991058d71949c68479390c5a66cfa7d8c166666da7fd38bdb64c9219cd911f87"
+  },
+  "zip_path": "Patch_v2.4_STAGE2_TEST.zip",
+  "zip_size": 21099711,
+  "zip_sha256": "bcb0a61265b68825ca151b82567fd261d57d49c20d7040ea09ab67b107e3f2bd",
+  "payload": {
+    "assembly_statement_count": 151,
+    "code_size": 441,
+    "payload_size": 635,
+    "payload_end_exclusive_va": 6529019,
+    "template_va": 6528848,
+    "template_length": 134,
+    "template_ascii": "HOTA_STAGE2 src=S hero=00000000 target=00000000 alive=00000000 start=00000000 lost=00000000 eax=00000000 overflow=00000000 revived=N",
+    "filename_va": 6528982,
+    "hexchars_va": 6529003,
+    "field_vas": {
+      "source": 6528864,
+      "hero": 6528871,
+      "target": 6528887,
+      "alive": 6528902,
+      "start": 6528917,
+      "lost": 6528931,
+      "eax": 6528944,
+      "overflow": 6528962,
+      "revived": 6528979
+    },
+    "validator_sequence_hex": "6a 00 ff 70 38 8b 4d f8 ff b1 c0 32 01 00 b8 d0 3f 5a 00 ff d0",
+    "permanent_resurrection_sequence_hex": "6a 00 ff 75 e0 50 8b 4d f8 ba 70 78 5a 00 ff d2",
+    "assembly": "wrapper:\n    mov eax, dword ptr [esp + 0x0C]\n    test eax, eax\n    jz tail_cure\n    mov edx, dword ptr [eax + 0x1A]\n    cmp edx, 0x19\n    je stage2\n    cmp edx, 0xAA\n    jne tail_cure\nstage2:\n    cmp dword ptr [ecx + 0x4C], 0\n    jle tail_cure\n    push ebp\n    mov ebp, esp\n    sub esp, 0x34\n    push ebx\n    push esi\n    push edi\n    mov dword ptr [ebp - 0x04], ecx\n    mov dword ptr [ebp - 0x08], ebx\n    mov dword ptr [ebp - 0x0C], edx\n    mov eax, dword ptr [ecx + 0x4C]\n    mov dword ptr [ebp - 0x10], eax\n    mov eax, dword ptr [ecx + 0x60]\n    mov dword ptr [ebp - 0x14], eax\n    mov eax, dword ptr [ecx + 0x58]\n    mov dword ptr [ebp - 0x18], eax\n    mov byte ptr [0x639f60], 0x4D\n    cmp dword ptr [ebp + 0x04], 0x5a1b0a\n    jne source_ready\n    mov byte ptr [0x639f60], 0x53\nsource_ready:\n    mov byte ptr [0x639fd3], 0x4E\n    push dword ptr [ebp + 0x10]\n    push dword ptr [ebp + 0x0C]\n    push dword ptr [ebp + 0x08]\n    mov ecx, dword ptr [ebp - 0x04]\n    mov eax, 0x446220\n    call eax\n    pushfd\n    pop dword ptr [ebp - 0x2C]\n    mov dword ptr [ebp - 0x1C], eax\n    mov dword ptr [ebp - 0x30], ecx\n    mov dword ptr [ebp - 0x34], edx\n    xor edx, edx\n    test eax, eax\n    jns overflow_ready\n    mov edx, eax\n    neg edx\noverflow_ready:\n    mov dword ptr [ebp - 0x20], edx\n    cmp dword ptr [ebp - 0x20], 0\n    jle write_log\n    mov eax, dword ptr [ebp - 0x10]\n    cmp eax, dword ptr [ebp - 0x14]\n    jge write_log\n\n    mov eax, dword ptr [ebp - 0x04]\n    push 0\n    push dword ptr [eax + 0x38]\n    mov ecx, dword ptr [ebp - 0x08]\n    push dword ptr [ecx + 0x132C0]\n    mov eax, 0x5a3fd0\n    call eax\n    test eax, eax\n    je write_log\n    cmp eax, dword ptr [ebp - 0x04]\n    jne write_log\n\n    push 0\n    push dword ptr [ebp - 0x20]\n    push eax\n    mov ecx, dword ptr [ebp - 0x08]\n    mov edx, 0x5a7870\n    call edx\n    mov byte ptr [0x639fd3], 0x59\n\nwrite_log:\n    mov eax, dword ptr [ebp - 0x0C]\n    mov edi, 0x639f67\n    call hex8\n    mov eax, dword ptr [ebp - 0x04]\n    mov edi, 0x639f77\n    call hex8\n    mov eax, dword ptr [ebp - 0x10]\n    mov edi, 0x639f86\n    call hex8\n    mov eax, dword ptr [ebp - 0x14]\n    mov edi, 0x639f95\n    call hex8\n    mov eax, dword ptr [ebp - 0x18]\n    mov edi, 0x639fa3\n    call hex8\n    mov eax, dword ptr [ebp - 0x1C]\n    mov edi, 0x639fb0\n    call hex8\n    mov eax, dword ptr [ebp - 0x20]\n    mov edi, 0x639fc2\n    call hex8\n\n    push 0\n    push 0x80\n    push 4\n    push 0\n    push 3\n    push 4\n    push 0x639fd6\n    call dword ptr [0x63a108]\n    cmp eax, -1\n    je log_finished\n    mov dword ptr [ebp - 0x24], eax\n    lea ecx, dword ptr [ebp - 0x28]\n    mov dword ptr [ecx], 0\n    push 0\n    push ecx\n    push 134\n    push 0x639f50\n    push eax\n    call dword ptr [0x63a114]\n    push dword ptr [ebp - 0x24]\n    call dword ptr [0x63a0c8]\nlog_finished:\n    mov eax, dword ptr [ebp - 0x1C]\n    mov ecx, dword ptr [ebp - 0x30]\n    mov edx, dword ptr [ebp - 0x34]\n    pop edi\n    pop esi\n    pop ebx\n    push dword ptr [ebp - 0x2C]\n    popfd\n    mov esp, ebp\n    pop ebp\n    ret 0x0C\n\ntail_cure:\n    mov eax, 0x446220\n    jmp eax\n\nhex8:\n    mov ecx, 8\nhex8_loop:\n    mov edx, eax\n    shr edx, 28\n    mov dl, byte ptr [edx + 0x639feb]\n    mov byte ptr [edi], dl\n    shl eax, 4\n    inc edi\n    dec ecx\n    jne hex8_loop\n    ret"
+  },
+  "executables": [
+    {
+      "name": "h3hota.exe",
+      "input_size": 2932736,
+      "output_size": 2932736,
+      "input_sha256": "3a2de7000a79040c42633dcd512ee76e5568bad260622f5cac8a8c7f6512abf6",
+      "output_sha256": "d712654471b06e6cf36e2cd5209e6f4ea744ab32af7d75ee08813b0334016bd2",
+      "logical_patch_regions": [
+        {
+          "label": "single Cure call",
+          "va": 5905157,
+          "file_offset": 1710853,
+          "length": 5,
+          "original_hex": "e8 16 47 ea ff",
+          "patched_hex": "e8 76 82 09 00",
+          "rollback_hex": "e8 16 47 ea ff"
+        },
+        {
+          "label": "mass Cure call",
+          "va": 5905332,
+          "file_offset": 1711028,
+          "length": 5,
+          "original_hex": "e8 67 46 ea ff",
+          "patched_hex": "e8 c7 81 09 00",
+          "rollback_hex": "e8 67 46 ea ff"
+        },
+        {
+          "label": "Stage 2 live-stack Cure overflow resurrection wrapper and logger",
+          "va": 6528384,
+          "file_offset": 2334080,
+          "length": 635,
+          "original_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+          "patched_hex": "8b 44 24 0c 85 c0 0f 84 8c 01 00 00 8b 50 1a 83 fa 19 74 0c 81 fa aa 00 00 00 0f 85 78 01 00 00 83 79 4c 00 0f 8e 6e 01 00 00 55 89 e5 83 ec 34 53 56 57 89 4d fc 89 5d f8 89 55 f4 8b 41 4c 89 45 f0 8b 41 60 89 45 ec 8b 41 58 89 45 e8 c6 05 60 9f 63 00 4d 81 7d 04 0a 1b 5a 00 75 07 c6 05 60 9f 63 00 53 c6 05 d3 9f 63 00 4e ff 75 10 ff 75 0c ff 75 08 8b 4d fc b8 20 62 44 00 ff d0 9c 8f 45 d4 89 45 e4 89 4d d0 89 55 cc 31 d2 85 c0 79 04 89 c2 f7 da 89 55 e0 83 7d e0 00 7e 40 8b 45 f0 3b 45 ec 7d 38 8b 45 fc 6a 00 ff 70 38 8b 4d f8 ff b1 c0 32 01 00 b8 d0 3f 5a 00 ff d0 85 c0 74 1c 3b 45 fc 75 17 6a 00 ff 75 e0 50 8b 4d f8 ba 70 78 5a 00 ff d2 c6 05 d3 9f 63 00 59 8b 45 f4 bf 67 9f 63 00 e8 b3 00 00 00 8b 45 fc bf 77 9f 63 00 e8 a6 00 00 00 8b 45 f0 bf 86 9f 63 00 e8 99 00 00 00 8b 45 ec bf 95 9f 63 00 e8 8c 00 00 00 8b 45 e8 bf a3 9f 63 00 e8 7f 00 00 00 8b 45 e4 bf b0 9f 63 00 e8 72 00 00 00 8b 45 e0 bf c2 9f 63 00 e8 65 00 00 00 6a 00 68 80 00 00 00 6a 04 6a 00 6a 03 6a 04 68 d6 9f 63 00 ff 15 08 a1 63 00 83 f8 ff 74 29 89 45 dc 8d 4d d8 c7 01 00 00 00 00 6a 00 51 68 86 00 00 00 68 50 9f 63 00 50 ff 15 14 a1 63 00 ff 75 dc ff 15 c8 a0 63 00 8b 45 e4 8b 4d d0 8b 55 cc 5f 5e 5b ff 75 d4 9d 89 ec 5d c2 0c 00 b8 20 62 44 00 ff e0 b9 08 00 00 00 89 c2 c1 ea 1c 8a 92 eb 9f 63 00 88 17 c1 e0 04 47 49 75 ec c3 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 48 4f 54 41 5f 53 54 41 47 45 32 20 73 72 63 3d 53 20 68 65 72 6f 3d 30 30 30 30 30 30 30 30 20 74 61 72 67 65 74 3d 30 30 30 30 30 30 30 30 20 61 6c 69 76 65 3d 30 30 30 30 30 30 30 30 20 73 74 61 72 74 3d 30 30 30 30 30 30 30 30 20 6c 6f 73 74 3d 30 30 30 30 30 30 30 30 20 65 61 78 3d 30 30 30 30 30 30 30 30 20 6f 76 65 72 66 6c 6f 77 3d 30 30 30 30 30 30 30 30 20 72 65 76 69 76 65 64 3d 4e 0d 0a 68 6f 74 61 5f 63 75 72 65 5f 73 74 61 67 65 32 2e 6c 6f 67 00 30 31 32 33 34 35 36 37 38 39 41 42 43 44 45 46",
+          "rollback_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+        }
+      ],
+      "exact_contiguous_differences": [
+        {
+          "start_offset": 1710854,
+          "end_offset_exclusive": 1710858,
+          "length": 4,
+          "original_hex": "16 47 ea ff",
+          "patched_hex": "76 82 09 00",
+          "rollback_hex": "16 47 ea ff"
+        },
+        {
+          "start_offset": 1711029,
+          "end_offset_exclusive": 1711033,
+          "length": 4,
+          "original_hex": "67 46 ea ff",
+          "patched_hex": "c7 81 09 00",
+          "rollback_hex": "67 46 ea ff"
+        },
+        {
+          "start_offset": 2334080,
+          "end_offset_exclusive": 2334090,
+          "length": 10,
+          "original_hex": "00 00 00 00 00 00 00 00 00 00",
+          "patched_hex": "8b 44 24 0c 85 c0 0f 84 8c 01",
+          "rollback_hex": "00 00 00 00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334092,
+          "end_offset_exclusive": 2334103,
+          "length": 11,
+          "original_hex": "00 00 00 00 00 00 00 00 00 00 00",
+          "patched_hex": "8b 50 1a 83 fa 19 74 0c 81 fa aa",
+          "rollback_hex": "00 00 00 00 00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334106,
+          "end_offset_exclusive": 2334110,
+          "length": 4,
+          "original_hex": "00 00 00 00",
+          "patched_hex": "0f 85 78 01",
+          "rollback_hex": "00 00 00 00"
+        },
+        {
+          "start_offset": 2334112,
+          "end_offset_exclusive": 2334115,
+          "length": 3,
+          "original_hex": "00 00 00",
+          "patched_hex": "83 79 4c",
+          "rollback_hex": "00 00 00"
+        },
+        {
+          "start_offset": 2334116,
+          "end_offset_exclusive": 2334120,
+          "length": 4,
+          "original_hex": "00 00 00 00",
+          "patched_hex": "0f 8e 6e 01",
+          "rollback_hex": "00 00 00 00"
+        },
+        {
+          "start_offset": 2334122,
+          "end_offset_exclusive": 2334163,
+          "length": 41,
+          "original_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+          "patched_hex": "55 89 e5 83 ec 34 53 56 57 89 4d fc 89 5d f8 89 55 f4 8b 41 4c 89 45 f0 8b 41 60 89 45 ec 8b 41 58 89 45 e8 c6 05 60 9f 63",
+          "rollback_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334164,
+          "end_offset_exclusive": 2334171,
+          "length": 7,
+          "original_hex": "00 00 00 00 00 00 00",
+          "patched_hex": "4d 81 7d 04 0a 1b 5a",
+          "rollback_hex": "00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334172,
+          "end_offset_exclusive": 2334179,
+          "length": 7,
+          "original_hex": "00 00 00 00 00 00 00",
+          "patched_hex": "75 07 c6 05 60 9f 63",
+          "rollback_hex": "00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334180,
+          "end_offset_exclusive": 2334186,
+          "length": 6,
+          "original_hex": "00 00 00 00 00 00",
+          "patched_hex": "53 c6 05 d3 9f 63",
+          "rollback_hex": "00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334187,
+          "end_offset_exclusive": 2334204,
+          "length": 17,
+          "original_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+          "patched_hex": "4e ff 75 10 ff 75 0c ff 75 08 8b 4d fc b8 20 62 44",
+          "rollback_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334205,
+          "end_offset_exclusive": 2334236,
+          "length": 31,
+          "original_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+          "patched_hex": "ff d0 9c 8f 45 d4 89 45 e4 89 4d d0 89 55 cc 31 d2 85 c0 79 04 89 c2 f7 da 89 55 e0 83 7d e0",
+          "rollback_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334237,
+          "end_offset_exclusive": 2334251,
+          "length": 14,
+          "original_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+          "patched_hex": "7e 40 8b 45 f0 3b 45 ec 7d 38 8b 45 fc 6a",
+          "rollback_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334252,
+          "end_offset_exclusive": 2334263,
+          "length": 11,
+          "original_hex": "00 00 00 00 00 00 00 00 00 00 00",
+          "patched_hex": "ff 70 38 8b 4d f8 ff b1 c0 32 01",
+          "rollback_hex": "00 00 00 00 00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334264,
+          "end_offset_exclusive": 2334268,
+          "length": 4,
+          "original_hex": "00 00 00 00",
+          "patched_hex": "b8 d0 3f 5a",
+          "rollback_hex": "00 00 00 00"
+        },
+        {
+          "start_offset": 2334269,
+          "end_offset_exclusive": 2334281,
+          "length": 12,
+          "original_hex": "00 00 00 00 00 00 00 00 00 00 00 00",
+          "patched_hex": "ff d0 85 c0 74 1c 3b 45 fc 75 17 6a",
+          "rollback_hex": "00 00 00 00 00 00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334282,
+          "end_offset_exclusive": 2334293,
+          "length": 11,
+          "original_hex": "00 00 00 00 00 00 00 00 00 00 00",
+          "patched_hex": "ff 75 e0 50 8b 4d f8 ba 70 78 5a",
+          "rollback_hex": "00 00 00 00 00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334294,
+          "end_offset_exclusive": 2334301,
+          "length": 7,
+          "original_hex": "00 00 00 00 00 00 00",
+          "patched_hex": "ff d2 c6 05 d3 9f 63",
+          "rollback_hex": "00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334302,
+          "end_offset_exclusive": 2334310,
+          "length": 8,
+          "original_hex": "00 00 00 00 00 00 00 00",
+          "patched_hex": "59 8b 45 f4 bf 67 9f 63",
+          "rollback_hex": "00 00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334311,
+          "end_offset_exclusive": 2334313,
+          "length": 2,
+          "original_hex": "00 00",
+          "patched_hex": "e8 b3",
+          "rollback_hex": "00 00"
+        },
+        {
+          "start_offset": 2334316,
+          "end_offset_exclusive": 2334323,
+          "length": 7,
+          "original_hex": "00 00 00 00 00 00 00",
+          "patched_hex": "8b 45 fc bf 77 9f 63",
+          "rollback_hex": "00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334324,
+          "end_offset_exclusive": 2334326,
+          "length": 2,
+          "original_hex": "00 00",
+          "patched_hex": "e8 a6",
+          "rollback_hex": "00 00"
+        },
+        {
+          "start_offset": 2334329,
+          "end_offset_exclusive": 2334336,
+          "length": 7,
+          "original_hex": "00 00 00 00 00 00 00",
+          "patched_hex": "8b 45 f0 bf 86 9f 63",
+          "rollback_hex": "00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334337,
+          "end_offset_exclusive": 2334339,
+          "length": 2,
+          "original_hex": "00 00",
+          "patched_hex": "e8 99",
+          "rollback_hex": "00 00"
+        },
+        {
+          "start_offset": 2334342,
+          "end_offset_exclusive": 2334349,
+          "length": 7,
+          "original_hex": "00 00 00 00 00 00 00",
+          "patched_hex": "8b 45 ec bf 95 9f 63",
+          "rollback_hex": "00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334350,
+          "end_offset_exclusive": 2334352,
+          "length": 2,
+          "original_hex": "00 00",
+          "patched_hex": "e8 8c",
+          "rollback_hex": "00 00"
+        },
+        {
+          "start_offset": 2334355,
+          "end_offset_exclusive": 2334362,
+          "length": 7,
+          "original_hex": "00 00 00 00 00 00 00",
+          "patched_hex": "8b 45 e8 bf a3 9f 63",
+          "rollback_hex": "00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334363,
+          "end_offset_exclusive": 2334365,
+          "length": 2,
+          "original_hex": "00 00",
+          "patched_hex": "e8 7f",
+          "rollback_hex": "00 00"
+        },
+        {
+          "start_offset": 2334368,
+          "end_offset_exclusive": 2334375,
+          "length": 7,
+          "original_hex": "00 00 00 00 00 00 00",
+          "patched_hex": "8b 45 e4 bf b0 9f 63",
+          "rollback_hex": "00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334376,
+          "end_offset_exclusive": 2334378,
+          "length": 2,
+          "original_hex": "00 00",
+          "patched_hex": "e8 72",
+          "rollback_hex": "00 00"
+        },
+        {
+          "start_offset": 2334381,
+          "end_offset_exclusive": 2334388,
+          "length": 7,
+          "original_hex": "00 00 00 00 00 00 00",
+          "patched_hex": "8b 45 e0 bf c2 9f 63",
+          "rollback_hex": "00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334389,
+          "end_offset_exclusive": 2334391,
+          "length": 2,
+          "original_hex": "00 00",
+          "patched_hex": "e8 65",
+          "rollback_hex": "00 00"
+        },
+        {
+          "start_offset": 2334394,
+          "end_offset_exclusive": 2334395,
+          "length": 1,
+          "original_hex": "00",
+          "patched_hex": "6a",
+          "rollback_hex": "00"
+        },
+        {
+          "start_offset": 2334396,
+          "end_offset_exclusive": 2334398,
+          "length": 2,
+          "original_hex": "00 00",
+          "patched_hex": "68 80",
+          "rollback_hex": "00 00"
+        },
+        {
+          "start_offset": 2334401,
+          "end_offset_exclusive": 2334404,
+          "length": 3,
+          "original_hex": "00 00 00",
+          "patched_hex": "6a 04 6a",
+          "rollback_hex": "00 00 00"
+        },
+        {
+          "start_offset": 2334405,
+          "end_offset_exclusive": 2334413,
+          "length": 8,
+          "original_hex": "00 00 00 00 00 00 00 00",
+          "patched_hex": "6a 03 6a 04 68 d6 9f 63",
+          "rollback_hex": "00 00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334414,
+          "end_offset_exclusive": 2334419,
+          "length": 5,
+          "original_hex": "00 00 00 00 00",
+          "patched_hex": "ff 15 08 a1 63",
+          "rollback_hex": "00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334420,
+          "end_offset_exclusive": 2334433,
+          "length": 13,
+          "original_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00",
+          "patched_hex": "83 f8 ff 74 29 89 45 dc 8d 4d d8 c7 01",
+          "rollback_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334437,
+          "end_offset_exclusive": 2334438,
+          "length": 1,
+          "original_hex": "00",
+          "patched_hex": "6a",
+          "rollback_hex": "00"
+        },
+        {
+          "start_offset": 2334439,
+          "end_offset_exclusive": 2334442,
+          "length": 3,
+          "original_hex": "00 00 00",
+          "patched_hex": "51 68 86",
+          "rollback_hex": "00 00 00"
+        },
+        {
+          "start_offset": 2334445,
+          "end_offset_exclusive": 2334449,
+          "length": 4,
+          "original_hex": "00 00 00 00",
+          "patched_hex": "68 50 9f 63",
+          "rollback_hex": "00 00 00 00"
+        },
+        {
+          "start_offset": 2334450,
+          "end_offset_exclusive": 2334456,
+          "length": 6,
+          "original_hex": "00 00 00 00 00 00",
+          "patched_hex": "50 ff 15 14 a1 63",
+          "rollback_hex": "00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334457,
+          "end_offset_exclusive": 2334465,
+          "length": 8,
+          "original_hex": "00 00 00 00 00 00 00 00",
+          "patched_hex": "ff 75 dc ff 15 c8 a0 63",
+          "rollback_hex": "00 00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334466,
+          "end_offset_exclusive": 2334487,
+          "length": 21,
+          "original_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+          "patched_hex": "8b 45 e4 8b 4d d0 8b 55 cc 5f 5e 5b ff 75 d4 9d 89 ec 5d c2 0c",
+          "rollback_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334488,
+          "end_offset_exclusive": 2334492,
+          "length": 4,
+          "original_hex": "00 00 00 00",
+          "patched_hex": "b8 20 62 44",
+          "rollback_hex": "00 00 00 00"
+        },
+        {
+          "start_offset": 2334493,
+          "end_offset_exclusive": 2334497,
+          "length": 4,
+          "original_hex": "00 00 00 00",
+          "patched_hex": "ff e0 b9 08",
+          "rollback_hex": "00 00 00 00"
+        },
+        {
+          "start_offset": 2334500,
+          "end_offset_exclusive": 2334510,
+          "length": 10,
+          "original_hex": "00 00 00 00 00 00 00 00 00 00",
+          "patched_hex": "89 c2 c1 ea 1c 8a 92 eb 9f 63",
+          "rollback_hex": "00 00 00 00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334511,
+          "end_offset_exclusive": 2334521,
+          "length": 10,
+          "original_hex": "00 00 00 00 00 00 00 00 00 00",
+          "patched_hex": "88 17 c1 e0 04 47 49 75 ec c3",
+          "rollback_hex": "00 00 00 00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334544,
+          "end_offset_exclusive": 2334698,
+          "length": 154,
+          "original_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+          "patched_hex": "48 4f 54 41 5f 53 54 41 47 45 32 20 73 72 63 3d 53 20 68 65 72 6f 3d 30 30 30 30 30 30 30 30 20 74 61 72 67 65 74 3d 30 30 30 30 30 30 30 30 20 61 6c 69 76 65 3d 30 30 30 30 30 30 30 30 20 73 74 61 72 74 3d 30 30 30 30 30 30 30 30 20 6c 6f 73 74 3d 30 30 30 30 30 30 30 30 20 65 61 78 3d 30 30 30 30 30 30 30 30 20 6f 76 65 72 66 6c 6f 77 3d 30 30 30 30 30 30 30 30 20 72 65 76 69 76 65 64 3d 4e 0d 0a 68 6f 74 61 5f 63 75 72 65 5f 73 74 61 67 65 32 2e 6c 6f 67",
+          "rollback_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334699,
+          "end_offset_exclusive": 2334715,
+          "length": 16,
+          "original_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+          "patched_hex": "30 31 32 33 34 35 36 37 38 39 41 42 43 44 45 46",
+          "rollback_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+        }
+      ],
+      "decoded_calls": [
+        {
+          "address": 5905157,
+          "bytes": "e8 76 82 09 00",
+          "mnemonic": "call",
+          "operands": "0x639d80"
+        },
+        {
+          "address": 5905332,
+          "bytes": "e8 c7 81 09 00",
+          "mnemonic": "call",
+          "operands": "0x639d80"
+        }
+      ],
+      "rollback_reconstructs_input": true
+    },
+    {
+      "name": "h3hota HD.exe",
+      "input_size": 2932736,
+      "output_size": 2932736,
+      "input_sha256": "7c3c6deca0c3afbb2e751512feefc65da5c5ea47536f337264e1a6cc6da826c2",
+      "output_sha256": "4b03cae3868cbe161e8063883bfccb2967a7937f4c89e2c8b11584609d6ddbec",
+      "logical_patch_regions": [
+        {
+          "label": "single Cure call",
+          "va": 5905157,
+          "file_offset": 1710853,
+          "length": 5,
+          "original_hex": "e8 16 47 ea ff",
+          "patched_hex": "e8 76 82 09 00",
+          "rollback_hex": "e8 16 47 ea ff"
+        },
+        {
+          "label": "mass Cure call",
+          "va": 5905332,
+          "file_offset": 1711028,
+          "length": 5,
+          "original_hex": "e8 67 46 ea ff",
+          "patched_hex": "e8 c7 81 09 00",
+          "rollback_hex": "e8 67 46 ea ff"
+        },
+        {
+          "label": "Stage 2 live-stack Cure overflow resurrection wrapper and logger",
+          "va": 6528384,
+          "file_offset": 2334080,
+          "length": 635,
+          "original_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+          "patched_hex": "8b 44 24 0c 85 c0 0f 84 8c 01 00 00 8b 50 1a 83 fa 19 74 0c 81 fa aa 00 00 00 0f 85 78 01 00 00 83 79 4c 00 0f 8e 6e 01 00 00 55 89 e5 83 ec 34 53 56 57 89 4d fc 89 5d f8 89 55 f4 8b 41 4c 89 45 f0 8b 41 60 89 45 ec 8b 41 58 89 45 e8 c6 05 60 9f 63 00 4d 81 7d 04 0a 1b 5a 00 75 07 c6 05 60 9f 63 00 53 c6 05 d3 9f 63 00 4e ff 75 10 ff 75 0c ff 75 08 8b 4d fc b8 20 62 44 00 ff d0 9c 8f 45 d4 89 45 e4 89 4d d0 89 55 cc 31 d2 85 c0 79 04 89 c2 f7 da 89 55 e0 83 7d e0 00 7e 40 8b 45 f0 3b 45 ec 7d 38 8b 45 fc 6a 00 ff 70 38 8b 4d f8 ff b1 c0 32 01 00 b8 d0 3f 5a 00 ff d0 85 c0 74 1c 3b 45 fc 75 17 6a 00 ff 75 e0 50 8b 4d f8 ba 70 78 5a 00 ff d2 c6 05 d3 9f 63 00 59 8b 45 f4 bf 67 9f 63 00 e8 b3 00 00 00 8b 45 fc bf 77 9f 63 00 e8 a6 00 00 00 8b 45 f0 bf 86 9f 63 00 e8 99 00 00 00 8b 45 ec bf 95 9f 63 00 e8 8c 00 00 00 8b 45 e8 bf a3 9f 63 00 e8 7f 00 00 00 8b 45 e4 bf b0 9f 63 00 e8 72 00 00 00 8b 45 e0 bf c2 9f 63 00 e8 65 00 00 00 6a 00 68 80 00 00 00 6a 04 6a 00 6a 03 6a 04 68 d6 9f 63 00 ff 15 08 a1 63 00 83 f8 ff 74 29 89 45 dc 8d 4d d8 c7 01 00 00 00 00 6a 00 51 68 86 00 00 00 68 50 9f 63 00 50 ff 15 14 a1 63 00 ff 75 dc ff 15 c8 a0 63 00 8b 45 e4 8b 4d d0 8b 55 cc 5f 5e 5b ff 75 d4 9d 89 ec 5d c2 0c 00 b8 20 62 44 00 ff e0 b9 08 00 00 00 89 c2 c1 ea 1c 8a 92 eb 9f 63 00 88 17 c1 e0 04 47 49 75 ec c3 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 48 4f 54 41 5f 53 54 41 47 45 32 20 73 72 63 3d 53 20 68 65 72 6f 3d 30 30 30 30 30 30 30 30 20 74 61 72 67 65 74 3d 30 30 30 30 30 30 30 30 20 61 6c 69 76 65 3d 30 30 30 30 30 30 30 30 20 73 74 61 72 74 3d 30 30 30 30 30 30 30 30 20 6c 6f 73 74 3d 30 30 30 30 30 30 30 30 20 65 61 78 3d 30 30 30 30 30 30 30 30 20 6f 76 65 72 66 6c 6f 77 3d 30 30 30 30 30 30 30 30 20 72 65 76 69 76 65 64 3d 4e 0d 0a 68 6f 74 61 5f 63 75 72 65 5f 73 74 61 67 65 32 2e 6c 6f 67 00 30 31 32 33 34 35 36 37 38 39 41 42 43 44 45 46",
+          "rollback_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+        }
+      ],
+      "exact_contiguous_differences": [
+        {
+          "start_offset": 1710854,
+          "end_offset_exclusive": 1710858,
+          "length": 4,
+          "original_hex": "16 47 ea ff",
+          "patched_hex": "76 82 09 00",
+          "rollback_hex": "16 47 ea ff"
+        },
+        {
+          "start_offset": 1711029,
+          "end_offset_exclusive": 1711033,
+          "length": 4,
+          "original_hex": "67 46 ea ff",
+          "patched_hex": "c7 81 09 00",
+          "rollback_hex": "67 46 ea ff"
+        },
+        {
+          "start_offset": 2334080,
+          "end_offset_exclusive": 2334090,
+          "length": 10,
+          "original_hex": "00 00 00 00 00 00 00 00 00 00",
+          "patched_hex": "8b 44 24 0c 85 c0 0f 84 8c 01",
+          "rollback_hex": "00 00 00 00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334092,
+          "end_offset_exclusive": 2334103,
+          "length": 11,
+          "original_hex": "00 00 00 00 00 00 00 00 00 00 00",
+          "patched_hex": "8b 50 1a 83 fa 19 74 0c 81 fa aa",
+          "rollback_hex": "00 00 00 00 00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334106,
+          "end_offset_exclusive": 2334110,
+          "length": 4,
+          "original_hex": "00 00 00 00",
+          "patched_hex": "0f 85 78 01",
+          "rollback_hex": "00 00 00 00"
+        },
+        {
+          "start_offset": 2334112,
+          "end_offset_exclusive": 2334115,
+          "length": 3,
+          "original_hex": "00 00 00",
+          "patched_hex": "83 79 4c",
+          "rollback_hex": "00 00 00"
+        },
+        {
+          "start_offset": 2334116,
+          "end_offset_exclusive": 2334120,
+          "length": 4,
+          "original_hex": "00 00 00 00",
+          "patched_hex": "0f 8e 6e 01",
+          "rollback_hex": "00 00 00 00"
+        },
+        {
+          "start_offset": 2334122,
+          "end_offset_exclusive": 2334163,
+          "length": 41,
+          "original_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+          "patched_hex": "55 89 e5 83 ec 34 53 56 57 89 4d fc 89 5d f8 89 55 f4 8b 41 4c 89 45 f0 8b 41 60 89 45 ec 8b 41 58 89 45 e8 c6 05 60 9f 63",
+          "rollback_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334164,
+          "end_offset_exclusive": 2334171,
+          "length": 7,
+          "original_hex": "00 00 00 00 00 00 00",
+          "patched_hex": "4d 81 7d 04 0a 1b 5a",
+          "rollback_hex": "00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334172,
+          "end_offset_exclusive": 2334179,
+          "length": 7,
+          "original_hex": "00 00 00 00 00 00 00",
+          "patched_hex": "75 07 c6 05 60 9f 63",
+          "rollback_hex": "00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334180,
+          "end_offset_exclusive": 2334186,
+          "length": 6,
+          "original_hex": "00 00 00 00 00 00",
+          "patched_hex": "53 c6 05 d3 9f 63",
+          "rollback_hex": "00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334187,
+          "end_offset_exclusive": 2334204,
+          "length": 17,
+          "original_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+          "patched_hex": "4e ff 75 10 ff 75 0c ff 75 08 8b 4d fc b8 20 62 44",
+          "rollback_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334205,
+          "end_offset_exclusive": 2334236,
+          "length": 31,
+          "original_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+          "patched_hex": "ff d0 9c 8f 45 d4 89 45 e4 89 4d d0 89 55 cc 31 d2 85 c0 79 04 89 c2 f7 da 89 55 e0 83 7d e0",
+          "rollback_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334237,
+          "end_offset_exclusive": 2334251,
+          "length": 14,
+          "original_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+          "patched_hex": "7e 40 8b 45 f0 3b 45 ec 7d 38 8b 45 fc 6a",
+          "rollback_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334252,
+          "end_offset_exclusive": 2334263,
+          "length": 11,
+          "original_hex": "00 00 00 00 00 00 00 00 00 00 00",
+          "patched_hex": "ff 70 38 8b 4d f8 ff b1 c0 32 01",
+          "rollback_hex": "00 00 00 00 00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334264,
+          "end_offset_exclusive": 2334268,
+          "length": 4,
+          "original_hex": "00 00 00 00",
+          "patched_hex": "b8 d0 3f 5a",
+          "rollback_hex": "00 00 00 00"
+        },
+        {
+          "start_offset": 2334269,
+          "end_offset_exclusive": 2334281,
+          "length": 12,
+          "original_hex": "00 00 00 00 00 00 00 00 00 00 00 00",
+          "patched_hex": "ff d0 85 c0 74 1c 3b 45 fc 75 17 6a",
+          "rollback_hex": "00 00 00 00 00 00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334282,
+          "end_offset_exclusive": 2334293,
+          "length": 11,
+          "original_hex": "00 00 00 00 00 00 00 00 00 00 00",
+          "patched_hex": "ff 75 e0 50 8b 4d f8 ba 70 78 5a",
+          "rollback_hex": "00 00 00 00 00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334294,
+          "end_offset_exclusive": 2334301,
+          "length": 7,
+          "original_hex": "00 00 00 00 00 00 00",
+          "patched_hex": "ff d2 c6 05 d3 9f 63",
+          "rollback_hex": "00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334302,
+          "end_offset_exclusive": 2334310,
+          "length": 8,
+          "original_hex": "00 00 00 00 00 00 00 00",
+          "patched_hex": "59 8b 45 f4 bf 67 9f 63",
+          "rollback_hex": "00 00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334311,
+          "end_offset_exclusive": 2334313,
+          "length": 2,
+          "original_hex": "00 00",
+          "patched_hex": "e8 b3",
+          "rollback_hex": "00 00"
+        },
+        {
+          "start_offset": 2334316,
+          "end_offset_exclusive": 2334323,
+          "length": 7,
+          "original_hex": "00 00 00 00 00 00 00",
+          "patched_hex": "8b 45 fc bf 77 9f 63",
+          "rollback_hex": "00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334324,
+          "end_offset_exclusive": 2334326,
+          "length": 2,
+          "original_hex": "00 00",
+          "patched_hex": "e8 a6",
+          "rollback_hex": "00 00"
+        },
+        {
+          "start_offset": 2334329,
+          "end_offset_exclusive": 2334336,
+          "length": 7,
+          "original_hex": "00 00 00 00 00 00 00",
+          "patched_hex": "8b 45 f0 bf 86 9f 63",
+          "rollback_hex": "00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334337,
+          "end_offset_exclusive": 2334339,
+          "length": 2,
+          "original_hex": "00 00",
+          "patched_hex": "e8 99",
+          "rollback_hex": "00 00"
+        },
+        {
+          "start_offset": 2334342,
+          "end_offset_exclusive": 2334349,
+          "length": 7,
+          "original_hex": "00 00 00 00 00 00 00",
+          "patched_hex": "8b 45 ec bf 95 9f 63",
+          "rollback_hex": "00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334350,
+          "end_offset_exclusive": 2334352,
+          "length": 2,
+          "original_hex": "00 00",
+          "patched_hex": "e8 8c",
+          "rollback_hex": "00 00"
+        },
+        {
+          "start_offset": 2334355,
+          "end_offset_exclusive": 2334362,
+          "length": 7,
+          "original_hex": "00 00 00 00 00 00 00",
+          "patched_hex": "8b 45 e8 bf a3 9f 63",
+          "rollback_hex": "00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334363,
+          "end_offset_exclusive": 2334365,
+          "length": 2,
+          "original_hex": "00 00",
+          "patched_hex": "e8 7f",
+          "rollback_hex": "00 00"
+        },
+        {
+          "start_offset": 2334368,
+          "end_offset_exclusive": 2334375,
+          "length": 7,
+          "original_hex": "00 00 00 00 00 00 00",
+          "patched_hex": "8b 45 e4 bf b0 9f 63",
+          "rollback_hex": "00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334376,
+          "end_offset_exclusive": 2334378,
+          "length": 2,
+          "original_hex": "00 00",
+          "patched_hex": "e8 72",
+          "rollback_hex": "00 00"
+        },
+        {
+          "start_offset": 2334381,
+          "end_offset_exclusive": 2334388,
+          "length": 7,
+          "original_hex": "00 00 00 00 00 00 00",
+          "patched_hex": "8b 45 e0 bf c2 9f 63",
+          "rollback_hex": "00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334389,
+          "end_offset_exclusive": 2334391,
+          "length": 2,
+          "original_hex": "00 00",
+          "patched_hex": "e8 65",
+          "rollback_hex": "00 00"
+        },
+        {
+          "start_offset": 2334394,
+          "end_offset_exclusive": 2334395,
+          "length": 1,
+          "original_hex": "00",
+          "patched_hex": "6a",
+          "rollback_hex": "00"
+        },
+        {
+          "start_offset": 2334396,
+          "end_offset_exclusive": 2334398,
+          "length": 2,
+          "original_hex": "00 00",
+          "patched_hex": "68 80",
+          "rollback_hex": "00 00"
+        },
+        {
+          "start_offset": 2334401,
+          "end_offset_exclusive": 2334404,
+          "length": 3,
+          "original_hex": "00 00 00",
+          "patched_hex": "6a 04 6a",
+          "rollback_hex": "00 00 00"
+        },
+        {
+          "start_offset": 2334405,
+          "end_offset_exclusive": 2334413,
+          "length": 8,
+          "original_hex": "00 00 00 00 00 00 00 00",
+          "patched_hex": "6a 03 6a 04 68 d6 9f 63",
+          "rollback_hex": "00 00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334414,
+          "end_offset_exclusive": 2334419,
+          "length": 5,
+          "original_hex": "00 00 00 00 00",
+          "patched_hex": "ff 15 08 a1 63",
+          "rollback_hex": "00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334420,
+          "end_offset_exclusive": 2334433,
+          "length": 13,
+          "original_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00",
+          "patched_hex": "83 f8 ff 74 29 89 45 dc 8d 4d d8 c7 01",
+          "rollback_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334437,
+          "end_offset_exclusive": 2334438,
+          "length": 1,
+          "original_hex": "00",
+          "patched_hex": "6a",
+          "rollback_hex": "00"
+        },
+        {
+          "start_offset": 2334439,
+          "end_offset_exclusive": 2334442,
+          "length": 3,
+          "original_hex": "00 00 00",
+          "patched_hex": "51 68 86",
+          "rollback_hex": "00 00 00"
+        },
+        {
+          "start_offset": 2334445,
+          "end_offset_exclusive": 2334449,
+          "length": 4,
+          "original_hex": "00 00 00 00",
+          "patched_hex": "68 50 9f 63",
+          "rollback_hex": "00 00 00 00"
+        },
+        {
+          "start_offset": 2334450,
+          "end_offset_exclusive": 2334456,
+          "length": 6,
+          "original_hex": "00 00 00 00 00 00",
+          "patched_hex": "50 ff 15 14 a1 63",
+          "rollback_hex": "00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334457,
+          "end_offset_exclusive": 2334465,
+          "length": 8,
+          "original_hex": "00 00 00 00 00 00 00 00",
+          "patched_hex": "ff 75 dc ff 15 c8 a0 63",
+          "rollback_hex": "00 00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334466,
+          "end_offset_exclusive": 2334487,
+          "length": 21,
+          "original_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+          "patched_hex": "8b 45 e4 8b 4d d0 8b 55 cc 5f 5e 5b ff 75 d4 9d 89 ec 5d c2 0c",
+          "rollback_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334488,
+          "end_offset_exclusive": 2334492,
+          "length": 4,
+          "original_hex": "00 00 00 00",
+          "patched_hex": "b8 20 62 44",
+          "rollback_hex": "00 00 00 00"
+        },
+        {
+          "start_offset": 2334493,
+          "end_offset_exclusive": 2334497,
+          "length": 4,
+          "original_hex": "00 00 00 00",
+          "patched_hex": "ff e0 b9 08",
+          "rollback_hex": "00 00 00 00"
+        },
+        {
+          "start_offset": 2334500,
+          "end_offset_exclusive": 2334510,
+          "length": 10,
+          "original_hex": "00 00 00 00 00 00 00 00 00 00",
+          "patched_hex": "89 c2 c1 ea 1c 8a 92 eb 9f 63",
+          "rollback_hex": "00 00 00 00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334511,
+          "end_offset_exclusive": 2334521,
+          "length": 10,
+          "original_hex": "00 00 00 00 00 00 00 00 00 00",
+          "patched_hex": "88 17 c1 e0 04 47 49 75 ec c3",
+          "rollback_hex": "00 00 00 00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334544,
+          "end_offset_exclusive": 2334698,
+          "length": 154,
+          "original_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+          "patched_hex": "48 4f 54 41 5f 53 54 41 47 45 32 20 73 72 63 3d 53 20 68 65 72 6f 3d 30 30 30 30 30 30 30 30 20 74 61 72 67 65 74 3d 30 30 30 30 30 30 30 30 20 61 6c 69 76 65 3d 30 30 30 30 30 30 30 30 20 73 74 61 72 74 3d 30 30 30 30 30 30 30 30 20 6c 6f 73 74 3d 30 30 30 30 30 30 30 30 20 65 61 78 3d 30 30 30 30 30 30 30 30 20 6f 76 65 72 66 6c 6f 77 3d 30 30 30 30 30 30 30 30 20 72 65 76 69 76 65 64 3d 4e 0d 0a 68 6f 74 61 5f 63 75 72 65 5f 73 74 61 67 65 32 2e 6c 6f 67",
+          "rollback_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+        },
+        {
+          "start_offset": 2334699,
+          "end_offset_exclusive": 2334715,
+          "length": 16,
+          "original_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+          "patched_hex": "30 31 32 33 34 35 36 37 38 39 41 42 43 44 45 46",
+          "rollback_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+        }
+      ],
+      "decoded_calls": [
+        {
+          "address": 5905157,
+          "bytes": "e8 76 82 09 00",
+          "mnemonic": "call",
+          "operands": "0x639d80"
+        },
+        {
+          "address": 5905332,
+          "bytes": "e8 c7 81 09 00",
+          "mnemonic": "call",
+          "operands": "0x639d80"
+        }
+      ],
+      "rollback_reconstructs_input": true
+    }
+  ],
+  "static_verification": {
+    "both_calls_decode_to_wrapper": true,
+    "native_validator_sequence_present": true,
+    "native_resurrect_target_sequence_present": true,
+    "temporary_argument_is_zero": true,
+    "pe_sizes_unchanged": true,
+    "other_package_files_unchanged": true,
+    "rollback_reconstruction_passed": true,
+    "zip_crc_test_passed": true
+  }
+}

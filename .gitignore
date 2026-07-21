@@ -25,4 +25,3 @@ baselines/hota180_clean/HotA_Settings.ini
 build/*
 !build/README.md
 output/*
-!output/README.md

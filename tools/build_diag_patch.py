@@ -613,7 +613,7 @@ def main() -> int:
             path.relative_to(package_root).as_posix(): sha256_file(path)
             for path in package_files
         },
-        "zip_path": zip_path.as_posix(),
+        "zip_path": zip_path.name,
         "zip_size": zip_path.stat().st_size,
         "zip_sha256": sha256_file(zip_path),
         "payload": payload_metadata,

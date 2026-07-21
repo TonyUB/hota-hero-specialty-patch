@@ -59,3 +59,11 @@ Implement only Stage 2:
 - Diagnostic builds: `Patch_v2.4_diagNN`
 - User Stage 2 test: `Patch_v2.4_STAGE2_TEST`
 - Do not reuse historical version numbers.
+
+## GitHub release layout
+
+- Keep the root `README.md` and `README.txt` bilingual and limited to three hero-effect rows: Elf Queen; Uland/Astra; Adela.
+- Store diagnostic and gameplay test packages, their instructions, and their manifests in `TEST/`.
+- Keep only the newest formal patch and its release metadata in `Download/`.
+- Before promoting a new formal patch, move the complete previous formal release from `Download/` to `OLD/`; never place test builds in `OLD/`.
+- Do not overwrite an older package with a new payload. Preserve versioned filenames and SHA-256 values.
