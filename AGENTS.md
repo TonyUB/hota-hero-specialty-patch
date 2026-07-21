@@ -72,8 +72,13 @@ Stage 4 is an experimental visual-only follow-up:
 - `TEST/Patch_v2.6_VISUAL_TEST10.zip` moves the record hook to the mandatory
   stack-count read at `0x005A1B48` and the rotation hook to the post-formatter
   argument setup at `0x005A1C00`. Both same-length trampolines replay the exact
-  displaced instructions; runtime log-order acceptance is still required.
-- TEST10 keeps the accepted Stage 3 gameplay bytes and routes only Cure-triggered
+  displaced instructions. Runtime testing still showed the mass Cure line last,
+  proving these independent trampolines did not enter the live display chain.
+- `TEST/Patch_v2.6_VISUAL_TEST11.zip` instead wraps the observable native calls
+  at `0x005A1B97` and `0x005A1BF6`. The first effective target check records the
+  log boundary; the native Cure formatter itself returns through the pointer
+  rotation and native refresh continuation.
+- TEST11 keeps the accepted Stage 3 gameplay bytes and routes only Cure-triggered
   resurrection calls through a scoped visual flag.
 - Native resurrection state updates, corpse placement, permanence, and the
   resurrection combat-log path remain before the visual gate.
@@ -87,7 +92,7 @@ Stage 4 is an experimental visual-only follow-up:
   to standing group 2 instead of leaving the creature on group 5 frame zero.
 - The scoped flag is cleared at the native public cleanup entry, including the
   autoresolve/no-animation branch.
-- Do not promote TEST10 or replace `Download/Patch_v2.5.zip` until the user
+- Do not promote TEST11 or replace `Download/Patch_v2.5.zip` until the user
   confirms the Cure cast line appears before every revival line in both single
   and mass Cure, while the already accepted TEST4 behavior remains unchanged.
 
@@ -149,6 +154,7 @@ Stage 4 is an experimental visual-only follow-up:
 - Stage 4 TEST4-layout-preserving log rotation retest: `Patch_v2.6_VISUAL_TEST8`
 - Stage 4 mandatory-init log rotation retest: `Patch_v2.6_VISUAL_TEST9`
 - Stage 4 mandatory-runtime-path log rotation retest: `Patch_v2.6_VISUAL_TEST10`
+- Stage 4 observable-native-call log rotation retest: `Patch_v2.6_VISUAL_TEST11`
 - Future formal Stage 4 release after runtime acceptance: `Patch_v2.6`
 - Do not reuse historical version numbers.
 
