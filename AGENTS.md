@@ -66,8 +66,14 @@ Stage 4 is an experimental visual-only follow-up:
 - `TEST/Patch_v2.6_VISUAL_TEST9.zip` restores TEST4's original instruction at
   `0x005A1B30`, moves the same-size record hook to the mandatory table-clear
   count at `0x005A1B36`, preserves all bytes from `0x005A1B3B` through
-  `0x005A1BFA`, and fixes the `JECXZ` target inside the validated cave.
-- TEST9 keeps the accepted Stage 3 gameplay bytes and routes only Cure-triggered
+  `0x005A1BFA`, and fixes the `JECXZ` target inside the validated cave. Runtime
+  testing proved single-Cure ordering and mass stability, but mass Cure still
+  displayed its cast line after every revival line.
+- `TEST/Patch_v2.6_VISUAL_TEST10.zip` moves the record hook to the mandatory
+  stack-count read at `0x005A1B48` and the rotation hook to the post-formatter
+  argument setup at `0x005A1C00`. Both same-length trampolines replay the exact
+  displaced instructions; runtime log-order acceptance is still required.
+- TEST10 keeps the accepted Stage 3 gameplay bytes and routes only Cure-triggered
   resurrection calls through a scoped visual flag.
 - Native resurrection state updates, corpse placement, permanence, and the
   resurrection combat-log path remain before the visual gate.
@@ -81,7 +87,7 @@ Stage 4 is an experimental visual-only follow-up:
   to standing group 2 instead of leaving the creature on group 5 frame zero.
 - The scoped flag is cleared at the native public cleanup entry, including the
   autoresolve/no-animation branch.
-- Do not promote TEST9 or replace `Download/Patch_v2.5.zip` until the user
+- Do not promote TEST10 or replace `Download/Patch_v2.5.zip` until the user
   confirms the Cure cast line appears before every revival line in both single
   and mass Cure, while the already accepted TEST4 behavior remains unchanged.
 
@@ -142,6 +148,7 @@ Stage 4 is an experimental visual-only follow-up:
 - Withdrawn Stage 4 post-settlement combat-log rotation retest: `Patch_v2.6_VISUAL_TEST7`
 - Stage 4 TEST4-layout-preserving log rotation retest: `Patch_v2.6_VISUAL_TEST8`
 - Stage 4 mandatory-init log rotation retest: `Patch_v2.6_VISUAL_TEST9`
+- Stage 4 mandatory-runtime-path log rotation retest: `Patch_v2.6_VISUAL_TEST10`
 - Future formal Stage 4 release after runtime acceptance: `Patch_v2.6`
 - Do not reuse historical version numbers.
 

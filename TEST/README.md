@@ -15,7 +15,8 @@
 | `Patch_v2.6_VISUAL_TEST6` | 已撤回：拆开每队效果检查与立即结算，群体在检查返回后的 `0x005A1B82` 崩溃 | `06d8cea2984d639313f45e6cf6269a574e2ac5088329eb037499a6864bc76c3f` |
 | `Patch_v2.6_VISUAL_TEST7` | 已撤回：单体日志顺序正确，但群体在重编译后的目标索引循环 `0x005A1B78` 崩溃 | `3a44d36ae14e86ad6bcfea286338cb4819297bbc697f57570cfedc9cea5968a1` |
 | `Patch_v2.6_VISUAL_TEST8` | 群体不再崩溃；已接替：日志顺序仍未改变，入口记录点未形成有效轮转起点 | `5a0d245492fda8f3c14f0bf2ceb5f6e8eb7da9f2b3b3eb0de4ea1bd69b4b28c9` |
-| `Patch_v2.6_VISUAL_TEST9` | 保留 TEST4 群体地址布局，把日志起点记录移到必经的表清空指令，并修复 TEST8 越界短跳 | `4b86ecfcbcaa89ee5fa90acaefa2c84915dcccc45629eb91065fb18319565f34` |
+| `Patch_v2.6_VISUAL_TEST9` | 群体稳定、单体顺序正确；已接替：群体治愈记录仍在全部复活记录之后 | `4b86ecfcbcaa89ee5fa90acaefa2c84915dcccc45629eb91065fb18319565f34` |
+| `Patch_v2.6_VISUAL_TEST10` | 把日志记录与轮转跳板移到群体实际施法必经的数量读取和施法后参数准备指令 | `eb2713942385e589b6dbe6e96c77a6b9597666a676a8e04ca3ddaa9b7c263e30` |
 
 每个测试版均保留 ZIP、测试说明和 JSON/Markdown 构建清单。重组前的根目录项目说明保存在 `README_before_download_layout.md`。
 
@@ -35,7 +36,9 @@
 
 `Patch_v2.6_VISUAL_TEST8` 已确认群体复活不再崩溃，证明恢复 TEST4 指令地址布局有效；但日志仍是先复活、后治愈，说明放在 `0x005A1B30` 的施法前日志长度记录没有形成有效轮转起点。静态复核还发现其 `JECXZ` 被编码到代码洞外的 `0x00639BB5`；正常特长英雄路径不会执行该空指针分支，但本包仍由 TEST9 接替。
 
-`Patch_v2.6_VISUAL_TEST9` 恢复 `0x005A1B30` 的 TEST4 原指令，把同长度记录 Hook 移到必经的 `0x005A1B36` 表清空计数指令；`0x005A1B3B–0x005A1BFA` 继续逐字节保持 TEST4，同时把短跳目标修正到洞内安全返回块。
+`Patch_v2.6_VISUAL_TEST9` 恢复 `0x005A1B30` 的 TEST4 原指令，把同长度记录 Hook 移到 `0x005A1B36` 表清空计数指令，并把短跳目标修正到洞内安全返回块。实机确认群体不崩溃、单体顺序正确，但群体治愈记录仍在最后，说明该初始化前缀仍未进入 HotA/HD 的实际显示路径。
+
+`Patch_v2.6_VISUAL_TEST10` 保留 TEST4 的群体循环和原版 `0x005A8C60` 施法记录时点，把记录 Hook 移到必经的堆栈数量读取 `0x005A1B48`，把轮转 Hook 移到施法记录返回后的参数准备 `0x005A1C00`；两个辅助函数都重放被覆盖的原指令。本包已通过双版本边界、回滚、可复现构建和 ZIP CRC 静态门禁，等待实机确认群体日志顺序。
 
 `Patch_v2.5_STAGE3_TEST` 已撤回：该包覆盖了启动导出名 `MainProc` 的字符串终止符，导致游戏无法启动。故障原包和取证材料已移至 `failed_forensics/`，不得安装。
 
