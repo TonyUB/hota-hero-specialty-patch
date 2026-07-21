@@ -1,11 +1,12 @@
 # Download
 
-当前唯一推荐下载的正式补丁：[`Patch_v2.6.zip`](./Patch_v2.6.zip)
+当前唯一正式补丁：[`HOTA_NEW_HERO_V1.zip`](./HOTA_NEW_HERO_V1.zip)
 
 ```text
-SHA-256 afb90c1a02e25eb8face09908b66150eb05f21e4a457144ffaccaaf0b6eb5557
+SHA-256 78162dc6f814ee1160d3e9e1edc482fdf2b201a4820564255d5d146a9a67388d
 ```
 
-同目录的 `Patch_v2.6_README.md` 是安装与功能边界说明，`Patch_v2.6_manifest.md` / `.json` 是完整构建、实机验收与回滚清单。
+- `HOTA_NEW_HERO_V1_README.md`：安装与功能摘要。
+- `HOTA_NEW_HERO_V1_manifest.md` / `.json`：构建来源、精确字节回滚和逐文件校验记录。
 
-发布规则：`Download` 始终只保留最新正式补丁；产生下一版正式补丁时，先把这里的上一版整体转移到 `OLD`，再把新版本放入 `Download`。
+历史版本只保留文字日志；旧补丁目录 `OLD/` 仅保留可信 `Patch_v1.8.zip`。

@@ -104,7 +104,7 @@ EAX < 0   → overflow = -EAX
 
 英雄对象的 ID 字段候选偏移为 `+0x1A`：
 
-- 当前 Adela 零祝福消耗 Hook 在 `0x00639D40` 使用 `cmp dword ptr [ebx+0x1A], 9`，与 Adela ID 9 一致。
+- 历史 Patch_v1.8 的 Adela 零祝福消耗 Hook 在 `0x00639D40` 使用 `cmp dword ptr [ebx+0x1A], 9`，与 Adela ID 9 一致；`HOTA_NEW_HERO_V1` 已恢复原生入口并清空该代码洞。
 - `CastSpell` 多处读取 `[hero+0x1A]` 作为英雄数据表索引。
 
 当前数据给出的目标英雄 ID：
