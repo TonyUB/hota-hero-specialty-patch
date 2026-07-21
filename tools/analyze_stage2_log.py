@@ -99,6 +99,10 @@ def parse_log(path: Path) -> dict[str, Any]:
                 "revived_yes": sum(record["revived"] for record in hero_records),
                 "revived_no": sum(not record["revived"] for record in hero_records),
                 "candidates": sum(record["stage2_candidate"] for record in hero_records),
+                "validator_rejections": sum(
+                    record["stage2_candidate"] and not record["revived"]
+                    for record in hero_records
+                ),
                 "false_positives": sum(record["false_positive"] for record in hero_records),
             }
         )
@@ -114,6 +118,13 @@ def parse_log(path: Path) -> dict[str, Any]:
         "revived_yes_count": sum(record["revived"] for record in records),
         "revived_no_count": sum(not record["revived"] for record in records),
         "candidate_count": len(candidates),
+        "non_candidate_count": len(non_candidates),
+        "validator_accepted_candidate_count": sum(
+            record["revived"] for record in candidates
+        ),
+        "validator_rejected_candidate_count": sum(
+            not record["revived"] for record in candidates
+        ),
         "all_candidates_revived": all(record["revived"] for record in candidates),
         "all_non_candidates_skipped": all(not record["revived"] for record in non_candidates),
         "false_positive_count": sum(record["false_positive"] for record in records),
@@ -131,29 +142,39 @@ def parse_log(path: Path) -> dict[str, Any]:
 
 
 def markdown(report: dict[str, Any]) -> str:
+    observed_paths = ", ".join(
+        f"{item['hero_name']}单体" * (item["single_records"] > 0)
+        + ("/" if item["single_records"] > 0 and item["mass_records"] > 0 else "")
+        + f"{item['hero_name']}群体" * (item["mass_records"] > 0)
+        for item in report["hero_summary"]
+        if item["single_records"] > 0 or item["mass_records"] > 0
+    )
     lines = [
         "# Patch_v2.4_STAGE2_TEST 实机日志验证",
         "",
-        "状态：**HD 版存活兵队复活路径通过；永久性与原生禁止目标仍待单独确认。**",
+        "状态：**Stage 2 日志决策已完成结构化验证。**",
         "",
         f"- 日志 SHA-256：`{report['sha256']}`",
         f"- 有效记录：{report['record_count']} 条",
         f"- `revived=Y`：{report['revived_yes_count']} 条",
         f"- `revived=N`：{report['revived_no_count']} 条",
         f"- 同时具备存活、阵亡和溢出的候选：{report['candidate_count']} 条",
-        "- 8 个候选全部进入原生永久复活调用；5 个非候选全部跳过，无误触发。",
+        f"- 原生资格验证接受：{report['validator_accepted_candidate_count']} 条",
+        f"- 原生资格验证拒绝：{report['validator_rejected_candidate_count']} 条",
+        f"- 非候选误触发：{report['false_positive_count']} 条",
         "- 所有 `overflow` 均等于 `max(0, -signed(EAX))`。",
         "",
         "## 英雄汇总",
         "",
-        "| 英雄 | 单体 | 群体 | 候选 | revived=Y | revived=N | 误触发 |",
-        "|---|---:|---:|---:|---:|---:|---:|",
+        "| 英雄 | 单体 | 群体 | 候选 | revived=Y | revived=N | 原生拒绝 | 误触发 |",
+        "|---|---:|---:|---:|---:|---:|---:|---:|",
     ]
     for item in report["hero_summary"]:
         lines.append(
             f"| {item['hero_name']} | {item['single_records']} | "
             f"{item['mass_records']} | {item['candidates']} | "
             f"{item['revived_yes']} | {item['revived_no']} | "
+            f"{item['validator_rejections']} | "
             f"{item['false_positives']} |"
         )
     lines.extend(
@@ -161,10 +182,18 @@ def markdown(report: dict[str, Any]) -> str:
             "",
             "## 判定",
             "",
-            "- 尤兰德与阿斯特拉均在单体、群体路径中出现 `revived=Y`。",
-            "- `alive=start` 的满编/仅受伤兵队即使存在治疗溢出，也全部为 `revived=N`。",
-            "- 本日志没有包含‘已有阵亡但被原生资格验证拒绝’的样本，因此亡灵、元素、构装体等限制仍不能据此宣告完成。",
-            "- 日志证明 `temporary=0` 调用发生，但是否在战斗结束后永久保留仍须由用户明确确认。",
+            f"- 本日志覆盖的路径：{observed_paths}。",
+            f"- 非候选记录共 {report['non_candidate_count']} 条，全部正确跳过。",
+            (
+                f"- 有 {report['validator_rejected_candidate_count']} 条记录在满足基础候选条件后被原生资格验证拒绝。"
+                if report["validator_rejected_candidate_count"]
+                else "- 本日志没有包含满足基础候选条件后被原生资格验证拒绝的样本。"
+            ),
+            (
+                "- `revived=Y` 证明 `temporary=0` 调用发生；战后永久性仍须结合用户实机观察。"
+                if report["revived_yes_count"]
+                else "- 本日志没有 `revived=Y`；它用于验证原生资格拒绝，不能单独证明永久复活路径。"
+            ),
         ]
     )
     return "\n".join(lines) + "\n"

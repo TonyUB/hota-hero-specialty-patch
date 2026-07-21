@@ -7,6 +7,9 @@
   "revived_yes_count": 8,
   "revived_no_count": 5,
   "candidate_count": 8,
+  "non_candidate_count": 5,
+  "validator_accepted_candidate_count": 8,
+  "validator_rejected_candidate_count": 0,
   "all_candidates_revived": true,
   "all_non_candidates_skipped": true,
   "false_positive_count": 0,
@@ -23,6 +26,7 @@
       "revived_yes": 3,
       "revived_no": 2,
       "candidates": 3,
+      "validator_rejections": 0,
       "false_positives": 0
     },
     {
@@ -35,6 +39,7 @@
       "revived_yes": 5,
       "revived_no": 3,
       "candidates": 5,
+      "validator_rejections": 0,
       "false_positives": 0
     }
   ],

@@ -1,6 +1,6 @@
 # Patch_v2.4_STAGE2_TEST 设计与静态验证
 
-状态：**HD 版单体/群体数量与动画已验证；等待战后永久性和禁止目标验证。**
+状态：**Stage 2 已通过实机门禁；正式 `Patch_v2.4` 已移除诊断日志。**
 
 ## 已通过的前置门禁
 
@@ -61,4 +61,6 @@ h3hota HD.exe
 SHA-256 4b03cae3868cbe161e8063883bfccb2967a7937f4c89e2c8b11584609d6ddbec
 ```
 
-静态验证包括输入哈希、机器码调用序列、PE 大小、其他 10 个文件不变、完整回滚重建、12 个 ZIP 成员和 CRC。用户回传的 HD 版日志与截图已证明两名英雄的单体/群体复活数量和原生动画正确；详情见 `stage2_runtime_validation.md` 与 `stage2_visual_validation.md`。正式发布仍须确认战后永久保留与原生禁止目标。
+静态验证包括输入哈希、机器码调用序列、PE 大小、其他 10 个文件不变、完整回滚重建、12 个 ZIP 成员和 CRC。用户回传的 HD 版日志与截图已证明两名英雄的单体/群体复活数量和原生动画正确；随后又确认新增单位战后保留，且亡灵只治疗、不复活。详情见 `stage2_runtime_validation.md`、`stage2_visual_validation.md`、`stage2_undead_runtime_validation.md` 与 `stage2_release_acceptance.md`。
+
+正式版 `Patch_v2.4` 使用相同的资格校验和 `temporary=0` 原生复活机器码序列，删除测试日志模板、文件名和 Windows 文件 I/O，包装器缩减为 206 字节。
