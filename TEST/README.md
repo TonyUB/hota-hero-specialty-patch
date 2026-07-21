@@ -6,8 +6,12 @@
 |---|---|---|
 | `Patch_v2.4_diag01` | 仅记录尤兰德/阿斯特拉单体与群体 Cure 的真实运行路径，不执行复活 | `210a542f140be64606f4b5af3b3768025f5badf3c3061ce0f5e07ff37d63cf40` |
 | `Patch_v2.4_STAGE2_TEST` | 验证存活兵队治疗溢出、原生资格校验与永久复活 | `bcb0a61265b68825ca151b82567fd261d57d49c20d7040ea09ab67b107e3f2bd` |
-| `Patch_v2.5_STAGE3_TEST` | 验证单体治愈选择全灭尸体，以及高级水系群体治愈扫描并复活尸体 | `ccff614ce639415b8da4abc5aaff4a264f19a144e37a7851d520a7e89e29a4b0` |
+| `Patch_v2.5_STAGE3_TEST3` | 修复单体尸体在正式结算前被 Cure 活体效果检查显示为“抵抗魔法”；保留已通过的群体尸体复活 | `11d3d34175b8b15b5de7f8c5af31e9809762cdb76909910704936e2b43fd8c73` |
 
 每个测试版均保留 ZIP、测试说明和 JSON/Markdown 构建清单。重组前的根目录项目说明保存在 `README_before_download_layout.md`。
+
+`Patch_v2.5_STAGE3_TEST` 已撤回：该包覆盖了启动导出名 `MainProc` 的字符串终止符，导致游戏无法启动。故障原包和取证材料已移至 `failed_forensics/`，不得安装。
+
+`Patch_v2.5_STAGE3_TEST2` 已完成部分实机验证：两名特长英雄的群体治愈可复活全部合法尸体并永久保留，亡灵和非特长英雄负例均通过；但单体尸体会显示“抵抗魔法”。该包也已移至 `failed_forensics/`，由 `TEST3` 接替。
 
 历史交接文档中提到的 Patch_v1.9–v2.3 失败实验没有作为本轮可信构建输入，也没有在当前工作区发现其原始 ZIP，因此这里只保留相关取证文档，不伪造或重新打包那些版本。

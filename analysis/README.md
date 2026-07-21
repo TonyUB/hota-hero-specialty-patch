@@ -7,7 +7,8 @@
 - [x] `cure_runtime_path.md`：单体/群体 Cure、CureCore、原生尸体解析和永久复活接口已经定位。
 - [x] `diag01_runtime_validation.md`：实机日志确认两个 Cure 调用点确实执行。
 - [x] `stage2_release_acceptance.md`：活体治疗溢出复活、亡灵负例和战后永久性已经通过实机门禁。
-- [ ] `stage3_corpse_research.md`：静态实现及测试构建已经完成；单体尸体目标、群体尸体扫描、负例和战后永久性等待实机验证。
+- [x] `stage3_corpse_research.md`：`TEST3` 已通过单体、群体、负例、永久性、重叠尸体和占格冲突的全部实机门禁；正式版为 `Download/Patch_v2.5.zip`。
+- [x] `stage3_test2_runtime_results.md`：九组截图结果和剩余单体故障边界已记录。
 
 辅助产物：
 
@@ -17,4 +18,4 @@
 - `../tools/extract_lod.py`：安全列出/解包 H3 LOD。
 - `../tools/build_stage3_patch.py`：从唯一可信 `Patch_v1.8` 构建 Stage 3 测试包。
 
-静态成果不能替代实机结果。`Patch_v2.5_STAGE3_TEST` 在用户完成运行时门禁前不得进入 `Download/`。
+Stage 3 运行时门禁已全部通过。正式版 `Patch_v2.5` 的两个 EXE 与 TEST3 逐字节一致；仅在中文语言资源中追加了已验收功能的一句特长说明。

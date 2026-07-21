@@ -4,12 +4,12 @@
 
 - The only trusted modified baseline is `Patch_v1.8.zip`.
 - Never build on Patch_v1.9, v2.0, v2.1, v2.2, or v2.3.
-- Later cure/resurrection packages are failed or unverified experiments and are for forensics only.
+- Historical cure/resurrection test packages remain test or forensic inputs; only
+  `Download/Patch_v2.5.zip` is the current accepted formal release.
 
 ## Current milestone
 
-Stage 2 is the current stable release. Implement Stage 3 only as a test build until
-the user completes runtime acceptance:
+Stage 3 is the current stable release. All required TEST3 runtime gates passed:
 
 - Preserve all accepted Stage 2 behavior for living stacks.
 - Uland and Astra may target a fully dead friendly stack with single-target Cure
@@ -20,8 +20,11 @@ the user completes runtime acceptance:
   dead friendly stacks and applies the same native Resurrection restrictions.
 - Reuse native corpse lookup, placement, occupancy, animation, eligibility, and
   `ResurrectTarget(..., temporary=0)`.
-- Do not promote Stage 3 to `Download/` or call it successful before the user
-  confirms single targeting, mass enumeration, negative targets, and permanence.
+- The real single-target cast path performs an additional Cure effect/resistance
+  check at `0x005A05FA`. For a fully dead specialist target, bypass it only after
+  `GetResurrectionTarget(..., context=0)` returns that exact stack again.
+- `Download/Patch_v2.5.zip` is the accepted formal release. Preserve its tested
+  executable bytes unless a later feature explicitly requires a new runtime gate.
 - Astra starting skills remain Basic Wisdom + Basic Water Magic.
 
 ## Non-negotiable rules
@@ -41,7 +44,11 @@ the user completes runtime acceptance:
 13. Produce a diagnostic hook first. The user must confirm a runtime log before resurrection logic is added.
 14. Never claim success from PE checks, ZIP integrity, disassembly, or static signatures alone.
 15. Every build must include input hashes, output hashes, changed offsets, original bytes, patched bytes, and rollback bytes.
-16. Keep the accepted `Download/Patch_v2.4.zip` unchanged while Stage 3 is under test.
+16. Keep the accepted `Download/Patch_v2.5.zip` unchanged until a later formal release replaces it.
+17. Never allocate a code cave from a zero run without checking adjacent strings,
+    terminators, tables, and startup data; preserve every semantic boundary byte.
+18. A distributed test build must pass a real startup-to-main-menu smoke test; static
+    PE, disassembly, and hash checks alone do not establish that it starts.
 
 ## Preserve existing Patch_v1.8 behavior
 
@@ -64,7 +71,10 @@ the user completes runtime acceptance:
 
 - Diagnostic builds: `Patch_v2.4_diagNN`
 - User Stage 2 test: `Patch_v2.4_STAGE2_TEST`
-- User Stage 3 corpse test: `Patch_v2.5_STAGE3_TEST`
+- Withdrawn Stage 3 corpse test: `Patch_v2.5_STAGE3_TEST` (startup-broken; forensics only)
+- Withdrawn Stage 3 corpse retest: `Patch_v2.5_STAGE3_TEST2` (single target blocked; forensics only)
+- User Stage 3 single-target retest: `Patch_v2.5_STAGE3_TEST3`
+- Formal Stage 3 release: `Patch_v2.5`
 - Do not reuse historical version numbers.
 
 ## GitHub release layout

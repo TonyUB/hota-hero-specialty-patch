@@ -37,9 +37,15 @@ from build_diag_patch import (
 )
 
 
-BUILD_NAME = "Patch_v2.5_STAGE3_TEST"
+BUILD_NAME = "Patch_v2.5_STAGE3_TEST3"
 
-SECOND_CAVE_VA = 0x00639C28
+MAINPROC_STRING_VA = 0x00639C20
+MAINPROC_STRING = b"MainProc\x00"
+
+# 0x00639C28 is the terminating NUL for the runtime GetProcAddress name
+# "MainProc". The original Stage 3 test incorrectly started there and made
+# startup resolve a longer, invalid export name. Payload may begin only after it.
+SECOND_CAVE_VA = 0x00639C29
 SECOND_CAVE_END_EXCLUSIVE_VA = 0x00639D00
 
 CURE_CORE_VA = 0x00446220
@@ -52,6 +58,10 @@ SINGLE_CURE_CALL_VA = 0x005A1B05
 MASS_CURE_CALL_VA = 0x005A1BB4
 MASS_AFTER_LIVING_LOOP_VA = 0x005A1BEC
 MASS_AFTER_LIVING_LOOP_RETURN_VA = 0x005A1BF1
+CAST_CURE_EFFECT_GATE_VA = 0x005A05E1
+CAST_CURE_EFFECT_ORIGINAL_CONTINUE_VA = 0x005A05E8
+CAST_CURE_EFFECT_BYPASS_VA = 0x005A0628
+CAST_CURE_EFFECT_NO_TARGET_VA = 0x005A062B
 TARGET_RESOLVER_SWITCH_VA = 0x005A3C77
 TARGET_RESOLVER_ORIGINAL_CONTINUE_VA = 0x005A3C7D
 TARGET_VALIDATION_GATE_VA = 0x005A3D26
@@ -62,6 +72,7 @@ PATCH_V18_EXPECTED = {
     SINGLE_CURE_CALL_VA: bytes.fromhex("E8 16 47 EA FF"),
     MASS_CURE_CALL_VA: bytes.fromhex("E8 67 46 EA FF"),
     MASS_AFTER_LIVING_LOOP_VA: bytes.fromhex("8B 4D 10 6A 00"),
+    CAST_CURE_EFFECT_GATE_VA: bytes.fromhex("85 FF 74 46 8B 55 10"),
     TARGET_RESOLVER_SWITCH_VA: bytes.fromhex("8B 55 08 83 EA 26"),
     TARGET_VALIDATION_GATE_VA: bytes.fromhex("8B 4D FC 57 53"),
 }
@@ -335,6 +346,49 @@ validation_original:
     validation_code, validation_count = assemble(validation_source, validation_va)
     components.append(("target_validation_gate", validation_va, validation_code, validation_count, validation_source))
 
+    effect_gate_va = align(validation_va + len(validation_code))
+    effect_gate_source = f"""
+single_corpse_effect_gate:
+    test edi, edi
+    jz {CAST_CURE_EFFECT_NO_TARGET_VA:#x}
+    cmp dword ptr [ebp + 0x08], 0x25
+    jne effect_original
+    cmp dword ptr [edi + 0x4C], 0
+    jne effect_original
+    mov eax, dword ptr [ebp - 0x14]
+    test eax, eax
+    jz effect_original
+    cmp byte ptr [eax + 0x1A], 0x19
+    je effect_validate_corpse
+    cmp byte ptr [eax + 0x1A], 0xAA
+    jne effect_original
+
+effect_validate_corpse:
+    push 0
+    push dword ptr [edi + 0x38]
+    push dword ptr [ebx + 0x132C0]
+    mov ecx, ebx
+    mov eax, {GET_RESURRECTION_TARGET_VA:#x}
+    call eax
+    cmp eax, edi
+    jne effect_original
+    jmp {CAST_CURE_EFFECT_BYPASS_VA:#x}
+
+effect_original:
+    mov edx, dword ptr [ebp + 0x10]
+    jmp {CAST_CURE_EFFECT_ORIGINAL_CONTINUE_VA:#x}
+"""
+    effect_gate_code, effect_gate_count = assemble(effect_gate_source, effect_gate_va)
+    components.append(
+        (
+            "single_corpse_effect_gate",
+            effect_gate_va,
+            effect_gate_code,
+            effect_gate_count,
+            effect_gate_source,
+        )
+    )
+
     mass_va = SECOND_CAVE_VA
     mass_source = f"""
 mass_corpse_hook:
@@ -428,7 +482,7 @@ mass_finish:
     components.append(("mass_corpse_hook", mass_va, mass_code, mass_count, mass_source))
 
     primary_components = components[:-1]
-    primary_end = validation_va + len(validation_code)
+    primary_end = effect_gate_va + len(effect_gate_code)
     if primary_end > CAVE_END_EXCLUSIVE_VA:
         layout = ", ".join(
             f"{name}=0x{address:08X}+{len(code)}"
@@ -476,6 +530,7 @@ mass_finish:
         "cure_wrapper": wrapper_va,
         "target_resolver_gate": resolver_va,
         "target_validation_gate": validation_va,
+        "single_corpse_effect_gate": effect_gate_va,
         "mass_corpse_hook": mass_va,
     }
     metadata = {
@@ -522,6 +577,16 @@ def patch_executable(
                 f"Unexpected {name} IAT in {path.name}: {imports.get(name)!r}"
             )
 
+    mainproc_offset = va_to_offset(pe, MAINPROC_STRING_VA)
+    mainproc_actual = original[
+        mainproc_offset : mainproc_offset + len(MAINPROC_STRING)
+    ]
+    if mainproc_actual != MAINPROC_STRING:
+        raise RuntimeError(
+            f"Startup export name guard failed in {path.name}: "
+            f"expected {MAINPROC_STRING!r}, got {mainproc_actual!r}"
+        )
+
     for region_va, payload in payload_regions:
         cave_offset = va_to_offset(pe, region_va)
         cave_end = cave_offset + len(payload)
@@ -540,6 +605,10 @@ def patch_executable(
         MASS_AFTER_LIVING_LOOP_VA: relative_branch(
             MASS_AFTER_LIVING_LOOP_VA, addresses["mass_corpse_hook"], 0xE8
         ),
+        CAST_CURE_EFFECT_GATE_VA: relative_branch(
+            CAST_CURE_EFFECT_GATE_VA, addresses["single_corpse_effect_gate"], 0xE9
+        )
+        + b"\x90\x90",
         TARGET_RESOLVER_SWITCH_VA: relative_branch(
             TARGET_RESOLVER_SWITCH_VA, addresses["target_resolver_gate"], 0xE9
         )
@@ -594,6 +663,11 @@ def patch_executable(
     patched_bytes = bytes(patched)
     if len(patched_bytes) != len(original):
         raise AssertionError("PE size changed")
+    if (
+        patched_bytes[mainproc_offset : mainproc_offset + len(MAINPROC_STRING)]
+        != MAINPROC_STRING
+    ):
+        raise RuntimeError(f"Startup export name was corrupted in {path.name}")
     pefile.PE(data=patched_bytes, fast_load=False)
 
     decoder = capstone.Cs(capstone.CS_ARCH_X86, capstone.CS_MODE_32)
@@ -606,6 +680,7 @@ def patch_executable(
             SINGLE_CURE_CALL_VA: addresses["cure_wrapper"],
             MASS_CURE_CALL_VA: addresses["cure_wrapper"],
             MASS_AFTER_LIVING_LOOP_VA: addresses["mass_corpse_hook"],
+            CAST_CURE_EFFECT_GATE_VA: addresses["single_corpse_effect_gate"],
             TARGET_RESOLVER_SWITCH_VA: addresses["target_resolver_gate"],
             TARGET_VALIDATION_GATE_VA: addresses["target_validation_gate"],
         }[address]
@@ -653,6 +728,9 @@ def patch_executable(
         "logical_patch_regions": logical_regions,
         "exact_contiguous_differences": contiguous_differences(original, patched_bytes),
         "decoded_hooks": decoded_hooks,
+        "startup_export_name_va": MAINPROC_STRING_VA,
+        "startup_export_name_hex": MAINPROC_STRING.hex(" "),
+        "startup_export_name_preserved": True,
         "rollback_reconstructs_input": True,
     }
 
@@ -662,6 +740,8 @@ def instructions(report: dict[str, Any]) -> str:
 
 状态：**Stage 3 实机测试版，不替换 `Download/Patch_v2.4.zip` 稳定版。**
 
+本包继续包含启动字符串保护，并修复 `TEST2` 中单体尸体在正式结算前被 Cure 活体效果校验判定为“抵抗魔法”的问题。
+
 ## 新增范围
 
 - 尤兰德、阿斯特拉的单体治愈可以选择符合原生转世重生规则的己方尸体。
@@ -669,12 +749,13 @@ def instructions(report: dict[str, Any]) -> str:
 - 高级水系群体治愈完成原有活体结算后，再扫描己方全灭兵队并逐队尝试永久复活。
 - 活体治疗溢出复活继续保留 Stage 2 已通过的逻辑。
 - 尸体解析、亡灵等禁用规则、占格冲突、数量上限、动画与永久性都调用原生接口。
+- 单体结算只在尤兰德/阿斯特拉、治愈、全灭目标且原生转世重生资格再次确认时，跳过不适用于尸体的 Cure 活体效果检查。
 
 ## 安装
 
 1. 备份当前游戏目录中的同名文件。
 2. 将 `{BUILD_NAME}.zip` 解压到 HotA 1.8.0 游戏根目录并覆盖。
-3. 优先用 `h3hota HD.exe` 测试。
+3. 第一次只启动 `h3hota HD.exe` 并确认可以到达主菜单；成功后再进行下列玩法测试。
 
 ## 必测项目
 
@@ -713,6 +794,7 @@ def research_markdown(report: dict[str, Any]) -> str:
         "",
         "- `0x005A3C77`：治愈先保留活体解析；仅英雄施法且当前英雄为尤兰德/阿斯特拉时，活体为空才回退到原生尸体解析。",
         "- `0x005A3D26`：仅对上述已由原生复活解析确认的治愈尸体跳过不适用于尸体的 Cure 二次校验。",
+        "- `0x005A05E1`：正式单体结算时再次确认英雄、治愈、全灭状态及原生复活资格，再跳过会把尸体显示为‘抵抗魔法’的 Cure 活体效果检查。",
         "- `0x005A1B05/0x005A1BB4`：保留 Stage 2 活体溢出复活；全灭目标不进入 CureCore。",
         "- `0x005A1BEC`：高级水系群体治愈的活体循环结束后，按当前阵营兵队槽位扫描 `numberAlive == 0` 的目标，并逐个再次调用原生尸体解析。",
         "- 全灭目标的治愈量复刻 CureCore 的原生数值公式，并调用英雄原生法术特长增幅函数；最终只调用 `ResurrectTarget(..., temporary=0)`。",
@@ -720,9 +802,10 @@ def research_markdown(report: dict[str, Any]) -> str:
         "## 静态验证",
         "",
         f"- 载荷：{report['payload']['payload_size']} 字节；两个代码洞合计剩余 {report['payload']['total_free_bytes']} 字节。",
-        "- 两个 EXE 的五个挂钩点均核验原字节并反汇编确认目标。",
+        "- 两个 EXE 的六个挂钩点均核验原字节并反汇编确认目标。",
         "- 两个 EXE 大小不变；其他包内文件哈希不变。",
         "- 每个补丁区都通过完整回滚重建；ZIP 成员与 CRC 通过。",
+        "- 启动导出名 `MainProc\\0` 在写入前后均逐字节校验，第二代码洞从终止符之后的 `0x00639C29` 开始。",
         "- 当前尚未证明尸体光标、群体枚举、占格冲突和战后永久性在实机环境中的最终行为。",
         "",
         "## 输出哈希",
@@ -806,7 +889,8 @@ def main() -> int:
         "addresses": addresses,
         "executables": executable_reports,
         "static_verification": {
-            "five_hook_sites_verified": True,
+            "six_hook_sites_verified": True,
+            "single_corpse_runtime_effect_gate_fixed": True,
             "native_target_lookup_reused": True,
             "native_resurrection_validator_reused": True,
             "native_resurrect_target_reused": True,
@@ -816,6 +900,7 @@ def main() -> int:
             "other_package_files_unchanged": True,
             "rollback_reconstruction_passed": True,
             "zip_crc_test_passed": True,
+            "startup_export_name_preserved": True,
         },
         "runtime_acceptance_required": True,
     }

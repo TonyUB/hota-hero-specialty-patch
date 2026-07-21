@@ -10,3 +10,11 @@
 本仓库重打包 ZIP SHA-256 c0aa1a327bf13e2935b45d29beb1b82ff790a4d82d7b5a5860422b8a86b30d0a
 原始交接 ZIP SHA-256   13520ef74a9decd28fdcbe21ecf630d046ea04561570a9b16bbddd3b8f76ea52
 ```
+
+## Patch_v2.4
+
+`Patch_v2.4` 是已通过实机验证的 Stage 2 正式版，支持对仍有单位存活的兵队进行治疗溢出复活。它已由支持全灭尸体单体与群体复活的 `Patch_v2.5` 替代；ZIP、说明和完整 JSON/Markdown 清单均原样保留在本目录。
+
+```text
+Patch_v2.4.zip SHA-256 43708d91e192bd7b42eb6f15b21414ecfcda72c1232dd5df277a2b049c35ffde
+```
