@@ -86,7 +86,13 @@ Stage 4 is an experimental visual-only follow-up:
   A mass-scoped byte counts each Cure-only resurrection entry; the post-append
   helper rotates the final Cure pointer backward by that exact count, refreshes
   the native log, and replays the displaced instructions.
-- TEST12 keeps the accepted Stage 3 gameplay bytes and routes only Cure-triggered
+- Runtime testing proved that TEST12 still displayed the mass Cure cast line
+  after every revival line. Do not continue changing ordering blindly.
+- `TEST/Patch_v2.6_VISUAL_LOGDIAG01.zip` keeps TEST12 behavior and writes
+  `hota_cure_logdiag01.bin`. One mass Cure records wrapper/helper entry, each
+  Cure-only resurrection count, and vector snapshots immediately after native
+  append, after rotation, and after native refresh.
+- LOGDIAG01 keeps the accepted Stage 3 gameplay bytes and routes only Cure-triggered
   resurrection calls through a scoped visual flag.
 - Native resurrection state updates, corpse placement, permanence, and the
   resurrection combat-log path remain before the visual gate.
@@ -100,9 +106,9 @@ Stage 4 is an experimental visual-only follow-up:
   to standing group 2 instead of leaving the creature on group 5 frame zero.
 - The scoped flag is cleared at the native public cleanup entry, including the
   autoresolve/no-animation branch.
-- Do not promote TEST12 or replace `Download/Patch_v2.5.zip` until the user
-  confirms the Cure cast line appears before every revival line in both single
-  and mass Cure, while the already accepted TEST4 behavior remains unchanged.
+- Do not create another ordering test or replace `Download/Patch_v2.5.zip`
+  until the user uploads `hota_cure_logdiag01.bin` and its six event classes
+  identify the first live path that loses or rebuilds the order.
 
 ## Non-negotiable rules
 
@@ -164,6 +170,7 @@ Stage 4 is an experimental visual-only follow-up:
 - Stage 4 mandatory-runtime-path log rotation retest: `Patch_v2.6_VISUAL_TEST10`
 - Stage 4 observable-native-call log rotation retest: `Patch_v2.6_VISUAL_TEST11`
 - Stage 4 native Cure logger post-append rotation retest: `Patch_v2.6_VISUAL_TEST12`
+- Stage 4 one-run binary log-path diagnostic: `Patch_v2.6_VISUAL_LOGDIAG01`
 - Future formal Stage 4 release after runtime acceptance: `Patch_v2.6`
 - Do not reuse historical version numbers.
 
