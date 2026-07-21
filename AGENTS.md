@@ -32,18 +32,25 @@ Stage 4 is an experimental visual-only follow-up:
 - `TEST/Patch_v2.6_VISUAL_TEST1.zip` proved that skipping the whole native
   visual block preserves resurrection state, but mass Cure left revived stacks
   displayed as corpses until a mouse-over forced a redraw.
-- `TEST/Patch_v2.6_VISUAL_TEST2.zip` supersedes TEST1 for runtime testing. It
+- `TEST/Patch_v2.6_VISUAL_TEST2.zip` is withdrawn after a runtime crash at
+  `HotA.dll+0x64AFF`. Supplying effect id `-1` cleared the native effect object,
+  but HotA's extra battle renderer dereferenced that pointer without a null check.
+- `TEST/Patch_v2.6_VISUAL_TEST3.zip` supersedes TEST2 for runtime testing. It
   keeps the accepted Stage 3 gameplay bytes and routes only Cure-triggered
   resurrection calls through a scoped visual flag.
 - Native resurrection state updates, corpse placement, permanence, and the
   resurrection combat-log path remain before the visual gate.
-- TEST2 temporarily supplies effect id `-1` only to the native circle-effect
-  setup, restores the real effect id at `0x005A7AF5`, and then runs the original
-  sound, creature stand-up frames, redraw loop, and cleanup. Ordinary
-  Resurrection uses the real effect id throughout.
+- TEST3 preserves the valid Resurrection effect object, writes an out-of-range
+  public frame index only during Cure-triggered stand-up redraws, and bypasses
+  only the Resurrection sound call. It keeps the creature's native stand-up
+  frames and the original Cure presentation/sound. Ordinary Resurrection uses
+  the original frame index, sound, circle effect, and stand-up path throughout.
+- The scoped flag is cleared at the native public cleanup entry, including the
+  autoresolve/no-animation branch.
 - Do not promote this build or replace `Download/Patch_v2.5.zip` until the user
-  confirms Cure animation, suppressed circle effect, per-stack stand-up/redraw,
-  ordinary Resurrection visuals, quantities, and post-battle permanence.
+  confirms startup stability, Cure animation/sound, suppressed circle and
+  Resurrection sound, per-stack stand-up/redraw, ordinary Resurrection visuals
+  and sound, quantities, and post-battle permanence.
 
 ## Non-negotiable rules
 
@@ -95,6 +102,7 @@ Stage 4 is an experimental visual-only follow-up:
 - Formal Stage 3 release: `Patch_v2.5`
 - Stage 4 Cure-animation isolation test: `Patch_v2.6_VISUAL_TEST1`
 - Stage 4 circle/stand-up split retest: `Patch_v2.6_VISUAL_TEST2`
+- Stage 4 valid-object/soundless retest: `Patch_v2.6_VISUAL_TEST3`
 - Future formal Stage 4 release after runtime acceptance: `Patch_v2.6`
 - Do not reuse historical version numbers.
 
