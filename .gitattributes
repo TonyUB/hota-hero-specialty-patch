@@ -8,5 +8,6 @@
 *.dat binary
 *.lod binary
 *.pcx binary
+*.png binary
 *.def binary
 baselines/Patch_v1.8/** -text -diff
