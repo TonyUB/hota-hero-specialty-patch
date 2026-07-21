@@ -62,7 +62,9 @@ Implement only Stage 2:
 
 ## GitHub release layout
 
-- Keep the root `README.md` and `README.txt` bilingual and limited to three hero-effect rows: Elf Queen; Uland/Astra; Adela.
+- Keep the root `README.md` limited to Chinese, English, and direct-download buttons. Put Chinese-only hero text in `README.zh-CN.md` and English-only hero text in `README.en.md`.
+- Each language page must contain only three in-game hero sections: Elf Queen; Uland/Astra; Adela. Use the in-game biography followed directly by the specialty effect; include only Elf Queen's 25/25/25 starting army and omit unrelated engineering details.
+- The Download button must point directly to the current ZIP rather than to the `Download/` directory or a GitHub file-preview page.
 - Store diagnostic and gameplay test packages, their instructions, and their manifests in `TEST/`.
 - Keep only the newest formal patch and its release metadata in `Download/`.
 - Before promoting a new formal patch, move the complete previous formal release from `Download/` to `OLD/`; never place test builds in `OLD/`.
