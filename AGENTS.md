@@ -92,6 +92,17 @@ Stage 4 is an experimental visual-only follow-up:
   `hota_cure_logdiag01.bin`. One mass Cure records wrapper/helper entry, each
   Cure-only resurrection count, and vector snapshots immediately after native
   append, after rotation, and after native refresh.
+- The returned LOGDIAG01 file contains 21 records. Four Cure-only resurrection
+  entries advanced the state through `0x81` to `0x84`; the Cure pointer was
+  moved to the intended insertion slot and remained there after `0x00472770`.
+  The screenshot nevertheless kept the Cure line last. This proves the visible
+  HotA/HD log is rebuilt from a second cache that observes append chronology,
+  not from the already-rotated native vector.
+- `Patch_v2.6_VISUAL_TEST13` therefore defers only mass-Cure resurrection log
+  calls at `0x005A7A3F`. It stores the creature id and revived count, lets the
+  native Cure line append normally, then recreates the original localized
+  messages and appends them through native `0x004729D0`. Single Cure and
+  ordinary Resurrection tail-jump directly to the original logger.
 - LOGDIAG01 keeps the accepted Stage 3 gameplay bytes and routes only Cure-triggered
   resurrection calls through a scoped visual flag.
 - Native resurrection state updates, corpse placement, permanence, and the
@@ -106,9 +117,8 @@ Stage 4 is an experimental visual-only follow-up:
   to standing group 2 instead of leaving the creature on group 5 frame zero.
 - The scoped flag is cleared at the native public cleanup entry, including the
   autoresolve/no-animation branch.
-- Do not create another ordering test or replace `Download/Patch_v2.5.zip`
-  until the user uploads `hota_cure_logdiag01.bin` and its six event classes
-  identify the first live path that loses or rebuilds the order.
+- Do not replace `Download/Patch_v2.5.zip` until TEST13 passes the one-run mass
+  Cure ordering gate. Formal v2.5 remains the accepted release meanwhile.
 
 ## Non-negotiable rules
 
