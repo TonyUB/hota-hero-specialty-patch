@@ -1,7 +1,7 @@
 <p align="center">
   <a href="#chinese-content"><img alt="显示中文" src="https://img.shields.io/badge/中文-显示中文-b22222?style=for-the-badge&amp;logo=googletranslate&amp;logoColor=white"></a>
   <a href="#english-content"><img alt="Show English" src="https://img.shields.io/badge/English-Show_English-1f6feb?style=for-the-badge&amp;logo=googletranslate&amp;logoColor=white"></a>
-  <a href="https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/agent/research-cure-runtime-path/Download/Patch_v2.5.zip"><img alt="Download Patch v2.5" src="https://img.shields.io/badge/Download-Patch_v2.5-2ea44f?style=for-the-badge&amp;logo=github&amp;logoColor=white"></a>
+  <a href="https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/Patch_v2.5.zip"><img alt="Download Patch v2.5" src="https://img.shields.io/badge/Download-Patch_v2.5-2ea44f?style=for-the-badge&amp;logo=github&amp;logoColor=white"></a>
 </p>
 
 <details name="language" open>
