@@ -489,7 +489,9 @@ def patch_visual_hooks(path: Path, stage3_report: dict[str, Any]) -> dict[str, A
 def instructions(report: dict[str, Any]) -> str:
     return f"""# {BUILD_NAME} 测试说明
 
-状态：**TEST6 群体崩溃修正版；仍是测试包，不替换 `Download/Patch_v2.5.zip`。**
+状态：**已撤回。单体日志顺序正确，但群体在重编译循环内 `0x005A1B78` 崩溃。**
+
+后续实机报告确认，TEST7 在群体目标索引计算阶段读取无效地址；此时尚未进入尸体扫描、原版施法记录或日志轮转。请改用保持 TEST4 原始循环地址布局的 TEST8。
 
 TEST6 把群体治愈拆成“先检查全部目标、再统一结算”，但 HotA 1.8.0 的效果检查会保存只供紧接着的本目标结算使用的内部状态。新崩溃报告的返回地址 `0x005A1B82` 正位于该检查之后，证明两阶段拆分不可用。
 
@@ -528,7 +530,9 @@ SHA-256 {report['zip_sha256']}
 def research_markdown(report: dict[str, Any]) -> str:
     return f"""# Stage 4 TEST7：结算后轮转战斗日志指针
 
-状态：**静态构建、双版本调用顺序与完整回滚验证已完成，等待实机门禁。**
+状态：**已撤回。单体路径通过，但群体在 `0x005A1B78` 崩溃。**
+
+TEST7 的群体崩溃发生在重编译后的目标索引计算阶段，早于尸体扫描、原版施法记录与日志轮转。该实机结果表明 HotA/HD Hook 依赖 TEST4 的原始指令地址布局；TEST8 因此只使用固定长度入口/出口跳板。
 
 ## TEST6 崩溃证据
 

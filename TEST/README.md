@@ -13,7 +13,8 @@
 | `Patch_v2.6_VISUAL_TEST4` | 在 TEST3 基础上增加第 `N+1` 个原生收尾帧，让游戏自身把死亡动画组切回站立组 | `a32410cc2ac4803dd9f79f40b9b32f061487b88dc8fe1d1465e2bf2ed53ecaad` |
 | `Patch_v2.6_VISUAL_TEST5` | 已撤回：单体正常，但群体日志函数在受影响兵队表初始化前运行，导致 `HotA.dll+0x38060` 崩溃 | `a229231636aaf4a53dac44f13edd4ce831e678d04352aadb5814d115564563a6` |
 | `Patch_v2.6_VISUAL_TEST6` | 已撤回：拆开每队效果检查与立即结算，群体在检查返回后的 `0x005A1B82` 崩溃 | `06d8cea2984d639313f45e6cf6269a574e2ac5088329eb037499a6864bc76c3f` |
-| `Patch_v2.6_VISUAL_TEST7` | 恢复 TEST4 逐队立即结算；全部结算和原版施法记录完成后，仅轮转本次新增日志指针并刷新显示 | `3a44d36ae14e86ad6bcfea286338cb4819297bbc697f57570cfedc9cea5968a1` |
+| `Patch_v2.6_VISUAL_TEST7` | 已撤回：单体日志顺序正确，但群体在重编译后的目标索引循环 `0x005A1B78` 崩溃 | `3a44d36ae14e86ad6bcfea286338cb4819297bbc697f57570cfedc9cea5968a1` |
+| `Patch_v2.6_VISUAL_TEST8` | 恢复 TEST4 群体循环原始地址布局；只用入口和施法记录后的固定长度跳板调整本次日志指针顺序 | `5a0d245492fda8f3c14f0bf2ceb5f6e8eb7da9f2b3b3eb0de4ea1bd69b4b28c9` |
 
 每个测试版均保留 ZIP、测试说明和 JSON/Markdown 构建清单。重组前的根目录项目说明保存在 `README_before_download_layout.md`。
 
@@ -27,7 +28,9 @@
 
 `Patch_v2.6_VISUAL_TEST5` 的单体顺序正常，但群体治愈在 `HotA.dll+0x38060` 崩溃。根因是群体日志调用使用空显式目标，依赖受影响兵队表；TEST5 在该表初始化之前调用了完整日志函数。不要安装 TEST5。
 
-`Patch_v2.6_VISUAL_TEST6` 也已撤回：虽然先建立了完整受影响兵队表，但它把每队效果检查与该队结算拆成两个阶段。新报告的直接返回地址 `0x005A1B82` 位于原生效果检查之后，证明 HotA 还依赖检查到立即结算之间的隐藏状态。不要安装 TEST6；后续测试只使用恢复逐队结算并在事后轮转日志指针的 `TEST7`。
+`Patch_v2.6_VISUAL_TEST6` 也已撤回：虽然先建立了完整受影响兵队表，但它把每队效果检查与该队结算拆成两个阶段。新报告的直接返回地址 `0x005A1B82` 位于原生效果检查之后，证明 HotA 还依赖检查到立即结算之间的隐藏状态。不要安装 TEST6。
+
+`Patch_v2.6_VISUAL_TEST7` 的单体日志顺序正确，但群体仍在 `0x005A1B78` 崩溃。该地址位于 TEST7 重编译后的目标索引计算阶段，尚未进入尸体扫描、原版施法记录或日志轮转，证明 HotA/HD Hook 依赖 TEST4 的原始指令地址布局。不要安装 TEST7；后续测试只使用保留 TEST4 群体循环地址的 `TEST8`。
 
 `Patch_v2.5_STAGE3_TEST` 已撤回：该包覆盖了启动导出名 `MainProc` 的字符串终止符，导致游戏无法启动。故障原包和取证材料已移至 `failed_forensics/`，不得安装。
 
