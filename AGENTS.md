@@ -4,20 +4,28 @@
 
 - The only trusted modified baseline is `Patch_v1.8.zip`.
 - Never build on Patch_v1.9, v2.0, v2.1, v2.2, or v2.3.
-- Later cure/resurrection packages are failed or unverified experiments and are for forensics only.
+- Historical cure/resurrection test packages remain test or forensic inputs; only
+  `Download/Patch_v2.5.zip` is the current accepted formal release.
 
 ## Current milestone
 
-Implement only Stage 2:
+Stage 3 is the current stable release. All required TEST3 runtime gates passed:
 
-- Uland and Astra cast Cure on a stack that still has at least one living creature.
-- Preserve native Cure and native specialty scaling.
-- Normal healing is applied first.
-- Remaining healing points permanently resurrect casualties in the same stack.
-- Use native Resurrection eligibility restrictions.
-- Do not support fully dead corpse targets yet.
-- Do not scan fully dead stacks during Expert Water Magic mass Cure yet.
-- Astra starting skills must become Basic Wisdom + Basic Water Magic.
+- Preserve all accepted Stage 2 behavior for living stacks.
+- Uland and Astra may target a fully dead friendly stack with single-target Cure
+  only when native Resurrection target lookup accepts that corpse.
+- A fully dead stack receives the complete Cure amount through native permanent
+  resurrection; never call the living-only Cure core on a corpse.
+- Expert Water Magic mass Cure resolves living stacks first, then scans fully
+  dead friendly stacks and applies the same native Resurrection restrictions.
+- Reuse native corpse lookup, placement, occupancy, animation, eligibility, and
+  `ResurrectTarget(..., temporary=0)`.
+- The real single-target cast path performs an additional Cure effect/resistance
+  check at `0x005A05FA`. For a fully dead specialist target, bypass it only after
+  `GetResurrectionTarget(..., context=0)` returns that exact stack again.
+- `Download/Patch_v2.5.zip` is the accepted formal release. Preserve its tested
+  executable bytes unless a later feature explicitly requires a new runtime gate.
+- Astra starting skills remain Basic Wisdom + Basic Water Magic.
 
 ## Non-negotiable rules
 
@@ -36,6 +44,11 @@ Implement only Stage 2:
 13. Produce a diagnostic hook first. The user must confirm a runtime log before resurrection logic is added.
 14. Never claim success from PE checks, ZIP integrity, disassembly, or static signatures alone.
 15. Every build must include input hashes, output hashes, changed offsets, original bytes, patched bytes, and rollback bytes.
+16. Keep the accepted `Download/Patch_v2.5.zip` unchanged until a later formal release replaces it.
+17. Never allocate a code cave from a zero run without checking adjacent strings,
+    terminators, tables, and startup data; preserve every semantic boundary byte.
+18. A distributed test build must pass a real startup-to-main-menu smoke test; static
+    PE, disassembly, and hash checks alone do not establish that it starts.
 
 ## Preserve existing Patch_v1.8 behavior
 
@@ -58,4 +71,18 @@ Implement only Stage 2:
 
 - Diagnostic builds: `Patch_v2.4_diagNN`
 - User Stage 2 test: `Patch_v2.4_STAGE2_TEST`
+- Withdrawn Stage 3 corpse test: `Patch_v2.5_STAGE3_TEST` (startup-broken; forensics only)
+- Withdrawn Stage 3 corpse retest: `Patch_v2.5_STAGE3_TEST2` (single target blocked; forensics only)
+- User Stage 3 single-target retest: `Patch_v2.5_STAGE3_TEST3`
+- Formal Stage 3 release: `Patch_v2.5`
 - Do not reuse historical version numbers.
+
+## GitHub release layout
+
+- Keep Chinese and English in mutually exclusive, same-page `<details name="language">` panels in the root `README.md`; Chinese is open by default and neither language control may navigate to another page.
+- The README must contain only three in-game hero sections per language: Elf Queen; Uland/Astra; Adela. Use the in-game biography followed directly by the specialty effect; include only Elf Queen's 25/25/25 starting army and omit unrelated engineering details.
+- The Download button must point directly to the current ZIP rather than to the `Download/` directory or a GitHub file-preview page.
+- Store diagnostic and gameplay test packages, their instructions, and their manifests in `TEST/`.
+- Keep only the newest formal patch and its release metadata in `Download/`.
+- Before promoting a new formal patch, move the complete previous formal release from `Download/` to `OLD/`; never place test builds in `OLD/`.
+- Do not overwrite an older package with a new payload. Preserve versioned filenames and SHA-256 values.

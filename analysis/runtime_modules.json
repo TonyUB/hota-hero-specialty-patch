@@ -1,0 +1,4425 @@
+{
+  "schema_version": 1,
+  "reference_exe": "baselines/Patch_v1.8/h3hota.exe",
+  "reference_exe_sha256": "3a2de7000a79040c42633dcd512ee76e5568bad260622f5cac8a8c7f6512abf6",
+  "modules": [
+    {
+      "path": "baselines/hota180_clean/HotA.dll",
+      "size": 2514432,
+      "sha256": "0a48b6d8e2b1743bdc094f3c0dc5a0b4e995e06165993f07885252905b0be2d1",
+      "machine": "0x014C",
+      "timestamp_utc": "2026-01-02T07:40:11+00:00",
+      "image_base": 268435456,
+      "entrypoint_va": 270571054,
+      "version": null,
+      "sections": [
+        {
+          "name": ".text",
+          "rva": 4096,
+          "virtual_size": 2277894,
+          "raw_offset": 1024,
+          "raw_size": 2278400,
+          "characteristics": "0x60000020",
+          "entropy": 6.599102
+        },
+        {
+          "name": ".rdata",
+          "rva": 2285568,
+          "virtual_size": 128856,
+          "raw_offset": 2279424,
+          "raw_size": 129024,
+          "characteristics": "0x40000040",
+          "entropy": 5.310174
+        },
+        {
+          "name": ".data",
+          "rva": 2416640,
+          "virtual_size": 71476776,
+          "raw_offset": 2408448,
+          "raw_size": 12288,
+          "characteristics": "0xC0000040",
+          "entropy": 4.201263
+        },
+        {
+          "name": ".tls",
+          "rva": 73895936,
+          "virtual_size": 29,
+          "raw_offset": 2420736,
+          "raw_size": 512,
+          "characteristics": "0xC0000040",
+          "entropy": 0.0
+        },
+        {
+          "name": ".rsrc",
+          "rva": 73900032,
+          "virtual_size": 480,
+          "raw_offset": 2421248,
+          "raw_size": 512,
+          "characteristics": "0x40000040",
+          "entropy": 4.730635
+        },
+        {
+          "name": ".reloc",
+          "rva": 73904128,
+          "virtual_size": 92240,
+          "raw_offset": 2421760,
+          "raw_size": 92672,
+          "characteristics": "0x42000040",
+          "entropy": 6.756928
+        }
+      ],
+      "imports": [
+        {
+          "dll": "KERNEL32.dll",
+          "symbols": [
+            {
+              "name": "GetCurrentProcess",
+              "ordinal": null,
+              "iat_va": 270721064
+            },
+            {
+              "name": "GetLastError",
+              "ordinal": null,
+              "iat_va": 270721068
+            },
+            {
+              "name": "GetFileSize",
+              "ordinal": null,
+              "iat_va": 270721072
+            },
+            {
+              "name": "CloseHandle",
+              "ordinal": null,
+              "iat_va": 270721076
+            },
+            {
+              "name": "SetCurrentDirectoryA",
+              "ordinal": null,
+              "iat_va": 270721080
+            },
+            {
+              "name": "GetCurrentDirectoryA",
+              "ordinal": null,
+              "iat_va": 270721084
+            },
+            {
+              "name": "CreateFileA",
+              "ordinal": null,
+              "iat_va": 270721088
+            },
+            {
+              "name": "GetFileAttributesA",
+              "ordinal": null,
+              "iat_va": 270721092
+            },
+            {
+              "name": "MultiByteToWideChar",
+              "ordinal": null,
+              "iat_va": 270721096
+            },
+            {
+              "name": "FreeLibrary",
+              "ordinal": null,
+              "iat_va": 270721100
+            },
+            {
+              "name": "GetModuleFileNameA",
+              "ordinal": null,
+              "iat_va": 270721104
+            },
+            {
+              "name": "GetCommandLineA",
+              "ordinal": null,
+              "iat_va": 270721108
+            },
+            {
+              "name": "IsBadReadPtr",
+              "ordinal": null,
+              "iat_va": 270721112
+            },
+            {
+              "name": "DisableThreadLibraryCalls",
+              "ordinal": null,
+              "iat_va": 270721116
+            },
+            {
+              "name": "SetUnhandledExceptionFilter",
+              "ordinal": null,
+              "iat_va": 270721120
+            },
+            {
+              "name": "SetErrorMode",
+              "ordinal": null,
+              "iat_va": 270721124
+            },
+            {
+              "name": "WriteFile",
+              "ordinal": null,
+              "iat_va": 270721128
+            },
+            {
+              "name": "ReadFile",
+              "ordinal": null,
+              "iat_va": 270721132
+            },
+            {
+              "name": "SetFilePointer",
+              "ordinal": null,
+              "iat_va": 270721136
+            },
+            {
+              "name": "CreateDirectoryA",
+              "ordinal": null,
+              "iat_va": 270721140
+            },
+            {
+              "name": "Sleep",
+              "ordinal": null,
+              "iat_va": 270721144
+            },
+            {
+              "name": "SetEndOfFile",
+              "ordinal": null,
+              "iat_va": 270721148
+            },
+            {
+              "name": "CreateFileW",
+              "ordinal": null,
+              "iat_va": 270721152
+            },
+            {
+              "name": "ReadConsoleW",
+              "ordinal": null,
+              "iat_va": 270721156
+            },
+            {
+              "name": "WriteConsoleW",
+              "ordinal": null,
+              "iat_va": 270721160
+            },
+            {
+              "name": "SetStdHandle",
+              "ordinal": null,
+              "iat_va": 270721164
+            },
+            {
+              "name": "OutputDebugStringW",
+              "ordinal": null,
+              "iat_va": 270721168
+            },
+            {
+              "name": "FreeEnvironmentStringsW",
+              "ordinal": null,
+              "iat_va": 270721172
+            },
+            {
+              "name": "GetEnvironmentStringsW",
+              "ordinal": null,
+              "iat_va": 270721176
+            },
+            {
+              "name": "GetCurrentProcessId",
+              "ordinal": null,
+              "iat_va": 270721180
+            },
+            {
+              "name": "GetModuleHandleA",
+              "ordinal": null,
+              "iat_va": 270721184
+            },
+            {
+              "name": "LoadLibraryA",
+              "ordinal": null,
+              "iat_va": 270721188
+            },
+            {
+              "name": "VirtualAlloc",
+              "ordinal": null,
+              "iat_va": 270721192
+            },
+            {
+              "name": "GetProcAddress",
+              "ordinal": null,
+              "iat_va": 270721196
+            },
+            {
+              "name": "FindNextFileA",
+              "ordinal": null,
+              "iat_va": 270721200
+            },
+            {
+              "name": "FindFirstFileA",
+              "ordinal": null,
+              "iat_va": 270721204
+            },
+            {
+              "name": "GetVersionExA",
+              "ordinal": null,
+              "iat_va": 270721208
+            },
+            {
+              "name": "FindClose",
+              "ordinal": null,
+              "iat_va": 270721212
+            },
+            {
+              "name": "QueryPerformanceCounter",
+              "ordinal": null,
+              "iat_va": 270721216
+            },
+            {
+              "name": "GetTimeZoneInformation",
+              "ordinal": null,
+              "iat_va": 270721220
+            },
+            {
+              "name": "LoadLibraryExW",
+              "ordinal": null,
+              "iat_va": 270721224
+            },
+            {
+              "name": "SetFilePointerEx",
+              "ordinal": null,
+              "iat_va": 270721228
+            },
+            {
+              "name": "GetConsoleMode",
+              "ordinal": null,
+              "iat_va": 270721232
+            },
+            {
+              "name": "GetConsoleCP",
+              "ordinal": null,
+              "iat_va": 270721236
+            },
+            {
+              "name": "FlushFileBuffers",
+              "ordinal": null,
+              "iat_va": 270721240
+            },
+            {
+              "name": "GetFileType",
+              "ordinal": null,
+              "iat_va": 270721244
+            },
+            {
+              "name": "GetModuleFileNameW",
+              "ordinal": null,
+              "iat_va": 270721248
+            },
+            {
+              "name": "GetStdHandle",
+              "ordinal": null,
+              "iat_va": 270721252
+            },
+            {
+              "name": "GetProcessHeap",
+              "ordinal": null,
+              "iat_va": 270721256
+            },
+            {
+              "name": "GetOEMCP",
+              "ordinal": null,
+              "iat_va": 270721260
+            },
+            {
+              "name": "GetACP",
+              "ordinal": null,
+              "iat_va": 270721264
+            },
+            {
+              "name": "IsValidCodePage",
+              "ordinal": null,
+              "iat_va": 270721268
+            },
+            {
+              "name": "EnumSystemLocalesW",
+              "ordinal": null,
+              "iat_va": 270721272
+            },
+            {
+              "name": "SetEnvironmentVariableA",
+              "ordinal": null,
+              "iat_va": 270721276
+            },
+            {
+              "name": "GetUserDefaultLCID",
+              "ordinal": null,
+              "iat_va": 270721280
+            },
+            {
+              "name": "WideCharToMultiByte",
+              "ordinal": null,
+              "iat_va": 270721284
+            },
+            {
+              "name": "GetSystemTimeAsFileTime",
+              "ordinal": null,
+              "iat_va": 270721288
+            },
+            {
+              "name": "EnterCriticalSection",
+              "ordinal": null,
+              "iat_va": 270721292
+            },
+            {
+              "name": "LeaveCriticalSection",
+              "ordinal": null,
+              "iat_va": 270721296
+            },
+            {
+              "name": "DeleteCriticalSection",
+              "ordinal": null,
+              "iat_va": 270721300
+            },
+            {
+              "name": "EncodePointer",
+              "ordinal": null,
+              "iat_va": 270721304
+            },
+            {
+              "name": "DecodePointer",
+              "ordinal": null,
+              "iat_va": 270721308
+            },
+            {
+              "name": "GetStringTypeW",
+              "ordinal": null,
+              "iat_va": 270721312
+            },
+            {
+              "name": "RaiseException",
+              "ordinal": null,
+              "iat_va": 270721316
+            },
+            {
+              "name": "RtlUnwind",
+              "ordinal": null,
+              "iat_va": 270721320
+            },
+            {
+              "name": "HeapFree",
+              "ordinal": null,
+              "iat_va": 270721324
+            },
+            {
+              "name": "HeapAlloc",
+              "ordinal": null,
+              "iat_va": 270721328
+            },
+            {
+              "name": "HeapReAlloc",
+              "ordinal": null,
+              "iat_va": 270721332
+            },
+            {
+              "name": "HeapSize",
+              "ordinal": null,
+              "iat_va": 270721336
+            },
+            {
+              "name": "IsDebuggerPresent",
+              "ordinal": null,
+              "iat_va": 270721340
+            },
+            {
+              "name": "IsProcessorFeaturePresent",
+              "ordinal": null,
+              "iat_va": 270721344
+            },
+            {
+              "name": "CreateThread",
+              "ordinal": null,
+              "iat_va": 270721348
+            },
+            {
+              "name": "ExitThread",
+              "ordinal": null,
+              "iat_va": 270721352
+            },
+            {
+              "name": "ResumeThread",
+              "ordinal": null,
+              "iat_va": 270721356
+            },
+            {
+              "name": "ExitProcess",
+              "ordinal": null,
+              "iat_va": 270721360
+            },
+            {
+              "name": "GetModuleHandleExW",
+              "ordinal": null,
+              "iat_va": 270721364
+            },
+            {
+              "name": "AreFileApisANSI",
+              "ordinal": null,
+              "iat_va": 270721368
+            },
+            {
+              "name": "GetCurrentThreadId",
+              "ordinal": null,
+              "iat_va": 270721372
+            },
+            {
+              "name": "GetCPInfo",
+              "ordinal": null,
+              "iat_va": 270721376
+            },
+            {
+              "name": "UnhandledExceptionFilter",
+              "ordinal": null,
+              "iat_va": 270721380
+            },
+            {
+              "name": "SetLastError",
+              "ordinal": null,
+              "iat_va": 270721384
+            },
+            {
+              "name": "InitializeCriticalSectionAndSpinCount",
+              "ordinal": null,
+              "iat_va": 270721388
+            },
+            {
+              "name": "TerminateProcess",
+              "ordinal": null,
+              "iat_va": 270721392
+            },
+            {
+              "name": "TlsAlloc",
+              "ordinal": null,
+              "iat_va": 270721396
+            },
+            {
+              "name": "TlsGetValue",
+              "ordinal": null,
+              "iat_va": 270721400
+            },
+            {
+              "name": "TlsSetValue",
+              "ordinal": null,
+              "iat_va": 270721404
+            },
+            {
+              "name": "TlsFree",
+              "ordinal": null,
+              "iat_va": 270721408
+            },
+            {
+              "name": "GetStartupInfoW",
+              "ordinal": null,
+              "iat_va": 270721412
+            },
+            {
+              "name": "GetModuleHandleW",
+              "ordinal": null,
+              "iat_va": 270721416
+            },
+            {
+              "name": "CompareStringW",
+              "ordinal": null,
+              "iat_va": 270721420
+            },
+            {
+              "name": "LCMapStringW",
+              "ordinal": null,
+              "iat_va": 270721424
+            },
+            {
+              "name": "GetLocaleInfoW",
+              "ordinal": null,
+              "iat_va": 270721428
+            },
+            {
+              "name": "IsValidLocale",
+              "ordinal": null,
+              "iat_va": 270721432
+            }
+          ]
+        },
+        {
+          "dll": "USER32.dll",
+          "symbols": [
+            {
+              "name": "GetSystemMetrics",
+              "ordinal": null,
+              "iat_va": 270721440
+            },
+            {
+              "name": "GetKeyState",
+              "ordinal": null,
+              "iat_va": 270721444
+            },
+            {
+              "name": "DeleteMenu",
+              "ordinal": null,
+              "iat_va": 270721448
+            },
+            {
+              "name": "AppendMenuA",
+              "ordinal": null,
+              "iat_va": 270721452
+            },
+            {
+              "name": "InsertMenuA",
+              "ordinal": null,
+              "iat_va": 270721456
+            },
+            {
+              "name": "MessageBoxA",
+              "ordinal": null,
+              "iat_va": 270721460
+            },
+            {
+              "name": "CreateMenu",
+              "ordinal": null,
+              "iat_va": 270721464
+            },
+            {
+              "name": "GetMenuItemCount",
+              "ordinal": null,
+              "iat_va": 270721468
+            }
+          ]
+        },
+        {
+          "dll": "ADVAPI32.dll",
+          "symbols": [
+            {
+              "name": "CryptHashData",
+              "ordinal": null,
+              "iat_va": 270721024
+            },
+            {
+              "name": "CryptCreateHash",
+              "ordinal": null,
+              "iat_va": 270721028
+            },
+            {
+              "name": "CryptGetHashParam",
+              "ordinal": null,
+              "iat_va": 270721032
+            },
+            {
+              "name": "CryptReleaseContext",
+              "ordinal": null,
+              "iat_va": 270721036
+            },
+            {
+              "name": "CryptAcquireContextA",
+              "ordinal": null,
+              "iat_va": 270721040
+            },
+            {
+              "name": "RegQueryValueExA",
+              "ordinal": null,
+              "iat_va": 270721044
+            },
+            {
+              "name": "RegOpenKeyExA",
+              "ordinal": null,
+              "iat_va": 270721048
+            },
+            {
+              "name": "RegCloseKey",
+              "ordinal": null,
+              "iat_va": 270721052
+            },
+            {
+              "name": "CryptDestroyHash",
+              "ordinal": null,
+              "iat_va": 270721056
+            }
+          ]
+        }
+      ],
+      "patching_related_imports": [
+        {
+          "dll": "KERNEL32.dll",
+          "name": "CreateFileA",
+          "iat_va": 270721088
+        },
+        {
+          "dll": "KERNEL32.dll",
+          "name": "WriteFile",
+          "iat_va": 270721128
+        },
+        {
+          "dll": "KERNEL32.dll",
+          "name": "CreateFileW",
+          "iat_va": 270721152
+        },
+        {
+          "dll": "KERNEL32.dll",
+          "name": "OutputDebugStringW",
+          "iat_va": 270721168
+        },
+        {
+          "dll": "KERNEL32.dll",
+          "name": "GetModuleHandleA",
+          "iat_va": 270721184
+        },
+        {
+          "dll": "KERNEL32.dll",
+          "name": "LoadLibraryA",
+          "iat_va": 270721188
+        },
+        {
+          "dll": "KERNEL32.dll",
+          "name": "VirtualAlloc",
+          "iat_va": 270721192
+        },
+        {
+          "dll": "KERNEL32.dll",
+          "name": "GetProcAddress",
+          "iat_va": 270721196
+        },
+        {
+          "dll": "KERNEL32.dll",
+          "name": "GetModuleHandleW",
+          "iat_va": 270721416
+        }
+      ],
+      "exports": [
+        {
+          "name": "MainProc",
+          "ordinal": 1,
+          "rva": 958400,
+          "va": 269393856
+        },
+        {
+          "name": "_MainProc@0",
+          "ordinal": 2,
+          "rva": 958400,
+          "va": 269393856
+        }
+      ],
+      "candidate_address_literal_hits": [
+        {
+          "label": "GetResurrectionTarget",
+          "va": 5914576,
+          "file_offsets": [
+            445363,
+            446577,
+            446830
+          ]
+        },
+        {
+          "label": "ResurrectTarget",
+          "va": 5929072,
+          "file_offsets": [
+            1203027,
+            1330168
+          ]
+        }
+      ],
+      "reference_signature_hits": [],
+      "string_count": 11258,
+      "relevant_strings": [
+        {
+          "offset": 2281176,
+          "encoding": "ascii",
+          "value": "SpellScr.def"
+        },
+        {
+          "offset": 2281740,
+          "encoding": "ascii",
+          "value": "push __Hook_Ptr"
+        },
+        {
+          "offset": 2282652,
+          "encoding": "ascii",
+          "value": "HotA.NewQuestLog"
+        },
+        {
+          "offset": 2282700,
+          "encoding": "ascii",
+          "value": "COMBAT_SPELL"
+        },
+        {
+          "offset": 2282716,
+          "encoding": "ascii",
+          "value": "ADV_SPELL"
+        },
+        {
+          "offset": 2282740,
+          "encoding": "ascii",
+          "value": "CREATURE_SPELL"
+        },
+        {
+          "offset": 2282856,
+          "encoding": "ascii",
+          "value": "MIND_SPELL"
+        },
+        {
+          "offset": 2282888,
+          "encoding": "ascii",
+          "value": "ARTIFACT_SPELL"
+        },
+        {
+          "offset": 2283080,
+          "encoding": "ascii",
+          "value": "patcher_x86.dll"
+        },
+        {
+          "offset": 2283096,
+          "encoding": "ascii",
+          "value": "_GetPatcherX86@0"
+        },
+        {
+          "offset": 2283636,
+          "encoding": "ascii",
+          "value": "HotA.CreatureWindowSetNextFrameCreatureID"
+        },
+        {
+          "offset": 2284652,
+          "encoding": "ascii",
+          "value": "[HotA CRASH INFO file]"
+        },
+        {
+          "offset": 2284708,
+          "encoding": "ascii",
+          "value": "HotA.dll version: %s"
+        },
+        {
+          "offset": 2284732,
+          "encoding": "ascii",
+          "value": "HotA.dll test version: %d"
+        },
+        {
+          "offset": 2284764,
+          "encoding": "ascii",
+          "value": "HotA_Setup.ini version: %s"
+        },
+        {
+          "offset": 2284796,
+          "encoding": "ascii",
+          "value": "HotA internal map format subversion: %d"
+        },
+        {
+          "offset": 2284840,
+          "encoding": "ascii",
+          "value": "HotA internal savegame format subversion: %d"
+        },
+        {
+          "offset": 2284888,
+          "encoding": "ascii",
+          "value": "HotA internal campaign format subversion: %d"
+        },
+        {
+          "offset": 2286704,
+          "encoding": "ascii",
+          "value": "PATCHER_DUMP_"
+        },
+        {
+          "offset": 2286720,
+          "encoding": "ascii",
+          "value": "PATCHER_LOG_"
+        },
+        {
+          "offset": 2292936,
+          "encoding": "ascii",
+          "value": "HotA.ComboArtDisabled"
+        },
+        {
+          "offset": 2292960,
+          "encoding": "ascii",
+          "value": "HotA.CanHaveBattles"
+        },
+        {
+          "offset": 2292980,
+          "encoding": "ascii",
+          "value": "HotA.MirrorMonsterSetup"
+        },
+        {
+          "offset": 2293004,
+          "encoding": "ascii",
+          "value": "HotA.MirrorResourceObjectSetup"
+        },
+        {
+          "offset": 2293080,
+          "encoding": "ascii",
+          "value": "HotA.ShadowDrawNewSpeccolor24bitFunc_0"
+        },
+        {
+          "offset": 2293120,
+          "encoding": "ascii",
+          "value": "HotA.ShadowDrawNewSpeccolor24bitFunc_1"
+        },
+        {
+          "offset": 2293160,
+          "encoding": "ascii",
+          "value": "HotA.ShadowDrawNewSpeccolorFunc"
+        },
+        {
+          "offset": 2293408,
+          "encoding": "ascii",
+          "value": "camphota.pcx"
+        },
+        {
+          "offset": 2293476,
+          "encoding": "ascii",
+          "value": "CSShota.def"
+        },
+        {
+          "offset": 2293740,
+          "encoding": "ascii",
+          "value": "[HotA] Air Supremacy.h3m"
+        },
+        {
+          "offset": 2293876,
+          "encoding": "ascii",
+          "value": "HotA.DecorObjectsType"
+        },
+        {
+          "offset": 2293900,
+          "encoding": "ascii",
+          "value": "HotA.DecorObjects"
+        },
+        {
+          "offset": 2293920,
+          "encoding": "ascii",
+          "value": "HotA.DecorObjectsCount"
+        },
+        {
+          "offset": 2293944,
+          "encoding": "ascii",
+          "value": "HotA.PuzzleObjectsType"
+        },
+        {
+          "offset": 2293968,
+          "encoding": "ascii",
+          "value": "HotA.PuzzleObjects"
+        },
+        {
+          "offset": 2293988,
+          "encoding": "ascii",
+          "value": "HotA.PuzzleObjectsCount"
+        },
+        {
+          "offset": 2294012,
+          "encoding": "ascii",
+          "value": "HotA.NeedRedrawStacksBorders"
+        },
+        {
+          "offset": 2294044,
+          "encoding": "ascii",
+          "value": "HotA.FontColor"
+        },
+        {
+          "offset": 2294272,
+          "encoding": "ascii",
+          "value": "HotA_Update.dll"
+        },
+        {
+          "offset": 2294300,
+          "encoding": "ascii",
+          "value": "HotA_Setup.ini"
+        },
+        {
+          "offset": 2294316,
+          "encoding": "ascii",
+          "value": "HotA_Settings.ini"
+        },
+        {
+          "offset": 2294692,
+          "encoding": "ascii",
+          "value": "spell"
+        },
+        {
+          "offset": 2294792,
+          "encoding": "ascii",
+          "value": "Your HotA build contains game resources belonging to different version of HotA.The build is broken and cannot be run. Please reinstall the game."
+        },
+        {
+          "offset": 2294940,
+          "encoding": "ascii",
+          "value": "HotA.Version"
+        },
+        {
+          "offset": 2294956,
+          "encoding": "ascii",
+          "value": "HotA.Build"
+        },
+        {
+          "offset": 2294968,
+          "encoding": "ascii",
+          "value": "HotA.TestBuild"
+        },
+        {
+          "offset": 2294984,
+          "encoding": "ascii",
+          "value": "HotA.IniVersion"
+        },
+        {
+          "offset": 2295000,
+          "encoding": "ascii",
+          "value": "HotA.Language"
+        },
+        {
+          "offset": 2295016,
+          "encoding": "ascii",
+          "value": "HotA.MapVerion"
+        },
+        {
+          "offset": 2295032,
+          "encoding": "ascii",
+          "value": "HotA.SaveVersion"
+        },
+        {
+          "offset": 2295052,
+          "encoding": "ascii",
+          "value": "HotA.DatLanguage"
+        },
+        {
+          "offset": 2295072,
+          "encoding": "ascii",
+          "value": "HotA.IsReleaseBuild"
+        },
+        {
+          "offset": 2295092,
+          "encoding": "ascii",
+          "value": "HotA.IsClosedTestingBuild"
+        },
+        {
+          "offset": 2295144,
+          "encoding": "ascii",
+          "value": "Your HoMM 3 HD version is obsolete and not compatible with HotA."
+        },
+        {
+          "offset": 2295209,
+          "encoding": "ascii",
+          "value": "You should update HD or play HotA without HD."
+        },
+        {
+          "offset": 2295256,
+          "encoding": "ascii",
+          "value": "DATA\\HotA_ext.lod"
+        },
+        {
+          "offset": 2295276,
+          "encoding": "ascii",
+          "value": "DATA\\HotA_l_ext.lod"
+        },
+        {
+          "offset": 2295448,
+          "encoding": "ascii",
+          "value": "HotA.ArtifactsCount"
+        },
+        {
+          "offset": 2295708,
+          "encoding": "ascii",
+          "value": "def.spells%02d"
+        },
+        {
+          "offset": 2295740,
+          "encoding": "ascii",
+          "value": "def.spells_n"
+        },
+        {
+          "offset": 2295800,
+          "encoding": "ascii",
+          "value": "def.spells00"
+        },
+        {
+          "offset": 2295972,
+          "encoding": "ascii",
+          "value": "def.spells01"
+        },
+        {
+          "offset": 2296004,
+          "encoding": "ascii",
+          "value": "SpellBE.p32"
+        },
+        {
+          "offset": 2296080,
+          "encoding": "ascii",
+          "value": "HotA.SwapMgrCalledFromTown"
+        },
+        {
+          "offset": 2296352,
+          "encoding": "ascii",
+          "value": "HotA.CrDwellTable"
+        },
+        {
+          "offset": 2296372,
+          "encoding": "ascii",
+          "value": "hota.dat"
+        },
+        {
+          "offset": 2297324,
+          "encoding": "ascii",
+          "value": "HotA.TavernHeroesEnabled"
+        },
+        {
+          "offset": 2297352,
+          "encoding": "ascii",
+          "value": "HotA.HeroesEnabledForSimTurnsPools"
+        },
+        {
+          "offset": 2297388,
+          "encoding": "ascii",
+          "value": "HotA.ForbidHiringHeroes"
+        },
+        {
+          "offset": 2298024,
+          "encoding": "ascii",
+          "value": "HotA.HPL_tbl"
+        },
+        {
+          "offset": 2298040,
+          "encoding": "ascii",
+          "value": "HotA.HPS_tbl"
+        },
+        {
+          "offset": 2298056,
+          "encoding": "ascii",
+          "value": "HotA.PortraitsCount"
+        },
+        {
+          "offset": 2298076,
+          "encoding": "ascii",
+          "value": "HotA.HeroesDefaultPortraits"
+        },
+        {
+          "offset": 2298135,
+          "encoding": "ascii",
+          "value": "@HotA.CloneModif"
+        },
+        {
+          "offset": 2298152,
+          "encoding": "ascii",
+          "value": "HotA.SpellLength"
+        },
+        {
+          "offset": 2298172,
+          "encoding": "ascii",
+          "value": "HotA.SpellSkillLevel"
+        },
+        {
+          "offset": 2298796,
+          "encoding": "ascii",
+          "value": "HotA.MaxCombatLength"
+        },
+        {
+          "offset": 2298820,
+          "encoding": "ascii",
+          "value": "HotA.Stack_VisibleHitPointsLost"
+        },
+        {
+          "offset": 2298896,
+          "encoding": "ascii",
+          "value": "Resurect.wav"
+        },
+        {
+          "offset": 2300680,
+          "encoding": "ascii",
+          "value": "casspells"
+        },
+        {
+          "offset": 2301400,
+          "encoding": "ascii",
+          "value": "hota.lod"
+        },
+        {
+          "offset": 2301412,
+          "encoding": "ascii",
+          "value": "hota_ext.lod"
+        },
+        {
+          "offset": 2301428,
+          "encoding": "ascii",
+          "value": "hota_lng.lod"
+        },
+        {
+          "offset": 2301444,
+          "encoding": "ascii",
+          "value": "hota_l_ext.lod"
+        },
+        {
+          "offset": 2301460,
+          "encoding": "ascii",
+          "value": "data\\hota.vid"
+        },
+        {
+          "offset": 2301492,
+          "encoding": "ascii",
+          "value": "data\\hota.snd"
+        },
+        {
+          "offset": 2301508,
+          "encoding": "ascii",
+          "value": "data\\HotA_lng.snd"
+        },
+        {
+          "offset": 2302056,
+          "encoding": "ascii",
+          "value": "HotA_logs"
+        },
+        {
+          "offset": 2302304,
+          "encoding": "ascii",
+          "value": "%s\\HotA_Data"
+        },
+        {
+          "offset": 2302336,
+          "encoding": "ascii",
+          "value": "Error! \\HotA_Data\\Mss32.dll not found!"
+        },
+        {
+          "offset": 2304228,
+          "encoding": "ascii",
+          "value": "HotA.PlayerStartTurn"
+        },
+        {
+          "offset": 2304252,
+          "encoding": "ascii",
+          "value": "HotA.TownGate_Name"
+        },
+        {
+          "offset": 2304272,
+          "encoding": "ascii",
+          "value": "HotA.QuestGate_Name"
+        },
+        {
+          "offset": 2304672,
+          "encoding": "ascii",
+          "value": "HotA.TwoWayMonolyths_Off"
+        },
+        {
+          "offset": 2304700,
+          "encoding": "ascii",
+          "value": "HotA.TwoWayMonolyths_Count"
+        },
+        {
+          "offset": 2304728,
+          "encoding": "ascii",
+          "value": "HotA.MonolythsOneWay_Off"
+        },
+        {
+          "offset": 2304756,
+          "encoding": "ascii",
+          "value": "HotA.MonolythsOneWay_Count"
+        },
+        {
+          "offset": 2304904,
+          "encoding": "ascii",
+          "value": "HotA_RMGTemplates\\%s"
+        },
+        {
+          "offset": 2304968,
+          "encoding": "ascii",
+          "value": "HotA.Action_OnDirectoryEnterOnline"
+        },
+        {
+          "offset": 2305624,
+          "encoding": "ascii",
+          "value": ", HotA "
+        },
+        {
+          "offset": 2306104,
+          "encoding": "ascii",
+          "value": "HotA.ReplayTurnInit"
+        },
+        {
+          "offset": 2306124,
+          "encoding": "ascii",
+          "value": "HotA.ReplayTurnFinish"
+        },
+        {
+          "offset": 2306168,
+          "encoding": "ascii",
+          "value": "HotA.Zone_AddRoadPoint"
+        },
+        {
+          "offset": 2308436,
+          "encoding": "ascii",
+          "value": "HotA.AdvMgr_LandDefShift"
+        },
+        {
+          "offset": 2308800,
+          "encoding": "ascii",
+          "value": "C:\\Users\\Remi\\Desktop\\Perso\\HotA\\source\\town_hint\\TownHint\\src\\typegenerator_impl.cpp"
+        },
+        {
+          "offset": 2310000,
+          "encoding": "ascii",
+          "value": "C:\\Users\\Remi\\Desktop\\Perso\\HotA\\source\\town_hint\\TownHint\\src\\condition\\condition.cpp"
+        },
+        {
+          "offset": 2310264,
+          "encoding": "ascii",
+          "value": "C:\\Users\\Remi\\Desktop\\Perso\\HotA\\source\\town_hint\\TownHint\\src\\condition\\townterraincondition.cpp"
+        },
+        {
+          "offset": 2310752,
+          "encoding": "ascii",
+          "value": "C:\\Users\\Remi\\Desktop\\Perso\\HotA\\source\\town_hint\\TownHint\\src\\town.cpp"
+        },
+        {
+          "offset": 2310824,
+          "encoding": "ascii",
+          "value": "C:\\Users\\Remi\\Desktop\\Perso\\HotA\\source\\town_hint\\TownHint\\src\\terrain.cpp"
+        },
+        {
+          "offset": 2311440,
+          "encoding": "ascii",
+          "value": "C:\\Users\\Remi\\Desktop\\Perso\\HotA\\source\\town_hint\\TownHint\\src\\condition\\sametowntypepattern.cpp"
+        },
+        {
+          "offset": 2311560,
+          "encoding": "ascii",
+          "value": "C:\\Users\\Remi\\Desktop\\Perso\\HotA\\source\\town_hint\\TownHint\\src\\condition\\terraintoterraincondition.cpp"
+        },
+        {
+          "offset": 2354504,
+          "encoding": "ascii",
+          "value": "C:\\Users\\Sav\\Documents\\HoMM3\\HotA_1\\Release\\HotA.pdb"
+        },
+        {
+          "offset": 2405676,
+          "encoding": "ascii",
+          "value": "HotA.dll"
+        },
+        {
+          "offset": 2408156,
+          "encoding": "ascii",
+          "value": "OutputDebugStringW"
+        }
+      ]
+    },
+    {
+      "path": "baselines/hota180_clean/HD_HOTA.dll",
+      "size": 2905600,
+      "sha256": "34c22f9ac460b57dd2ffcd205a80d0c118a42cf14005c9e4a042f4030e8e1bde",
+      "machine": "0x014C",
+      "timestamp_utc": "2026-01-02T13:36:40+00:00",
+      "image_base": 16777216,
+      "entrypoint_va": 19284486,
+      "version": {
+        "file_version": "0.4.0.20",
+        "product_version": "5.0.0.5",
+        "file_flags": 0,
+        "file_type": 2
+      },
+      "sections": [
+        {
+          "name": ".text",
+          "rva": 4096,
+          "virtual_size": 2643803,
+          "raw_offset": 1024,
+          "raw_size": 2643968,
+          "characteristics": "0x60000020",
+          "entropy": 6.294105
+        },
+        {
+          "name": ".rdata",
+          "rva": 2650112,
+          "virtual_size": 140200,
+          "raw_offset": 2644992,
+          "raw_size": 140288,
+          "characteristics": "0x40000040",
+          "entropy": 5.863413
+        },
+        {
+          "name": ".data",
+          "rva": 2793472,
+          "virtual_size": 16537508,
+          "raw_offset": 2785280,
+          "raw_size": 8704,
+          "characteristics": "0xC0000040",
+          "entropy": 4.974395
+        },
+        {
+          "name": ".rsrc",
+          "rva": 19333120,
+          "virtual_size": 1224,
+          "raw_offset": 2793984,
+          "raw_size": 1536,
+          "characteristics": "0x40000040",
+          "entropy": 3.626351
+        },
+        {
+          "name": ".reloc",
+          "rva": 19337216,
+          "virtual_size": 109596,
+          "raw_offset": 2795520,
+          "raw_size": 110080,
+          "characteristics": "0x42000040",
+          "entropy": 6.743286
+        }
+      ],
+      "imports": [
+        {
+          "dll": "WS2_32.dll",
+          "symbols": [
+            {
+              "name": "setsockopt",
+              "ordinal": 21,
+              "iat_va": 19428096
+            },
+            {
+              "name": "WSACleanup",
+              "ordinal": 116,
+              "iat_va": 19428100
+            },
+            {
+              "name": "WSAIoctl",
+              "ordinal": null,
+              "iat_va": 19428104
+            },
+            {
+              "name": "closesocket",
+              "ordinal": 3,
+              "iat_va": 19428108
+            },
+            {
+              "name": "shutdown",
+              "ordinal": 22,
+              "iat_va": 19428112
+            },
+            {
+              "name": "WSAAsyncSelect",
+              "ordinal": 101,
+              "iat_va": 19428116
+            },
+            {
+              "name": "WSAStartup",
+              "ordinal": 115,
+              "iat_va": 19428120
+            },
+            {
+              "name": "inet_addr",
+              "ordinal": 11,
+              "iat_va": 19428124
+            },
+            {
+              "name": "send",
+              "ordinal": 19,
+              "iat_va": 19428128
+            },
+            {
+              "name": "socket",
+              "ordinal": 23,
+              "iat_va": 19428132
+            },
+            {
+              "name": "connect",
+              "ordinal": 4,
+              "iat_va": 19428136
+            },
+            {
+              "name": "recv",
+              "ordinal": 16,
+              "iat_va": 19428140
+            },
+            {
+              "name": "htons",
+              "ordinal": 9,
+              "iat_va": 19428144
+            },
+            {
+              "name": "WSAGetLastError",
+              "ordinal": 111,
+              "iat_va": 19428148
+            }
+          ]
+        },
+        {
+          "dll": "KERNEL32.dll",
+          "symbols": [
+            {
+              "name": "CloseHandle",
+              "ordinal": null,
+              "iat_va": 19427400
+            },
+            {
+              "name": "GetFileSize",
+              "ordinal": null,
+              "iat_va": 19427404
+            },
+            {
+              "name": "TlsSetValue",
+              "ordinal": null,
+              "iat_va": 19427408
+            },
+            {
+              "name": "GetSystemDefaultLCID",
+              "ordinal": null,
+              "iat_va": 19427412
+            },
+            {
+              "name": "EnterCriticalSection",
+              "ordinal": null,
+              "iat_va": 19427416
+            },
+            {
+              "name": "GetCurrentProcess",
+              "ordinal": null,
+              "iat_va": 19427420
+            },
+            {
+              "name": "WriteFile",
+              "ordinal": null,
+              "iat_va": 19427424
+            },
+            {
+              "name": "GetSystemDefaultUILanguage",
+              "ordinal": null,
+              "iat_va": 19427428
+            },
+            {
+              "name": "GetUserDefaultUILanguage",
+              "ordinal": null,
+              "iat_va": 19427432
+            },
+            {
+              "name": "LeaveCriticalSection",
+              "ordinal": null,
+              "iat_va": 19427436
+            },
+            {
+              "name": "WaitForSingleObject",
+              "ordinal": null,
+              "iat_va": 19427440
+            },
+            {
+              "name": "LocalAlloc",
+              "ordinal": null,
+              "iat_va": 19427444
+            },
+            {
+              "name": "ResumeThread",
+              "ordinal": null,
+              "iat_va": 19427448
+            },
+            {
+              "name": "GetModuleHandleA",
+              "ordinal": null,
+              "iat_va": 19427452
+            },
+            {
+              "name": "Sleep",
+              "ordinal": null,
+              "iat_va": 19427456
+            },
+            {
+              "name": "GetFileAttributesA",
+              "ordinal": null,
+              "iat_va": 19427460
+            },
+            {
+              "name": "SetEvent",
+              "ordinal": null,
+              "iat_va": 19427464
+            },
+            {
+              "name": "TlsAlloc",
+              "ordinal": null,
+              "iat_va": 19427468
+            },
+            {
+              "name": "GlobalAlloc",
+              "ordinal": null,
+              "iat_va": 19427472
+            },
+            {
+              "name": "GetSystemInfo",
+              "ordinal": null,
+              "iat_va": 19427476
+            },
+            {
+              "name": "CreateThread",
+              "ordinal": null,
+              "iat_va": 19427480
+            },
+            {
+              "name": "GetProcAddress",
+              "ordinal": null,
+              "iat_va": 19427484
+            },
+            {
+              "name": "GlobalLock",
+              "ordinal": null,
+              "iat_va": 19427488
+            },
+            {
+              "name": "ExitProcess",
+              "ordinal": null,
+              "iat_va": 19427492
+            },
+            {
+              "name": "WideCharToMultiByte",
+              "ordinal": null,
+              "iat_va": 19427496
+            },
+            {
+              "name": "TlsGetValue",
+              "ordinal": null,
+              "iat_va": 19427500
+            },
+            {
+              "name": "CreateEventA",
+              "ordinal": null,
+              "iat_va": 19427504
+            },
+            {
+              "name": "GlobalUnlock",
+              "ordinal": null,
+              "iat_va": 19427508
+            },
+            {
+              "name": "VirtualQuery",
+              "ordinal": null,
+              "iat_va": 19427512
+            },
+            {
+              "name": "GetModuleFileNameA",
+              "ordinal": null,
+              "iat_va": 19427516
+            },
+            {
+              "name": "VirtualProtect",
+              "ordinal": null,
+              "iat_va": 19427520
+            },
+            {
+              "name": "GetConsoleScreenBufferInfo",
+              "ordinal": null,
+              "iat_va": 19427524
+            },
+            {
+              "name": "VirtualFree",
+              "ordinal": null,
+              "iat_va": 19427528
+            },
+            {
+              "name": "GetStdHandle",
+              "ordinal": null,
+              "iat_va": 19427532
+            },
+            {
+              "name": "WriteConsoleA",
+              "ordinal": null,
+              "iat_va": 19427536
+            },
+            {
+              "name": "VirtualAlloc",
+              "ordinal": null,
+              "iat_va": 19427540
+            },
+            {
+              "name": "GetCurrentDirectoryA",
+              "ordinal": null,
+              "iat_va": 19427544
+            },
+            {
+              "name": "SetCurrentDirectoryA",
+              "ordinal": null,
+              "iat_va": 19427548
+            },
+            {
+              "name": "MultiByteToWideChar",
+              "ordinal": null,
+              "iat_va": 19427552
+            },
+            {
+              "name": "GetModuleHandleExA",
+              "ordinal": null,
+              "iat_va": 19427556
+            },
+            {
+              "name": "FileTimeToLocalFileTime",
+              "ordinal": null,
+              "iat_va": 19427560
+            },
+            {
+              "name": "GetLocalTime",
+              "ordinal": null,
+              "iat_va": 19427564
+            },
+            {
+              "name": "SwitchToThread",
+              "ordinal": null,
+              "iat_va": 19427568
+            },
+            {
+              "name": "GetSystemTime",
+              "ordinal": null,
+              "iat_va": 19427572
+            },
+            {
+              "name": "IsBadReadPtr",
+              "ordinal": null,
+              "iat_va": 19427576
+            },
+            {
+              "name": "GetTickCount",
+              "ordinal": null,
+              "iat_va": 19427580
+            },
+            {
+              "name": "AllocConsole",
+              "ordinal": null,
+              "iat_va": 19427584
+            },
+            {
+              "name": "GetCurrentThreadId",
+              "ordinal": null,
+              "iat_va": 19427588
+            },
+            {
+              "name": "ExitThread",
+              "ordinal": null,
+              "iat_va": 19427592
+            },
+            {
+              "name": "LoadLibraryA",
+              "ordinal": null,
+              "iat_va": 19427596
+            },
+            {
+              "name": "CopyFileA",
+              "ordinal": null,
+              "iat_va": 19427600
+            },
+            {
+              "name": "DeleteFileA",
+              "ordinal": null,
+              "iat_va": 19427604
+            },
+            {
+              "name": "FindFirstFileA",
+              "ordinal": null,
+              "iat_va": 19427608
+            },
+            {
+              "name": "FindNextFileA",
+              "ordinal": null,
+              "iat_va": 19427612
+            },
+            {
+              "name": "FindClose",
+              "ordinal": null,
+              "iat_va": 19427616
+            },
+            {
+              "name": "CreateFileA",
+              "ordinal": null,
+              "iat_va": 19427620
+            },
+            {
+              "name": "GetEnvironmentVariableA",
+              "ordinal": null,
+              "iat_va": 19427624
+            },
+            {
+              "name": "GetACP",
+              "ordinal": null,
+              "iat_va": 19427628
+            },
+            {
+              "name": "FileTimeToSystemTime",
+              "ordinal": null,
+              "iat_va": 19427632
+            },
+            {
+              "name": "SystemTimeToFileTime",
+              "ordinal": null,
+              "iat_va": 19427636
+            },
+            {
+              "name": "CreateDirectoryA",
+              "ordinal": null,
+              "iat_va": 19427640
+            },
+            {
+              "name": "FreeLibrary",
+              "ordinal": null,
+              "iat_va": 19427644
+            },
+            {
+              "name": "SetFilePointer",
+              "ordinal": null,
+              "iat_va": 19427648
+            },
+            {
+              "name": "DeleteCriticalSection",
+              "ordinal": null,
+              "iat_va": 19427652
+            },
+            {
+              "name": "ReleaseSemaphore",
+              "ordinal": null,
+              "iat_va": 19427656
+            },
+            {
+              "name": "InitializeCriticalSection",
+              "ordinal": null,
+              "iat_va": 19427660
+            },
+            {
+              "name": "ResetEvent",
+              "ordinal": null,
+              "iat_va": 19427664
+            },
+            {
+              "name": "CreateSemaphoreA",
+              "ordinal": null,
+              "iat_va": 19427668
+            },
+            {
+              "name": "FindFirstFileExA",
+              "ordinal": null,
+              "iat_va": 19427672
+            },
+            {
+              "name": "SetEnvironmentVariableW",
+              "ordinal": null,
+              "iat_va": 19427676
+            },
+            {
+              "name": "SetEnvironmentVariableA",
+              "ordinal": null,
+              "iat_va": 19427680
+            },
+            {
+              "name": "GetTimeZoneInformation",
+              "ordinal": null,
+              "iat_va": 19427684
+            },
+            {
+              "name": "ReadConsoleW",
+              "ordinal": null,
+              "iat_va": 19427688
+            },
+            {
+              "name": "GetConsoleMode",
+              "ordinal": null,
+              "iat_va": 19427692
+            },
+            {
+              "name": "GetConsoleCP",
+              "ordinal": null,
+              "iat_va": 19427696
+            },
+            {
+              "name": "HeapReAlloc",
+              "ordinal": null,
+              "iat_va": 19427700
+            },
+            {
+              "name": "EnumSystemLocalesW",
+              "ordinal": null,
+              "iat_va": 19427704
+            },
+            {
+              "name": "GetUserDefaultLCID",
+              "ordinal": null,
+              "iat_va": 19427708
+            },
+            {
+              "name": "IsValidLocale",
+              "ordinal": null,
+              "iat_va": 19427712
+            },
+            {
+              "name": "GetFileType",
+              "ordinal": null,
+              "iat_va": 19427716
+            },
+            {
+              "name": "HeapAlloc",
+              "ordinal": null,
+              "iat_va": 19427720
+            },
+            {
+              "name": "IsValidCodePage",
+              "ordinal": null,
+              "iat_va": 19427724
+            },
+            {
+              "name": "HeapFree",
+              "ordinal": null,
+              "iat_va": 19427728
+            },
+            {
+              "name": "GetModuleHandleExW",
+              "ordinal": null,
+              "iat_va": 19427732
+            },
+            {
+              "name": "FreeLibraryAndExitThread",
+              "ordinal": null,
+              "iat_va": 19427736
+            },
+            {
+              "name": "LoadLibraryExW",
+              "ordinal": null,
+              "iat_va": 19427740
+            },
+            {
+              "name": "InterlockedFlushSList",
+              "ordinal": null,
+              "iat_va": 19427744
+            },
+            {
+              "name": "RaiseException",
+              "ordinal": null,
+              "iat_va": 19427748
+            },
+            {
+              "name": "RtlUnwind",
+              "ordinal": null,
+              "iat_va": 19427752
+            },
+            {
+              "name": "InitializeSListHead",
+              "ordinal": null,
+              "iat_va": 19427756
+            },
+            {
+              "name": "QueryPerformanceCounter",
+              "ordinal": null,
+              "iat_va": 19427760
+            },
+            {
+              "name": "GetStartupInfoW",
+              "ordinal": null,
+              "iat_va": 19427764
+            },
+            {
+              "name": "IsDebuggerPresent",
+              "ordinal": null,
+              "iat_va": 19427768
+            },
+            {
+              "name": "IsProcessorFeaturePresent",
+              "ordinal": null,
+              "iat_va": 19427772
+            },
+            {
+              "name": "TerminateProcess",
+              "ordinal": null,
+              "iat_va": 19427776
+            },
+            {
+              "name": "SetUnhandledExceptionFilter",
+              "ordinal": null,
+              "iat_va": 19427780
+            },
+            {
+              "name": "UnhandledExceptionFilter",
+              "ordinal": null,
+              "iat_va": 19427784
+            },
+            {
+              "name": "GetStringTypeW",
+              "ordinal": null,
+              "iat_va": 19427788
+            },
+            {
+              "name": "GetLocaleInfoW",
+              "ordinal": null,
+              "iat_va": 19427792
+            },
+            {
+              "name": "LCMapStringW",
+              "ordinal": null,
+              "iat_va": 19427796
+            },
+            {
+              "name": "CompareStringW",
+              "ordinal": null,
+              "iat_va": 19427800
+            },
+            {
+              "name": "GetCPInfo",
+              "ordinal": null,
+              "iat_va": 19427804
+            },
+            {
+              "name": "DecodePointer",
+              "ordinal": null,
+              "iat_va": 19427808
+            },
+            {
+              "name": "EncodePointer",
+              "ordinal": null,
+              "iat_va": 19427812
+            },
+            {
+              "name": "GetOEMCP",
+              "ordinal": null,
+              "iat_va": 19427816
+            },
+            {
+              "name": "GetLastError",
+              "ordinal": null,
+              "iat_va": 19427820
+            },
+            {
+              "name": "ReadFile",
+              "ordinal": null,
+              "iat_va": 19427824
+            },
+            {
+              "name": "GetCommandLineA",
+              "ordinal": null,
+              "iat_va": 19427828
+            },
+            {
+              "name": "GetCommandLineW",
+              "ordinal": null,
+              "iat_va": 19427832
+            },
+            {
+              "name": "GetEnvironmentStringsW",
+              "ordinal": null,
+              "iat_va": 19427836
+            },
+            {
+              "name": "FreeEnvironmentStringsW",
+              "ordinal": null,
+              "iat_va": 19427840
+            },
+            {
+              "name": "GetProcessHeap",
+              "ordinal": null,
+              "iat_va": 19427844
+            },
+            {
+              "name": "SetStdHandle",
+              "ordinal": null,
+              "iat_va": 19427848
+            },
+            {
+              "name": "FlushFileBuffers",
+              "ordinal": null,
+              "iat_va": 19427852
+            },
+            {
+              "name": "CreateFileW",
+              "ordinal": null,
+              "iat_va": 19427856
+            },
+            {
+              "name": "SetFilePointerEx",
+              "ordinal": null,
+              "iat_va": 19427860
+            },
+            {
+              "name": "WriteConsoleW",
+              "ordinal": null,
+              "iat_va": 19427864
+            },
+            {
+              "name": "HeapSize",
+              "ordinal": null,
+              "iat_va": 19427868
+            },
+            {
+              "name": "SetEndOfFile",
+              "ordinal": null,
+              "iat_va": 19427872
+            },
+            {
+              "name": "GetCurrentProcessId",
+              "ordinal": null,
+              "iat_va": 19427876
+            },
+            {
+              "name": "GetModuleHandleW",
+              "ordinal": null,
+              "iat_va": 19427880
+            },
+            {
+              "name": "GetSystemTimeAsFileTime",
+              "ordinal": null,
+              "iat_va": 19427884
+            },
+            {
+              "name": "TlsFree",
+              "ordinal": null,
+              "iat_va": 19427888
+            },
+            {
+              "name": "InitializeCriticalSectionAndSpinCount",
+              "ordinal": null,
+              "iat_va": 19427892
+            },
+            {
+              "name": "SetLastError",
+              "ordinal": null,
+              "iat_va": 19427896
+            }
+          ]
+        },
+        {
+          "dll": "USER32.dll",
+          "symbols": [
+            {
+              "name": "DrawTextW",
+              "ordinal": null,
+              "iat_va": 19427936
+            },
+            {
+              "name": "DefWindowProcA",
+              "ordinal": null,
+              "iat_va": 19427940
+            },
+            {
+              "name": "KillTimer",
+              "ordinal": null,
+              "iat_va": 19427944
+            },
+            {
+              "name": "PostMessageA",
+              "ordinal": null,
+              "iat_va": 19427948
+            },
+            {
+              "name": "GetKeyboardLayoutNameA",
+              "ordinal": null,
+              "iat_va": 19427952
+            },
+            {
+              "name": "MessageBeep",
+              "ordinal": null,
+              "iat_va": 19427956
+            },
+            {
+              "name": "GetActiveWindow",
+              "ordinal": null,
+              "iat_va": 19427960
+            },
+            {
+              "name": "SetTimer",
+              "ordinal": null,
+              "iat_va": 19427964
+            },
+            {
+              "name": "GetKeyboardLayoutList",
+              "ordinal": null,
+              "iat_va": 19427968
+            },
+            {
+              "name": "CharToOemA",
+              "ordinal": null,
+              "iat_va": 19427972
+            },
+            {
+              "name": "FlashWindowEx",
+              "ordinal": null,
+              "iat_va": 19427976
+            },
+            {
+              "name": "ActivateKeyboardLayout",
+              "ordinal": null,
+              "iat_va": 19427980
+            },
+            {
+              "name": "DrawTextA",
+              "ordinal": null,
+              "iat_va": 19427984
+            },
+            {
+              "name": "GetKeyState",
+              "ordinal": null,
+              "iat_va": 19427988
+            },
+            {
+              "name": "GetMessageA",
+              "ordinal": null,
+              "iat_va": 19427992
+            },
+            {
+              "name": "DispatchMessageA",
+              "ordinal": null,
+              "iat_va": 19427996
+            },
+            {
+              "name": "keybd_event",
+              "ordinal": null,
+              "iat_va": 19428000
+            },
+            {
+              "name": "ToAsciiEx",
+              "ordinal": null,
+              "iat_va": 19428004
+            },
+            {
+              "name": "CallNextHookEx",
+              "ordinal": null,
+              "iat_va": 19428008
+            },
+            {
+              "name": "GetKeyboardState",
+              "ordinal": null,
+              "iat_va": 19428012
+            },
+            {
+              "name": "OpenClipboard",
+              "ordinal": null,
+              "iat_va": 19428016
+            },
+            {
+              "name": "CloseClipboard",
+              "ordinal": null,
+              "iat_va": 19428020
+            },
+            {
+              "name": "EmptyClipboard",
+              "ordinal": null,
+              "iat_va": 19428024
+            },
+            {
+              "name": "SetWindowsHookExA",
+              "ordinal": null,
+              "iat_va": 19428028
+            },
+            {
+              "name": "GetKeyboardLayout",
+              "ordinal": null,
+              "iat_va": 19428032
+            },
+            {
+              "name": "MessageBoxA",
+              "ordinal": null,
+              "iat_va": 19428036
+            },
+            {
+              "name": "EnumDisplaySettingsA",
+              "ordinal": null,
+              "iat_va": 19428040
+            },
+            {
+              "name": "GetForegroundWindow",
+              "ordinal": null,
+              "iat_va": 19428044
+            },
+            {
+              "name": "TranslateMessage",
+              "ordinal": null,
+              "iat_va": 19428048
+            },
+            {
+              "name": "GetClipboardData",
+              "ordinal": null,
+              "iat_va": 19428052
+            },
+            {
+              "name": "SetCapture",
+              "ordinal": null,
+              "iat_va": 19428056
+            },
+            {
+              "name": "SetClipboardData",
+              "ordinal": null,
+              "iat_va": 19428060
+            },
+            {
+              "name": "ToUnicode",
+              "ordinal": null,
+              "iat_va": 19428064
+            },
+            {
+              "name": "PeekMessageA",
+              "ordinal": null,
+              "iat_va": 19428068
+            },
+            {
+              "name": "IsClipboardFormatAvailable",
+              "ordinal": null,
+              "iat_va": 19428072
+            },
+            {
+              "name": "ReleaseCapture",
+              "ordinal": null,
+              "iat_va": 19428076
+            },
+            {
+              "name": "IsIconic",
+              "ordinal": null,
+              "iat_va": 19428080
+            },
+            {
+              "name": "GetParent",
+              "ordinal": null,
+              "iat_va": 19428084
+            },
+            {
+              "name": "MsgWaitForMultipleObjects",
+              "ordinal": null,
+              "iat_va": 19428088
+            }
+          ]
+        },
+        {
+          "dll": "GDI32.dll",
+          "symbols": [
+            {
+              "name": "CreateDIBSection",
+              "ordinal": null,
+              "iat_va": 19427360
+            },
+            {
+              "name": "SetTextColor",
+              "ordinal": null,
+              "iat_va": 19427364
+            },
+            {
+              "name": "SetBkMode",
+              "ordinal": null,
+              "iat_va": 19427368
+            },
+            {
+              "name": "BitBlt",
+              "ordinal": null,
+              "iat_va": 19427372
+            },
+            {
+              "name": "CreateFontA",
+              "ordinal": null,
+              "iat_va": 19427376
+            },
+            {
+              "name": "SelectObject",
+              "ordinal": null,
+              "iat_va": 19427380
+            },
+            {
+              "name": "CreateCompatibleDC",
+              "ordinal": null,
+              "iat_va": 19427384
+            },
+            {
+              "name": "DeleteObject",
+              "ordinal": null,
+              "iat_va": 19427388
+            },
+            {
+              "name": "AddFontResourceExA",
+              "ordinal": null,
+              "iat_va": 19427392
+            }
+          ]
+        },
+        {
+          "dll": "ADVAPI32.dll",
+          "symbols": [
+            {
+              "name": "RegQueryValueExA",
+              "ordinal": null,
+              "iat_va": 19427328
+            },
+            {
+              "name": "CryptCreateHash",
+              "ordinal": null,
+              "iat_va": 19427332
+            },
+            {
+              "name": "CryptHashData",
+              "ordinal": null,
+              "iat_va": 19427336
+            },
+            {
+              "name": "CryptDestroyHash",
+              "ordinal": null,
+              "iat_va": 19427340
+            },
+            {
+              "name": "CryptGetHashParam",
+              "ordinal": null,
+              "iat_va": 19427344
+            },
+            {
+              "name": "CryptReleaseContext",
+              "ordinal": null,
+              "iat_va": 19427348
+            },
+            {
+              "name": "CryptAcquireContextA",
+              "ordinal": null,
+              "iat_va": 19427352
+            }
+          ]
+        },
+        {
+          "dll": "SHELL32.dll",
+          "symbols": [
+            {
+              "name": "ShellExecuteA",
+              "ordinal": null,
+              "iat_va": 19427912
+            }
+          ]
+        },
+        {
+          "dll": "PSAPI.DLL",
+          "symbols": [
+            {
+              "name": "GetModuleInformation",
+              "ordinal": null,
+              "iat_va": 19427904
+            }
+          ]
+        },
+        {
+          "dll": "SHLWAPI.dll",
+          "symbols": [
+            {
+              "name": "StrToIntA",
+              "ordinal": null,
+              "iat_va": 19427920
+            },
+            {
+              "name": "PathRemoveFileSpecA",
+              "ordinal": null,
+              "iat_va": 19427924
+            },
+            {
+              "name": "PathAppendA",
+              "ordinal": null,
+              "iat_va": 19427928
+            }
+          ]
+        }
+      ],
+      "patching_related_imports": [
+        {
+          "dll": "KERNEL32.dll",
+          "name": "WriteFile",
+          "iat_va": 19427424
+        },
+        {
+          "dll": "KERNEL32.dll",
+          "name": "GetModuleHandleA",
+          "iat_va": 19427452
+        },
+        {
+          "dll": "KERNEL32.dll",
+          "name": "GetProcAddress",
+          "iat_va": 19427484
+        },
+        {
+          "dll": "KERNEL32.dll",
+          "name": "VirtualProtect",
+          "iat_va": 19427520
+        },
+        {
+          "dll": "KERNEL32.dll",
+          "name": "VirtualAlloc",
+          "iat_va": 19427540
+        },
+        {
+          "dll": "KERNEL32.dll",
+          "name": "LoadLibraryA",
+          "iat_va": 19427596
+        },
+        {
+          "dll": "KERNEL32.dll",
+          "name": "CreateFileA",
+          "iat_va": 19427620
+        },
+        {
+          "dll": "KERNEL32.dll",
+          "name": "CreateFileW",
+          "iat_va": 19427856
+        },
+        {
+          "dll": "KERNEL32.dll",
+          "name": "GetModuleHandleW",
+          "iat_va": 19427880
+        }
+      ],
+      "exports": [
+        {
+          "name": "Start",
+          "ordinal": 1,
+          "rva": 1009536,
+          "va": 17786752
+        },
+        {
+          "name": "_Start@0",
+          "ordinal": 2,
+          "rva": 1009536,
+          "va": 17786752
+        }
+      ],
+      "candidate_address_literal_hits": [],
+      "reference_signature_hits": [],
+      "string_count": 7867,
+      "relevant_strings": [
+        {
+          "offset": 2701536,
+          "encoding": "ascii",
+          "value": "HD.Func.LOG_WRITE"
+        },
+        {
+          "offset": 2701556,
+          "encoding": "ascii",
+          "value": "HD.Ini.Main"
+        },
+        {
+          "offset": 2701568,
+          "encoding": "ascii",
+          "value": "HD.Ini.Main is NULL. Load again."
+        },
+        {
+          "offset": 2701620,
+          "encoding": "ascii",
+          "value": "HD.Ini.Main.Name"
+        },
+        {
+          "offset": 2701976,
+          "encoding": "ascii",
+          "value": "HotA.Stack_VisibleHitPointsLost"
+        },
+        {
+          "offset": 2702168,
+          "encoding": "ascii",
+          "value": "HD.Ini.Txt"
+        },
+        {
+          "offset": 2702180,
+          "encoding": "ascii",
+          "value": "HD.Ini.Txt.En"
+        },
+        {
+          "offset": 2702268,
+          "encoding": "ascii",
+          "value": "HotA.SpellLength"
+        },
+        {
+          "offset": 2702288,
+          "encoding": "ascii",
+          "value": "HotA.SpellSkillLevel"
+        },
+        {
+          "offset": 2703004,
+          "encoding": "ascii",
+          "value": "HotA.HPS_tbl"
+        },
+        {
+          "offset": 2703508,
+          "encoding": "ascii",
+          "value": "HotA.SaveVersion"
+        },
+        {
+          "offset": 2704032,
+          "encoding": "ascii",
+          "value": "HotA.QuestGate_Name"
+        },
+        {
+          "offset": 2704092,
+          "encoding": "ascii",
+          "value": "HotA.HPL_tbl"
+        },
+        {
+          "offset": 2704336,
+          "encoding": "ascii",
+          "value": "HotA.NewQuestLog"
+        },
+        {
+          "offset": 2704408,
+          "encoding": "ascii",
+          "value": "HotA.CreatureWindowSetNextFrameCreatureID"
+        },
+        {
+          "offset": 2704668,
+          "encoding": "ascii",
+          "value": "SpellScr.def"
+        },
+        {
+          "offset": 2704716,
+          "encoding": "ascii",
+          "value": "HD.UI.Ext.SpellScroll"
+        },
+        {
+          "offset": 2704740,
+          "encoding": "ascii",
+          "value": "HotA.ComboArtDisabled"
+        },
+        {
+          "offset": 2704824,
+          "encoding": "ascii",
+          "value": "HD.UI.Ext.SpellBook"
+        },
+        {
+          "offset": 2705808,
+          "encoding": "ascii",
+          "value": "spells.def"
+        },
+        {
+          "offset": 2706536,
+          "encoding": "ascii",
+          "value": "HotA.DecorObjects"
+        },
+        {
+          "offset": 2706556,
+          "encoding": "ascii",
+          "value": "HotA.DecorObjectsType"
+        },
+        {
+          "offset": 2706580,
+          "encoding": "ascii",
+          "value": "HotA.PuzzleObjects"
+        },
+        {
+          "offset": 2706600,
+          "encoding": "ascii",
+          "value": "HotA.PuzzleObjectsType"
+        },
+        {
+          "offset": 2706624,
+          "encoding": "ascii",
+          "value": "HotA.AdvMgr_LandDefShift"
+        },
+        {
+          "offset": 2706808,
+          "encoding": "ascii",
+          "value": "HotA.ReplayTurnInit"
+        },
+        {
+          "offset": 2706828,
+          "encoding": "ascii",
+          "value": "HotA.ReplayTurnFinish"
+        },
+        {
+          "offset": 2708096,
+          "encoding": "ascii",
+          "value": "HotA.SwapMgrCalledFromTown"
+        },
+        {
+          "offset": 2708448,
+          "encoding": "ascii",
+          "value": "HotA.TownGate_Name"
+        },
+        {
+          "offset": 2709052,
+          "encoding": "ascii",
+          "value": "hota.dll"
+        },
+        {
+          "offset": 2709064,
+          "encoding": "ascii",
+          "value": "HotA.PlayerStartTurn"
+        },
+        {
+          "offset": 2709128,
+          "encoding": "ascii",
+          "value": "HotA.60FpsHero"
+        },
+        {
+          "offset": 2709144,
+          "encoding": "ascii",
+          "value": "HotA.60FpsFrameSkips"
+        },
+        {
+          "offset": 2709200,
+          "encoding": "ascii",
+          "value": "HD.HotA.GetShadowTerrain"
+        },
+        {
+          "offset": 2709560,
+          "encoding": "ascii",
+          "value": "HD.HotA"
+        },
+        {
+          "offset": 2709724,
+          "encoding": "ascii",
+          "value": "HotA.Version"
+        },
+        {
+          "offset": 2709740,
+          "encoding": "ascii",
+          "value": "HotA.Build"
+        },
+        {
+          "offset": 2709788,
+          "encoding": "ascii",
+          "value": "%s\\HotA.dll"
+        },
+        {
+          "offset": 2709841,
+          "encoding": "ascii",
+          "value": " hota.dll. "
+        },
+        {
+          "offset": 2709912,
+          "encoding": "ascii",
+          "value": "The file hota.dll is not recognized. The game may not work properly. Reinstall the game."
+        },
+        {
+          "offset": 2710040,
+          "encoding": "ascii",
+          "value": "HD.Option.CpuPatch"
+        },
+        {
+          "offset": 2710576,
+          "encoding": "ascii",
+          "value": "HD.Option.MusicPatch"
+        },
+        {
+          "offset": 2719276,
+          "encoding": "ascii",
+          "value": "vk.com/h3hota"
+        },
+        {
+          "offset": 2719292,
+          "encoding": "ascii",
+          "value": "h3hota.com"
+        },
+        {
+          "offset": 2719384,
+          "encoding": "ascii",
+          "value": "https://h3hota.com"
+        },
+        {
+          "offset": 2719404,
+          "encoding": "ascii",
+          "value": "https://vk.com/h3hota"
+        },
+        {
+          "offset": 2721620,
+          "encoding": "ascii",
+          "value": "https://sites.google.com/view/hota-lobby-ru/rules_conduct"
+        },
+        {
+          "offset": 2721680,
+          "encoding": "ascii",
+          "value": "https://sites.google.com/view/hota-lobby-pl/rules_conduct"
+        },
+        {
+          "offset": 2721740,
+          "encoding": "ascii",
+          "value": "https://sites.google.com/view/hota-lobby-en/rules_conduct"
+        },
+        {
+          "offset": 2721800,
+          "encoding": "ascii",
+          "value": "https://sites.google.com/view/hota-lobby-ru/rules_gaming"
+        },
+        {
+          "offset": 2721860,
+          "encoding": "ascii",
+          "value": "https://sites.google.com/view/hota-lobby-pl/rules_gaming"
+        },
+        {
+          "offset": 2721920,
+          "encoding": "ascii",
+          "value": "https://sites.google.com/view/hota-lobby-en/rules_gaming"
+        },
+        {
+          "offset": 2721980,
+          "encoding": "ascii",
+          "value": "https://sites.google.com/view/hota-lobby-ru/report"
+        },
+        {
+          "offset": 2722032,
+          "encoding": "ascii",
+          "value": "https://sites.google.com/view/hota-lobby-pl/report"
+        },
+        {
+          "offset": 2722084,
+          "encoding": "ascii",
+          "value": "https://sites.google.com/view/hota-lobby-en/report"
+        },
+        {
+          "offset": 2722312,
+          "encoding": "utf16le",
+          "value": " HotA "
+        },
+        {
+          "offset": 2722356,
+          "encoding": "utf16le",
+          "value": " HotA "
+        },
+        {
+          "offset": 2722562,
+          "encoding": "utf16le",
+          "value": "RHotA VK"
+        },
+        {
+          "offset": 2722580,
+          "encoding": "utf16le",
+          "value": "HotA Discord"
+        },
+        {
+          "offset": 2722672,
+          "encoding": "ascii",
+          "value": "HotA.HeroesDefaultPortraits"
+        },
+        {
+          "offset": 2724360,
+          "encoding": "ascii",
+          "value": "The host has HotA version {%s}."
+        },
+        {
+          "offset": 2724392,
+          "encoding": "ascii",
+          "value": "You have HotA version {%s}."
+        },
+        {
+          "offset": 2726192,
+          "encoding": "ascii",
+          "value": "HotA.ForbidHiringHeroes"
+        },
+        {
+          "offset": 2726256,
+          "encoding": "ascii",
+          "value": "HD.HotaVer"
+        },
+        {
+          "offset": 2726616,
+          "encoding": "ascii",
+          "value": "HD.Hota180Fixed"
+        },
+        {
+          "offset": 2726632,
+          "encoding": "ascii",
+          "value": "HD_HOTA.DLL"
+        },
+        {
+          "offset": 2726734,
+          "encoding": "ascii",
+          "value": " HotA {"
+        },
+        {
+          "offset": 2726904,
+          "encoding": "ascii",
+          "value": " HotA."
+        },
+        {
+          "offset": 2726912,
+          "encoding": "ascii",
+          "value": "HotA - "
+        },
+        {
+          "offset": 2727082,
+          "encoding": "ascii",
+          "value": " HotA."
+        },
+        {
+          "offset": 2727158,
+          "encoding": "ascii",
+          "value": "HotA Crew {has} {nothing} {to} {do} with the development and support of online lobby. In case of issues when accessing the lobby, please abstain from posting complaints on the Discord channel and on other project's pages."
+        },
+        {
+          "offset": 2727381,
+          "encoding": "ascii",
+          "value": "HotA is a non-profit project, and the HotA Crew has never once accepted donations over 16 years of development. By supporting the lobby you support the creator of HoMM3 HD+, not the HotA project."
+        },
+        {
+          "offset": 2727647,
+          "encoding": "ascii",
+          "value": " HotA {"
+        },
+        {
+          "offset": 2727814,
+          "encoding": "ascii",
+          "value": " HotA."
+        },
+        {
+          "offset": 2727822,
+          "encoding": "ascii",
+          "value": "HotA "
+        },
+        {
+          "offset": 2727985,
+          "encoding": "ascii",
+          "value": " HotA."
+        },
+        {
+          "offset": 2728010,
+          "encoding": "utf16le",
+          "value": " HotA 1.8.0"
+        },
+        {
+          "offset": 2728036,
+          "encoding": "utf16le",
+          "value": "Download HotA 1.8.0"
+        },
+        {
+          "offset": 2728148,
+          "encoding": "ascii",
+          "value": "HD.IsGogHota"
+        },
+        {
+          "offset": 2728240,
+          "encoding": "ascii",
+          "value": "https://h3hota.com/ru/download"
+        },
+        {
+          "offset": 2728272,
+          "encoding": "ascii",
+          "value": "https://h3hota.com/en/download"
+        },
+        {
+          "offset": 2731340,
+          "encoding": "ascii",
+          "value": "HotA Developer"
+        },
+        {
+          "offset": 2734516,
+          "encoding": "ascii",
+          "value": "HotA.FontColor"
+        },
+        {
+          "offset": 2735772,
+          "encoding": "ascii",
+          "value": "Update.ini"
+        },
+        {
+          "offset": 2737112,
+          "encoding": "ascii",
+          "value": "patcher_x86.dll"
+        },
+        {
+          "offset": 2737128,
+          "encoding": "ascii",
+          "value": "_GetPatcherX86@0"
+        },
+        {
+          "offset": 2737148,
+          "encoding": "ascii",
+          "value": "_GetPatcherX86Version@0"
+        },
+        {
+          "offset": 2738088,
+          "encoding": "ascii",
+          "value": "%s\\HotA_RMGTemplates"
+        },
+        {
+          "offset": 2739256,
+          "encoding": "ascii",
+          "value": "HotA.HeroesEnabledForSimTurnsPools"
+        },
+        {
+          "offset": 2739820,
+          "encoding": "ascii",
+          "value": "HotA.CanHaveBattles"
+        },
+        {
+          "offset": 2742980,
+          "encoding": "ascii",
+          "value": "%s\\hota.dll"
+        },
+        {
+          "offset": 2743060,
+          "encoding": "ascii",
+          "value": "HotA.NeedRedrawStacksBorders"
+        },
+        {
+          "offset": 2743210,
+          "encoding": "ascii",
+          "value": "Are you sure you want to cast the spell?"
+        },
+        {
+          "offset": 2743252,
+          "encoding": "ascii",
+          "value": "SpellConfirm"
+        },
+        {
+          "offset": 2744016,
+          "encoding": "ascii",
+          "value": "%s\\HotA_Data"
+        },
+        {
+          "offset": 2744032,
+          "encoding": "ascii",
+          "value": "HotA_Data"
+        },
+        {
+          "offset": 2744096,
+          "encoding": "ascii",
+          "value": "HotA_Data\\draw_template.dll"
+        },
+        {
+          "offset": 2744152,
+          "encoding": "ascii",
+          "value": "HotA_Data\\hota_te.dll"
+        },
+        {
+          "offset": 2744308,
+          "encoding": "ascii",
+          "value": "SpellBook"
+        },
+        {
+          "offset": 2744328,
+          "encoding": "ascii",
+          "value": "SpellInt.def"
+        },
+        {
+          "offset": 2744544,
+          "encoding": "ascii",
+          "value": "{[hota]}"
+        },
+        {
+          "offset": 2744652,
+          "encoding": "ascii",
+          "value": "HotA.Action_OnDirectoryEnterOnline"
+        },
+        {
+          "offset": 2745296,
+          "encoding": "ascii",
+          "value": "HotA.TavernHeroesEnabled"
+        },
+        {
+          "offset": 2750792,
+          "encoding": "ascii",
+          "value": "HotA Random"
+        },
+        {
+          "offset": 2756488,
+          "encoding": "ascii",
+          "value": "C:\\Ultra\\Projects\\HD3x\\Sources\\Release\\HD_HOTA.pdb"
+        },
+        {
+          "offset": 2780652,
+          "encoding": "ascii",
+          "value": "HD_HOTA.dll"
+        },
+        {
+          "offset": 2782284,
+          "encoding": "ascii",
+          "value": "VirtualProtect"
+        },
+        {
+          "offset": 2783254,
+          "encoding": "ascii",
+          "value": "SetWindowsHookExA"
+        },
+        {
+          "offset": 2783374,
+          "encoding": "ascii",
+          "value": "CallNextHookEx"
+        },
+        {
+          "offset": 2783418,
+          "encoding": "ascii",
+          "value": "DispatchMessageA"
+        }
+      ]
+    },
+    {
+      "path": "baselines/hota180_clean/HW_HOTA.dll",
+      "size": 205312,
+      "sha256": "a806a256f546fedfd3935d17d91756847f98263f5f48b9a74d462f314e9d21be",
+      "machine": "0x014C",
+      "timestamp_utc": "2026-01-02T12:43:09+00:00",
+      "image_base": 268435456,
+      "entrypoint_va": 268538581,
+      "version": null,
+      "sections": [
+        {
+          "name": ".text",
+          "rva": 4096,
+          "virtual_size": 164192,
+          "raw_offset": 1024,
+          "raw_size": 164352,
+          "characteristics": "0x60000020",
+          "entropy": 6.51407
+        },
+        {
+          "name": ".rdata",
+          "rva": 172032,
+          "virtual_size": 29312,
+          "raw_offset": 165376,
+          "raw_size": 29696,
+          "characteristics": "0x40000040",
+          "entropy": 5.369771
+        },
+        {
+          "name": ".data",
+          "rva": 204800,
+          "virtual_size": 46476,
+          "raw_offset": 195072,
+          "raw_size": 2560,
+          "characteristics": "0xC0000040",
+          "entropy": 2.617617
+        },
+        {
+          "name": ".reloc",
+          "rva": 253952,
+          "virtual_size": 7384,
+          "raw_offset": 197632,
+          "raw_size": 7680,
+          "characteristics": "0x42000040",
+          "entropy": 6.593707
+        }
+      ],
+      "imports": [
+        {
+          "dll": "KERNEL32.dll",
+          "symbols": [
+            {
+              "name": "GetProcAddress",
+              "ordinal": null,
+              "iat_va": 268607488
+            },
+            {
+              "name": "LoadLibraryA",
+              "ordinal": null,
+              "iat_va": 268607492
+            },
+            {
+              "name": "GetModuleHandleA",
+              "ordinal": null,
+              "iat_va": 268607496
+            },
+            {
+              "name": "QueryPerformanceCounter",
+              "ordinal": null,
+              "iat_va": 268607500
+            },
+            {
+              "name": "QueryPerformanceFrequency",
+              "ordinal": null,
+              "iat_va": 268607504
+            },
+            {
+              "name": "ReadFile",
+              "ordinal": null,
+              "iat_va": 268607508
+            },
+            {
+              "name": "SetFilePointer",
+              "ordinal": null,
+              "iat_va": 268607512
+            },
+            {
+              "name": "CloseHandle",
+              "ordinal": null,
+              "iat_va": 268607516
+            },
+            {
+              "name": "CreateFileA",
+              "ordinal": null,
+              "iat_va": 268607520
+            },
+            {
+              "name": "GetStdHandle",
+              "ordinal": null,
+              "iat_va": 268607524
+            },
+            {
+              "name": "GetConsoleScreenBufferInfo",
+              "ordinal": null,
+              "iat_va": 268607528
+            },
+            {
+              "name": "AllocConsole",
+              "ordinal": null,
+              "iat_va": 268607532
+            },
+            {
+              "name": "WriteConsoleA",
+              "ordinal": null,
+              "iat_va": 268607536
+            },
+            {
+              "name": "IsProcessorFeaturePresent",
+              "ordinal": null,
+              "iat_va": 268607540
+            },
+            {
+              "name": "IsDebuggerPresent",
+              "ordinal": null,
+              "iat_va": 268607544
+            },
+            {
+              "name": "UnhandledExceptionFilter",
+              "ordinal": null,
+              "iat_va": 268607548
+            },
+            {
+              "name": "SetUnhandledExceptionFilter",
+              "ordinal": null,
+              "iat_va": 268607552
+            },
+            {
+              "name": "GetStartupInfoW",
+              "ordinal": null,
+              "iat_va": 268607556
+            },
+            {
+              "name": "GetModuleHandleW",
+              "ordinal": null,
+              "iat_va": 268607560
+            },
+            {
+              "name": "GetCurrentProcessId",
+              "ordinal": null,
+              "iat_va": 268607564
+            },
+            {
+              "name": "GetCurrentThreadId",
+              "ordinal": null,
+              "iat_va": 268607568
+            },
+            {
+              "name": "GetSystemTimeAsFileTime",
+              "ordinal": null,
+              "iat_va": 268607572
+            },
+            {
+              "name": "InitializeSListHead",
+              "ordinal": null,
+              "iat_va": 268607576
+            },
+            {
+              "name": "GetCurrentProcess",
+              "ordinal": null,
+              "iat_va": 268607580
+            },
+            {
+              "name": "TerminateProcess",
+              "ordinal": null,
+              "iat_va": 268607584
+            },
+            {
+              "name": "RaiseException",
+              "ordinal": null,
+              "iat_va": 268607588
+            },
+            {
+              "name": "RtlUnwind",
+              "ordinal": null,
+              "iat_va": 268607592
+            },
+            {
+              "name": "InterlockedFlushSList",
+              "ordinal": null,
+              "iat_va": 268607596
+            },
+            {
+              "name": "GetLastError",
+              "ordinal": null,
+              "iat_va": 268607600
+            },
+            {
+              "name": "SetLastError",
+              "ordinal": null,
+              "iat_va": 268607604
+            },
+            {
+              "name": "EncodePointer",
+              "ordinal": null,
+              "iat_va": 268607608
+            },
+            {
+              "name": "VirtualQuery",
+              "ordinal": null,
+              "iat_va": 268607612
+            },
+            {
+              "name": "EnterCriticalSection",
+              "ordinal": null,
+              "iat_va": 268607616
+            },
+            {
+              "name": "LeaveCriticalSection",
+              "ordinal": null,
+              "iat_va": 268607620
+            },
+            {
+              "name": "DeleteCriticalSection",
+              "ordinal": null,
+              "iat_va": 268607624
+            },
+            {
+              "name": "InitializeCriticalSectionAndSpinCount",
+              "ordinal": null,
+              "iat_va": 268607628
+            },
+            {
+              "name": "TlsAlloc",
+              "ordinal": null,
+              "iat_va": 268607632
+            },
+            {
+              "name": "TlsGetValue",
+              "ordinal": null,
+              "iat_va": 268607636
+            },
+            {
+              "name": "TlsSetValue",
+              "ordinal": null,
+              "iat_va": 268607640
+            },
+            {
+              "name": "TlsFree",
+              "ordinal": null,
+              "iat_va": 268607644
+            },
+            {
+              "name": "FreeLibrary",
+              "ordinal": null,
+              "iat_va": 268607648
+            },
+            {
+              "name": "LoadLibraryExW",
+              "ordinal": null,
+              "iat_va": 268607652
+            },
+            {
+              "name": "ExitProcess",
+              "ordinal": null,
+              "iat_va": 268607656
+            },
+            {
+              "name": "GetModuleHandleExW",
+              "ordinal": null,
+              "iat_va": 268607660
+            },
+            {
+              "name": "GetModuleFileNameA",
+              "ordinal": null,
+              "iat_va": 268607664
+            },
+            {
+              "name": "MultiByteToWideChar",
+              "ordinal": null,
+              "iat_va": 268607668
+            },
+            {
+              "name": "WideCharToMultiByte",
+              "ordinal": null,
+              "iat_va": 268607672
+            },
+            {
+              "name": "HeapAlloc",
+              "ordinal": null,
+              "iat_va": 268607676
+            },
+            {
+              "name": "HeapFree",
+              "ordinal": null,
+              "iat_va": 268607680
+            },
+            {
+              "name": "GetACP",
+              "ordinal": null,
+              "iat_va": 268607684
+            },
+            {
+              "name": "GetFileType",
+              "ordinal": null,
+              "iat_va": 268607688
+            },
+            {
+              "name": "LCMapStringW",
+              "ordinal": null,
+              "iat_va": 268607692
+            },
+            {
+              "name": "FindClose",
+              "ordinal": null,
+              "iat_va": 268607696
+            },
+            {
+              "name": "FindFirstFileExA",
+              "ordinal": null,
+              "iat_va": 268607700
+            },
+            {
+              "name": "FindNextFileA",
+              "ordinal": null,
+              "iat_va": 268607704
+            },
+            {
+              "name": "IsValidCodePage",
+              "ordinal": null,
+              "iat_va": 268607708
+            },
+            {
+              "name": "GetOEMCP",
+              "ordinal": null,
+              "iat_va": 268607712
+            },
+            {
+              "name": "GetCPInfo",
+              "ordinal": null,
+              "iat_va": 268607716
+            },
+            {
+              "name": "GetCommandLineA",
+              "ordinal": null,
+              "iat_va": 268607720
+            },
+            {
+              "name": "GetCommandLineW",
+              "ordinal": null,
+              "iat_va": 268607724
+            },
+            {
+              "name": "GetEnvironmentStringsW",
+              "ordinal": null,
+              "iat_va": 268607728
+            },
+            {
+              "name": "FreeEnvironmentStringsW",
+              "ordinal": null,
+              "iat_va": 268607732
+            },
+            {
+              "name": "GetProcessHeap",
+              "ordinal": null,
+              "iat_va": 268607736
+            },
+            {
+              "name": "GetStringTypeW",
+              "ordinal": null,
+              "iat_va": 268607740
+            },
+            {
+              "name": "SetStdHandle",
+              "ordinal": null,
+              "iat_va": 268607744
+            },
+            {
+              "name": "HeapSize",
+              "ordinal": null,
+              "iat_va": 268607748
+            },
+            {
+              "name": "HeapReAlloc",
+              "ordinal": null,
+              "iat_va": 268607752
+            },
+            {
+              "name": "WriteFile",
+              "ordinal": null,
+              "iat_va": 268607756
+            },
+            {
+              "name": "GetConsoleCP",
+              "ordinal": null,
+              "iat_va": 268607760
+            },
+            {
+              "name": "GetConsoleMode",
+              "ordinal": null,
+              "iat_va": 268607764
+            },
+            {
+              "name": "SetFilePointerEx",
+              "ordinal": null,
+              "iat_va": 268607768
+            },
+            {
+              "name": "FlushFileBuffers",
+              "ordinal": null,
+              "iat_va": 268607772
+            },
+            {
+              "name": "DecodePointer",
+              "ordinal": null,
+              "iat_va": 268607776
+            },
+            {
+              "name": "WriteConsoleW",
+              "ordinal": null,
+              "iat_va": 268607780
+            },
+            {
+              "name": "CreateFileW",
+              "ordinal": null,
+              "iat_va": 268607784
+            }
+          ]
+        },
+        {
+          "dll": "USER32.dll",
+          "symbols": [
+            {
+              "name": "MessageBeep",
+              "ordinal": null,
+              "iat_va": 268607792
+            },
+            {
+              "name": "GetKeyState",
+              "ordinal": null,
+              "iat_va": 268607796
+            }
+          ]
+        }
+      ],
+      "patching_related_imports": [
+        {
+          "dll": "KERNEL32.dll",
+          "name": "GetProcAddress",
+          "iat_va": 268607488
+        },
+        {
+          "dll": "KERNEL32.dll",
+          "name": "LoadLibraryA",
+          "iat_va": 268607492
+        },
+        {
+          "dll": "KERNEL32.dll",
+          "name": "GetModuleHandleA",
+          "iat_va": 268607496
+        },
+        {
+          "dll": "KERNEL32.dll",
+          "name": "CreateFileA",
+          "iat_va": 268607520
+        },
+        {
+          "dll": "KERNEL32.dll",
+          "name": "GetModuleHandleW",
+          "iat_va": 268607560
+        },
+        {
+          "dll": "KERNEL32.dll",
+          "name": "WriteFile",
+          "iat_va": 268607756
+        },
+        {
+          "dll": "KERNEL32.dll",
+          "name": "CreateFileW",
+          "iat_va": 268607784
+        }
+      ],
+      "exports": [
+        {
+          "name": "Start",
+          "ordinal": 1,
+          "rva": 15904,
+          "va": 268451360
+        },
+        {
+          "name": "_Start@0",
+          "ordinal": 2,
+          "rva": 15904,
+          "va": 268451360
+        }
+      ],
+      "candidate_address_literal_hits": [],
+      "reference_signature_hits": [],
+      "string_count": 1094,
+      "relevant_strings": [
+        {
+          "offset": 165792,
+          "encoding": "ascii",
+          "value": "patcher_x86.dll"
+        },
+        {
+          "offset": 165808,
+          "encoding": "ascii",
+          "value": "_GetPatcherX86@0"
+        },
+        {
+          "offset": 165828,
+          "encoding": "ascii",
+          "value": "HotA.SaveVersion"
+        },
+        {
+          "offset": 166012,
+          "encoding": "ascii",
+          "value": "#ru.ini"
+        },
+        {
+          "offset": 166020,
+          "encoding": "ascii",
+          "value": "#en.ini"
+        },
+        {
+          "offset": 166040,
+          "encoding": "ascii",
+          "value": "HW.patch.start_res_gold"
+        },
+        {
+          "offset": 166064,
+          "encoding": "ascii",
+          "value": "HW.patch.start_res_ore"
+        },
+        {
+          "offset": 166088,
+          "encoding": "ascii",
+          "value": "HW.patch.start_res_wood"
+        },
+        {
+          "offset": 166112,
+          "encoding": "ascii",
+          "value": "HW.patch.start_res_mercury"
+        },
+        {
+          "offset": 166140,
+          "encoding": "ascii",
+          "value": "HW.patch.start_res_sulfur"
+        },
+        {
+          "offset": 166168,
+          "encoding": "ascii",
+          "value": "HW.patch.start_res_crystal"
+        },
+        {
+          "offset": 166196,
+          "encoding": "ascii",
+          "value": "HW.patch.start_res_gems"
+        },
+        {
+          "offset": 166924,
+          "encoding": "ascii",
+          "value": "HotA.MonolythsOneWay_Count"
+        },
+        {
+          "offset": 166952,
+          "encoding": "ascii",
+          "value": "HotA.TwoWayMonolyths_Count"
+        },
+        {
+          "offset": 166980,
+          "encoding": "ascii",
+          "value": "HotA.MirrorMonsterSetup"
+        },
+        {
+          "offset": 167004,
+          "encoding": "ascii",
+          "value": "HotA.MirrorResourceObjectSetup"
+        },
+        {
+          "offset": 167069,
+          "encoding": "ascii",
+          "value": " HotA.MirrorMonsterSetup not found."
+        },
+        {
+          "offset": 167108,
+          "encoding": "ascii",
+          "value": "HotA.Zone_AddRoadPoint"
+        },
+        {
+          "offset": 167148,
+          "encoding": "ascii",
+          "value": "HotA.HeroesEnabledForSimTurnsPools"
+        },
+        {
+          "offset": 190316,
+          "encoding": "ascii",
+          "value": "C:\\Ultra\\Projects\\HD3x\\Sources\\Release\\HD_HW_HOTA.pdb"
+        },
+        {
+          "offset": 192844,
+          "encoding": "ascii",
+          "value": "HW_HOTA.dll"
+        }
+      ]
+    },
+    {
+      "path": "baselines/hota180_clean/patcher_x86.dll",
+      "size": 483328,
+      "sha256": "8c10bae88bf42d30157b66611b045e5e904e14b2dda66988e90163bc0d3626bf",
+      "machine": "0x014C",
+      "timestamp_utc": "2025-07-04T03:40:30+00:00",
+      "image_base": 268435456,
+      "entrypoint_va": 268512742,
+      "version": {
+        "file_version": "4.18.2.0",
+        "product_version": "4.18.2.0",
+        "file_flags": 0,
+        "file_type": 2
+      },
+      "sections": [
+        {
+          "name": ".text",
+          "rva": 4096,
+          "virtual_size": 382625,
+          "raw_offset": 1024,
+          "raw_size": 382976,
+          "characteristics": "0x60000020",
+          "entropy": 6.671533
+        },
+        {
+          "name": ".rdata",
+          "rva": 389120,
+          "virtual_size": 77954,
+          "raw_offset": 384000,
+          "raw_size": 78336,
+          "characteristics": "0x40000040",
+          "entropy": 5.665951
+        },
+        {
+          "name": ".data",
+          "rva": 471040,
+          "virtual_size": 278820,
+          "raw_offset": 462336,
+          "raw_size": 3584,
+          "characteristics": "0xC0000040",
+          "entropy": 3.39587
+        },
+        {
+          "name": ".rsrc",
+          "rva": 753664,
+          "virtual_size": 1368,
+          "raw_offset": 465920,
+          "raw_size": 1536,
+          "characteristics": "0x40000040",
+          "entropy": 3.872882
+        },
+        {
+          "name": ".reloc",
+          "rva": 757760,
+          "virtual_size": 15448,
+          "raw_offset": 467456,
+          "raw_size": 15872,
+          "characteristics": "0x42000040",
+          "entropy": 6.636019
+        }
+      ],
+      "imports": [
+        {
+          "dll": "KERNEL32.dll",
+          "symbols": [
+            {
+              "name": "GetStdHandle",
+              "ordinal": null,
+              "iat_va": 268824576
+            },
+            {
+              "name": "GetConsoleScreenBufferInfo",
+              "ordinal": null,
+              "iat_va": 268824580
+            },
+            {
+              "name": "SetConsoleTextAttribute",
+              "ordinal": null,
+              "iat_va": 268824584
+            },
+            {
+              "name": "AllocConsole",
+              "ordinal": null,
+              "iat_va": 268824588
+            },
+            {
+              "name": "WriteConsoleA",
+              "ordinal": null,
+              "iat_va": 268824592
+            },
+            {
+              "name": "VirtualAlloc",
+              "ordinal": null,
+              "iat_va": 268824596
+            },
+            {
+              "name": "GetProcAddress",
+              "ordinal": null,
+              "iat_va": 268824600
+            },
+            {
+              "name": "LocalAlloc",
+              "ordinal": null,
+              "iat_va": 268824604
+            },
+            {
+              "name": "LocalFree",
+              "ordinal": null,
+              "iat_va": 268824608
+            },
+            {
+              "name": "VirtualProtect",
+              "ordinal": null,
+              "iat_va": 268824612
+            },
+            {
+              "name": "GetLastError",
+              "ordinal": null,
+              "iat_va": 268824616
+            },
+            {
+              "name": "Beep",
+              "ordinal": null,
+              "iat_va": 268824620
+            },
+            {
+              "name": "TlsAlloc",
+              "ordinal": null,
+              "iat_va": 268824624
+            },
+            {
+              "name": "TlsGetValue",
+              "ordinal": null,
+              "iat_va": 268824628
+            },
+            {
+              "name": "TlsSetValue",
+              "ordinal": null,
+              "iat_va": 268824632
+            },
+            {
+              "name": "TlsFree",
+              "ordinal": null,
+              "iat_va": 268824636
+            },
+            {
+              "name": "GetModuleFileNameA",
+              "ordinal": null,
+              "iat_va": 268824640
+            },
+            {
+              "name": "GetModuleHandleA",
+              "ordinal": null,
+              "iat_va": 268824644
+            },
+            {
+              "name": "GetModuleHandleExA",
+              "ordinal": null,
+              "iat_va": 268824648
+            },
+            {
+              "name": "SetCurrentDirectoryA",
+              "ordinal": null,
+              "iat_va": 268824652
+            },
+            {
+              "name": "GetCurrentDirectoryA",
+              "ordinal": null,
+              "iat_va": 268824656
+            },
+            {
+              "name": "WaitForSingleObjectEx",
+              "ordinal": null,
+              "iat_va": 268824660
+            },
+            {
+              "name": "UnhandledExceptionFilter",
+              "ordinal": null,
+              "iat_va": 268824664
+            },
+            {
+              "name": "SetUnhandledExceptionFilter",
+              "ordinal": null,
+              "iat_va": 268824668
+            },
+            {
+              "name": "GetCurrentProcess",
+              "ordinal": null,
+              "iat_va": 268824672
+            },
+            {
+              "name": "TerminateProcess",
+              "ordinal": null,
+              "iat_va": 268824676
+            },
+            {
+              "name": "IsProcessorFeaturePresent",
+              "ordinal": null,
+              "iat_va": 268824680
+            },
+            {
+              "name": "IsDebuggerPresent",
+              "ordinal": null,
+              "iat_va": 268824684
+            },
+            {
+              "name": "GetStartupInfoW",
+              "ordinal": null,
+              "iat_va": 268824688
+            },
+            {
+              "name": "GetModuleHandleW",
+              "ordinal": null,
+              "iat_va": 268824692
+            },
+            {
+              "name": "QueryPerformanceCounter",
+              "ordinal": null,
+              "iat_va": 268824696
+            },
+            {
+              "name": "GetCurrentProcessId",
+              "ordinal": null,
+              "iat_va": 268824700
+            },
+            {
+              "name": "GetCurrentThreadId",
+              "ordinal": null,
+              "iat_va": 268824704
+            },
+            {
+              "name": "GetSystemTimeAsFileTime",
+              "ordinal": null,
+              "iat_va": 268824708
+            },
+            {
+              "name": "InitializeSListHead",
+              "ordinal": null,
+              "iat_va": 268824712
+            },
+            {
+              "name": "RaiseException",
+              "ordinal": null,
+              "iat_va": 268824716
+            },
+            {
+              "name": "RtlUnwind",
+              "ordinal": null,
+              "iat_va": 268824720
+            },
+            {
+              "name": "InterlockedPushEntrySList",
+              "ordinal": null,
+              "iat_va": 268824724
+            },
+            {
+              "name": "InterlockedFlushSList",
+              "ordinal": null,
+              "iat_va": 268824728
+            },
+            {
+              "name": "SetLastError",
+              "ordinal": null,
+              "iat_va": 268824732
+            },
+            {
+              "name": "EncodePointer",
+              "ordinal": null,
+              "iat_va": 268824736
+            },
+            {
+              "name": "EnterCriticalSection",
+              "ordinal": null,
+              "iat_va": 268824740
+            },
+            {
+              "name": "LeaveCriticalSection",
+              "ordinal": null,
+              "iat_va": 268824744
+            },
+            {
+              "name": "DeleteCriticalSection",
+              "ordinal": null,
+              "iat_va": 268824748
+            },
+            {
+              "name": "InitializeCriticalSectionAndSpinCount",
+              "ordinal": null,
+              "iat_va": 268824752
+            },
+            {
+              "name": "FreeLibrary",
+              "ordinal": null,
+              "iat_va": 268824756
+            },
+            {
+              "name": "LoadLibraryExW",
+              "ordinal": null,
+              "iat_va": 268824760
+            },
+            {
+              "name": "ExitProcess",
+              "ordinal": null,
+              "iat_va": 268824764
+            },
+            {
+              "name": "GetModuleHandleExW",
+              "ordinal": null,
+              "iat_va": 268824768
+            },
+            {
+              "name": "GetModuleFileNameW",
+              "ordinal": null,
+              "iat_va": 268824772
+            },
+            {
+              "name": "MultiByteToWideChar",
+              "ordinal": null,
+              "iat_va": 268824776
+            },
+            {
+              "name": "WideCharToMultiByte",
+              "ordinal": null,
+              "iat_va": 268824780
+            },
+            {
+              "name": "HeapFree",
+              "ordinal": null,
+              "iat_va": 268824784
+            },
+            {
+              "name": "HeapAlloc",
+              "ordinal": null,
+              "iat_va": 268824788
+            },
+            {
+              "name": "GetStringTypeW",
+              "ordinal": null,
+              "iat_va": 268824792
+            },
+            {
+              "name": "GetCurrentThread",
+              "ordinal": null,
+              "iat_va": 268824796
+            },
+            {
+              "name": "GetACP",
+              "ordinal": null,
+              "iat_va": 268824800
+            },
+            {
+              "name": "CloseHandle",
+              "ordinal": null,
+              "iat_va": 268824804
+            },
+            {
+              "name": "GetFileType",
+              "ordinal": null,
+              "iat_va": 268824808
+            },
+            {
+              "name": "ReadFile",
+              "ordinal": null,
+              "iat_va": 268824812
+            },
+            {
+              "name": "SetFilePointerEx",
+              "ordinal": null,
+              "iat_va": 268824816
+            },
+            {
+              "name": "GetDateFormatW",
+              "ordinal": null,
+              "iat_va": 268824820
+            },
+            {
+              "name": "GetTimeFormatW",
+              "ordinal": null,
+              "iat_va": 268824824
+            },
+            {
+              "name": "CompareStringW",
+              "ordinal": null,
+              "iat_va": 268824828
+            },
+            {
+              "name": "LCMapStringW",
+              "ordinal": null,
+              "iat_va": 268824832
+            },
+            {
+              "name": "GetLocaleInfoW",
+              "ordinal": null,
+              "iat_va": 268824836
+            },
+            {
+              "name": "IsValidLocale",
+              "ordinal": null,
+              "iat_va": 268824840
+            },
+            {
+              "name": "GetUserDefaultLCID",
+              "ordinal": null,
+              "iat_va": 268824844
+            },
+            {
+              "name": "EnumSystemLocalesW",
+              "ordinal": null,
+              "iat_va": 268824848
+            },
+            {
+              "name": "FindClose",
+              "ordinal": null,
+              "iat_va": 268824852
+            },
+            {
+              "name": "FindFirstFileExA",
+              "ordinal": null,
+              "iat_va": 268824856
+            },
+            {
+              "name": "FindFirstFileExW",
+              "ordinal": null,
+              "iat_va": 268824860
+            },
+            {
+              "name": "FindNextFileA",
+              "ordinal": null,
+              "iat_va": 268824864
+            },
+            {
+              "name": "FindNextFileW",
+              "ordinal": null,
+              "iat_va": 268824868
+            },
+            {
+              "name": "IsValidCodePage",
+              "ordinal": null,
+              "iat_va": 268824872
+            },
+            {
+              "name": "GetOEMCP",
+              "ordinal": null,
+              "iat_va": 268824876
+            },
+            {
+              "name": "GetCPInfo",
+              "ordinal": null,
+              "iat_va": 268824880
+            },
+            {
+              "name": "GetCommandLineA",
+              "ordinal": null,
+              "iat_va": 268824884
+            },
+            {
+              "name": "GetCommandLineW",
+              "ordinal": null,
+              "iat_va": 268824888
+            },
+            {
+              "name": "GetEnvironmentStringsW",
+              "ordinal": null,
+              "iat_va": 268824892
+            },
+            {
+              "name": "FreeEnvironmentStringsW",
+              "ordinal": null,
+              "iat_va": 268824896
+            },
+            {
+              "name": "SetEnvironmentVariableA",
+              "ordinal": null,
+              "iat_va": 268824900
+            },
+            {
+              "name": "SetEnvironmentVariableW",
+              "ordinal": null,
+              "iat_va": 268824904
+            },
+            {
+              "name": "GetProcessHeap",
+              "ordinal": null,
+              "iat_va": 268824908
+            },
+            {
+              "name": "SetConsoleCtrlHandler",
+              "ordinal": null,
+              "iat_va": 268824912
+            },
+            {
+              "name": "SetStdHandle",
+              "ordinal": null,
+              "iat_va": 268824916
+            },
+            {
+              "name": "FlushFileBuffers",
+              "ordinal": null,
+              "iat_va": 268824920
+            },
+            {
+              "name": "WriteFile",
+              "ordinal": null,
+              "iat_va": 268824924
+            },
+            {
+              "name": "GetConsoleCP",
+              "ordinal": null,
+              "iat_va": 268824928
+            },
+            {
+              "name": "GetConsoleMode",
+              "ordinal": null,
+              "iat_va": 268824932
+            },
+            {
+              "name": "CreateFileW",
+              "ordinal": null,
+              "iat_va": 268824936
+            },
+            {
+              "name": "DecodePointer",
+              "ordinal": null,
+              "iat_va": 268824940
+            },
+            {
+              "name": "ReadConsoleW",
+              "ordinal": null,
+              "iat_va": 268824944
+            },
+            {
+              "name": "HeapSize",
+              "ordinal": null,
+              "iat_va": 268824948
+            },
+            {
+              "name": "HeapReAlloc",
+              "ordinal": null,
+              "iat_va": 268824952
+            },
+            {
+              "name": "WriteConsoleW",
+              "ordinal": null,
+              "iat_va": 268824956
+            },
+            {
+              "name": "SetEndOfFile",
+              "ordinal": null,
+              "iat_va": 268824960
+            },
+            {
+              "name": "OutputDebugStringA",
+              "ordinal": null,
+              "iat_va": 268824964
+            },
+            {
+              "name": "OutputDebugStringW",
+              "ordinal": null,
+              "iat_va": 268824968
+            },
+            {
+              "name": "CreateThread",
+              "ordinal": null,
+              "iat_va": 268824972
+            }
+          ]
+        }
+      ],
+      "patching_related_imports": [
+        {
+          "dll": "KERNEL32.dll",
+          "name": "VirtualAlloc",
+          "iat_va": 268824596
+        },
+        {
+          "dll": "KERNEL32.dll",
+          "name": "GetProcAddress",
+          "iat_va": 268824600
+        },
+        {
+          "dll": "KERNEL32.dll",
+          "name": "VirtualProtect",
+          "iat_va": 268824612
+        },
+        {
+          "dll": "KERNEL32.dll",
+          "name": "GetModuleHandleA",
+          "iat_va": 268824644
+        },
+        {
+          "dll": "KERNEL32.dll",
+          "name": "GetModuleHandleW",
+          "iat_va": 268824692
+        },
+        {
+          "dll": "KERNEL32.dll",
+          "name": "WriteFile",
+          "iat_va": 268824924
+        },
+        {
+          "dll": "KERNEL32.dll",
+          "name": "CreateFileW",
+          "iat_va": 268824936
+        },
+        {
+          "dll": "KERNEL32.dll",
+          "name": "OutputDebugStringA",
+          "iat_va": 268824964
+        },
+        {
+          "dll": "KERNEL32.dll",
+          "name": "OutputDebugStringW",
+          "iat_va": 268824968
+        }
+      ],
+      "exports": [
+        {
+          "name": "_GetPatcherX86@0",
+          "ordinal": 1,
+          "rva": 73968,
+          "va": 268509424
+        },
+        {
+          "name": "_GetPatcherX86Version@0",
+          "ordinal": 2,
+          "rva": 74256,
+          "va": 268509712
+        }
+      ],
+      "candidate_address_literal_hits": [],
+      "reference_signature_hits": [],
+      "string_count": 2465,
+      "relevant_strings": [
+        {
+          "offset": 384629,
+          "encoding": "ascii",
+          "value": "Patcher_x86: Assembler: %d: \"%s\""
+        },
+        {
+          "offset": 384693,
+          "encoding": "ascii",
+          "value": "Patcher_x86: Assembler: Duplicate label \"%s\" found!"
+        },
+        {
+          "offset": 384765,
+          "encoding": "ascii",
+          "value": "Patcher_x86: Assembler: %d: \"%s\""
+        },
+        {
+          "offset": 402876,
+          "encoding": "ascii",
+          "value": "Patch "
+        },
+        {
+          "offset": 402884,
+          "encoding": "ascii",
+          "value": "LoHook"
+        },
+        {
+          "offset": 402892,
+          "encoding": "ascii",
+          "value": "HiHook"
+        },
+        {
+          "offset": 402948,
+          "encoding": "ascii",
+          "value": "patcher_x86.dll"
+        },
+        {
+          "offset": 402972,
+          "encoding": "ascii",
+          "value": "patcher_x86.ini"
+        },
+        {
+          "offset": 403080,
+          "encoding": "ascii",
+          "value": "  patches count: %u"
+        },
+        {
+          "offset": 403268,
+          "encoding": "ascii",
+          "value": "N_LAST_RECURSIVE_HOOK_ADDRESS = 0x%X"
+        },
+        {
+          "offset": 403834,
+          "encoding": "ascii",
+          "value": "ERROR!   %.8X: can not apply CALL_ HiHook! (owner: %s) Wrong opcode: %.2X %.2X ...!"
+        },
+        {
+          "offset": 403930,
+          "encoding": "ascii",
+          "value": "ERROR!   Can not create %s at %.8X (%s): Wrong Patcher Instance!"
+        },
+        {
+          "offset": 404185,
+          "encoding": "ascii",
+          "value": "Patcher_x86: FATAL ERROR! Cann't create Jmp/Hook at 0x%.8X! Unknown opcode."
+        },
+        {
+          "offset": 404281,
+          "encoding": "ascii",
+          "value": "Patcher_x86: CreateAsmHook: too many _ExecDefault commands!"
+        },
+        {
+          "offset": 404360,
+          "encoding": "ascii",
+          "value": "__Hook_Ptr"
+        },
+        {
+          "offset": 404424,
+          "encoding": "ascii",
+          "value": "_lohook_in_xp: TlsGetValue failed."
+        },
+        {
+          "offset": 404460,
+          "encoding": "ascii",
+          "value": "_lohook_in_xp: TlsSetValue failed."
+        },
+        {
+          "offset": 404536,
+          "encoding": "ascii",
+          "value": "push __Hook_Ptr"
+        },
+        {
+          "offset": 454108,
+          "encoding": "ascii",
+          "value": "C:\\Ultra\\Projects\\HD3x\\Sources\\Release\\patcher_x86.pdb"
+        },
+        {
+          "offset": 459548,
+          "encoding": "ascii",
+          "value": "patcher_x86.dll"
+        },
+        {
+          "offset": 459564,
+          "encoding": "ascii",
+          "value": "_GetPatcherX86@0"
+        },
+        {
+          "offset": 459581,
+          "encoding": "ascii",
+          "value": "_GetPatcherX86Version@0"
+        },
+        {
+          "offset": 460218,
+          "encoding": "ascii",
+          "value": "VirtualProtect"
+        },
+        {
+          "offset": 461872,
+          "encoding": "ascii",
+          "value": "OutputDebugStringA"
+        },
+        {
+          "offset": 461894,
+          "encoding": "ascii",
+          "value": "OutputDebugStringW"
+        },
+        {
+          "offset": 464956,
+          "encoding": "ascii",
+          "value": ".?AVPatch@@"
+        },
+        {
+          "offset": 464976,
+          "encoding": "ascii",
+          "value": ".?AVPatcherInstance@@"
+        },
+        {
+          "offset": 465008,
+          "encoding": "ascii",
+          "value": ".?AVLoHook@@"
+        },
+        {
+          "offset": 465032,
+          "encoding": "ascii",
+          "value": ".?AVHiHook@@"
+        },
+        {
+          "offset": 465056,
+          "encoding": "ascii",
+          "value": ".?AVNewHiHook@@"
+        },
+        {
+          "offset": 465080,
+          "encoding": "ascii",
+          "value": ".?AVPatcher@@"
+        },
+        {
+          "offset": 466272,
+          "encoding": "utf16le",
+          "value": "patcher_x86 Dynamic Link Library"
+        },
+        {
+          "offset": 466424,
+          "encoding": "utf16le",
+          "value": "patcher_x86"
+        },
+        {
+          "offset": 466692,
+          "encoding": "utf16le",
+          "value": "patcher_x86.dll"
+        },
+        {
+          "offset": 466756,
+          "encoding": "utf16le",
+          "value": "patcher x86"
+        }
+      ]
+    }
+  ]
+}

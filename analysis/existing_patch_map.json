@@ -1,15 +1,86 @@
 {
   "schema_version": 1,
-  "status": "incomplete",
+  "status": "partial_static_map_without_clean_baseline",
   "trusted_baseline": {
     "name": "Patch_v1.8",
     "source_zip_sha256": "13520ef74a9decd28fdcbe21ecf630d046ea04561570a9b16bbddd3b8f76ea52",
-    "internal_files_verified": 12
+    "internal_files_verified": 12,
+    "standard_exe_sha256": "3a2de7000a79040c42633dcd512ee76e5568bad260622f5cac8a8c7f6512abf6",
+    "hd_exe_sha256": "7c3c6deca0c3afbb2e751512feefc65da5c5ea47536f337264e1a6cc6da826c2"
   },
   "blocked_by": [
     "clean HotA 1.8.0 h3hota.exe not provided",
     "clean HotA 1.8.0 h3hota HD.exe not provided",
     "runtime DLL and patcher inputs not provided"
   ],
-  "mapped_changes": []
+  "standard_vs_hd": {
+    "same_size": true,
+    "differing_bytes": 21,
+    "ranges": [
+      {
+        "file_offset": "0x00095590",
+        "va": "0x00495590",
+        "length": 3
+      },
+      {
+        "file_offset": "0x000955B7",
+        "va": "0x004955B7",
+        "length": 9
+      },
+      {
+        "file_offset": "0x0025C6DC",
+        "va": "0x0065C6DC",
+        "length": 9,
+        "assessment": "import name nullmss vs _hd3_.dll"
+      }
+    ]
+  },
+  "mapped_changes": [
+    {
+      "id": "existing_hook_4e65dc",
+      "present_in": [
+        "h3hota.exe",
+        "h3hota HD.exe"
+      ],
+      "hook_va": "0x004E65DC",
+      "hook_bytes": "E9 1F 37 15 00",
+      "cave_va_start": "0x00639D00",
+      "cave_va_end_exclusive": "0x00639D20",
+      "cave_bytes": "8B 48 1A 81 F9 9B 00 00 00 0F 84 D8 C8 EA FF 81 F9 8D 00 00 00 0F 84 CC C8 EA FF E9 CA C8 EA FF",
+      "assessment": "likely stable Elf Queen/speed-related logic; final attribution awaits clean diff",
+      "clean_original_bytes": null,
+      "rollback_bytes": null
+    },
+    {
+      "id": "adela_bless_zero_cost",
+      "present_in": [
+        "h3hota.exe",
+        "h3hota HD.exe"
+      ],
+      "hook_va": "0x004E5597",
+      "hook_bytes": "E9 A4 47 15 00",
+      "cave_va_start": "0x00639D40",
+      "cave_va_end_exclusive": "0x00639D58",
+      "cave_bytes": "83 7B 1A 09 75 08 83 7D 08 29 75 02 31 F6 8B C6 5E 5B 5D E9 44 B8 EA FF",
+      "assessment": "hero ID 9 and Bless spell ID 41 force final cost register ESI to zero",
+      "clean_original_bytes": null,
+      "rollback_bytes": null
+    }
+  ],
+  "cure_static_candidates": {
+    "cure_core_va": "0x00446220",
+    "single_call_va": "0x005A1B05",
+    "mass_call_va": "0x005A1BB4",
+    "get_resurrection_target_va": "0x005A3FD0",
+    "resurrect_target_va": "0x005A7870",
+    "evidence_level": "static_only"
+  },
+  "unallocated_zero_regions": [
+    {
+      "va_start": "0x00639D20",
+      "va_end_exclusive": "0x00639D40",
+      "allocatable": false,
+      "reason": "clean baseline and complete patch map missing"
+    }
+  ]
 }
