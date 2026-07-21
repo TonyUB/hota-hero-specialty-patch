@@ -49,12 +49,16 @@ Stage 4 is an experimental visual-only follow-up:
   Cure crashed at `HotA.dll+0x38060`: the mass cast-message routine received a
   null explicit target before `[battle+0x547C]` had been initialized with the
   affected stacks.
-- `TEST/Patch_v2.6_VISUAL_TEST6.zip` supersedes TEST5. Single Cure keeps the
-  accepted TEST5 ordering. Mass Cure now validates and premarks living/dead
-  targets, calls the original cast-message routine only after the affected
-  table is complete, and then applies Cure/permanent resurrection in a second
-  phase.
-- TEST6 keeps the accepted Stage 3 gameplay bytes and routes only Cure-triggered
+- `TEST/Patch_v2.6_VISUAL_TEST6.zip` is withdrawn. Mass Cure still crashed; the
+  direct return address `0x005A1B82` is immediately after the native effect
+  check. HotA requires each target's check to be followed immediately by its
+  settlement, so TEST6's two-phase validation/application split was unsafe.
+- `TEST/Patch_v2.6_VISUAL_TEST7.zip` restores TEST4's immediate per-target
+  check/settlement order. It records the combat-log vector count before mass
+  Cure, lets all native state-sensitive work and the original cast formatter
+  finish at their original timing, then rotates only the newly appended pointer
+  range and refreshes the log view.
+- TEST7 keeps the accepted Stage 3 gameplay bytes and routes only Cure-triggered
   resurrection calls through a scoped visual flag.
 - Native resurrection state updates, corpse placement, permanence, and the
   resurrection combat-log path remain before the visual gate.
@@ -68,7 +72,7 @@ Stage 4 is an experimental visual-only follow-up:
   to standing group 2 instead of leaving the creature on group 5 frame zero.
 - The scoped flag is cleared at the native public cleanup entry, including the
   autoresolve/no-animation branch.
-- Do not promote TEST6 or replace `Download/Patch_v2.5.zip` until the user
+- Do not promote TEST7 or replace `Download/Patch_v2.5.zip` until the user
   confirms the Cure cast line appears before every revival line in both single
   and mass Cure, while the already accepted TEST4 behavior remains unchanged.
 
@@ -125,7 +129,8 @@ Stage 4 is an experimental visual-only follow-up:
 - Stage 4 valid-object/soundless retest: `Patch_v2.6_VISUAL_TEST3`
 - Stage 4 native stand-up completion retest: `Patch_v2.6_VISUAL_TEST4`
 - Stage 4 Cure combat-log ordering retest: `Patch_v2.6_VISUAL_TEST5`
-- Stage 4 safe two-phase mass Cure retest: `Patch_v2.6_VISUAL_TEST6`
+- Withdrawn Stage 4 two-phase mass Cure retest: `Patch_v2.6_VISUAL_TEST6`
+- Stage 4 post-settlement combat-log rotation retest: `Patch_v2.6_VISUAL_TEST7`
 - Future formal Stage 4 release after runtime acceptance: `Patch_v2.6`
 - Do not reuse historical version numbers.
 
