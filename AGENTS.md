@@ -39,8 +39,17 @@ Stage 4 is an experimental visual-only follow-up:
   presentation/sound, circle suppression, Resurrection-sound suppression, and
   single/mass resurrection. It stopped revived creatures on death-animation
   frame zero (visually the hit pose) because it ran exactly `N` reverse frames.
-- `TEST/Patch_v2.6_VISUAL_TEST4.zip` supersedes TEST3 for runtime testing. It
-  keeps the accepted Stage 3 gameplay bytes and routes only Cure-triggered
+- `TEST/Patch_v2.6_VISUAL_TEST4.zip` passed all runtime gates: startup,
+  single/mass resurrection, quantities, permanence, undead exclusion,
+  overlapping corpses, occupied corpses, Cure-only sound/effect isolation,
+  per-stack redraw, stand-up completion, and ordinary Resurrection behavior.
+  Its only remaining issue was cosmetic combat-log ordering: native revival
+  lines appeared before the outer Cure cast line.
+- `TEST/Patch_v2.6_VISUAL_TEST5.zip` supersedes TEST4 for runtime testing. It
+  keeps the accepted TEST4 gameplay and presentation bytes, then reorders the
+  existing fixed-size single/mass Cure blocks so the unchanged Cure cast-log
+  call runs before CureCore and the mass corpse scan.
+- TEST5 keeps the accepted Stage 3 gameplay bytes and routes only Cure-triggered
   resurrection calls through a scoped visual flag.
 - Native resurrection state updates, corpse placement, permanence, and the
   resurrection combat-log path remain before the visual gate.
@@ -54,10 +63,9 @@ Stage 4 is an experimental visual-only follow-up:
   to standing group 2 instead of leaving the creature on group 5 frame zero.
 - The scoped flag is cleared at the native public cleanup entry, including the
   autoresolve/no-animation branch.
-- Do not promote this build or replace `Download/Patch_v2.5.zip` until the user
-  confirms startup stability, Cure animation/sound, suppressed circle and
-  Resurrection sound, per-stack stand-up/redraw, ordinary Resurrection visuals
-  and sound, quantities, and post-battle permanence.
+- Do not promote TEST5 or replace `Download/Patch_v2.5.zip` until the user
+  confirms the Cure cast line appears before every revival line in both single
+  and mass Cure, while the already accepted TEST4 behavior remains unchanged.
 
 ## Non-negotiable rules
 
@@ -111,6 +119,7 @@ Stage 4 is an experimental visual-only follow-up:
 - Stage 4 circle/stand-up split retest: `Patch_v2.6_VISUAL_TEST2`
 - Stage 4 valid-object/soundless retest: `Patch_v2.6_VISUAL_TEST3`
 - Stage 4 native stand-up completion retest: `Patch_v2.6_VISUAL_TEST4`
+- Stage 4 Cure combat-log ordering retest: `Patch_v2.6_VISUAL_TEST5`
 - Future formal Stage 4 release after runtime acceptance: `Patch_v2.6`
 - Do not reuse historical version numbers.
 
