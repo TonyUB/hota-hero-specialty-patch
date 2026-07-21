@@ -325,7 +325,14 @@ def contiguous_differences(before: bytes, after: bytes) -> list[dict[str, Any]]:
     return ranges
 
 
-def patch_executable(path: Path, payload: bytes) -> dict[str, Any]:
+def patch_executable(
+    path: Path,
+    payload: bytes,
+    *,
+    payload_label: str = "diagnostic-only wrapper, logger, and mutable ASCII template",
+    forbidden_address_literals: dict[str, bytes] | None = None,
+    required_address_literals: dict[str, bytes] | None = None,
+) -> dict[str, Any]:
     original = path.read_bytes()
     pe = pefile.PE(data=original, fast_load=False)
     if pe.OPTIONAL_HEADER.ImageBase != 0x00400000:
@@ -371,7 +378,7 @@ def patch_executable(path: Path, payload: bytes) -> dict[str, Any]:
     patched[cave_offset:cave_end] = payload
     logical_regions.append(
         {
-            "label": "diagnostic-only wrapper, logger, and mutable ASCII template",
+            "label": payload_label,
             "va": CAVE_VA,
             "file_offset": cave_offset,
             "length": len(payload),
@@ -408,13 +415,19 @@ def patch_executable(path: Path, payload: bytes) -> dict[str, Any]:
             }
         )
 
-    forbidden = {
-        "GetResurrectionTarget": struct.pack("<I", 0x005A3FD0),
-        "ResurrectTarget": struct.pack("<I", 0x005A7870),
-    }
-    for label, needle in forbidden.items():
+    if forbidden_address_literals is None:
+        forbidden_address_literals = {
+            "GetResurrectionTarget": struct.pack("<I", 0x005A3FD0),
+            "ResurrectTarget": struct.pack("<I", 0x005A7870),
+        }
+    if required_address_literals is None:
+        required_address_literals = {}
+    for label, needle in forbidden_address_literals.items():
         if needle in payload:
             raise RuntimeError(f"Diagnostic payload unexpectedly references {label}")
+    for label, needle in required_address_literals.items():
+        if needle not in payload:
+            raise RuntimeError(f"Payload does not reference required address {label}")
 
     rollback = bytearray(patched_bytes)
     for region in logical_regions:
