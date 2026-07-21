@@ -35,16 +35,23 @@ Stage 4 is an experimental visual-only follow-up:
 - `TEST/Patch_v2.6_VISUAL_TEST2.zip` is withdrawn after a runtime crash at
   `HotA.dll+0x64AFF`. Supplying effect id `-1` cleared the native effect object,
   but HotA's extra battle renderer dereferenced that pointer without a null check.
-- `TEST/Patch_v2.6_VISUAL_TEST3.zip` supersedes TEST2 for runtime testing. It
+- `TEST/Patch_v2.6_VISUAL_TEST3.zip` passed startup, crash prevention, Cure
+  presentation/sound, circle suppression, Resurrection-sound suppression, and
+  single/mass resurrection. It stopped revived creatures on death-animation
+  frame zero (visually the hit pose) because it ran exactly `N` reverse frames.
+- `TEST/Patch_v2.6_VISUAL_TEST4.zip` supersedes TEST3 for runtime testing. It
   keeps the accepted Stage 3 gameplay bytes and routes only Cure-triggered
   resurrection calls through a scoped visual flag.
 - Native resurrection state updates, corpse placement, permanence, and the
   resurrection combat-log path remain before the visual gate.
-- TEST3 preserves the valid Resurrection effect object, writes an out-of-range
+- TEST4 preserves the valid Resurrection effect object, writes an out-of-range
   public frame index only during Cure-triggered stand-up redraws, and bypasses
   only the Resurrection sound call. It keeps the creature's native stand-up
   frames and the original Cure presentation/sound. Ordinary Resurrection uses
   the original frame index, sound, circle effect, and stand-up path throughout.
+- TEST4 runs the reverse death animation for `N+1` iterations. The added final
+  iteration reaches the original `0x005A7B3D` transition from animation group 5
+  to standing group 2 instead of leaving the creature on group 5 frame zero.
 - The scoped flag is cleared at the native public cleanup entry, including the
   autoresolve/no-animation branch.
 - Do not promote this build or replace `Download/Patch_v2.5.zip` until the user
@@ -103,6 +110,7 @@ Stage 4 is an experimental visual-only follow-up:
 - Stage 4 Cure-animation isolation test: `Patch_v2.6_VISUAL_TEST1`
 - Stage 4 circle/stand-up split retest: `Patch_v2.6_VISUAL_TEST2`
 - Stage 4 valid-object/soundless retest: `Patch_v2.6_VISUAL_TEST3`
+- Stage 4 native stand-up completion retest: `Patch_v2.6_VISUAL_TEST4`
 - Future formal Stage 4 release after runtime acceptance: `Patch_v2.6`
 - Do not reuse historical version numbers.
 

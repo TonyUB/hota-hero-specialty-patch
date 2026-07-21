@@ -40,6 +40,11 @@ from build_stage3_patch import (
     relative_branch,
 )
 BUILD_NAME = "Patch_v2.6_VISUAL_TEST3"
+BUILD_SCOPE = "stage4_valid_effect_hidden_frame_soundless_standup_test"
+SUPERSEDES_TEST_BUILD = "Patch_v2.6_VISUAL_TEST2"
+SUPERSEDED_RESULT_FIELD = "test2_failure"
+SUPERSEDED_RUNTIME_RESULT = "HotA.dll+0x64AFF null resurrection-effect dereference"
+EXTRA_STANDUP_COMPLETION_FRAME = False
 
 VISUAL_TAIL_GATE_VA = 0x00639D20
 SILENT_FLAG_VA = 0x00639D3F
@@ -82,6 +87,9 @@ silent_resurrect_entry:
     if not helper_appended:
         raise RuntimeError("Stage 3 secondary payload no longer ends at the helper address")
 
+    completion_frame_statement = (
+        "    inc eax\n" if EXTRA_STANDUP_COMPLETION_FRAME else ""
+    )
     tail_source = f"""
 cure_visual_tail_gate:
     cmp byte ptr [{SILENT_FLAG_VA:#x}], 0
@@ -93,16 +101,22 @@ normal_resurrection_tail:
 cure_soundless_standup:
     pop edx
     mov eax, dword ptr [ebp + 0x10]
-    mov byte ptr [esi + 0x20], 1
+{completion_frame_statement}    mov byte ptr [esi + 0x20], 1
     mov dword ptr [ebp + 0x0c], eax
     jmp {SOUNDLESS_STANDUP_ENTRY_VA:#x}
 """
     tail_code, tail_count = assemble(tail_source, VISUAL_TAIL_GATE_VA)
-    if VISUAL_TAIL_GATE_VA + len(tail_code) > SILENT_FLAG_VA:
+    tail_end_va = VISUAL_TAIL_GATE_VA + len(tail_code)
+    if tail_end_va > 0x00639D40:
+        raise RuntimeError("Visual tail gate exceeds the validated low cave")
+    if VISUAL_TAIL_GATE_VA <= SILENT_FLAG_VA < tail_end_va:
         raise RuntimeError("Visual tail gate overlaps its runtime flag")
     low_payload = bytearray(0x00639D40 - VISUAL_TAIL_GATE_VA)
     low_payload[: len(tail_code)] = tail_code
-    low_payload[SILENT_FLAG_VA - VISUAL_TAIL_GATE_VA] = 0
+    flag_placed = False
+    if VISUAL_TAIL_GATE_VA <= SILENT_FLAG_VA < 0x00639D40:
+        low_payload[SILENT_FLAG_VA - VISUAL_TAIL_GATE_VA] = 0
+        flag_placed = True
 
     frame_source = f"""
 cure_frame_counter_gate:
@@ -130,10 +144,22 @@ public_cleanup_gate:
     )
     if PUBLIC_CLEANUP_GATE_VA + len(cleanup_code) > 0x00639D80:
         raise RuntimeError("Public cleanup gate exceeds the validated high cave")
+    frame_end_va = FRAME_COUNTER_GATE_VA + len(frame_code)
+    cleanup_end_va = PUBLIC_CLEANUP_GATE_VA + len(cleanup_code)
+    if (
+        FRAME_COUNTER_GATE_VA <= SILENT_FLAG_VA < frame_end_va
+        or PUBLIC_CLEANUP_GATE_VA <= SILENT_FLAG_VA < cleanup_end_va
+    ):
+        raise RuntimeError("High visual helper overlaps its runtime flag")
     high_payload = bytearray(0x00639D80 - FRAME_COUNTER_GATE_VA)
     high_payload[: len(frame_code)] = frame_code
     cleanup_offset = PUBLIC_CLEANUP_GATE_VA - FRAME_COUNTER_GATE_VA
     high_payload[cleanup_offset : cleanup_offset + len(cleanup_code)] = cleanup_code
+    if FRAME_COUNTER_GATE_VA <= SILENT_FLAG_VA < 0x00639D80:
+        high_payload[SILENT_FLAG_VA - FRAME_COUNTER_GATE_VA] = 0
+        flag_placed = True
+    if not flag_placed:
+        raise RuntimeError("Runtime flag lies outside the validated visual caves")
 
     payload_regions = extended_stage3_regions + [
         (VISUAL_TAIL_GATE_VA, bytes(low_payload)),
@@ -443,7 +469,7 @@ def main() -> int:
         "build_name": BUILD_NAME,
         "release": False,
         "runtime_logging": False,
-        "scope": "stage4_valid_effect_hidden_frame_soundless_standup_test",
+        "scope": BUILD_SCOPE,
         "source_baseline": "Patch_v1.8",
         "preserves_stage3_gameplay": True,
         "cure_resurrection_effect_object_preserved": True,
@@ -485,9 +511,11 @@ def main() -> int:
             "startup_export_name_preserved": True,
         },
         "runtime_acceptance_required": True,
-        "supersedes_test_build": "Patch_v2.6_VISUAL_TEST2",
-        "test2_failure": "HotA.dll+0x64AFF null resurrection-effect dereference",
+        "supersedes_test_build": SUPERSEDES_TEST_BUILD,
+        SUPERSEDED_RESULT_FIELD: SUPERSEDED_RUNTIME_RESULT,
     }
+    if EXTRA_STANDUP_COMPLETION_FRAME:
+        report["cure_standup_completion_frame_added"] = True
 
     json_path = output_root / f"{BUILD_NAME}_manifest.json"
     instructions_path = output_root / f"{BUILD_NAME}_INSTRUCTIONS.md"
