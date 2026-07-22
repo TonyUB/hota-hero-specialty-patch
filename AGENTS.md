@@ -50,6 +50,19 @@ presentation/log-order gates passed:
   line passed, but its mass treatment records were absent because it cleared
   living records at the later corpse-scan initializer and did not hook the
   direct mass-corpse calculator call at `0x00639C98`.
+- `HOTA_NEW_HERO_V1.04_LOG_TEST2` passed battle-runtime acceptance for single
+  and mass Cure, living and fully-dead stacks, per-stack treatment totals, F6
+  values, and the final order “native Cure line -> all treatment totals ->
+  native resurrection lines”. It was not promoted because its terse
+  `creature: +H` wording still needed localization and the specialty detail
+  panel continued to use HotA.dat/HotA.dll's native `8-n` text and values.
+- `HOTA_NEW_HERO_V1.04_UI_TEST3` is the active candidate. It keeps all TEST2
+  settlement behavior, uses the localized `creature obtains H healing` line,
+  updates `Heroes\hero170.str` inside HotA.dat, and redirects only Uland/Astra
+  Cure specialty-panel calculations to the same F6 total. Its effect column is
+  `H`; its integer bonus column is `floor((H-(5P+30))*100/(5P+30))`. Static,
+  reproducible-build, rollback, and standard/HD 12-second startup gates pass;
+  the new wording and panel still require one in-game confirmation.
 - The Chinese HD pack's loose
   `_HD3_Data\Packs\H3中文-基础资源\HeroSpec.txt` overrides both HotA LOD copies.
   Any Cure-description release must patch and verify this loose file as well as
