@@ -197,13 +197,15 @@ Stage 4 development history:
 
 ## GitHub release layout
 
-- Keep Chinese and English in mutually exclusive, same-page `<details name="language">` panels in the root `README.md`; Chinese is open by default and neither language control may navigate to another page.
+- Keep Chinese, English, and copyright content in mutually exclusive, same-page `<details name="section">` panels in the root `README.md`; all three panels are collapsed by default.
 - The README must contain exactly three hero sections per language: Elf Queen,
   Uland, and Astra. Each uses the same template: hero name, biography, specialty
-  effect, starting army. Adela must not appear in the landing README.
-- The Chinese and English large titles belong inside their respective language
-  panels; neither title may appear while the other language is selected.
-- The Download button must point directly to the current ZIP rather than to the `Download/` directory or a GitHub file-preview page.
+  effect, starting army, initial profile (class plus Attack/Defense/Power/Knowledge),
+  starting skills, and creative direction. Adela must not appear in the landing README.
+- Show one bilingual large title and one bilingual expansion hint above the three
+  collapsed panels. Do not restore the old badge/button row.
+- Keep a direct current-ZIP download link inside both language panels rather than
+  linking to the `Download/` directory or a GitHub file-preview page.
 - Do not retain diagnostic ZIPs, extracted test packages, failed binaries, raw
   runtime logs, or test manifests in the published repository.
 - Keep only the newest formal patch and its release metadata in `Download/`.
