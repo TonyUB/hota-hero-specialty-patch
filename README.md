@@ -7,7 +7,7 @@
 <details name="section">
 <summary><strong>🔴 中文说明</strong></summary>
 
-**当前版本下载：** [HOTA_NEW_HERO_V1.02.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.02.zip)
+**当前版本下载：** [HOTA_NEW_HERO_V1.03.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.03.zip)
 
 ## 埃尔芙
 
@@ -58,17 +58,18 @@
 ### 当前治疗量公式
 
 ```text
-H = 10P + 30 + floor((20P + 60) × 3(L - 1) / (3L + 16 - n))
+H = floor((11L + 10P + 19) × (clamp(n, 1, 7) + 11) / 12)
+    + 10 × max(0, clamp(w, 0, 3) - 1)
 ```
 
-其中 `H` 为最终治疗/复活生命值，`P` 为英雄力量，`L` 为英雄等级，`n` 为目标生物等级（1–7）。整数除法向下取整。水系魔法等级不改变 `H`，只决定治愈术是单体施放还是群体施放。
+其中 `H` 为最终治疗/复活生命值，`P` 为英雄力量，`L` 为英雄等级，`n` 为目标生物等级（限定为 1–7），`w` 为水系魔法熟练度（无/初级/中级/高级分别取 0/1/2/3）。主公式按整数运算向下取整，随后中级/高级水系分别增加 10/20 点；原版单体/群体施法范围规则保持不变。
 
 </details>
 
 <details name="section">
 <summary><strong>🔵 English Description</strong></summary>
 
-**Current version:** [Download HOTA_NEW_HERO_V1.02.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.02.zip)
+**Current version:** [Download HOTA_NEW_HERO_V1.03.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.03.zip)
 
 ## Elf Queen
 
@@ -119,10 +120,11 @@ H = 10P + 30 + floor((20P + 60) × 3(L - 1) / (3L + 16 - n))
 ### Current Cure Formula
 
 ```text
-H = 10P + 30 + floor((20P + 60) × 3(L - 1) / (3L + 16 - n))
+H = floor((11L + 10P + 19) × (clamp(n, 1, 7) + 11) / 12)
+    + 10 × max(0, clamp(w, 0, 3) - 1)
 ```
 
-Here, `H` is the final pool of hit points available for healing and resurrection, `P` is the hero's Spell Power, `L` is the hero's level, and `n` is the target creature's tier (1–7). Integer division is rounded down. Water Magic mastery does not change `H`; it only determines whether Cure is cast on one target or as a mass spell.
+Here, `H` is the final pool of hit points available for healing and resurrection, `P` is the hero's Spell Power, `L` is the hero's level, `n` is the target creature's tier (clamped to 1–7), and `w` is Water Magic mastery (0/1/2/3 for none/basic/advanced/expert). The main expression is rounded down first, then Advanced/Expert Water Magic adds 10/20 points. The original single-target and mass-cast range rules remain unchanged.
 
 </details>
 

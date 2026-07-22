@@ -6,7 +6,7 @@
 - Never build on Patch_v1.9, v2.0, v2.1, v2.2, or v2.3.
 - Historical test packages and failed binaries are no longer retained in the
   repository. Their conclusions are preserved under `CHANGELOG/` and `analysis/`.
-- `Download/HOTA_NEW_HERO_V1.02.zip` is the current formal release.
+- `Download/HOTA_NEW_HERO_V1.03.zip` is the current formal release.
 
 ## Current milestone
 
@@ -25,18 +25,21 @@ presentation/log-order gates passed:
 - The real single-target cast path performs an additional Cure effect/resistance
   check at `0x005A05FA`. For a fully dead specialist target, bypass it only after
   `GetResurrectionTarget(..., context=0)` returns that exact stack again.
-- `Download/HOTA_NEW_HERO_V1.02.zip` inherits the runtime-accepted V1 Cure,
-  presentation, log-order, and Elf implementation. V1.02 corrects only the
-  Uland/Astra Cure specialty arithmetic and release documentation; its new
-  arithmetic still requires an in-game value check.
-- Astra starting skills remain Basic Wisdom + Basic Water Magic.
-- V1.02 Cure uses, at every Water Magic mastery,
-  `H = 10P + 30 + floor((20P + 60) * 3(L - 1) / (3L + 16 - n))`.
-  At `P=1, L=1`, the result is always 40 regardless of target tier. Water Magic
-  controls only native single-target versus mass-target casting and does not
-  change the numeric result. Both living and fully dead specialist targets
-  finish at the same custom total; non-specialists tail-call the original bonus
-  function.
+- `Download/HOTA_NEW_HERO_V1.03.zip` inherits the runtime-accepted V1 Cure,
+  presentation, log-order, and Elf implementation. V1.03 changes only the
+  Uland/Astra Cure specialty arithmetic, Astra's default second skill, and
+  release documentation; both changes still require a new-map in-game check.
+- Astra starts with Basic Wisdom + Basic Water Magic. The release performs this
+  as a direct `HotA.dat` patch to `Heroes\hero170.str`: second-skill type `9`
+  (Luck) becomes `16` (Water Magic), while its Basic level, spellbook, and
+  starting Cure spell remain unchanged.
+- V1.03 Cure uses F6 Direct:
+  `H = floor((11L + 10P + 19) * (clamp(n,1,7) + 11) / 12) + 10 * max(0, clamp(w,0,3) - 1)`.
+  Here `w=0/1/2/3` means none/basic/advanced/expert Water Magic. The Water
+  bonus is therefore `0/0/10/20` and is added after integer division. Native
+  single-target versus mass-target rules remain unchanged. Both living and
+  fully dead specialist targets finish at the same custom total;
+  non-specialists tail-call the original bonus function.
 - V1.01 was withdrawn and its package removed: it incorrectly treated the
   requested formula as the expert-Water result and preserved native -20/-10
   mastery differences. Its SHA-256 and lesson remain in `CHANGELOG/`.
@@ -188,7 +191,7 @@ Stage 4 development history:
 - After V1, adding a new hero or a new hero specialty increases the version by
   `0.1`; a numerical adjustment to existing content increases it by `0.01`.
 - V1.01 was the first numerical-adjustment release under this rule, but was
-  withdrawn. V1.02 is its corrected replacement.
+  withdrawn. V1.02 corrected it; V1.03 is the next numerical/data adjustment.
 
 - Diagnostic builds: `Patch_v2.4_diagNN`
 - User Stage 2 test: `Patch_v2.4_STAGE2_TEST`
@@ -212,7 +215,8 @@ Stage 4 development history:
 - Historical formal Stage 4 release: `Patch_v2.6`
 - Historical formal release: `HOTA_NEW_HERO_V1`
 - Withdrawn numerical release: `HOTA_NEW_HERO_V1.01`
-- Current formal release: `HOTA_NEW_HERO_V1.02`
+- Historical numerical release: `HOTA_NEW_HERO_V1.02`
+- Current formal release: `HOTA_NEW_HERO_V1.03`
 - Do not reuse historical version numbers.
 
 ## GitHub release layout
