@@ -222,6 +222,10 @@ Stage 4 development history:
   Uland, and Astra. Each uses the same template: hero name, biography, specialty
   effect, starting army, initial profile (class plus Attack/Defense/Power/Knowledge),
   starting skills, and creative direction. Adela must not appear in the landing README.
+- In each language panel, place Uland and Astra together beneath one horizontal
+  divider and one Cure-specialty group heading. Show the current Cure formula
+  after Astra. Every numerical Cure update must update both README formulas to
+  match the release manifest in the same commit.
 - Show one bilingual large title and one bilingual expansion hint above the three
   collapsed panels. Do not restore the old badge/button row.
 - Keep a direct current-ZIP download link inside both language panels rather than
