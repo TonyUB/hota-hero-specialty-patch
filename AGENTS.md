@@ -156,6 +156,8 @@ Stage 4 development history:
 
 - Elf Queen in Aenain slot: Pixie/Sprite +1 damage and +1 speed.
 - Elf Queen starts with 25/25/25 Pixies.
+- Elf Queen uses the Planeswalker class, starts with primary stats 3/1/1/1
+  (Attack/Defense/Power/Knowledge), and has Basic Tactics + Basic Offense.
 - Ivor starts with 12–24 Centaurs and 6 + 6 Wood Elves.
 - Other heroes use HotA 1.8.0 starting-army ranges.
 - Adela is fully native HotA 1.8.0; Bless uses the original mana cost and no

@@ -2,6 +2,8 @@
 
 <p align="center"><sub>点击左侧三角图标，展开对应语言或版权声明的详细内容。<br>Click the triangle icon on the left to expand your preferred language or the copyright notice.</sub></p>
 
+<p align="center">本项目专注于《英雄无敌 III：深渊号角》（HotA）1.8.0 版本的英雄新特长开发、机制研究与实机验证。<br>This project focuses on developing, researching, and playtesting new hero specialties for Heroes of Might and Magic III: Horn of the Abyss (HotA) 1.8.0.</p>
+
 <details name="section">
 <summary><strong>🔴 中文说明</strong></summary>
 
@@ -15,9 +17,9 @@
 
 **初始兵力：** 25 仙灵 / 25 仙灵 / 25 仙灵。
 
-**初始指数：** 职业：元素使；四维（攻击 / 防御 / 力量 / 知识）：0 / 0 / 3 / 3。
+**初始指数：** 职业：位面行者；四维（攻击 / 防御 / 力量 / 知识）：3 / 1 / 1 / 1。
 
-**初始技能：** 初级智慧术 / 初级气系魔法。
+**初始技能：** 初级战术 / 初级进攻。
 
 **创作方向：** 原作中不存在的新兵种特长。
 
@@ -64,9 +66,9 @@
 
 **Starting army:** 25 Pixies / 25 Pixies / 25 Pixies.
 
-**Initial profile:** Class: Elementalist; primary stats (Attack / Defense / Power / Knowledge): 0 / 0 / 3 / 3.
+**Initial profile:** Class: Planeswalker; primary stats (Attack / Defense / Power / Knowledge): 3 / 1 / 1 / 1.
 
-**Starting skills:** Basic Wisdom / Basic Air Magic.
+**Starting skills:** Basic Tactics / Basic Offense.
 
 **Creative direction:** A new creature specialty not present in the original game.
 
