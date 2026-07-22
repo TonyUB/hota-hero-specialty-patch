@@ -8,7 +8,7 @@
 - [x] `diag01_runtime_validation.md`：实机日志确认两个 Cure 调用点确实执行。
 - [x] `stage2_release_acceptance.md`：活体治疗溢出复活、亡灵负例和战后永久性已经通过实机门禁。
 - [x] `stage3_corpse_research.md`：`TEST3` 已通过单体、群体、负例、永久性、重叠尸体和占格冲突的全部实机门禁。
-- [x] `stage4_visual_isolation.md` / `stage4_logdiag01_runtime_validation.md`：治愈演出隔离、起身状态、音效及单体/群体日志顺序均已通过；该运行逻辑由 `HOTA_NEW_HERO_V1.02` 继续继承。
+- [x] `stage4_visual_isolation.md` / `stage4_logdiag01_runtime_validation.md`：治愈演出隔离、起身状态、音效及单体/群体日志顺序均已通过；该运行逻辑由 `HOTA_NEW_HERO_V1.03` 继续继承。
 - [x] `stage4_release_acceptance.md`：TEST13 到正式 v2.6 的逐字节执行文件保留、双语言 LOD 文案、旧版归档与正式包哈希已经闭合。
 - [x] `stage3_test2_runtime_results.md`：九组截图结果和剩余单体故障边界已记录。
 
@@ -20,6 +20,8 @@
 - `../tools/extract_lod.py`：安全列出/解包 H3 LOD。
 - `../tools/build_hota_new_hero_v1.py`：从已验收 v2.6 正式包可复现构建历史 V1。
 - `../tools/build_hota_new_hero_v101.py`：历史 V1.01 构建器；保留了错误的水系数值差，仅用于追溯。
-- `../tools/build_hota_new_hero_v102.py`：从 V1.01 可复现构建当前 V1.02，使所有水系等级直接得到同一公式总量，并记录公式代码、回滚字节和逐文件哈希。
+- `../tools/build_hota_new_hero_v102.py`：历史 V1.02 构建器；用于追溯上一版治疗公式。
+- `../tools/build_hota_new_hero_v103.py`：从 V1.02 可复现构建当前 V1.03，写入 F6 Direct 治疗公式，并在 `HotA.dat` 中把阿斯特拉的初级幸运术改为初级水系魔法。
+- `../tools/verify_hota_new_hero_v103.py`：校验双 EXE 公式、活体/尸体路径、阿斯特拉初始技能、LOD 文案、ZIP 成员与可复现哈希。
 
-Stage 4 运行时门禁已全部通过。当前正式版 `HOTA_NEW_HERO_V1.02` 继承该治愈运行逻辑，保持阿德拉原始耗魔，并让两位治愈特英雄在所有水系熟练度下直接使用同一总量公式和简化说明。
+Stage 4 运行时门禁已全部通过。当前正式版 `HOTA_NEW_HERO_V1.03` 继承该治愈运行逻辑，保持阿德拉原始耗魔，采用 F6 Direct 治疗公式，并把阿斯特拉的初始技能设为初级智慧术 + 初级水系魔法。V1.03 的新数值与初始技能仍需在新开地图中做一次实机确认。
