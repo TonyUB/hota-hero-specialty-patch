@@ -6,7 +6,7 @@
 - Never build on Patch_v1.9, v2.0, v2.1, v2.2, or v2.3.
 - Historical test packages and failed binaries are no longer retained in the
   repository. Their conclusions are preserved under `CHANGELOG/` and `analysis/`.
-- `Download/HOTA_NEW_HERO_V1.01.zip` is the current formal release.
+- `Download/HOTA_NEW_HERO_V1.02.zip` is the current formal release.
 
 ## Current milestone
 
@@ -25,16 +25,21 @@ presentation/log-order gates passed:
 - The real single-target cast path performs an additional Cure effect/resistance
   check at `0x005A05FA`. For a fully dead specialist target, bypass it only after
   `GetResurrectionTarget(..., context=0)` returns that exact stack again.
-- `Download/HOTA_NEW_HERO_V1.01.zip` inherits the runtime-accepted V1 Cure,
-  presentation, log-order, and Elf implementation. V1.01 changes only the
-  Uland/Astra Cure specialty arithmetic, both localized descriptions, and
-  release documentation; its new arithmetic still requires an in-game value check.
+- `Download/HOTA_NEW_HERO_V1.02.zip` inherits the runtime-accepted V1 Cure,
+  presentation, log-order, and Elf implementation. V1.02 corrects only the
+  Uland/Astra Cure specialty arithmetic and release documentation; its new
+  arithmetic still requires an in-game value check.
 - Astra starting skills remain Basic Wisdom + Basic Water Magic.
-- V1.01 expert-Water Cure uses
+- V1.02 Cure uses, at every Water Magic mastery,
   `H = 10P + 30 + floor((20P + 60) * 3(L - 1) / (3L + 16 - n))`.
-  Lower mastery levels preserve the native -20/-10 differences relative to
-  expert Water. Both living and fully dead specialist targets use the same
-  custom bonus routine; non-specialists tail-call the original bonus function.
+  At `P=1, L=1`, the result is always 40 regardless of target tier. Water Magic
+  controls only native single-target versus mass-target casting and does not
+  change the numeric result. Both living and fully dead specialist targets
+  finish at the same custom total; non-specialists tail-call the original bonus
+  function.
+- V1.01 was withdrawn and its package removed: it incorrectly treated the
+  requested formula as the expert-Water result and preserved native -20/-10
+  mastery differences. Its SHA-256 and lesson remain in `CHANGELOG/`.
 
 Stage 4 development history:
 
@@ -182,7 +187,8 @@ Stage 4 development history:
 
 - After V1, adding a new hero or a new hero specialty increases the version by
   `0.1`; a numerical adjustment to existing content increases it by `0.01`.
-- V1.01 is the first numerical-adjustment release under this rule.
+- V1.01 was the first numerical-adjustment release under this rule, but was
+  withdrawn. V1.02 is its corrected replacement.
 
 - Diagnostic builds: `Patch_v2.4_diagNN`
 - User Stage 2 test: `Patch_v2.4_STAGE2_TEST`
@@ -205,7 +211,8 @@ Stage 4 development history:
 - Stage 4 one-run binary log-path diagnostic: `Patch_v2.6_VISUAL_LOGDIAG01`
 - Historical formal Stage 4 release: `Patch_v2.6`
 - Historical formal release: `HOTA_NEW_HERO_V1`
-- Current formal release: `HOTA_NEW_HERO_V1.01`
+- Withdrawn numerical release: `HOTA_NEW_HERO_V1.01`
+- Current formal release: `HOTA_NEW_HERO_V1.02`
 - Do not reuse historical version numbers.
 
 ## GitHub release layout

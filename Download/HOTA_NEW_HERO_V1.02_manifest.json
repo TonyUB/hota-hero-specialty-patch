@@ -1,0 +1,292 @@
+{
+  "schema_version": 1,
+  "build_name": "HOTA_NEW_HERO_V1.02",
+  "release": true,
+  "source_release": "HOTA_NEW_HERO_V1.01",
+  "source_zip_sha256": "8962665d3bd4e4f7dc686b9c3cae137262856e698d6e6b25479efd1b2a200d1d",
+  "zip_path": "HOTA_NEW_HERO_V1.02.zip",
+  "zip_size": 21097721,
+  "zip_sha256": "8ed7849fb7251ed44124bf86328f23952e6e6341cc664872beb1b62cdd31375a",
+  "source_file_hashes": {
+    "_HD3_Data/Compability/#hota15/Files.ini": "2a942fe7b10dd0adc8f1341b301ff2a531d7090a616edfdbcd62252b5ace029a",
+    "_HD3_Data/Compability/#hota15/Pack.ini": "15db9fe45cd4f5ef9ddd5951e8a6772cf62e83226c269c92900f86c20edfe9de",
+    "_HD3_Data/Compability/#hota15/UN32.DEF": "17799a6988f9f37f08fca54e43de22ea6374409a0a477fa778bbde575a65768b",
+    "_HD3_Data/Compability/#hota15/UN44.DEF": "bba48ccbe9ab2dd3a2a822edaa267d47778fe82a33fb79bbca81aa112a40dcb7",
+    "Data/HotA_l_ext.lod": "31fe8b8c6d4370fbd2e2ab814ca3e0f3c1732024b7bca3bdd870f985b8e2e7fc",
+    "Data/HotA_lng.lod": "0f1b05667c648c4a672e367d47da7f41983ef6a1698939af501bc30a649a2f11",
+    "Data/HPL005EL.PCX": "6a3f6e6957b763cbc8c41935e6b4675cfd2cc07171296e35e03609e15acc60cd",
+    "Data/HPS005EL.PCX": "e8c1a4d872ce344c212b2df15b710d3bddece84eab0daa184668fa1c83858f91",
+    "h3hota HD.exe": "297d5689994111d3844b1cb670dcb015ac6d92b47b993db6d7c12b2b026a8016",
+    "h3hota.exe": "b85055630b21e6774f8f945b0d7e82c84ad34f8d08c1c328072fafbd0b433367",
+    "HotA.dat": "5075795db5878b16c14dd7e438c30a68faa3fb27135815c6237d12099d3fe45b",
+    "安装说明.txt": "cf2d4c3fdba6d3ecd5cec6e401eac459b7c9137e7da1364cd0938af9d4681f08"
+  },
+  "package_file_hashes": {
+    "_HD3_Data/Compability/#hota15/Files.ini": "2a942fe7b10dd0adc8f1341b301ff2a531d7090a616edfdbcd62252b5ace029a",
+    "_HD3_Data/Compability/#hota15/Pack.ini": "15db9fe45cd4f5ef9ddd5951e8a6772cf62e83226c269c92900f86c20edfe9de",
+    "_HD3_Data/Compability/#hota15/UN32.DEF": "17799a6988f9f37f08fca54e43de22ea6374409a0a477fa778bbde575a65768b",
+    "_HD3_Data/Compability/#hota15/UN44.DEF": "bba48ccbe9ab2dd3a2a822edaa267d47778fe82a33fb79bbca81aa112a40dcb7",
+    "Data/HotA_l_ext.lod": "31fe8b8c6d4370fbd2e2ab814ca3e0f3c1732024b7bca3bdd870f985b8e2e7fc",
+    "Data/HotA_lng.lod": "0f1b05667c648c4a672e367d47da7f41983ef6a1698939af501bc30a649a2f11",
+    "Data/HPL005EL.PCX": "6a3f6e6957b763cbc8c41935e6b4675cfd2cc07171296e35e03609e15acc60cd",
+    "Data/HPS005EL.PCX": "e8c1a4d872ce344c212b2df15b710d3bddece84eab0daa184668fa1c83858f91",
+    "h3hota HD.exe": "bc95b4e2f6a6a0494c512c974e7bbcb64df4744562466b798a87da8836cb1207",
+    "h3hota.exe": "ca7ea0aba6f87574d730e5a594324ff02a82123f12ccfbc9b529964927df4828",
+    "HotA.dat": "5075795db5878b16c14dd7e438c30a68faa3fb27135815c6237d12099d3fe45b",
+    "安装说明.txt": "759d19f02034c73343f5059a65c2a9c3f19508bb973b4001742cbd64fcb824c6"
+  },
+  "changed_package_files": [
+    "h3hota HD.exe",
+    "h3hota.exe",
+    "安装说明.txt"
+  ],
+  "executables": [
+    {
+      "name": "h3hota.exe",
+      "source_sha256": "b85055630b21e6774f8f945b0d7e82c84ad34f8d08c1c328072fafbd0b433367",
+      "output_sha256": "ca7ea0aba6f87574d730e5a594324ff02a82123f12ccfbc9b529964927df4828",
+      "logical_patch_regions": [
+        {
+          "label": "Full-corpse Cure total calculator",
+          "va": 6528384,
+          "file_offset": 2334080,
+          "length": 65,
+          "source_hex": "55 89 e5 56 a1 a8 7f 68 00 8b 88 d8 13 00 00 0f af 4d 10 8b 55 0c 8b b4 90 dc 13 00 00 01 ce ff 75 14 ff 75 10 ff 75 08 b8 40 de 65 00 ff d0 01 c6 89 f0 5e 89 ec 5d c2 10 00 90 90 90 90 90 90 90",
+          "release_hex": "55 89 e5 ff 75 14 ff 75 10 ff 75 08 b8 40 de 65 00 ff d0 89 ec 5d c2 10 00 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90",
+          "rollback_hex": "55 89 e5 56 a1 a8 7f 68 00 8b 88 d8 13 00 00 0f af 4d 10 8b 55 0c 8b b4 90 dc 13 00 00 01 ce ff 75 14 ff 75 10 ff 75 08 b8 40 de 65 00 ff d0 01 c6 89 f0 5e 89 ec 5d c2 10 00 90 90 90 90 90 90 90"
+        },
+        {
+          "label": "Uland/Astra Cure specialty dispatcher",
+          "va": 6675968,
+          "file_offset": 2481664,
+          "length": 35,
+          "source_hex": "8b 41 1a 83 f8 19 74 0c 3d aa 00 00 00 74 05 e9 4c 84 e8 ff 51 ff 75 0c 56 e8 22 00 00 00 c2 0c 00 00 00",
+          "release_hex": "8b 41 1a 83 f8 19 74 0c 3d aa 00 00 00 74 05 e9 4c 84 e8 ff 51 ff 75 0c 56 e8 22 00 00 00 29 f8 c2 0c 00",
+          "rollback_hex": "8b 41 1a 83 f8 19 74 0c 3d aa 00 00 00 74 05 e9 4c 84 e8 ff 51 ff 75 0c 56 e8 22 00 00 00 c2 0c 00 00 00"
+        },
+        {
+          "label": "Uland/Astra total Cure formula",
+          "va": 6676032,
+          "file_offset": 2481728,
+          "length": 61,
+          "source_hex": "55 89 e5 56 8b 45 0c 6b f0 05 6b c0 14 83 c0 3c 8b 4d 10 0f bf 49 55 8d 14 49 83 ea 03 0f af c2 8d 14 49 83 c2 09 8b 4d 08 03 51 78 89 d1 99 f7 f9 01 f0 5e 89 ec 5d c2 0c 00 00 00 00",
+          "release_hex": "55 89 e5 56 8b 45 0c 6b f0 0a 83 c6 1e 6b c0 14 83 c0 3c 8b 4d 10 0f bf 49 55 8d 14 49 83 ea 03 0f af c2 8d 14 49 83 c2 09 8b 4d 08 03 51 78 89 d1 99 f7 f9 01 f0 5e 89 ec 5d c2 0c 00",
+          "rollback_hex": "55 89 e5 56 8b 45 0c 6b f0 05 6b c0 14 83 c0 3c 8b 4d 10 0f bf 49 55 8d 14 49 83 ea 03 0f af c2 8d 14 49 83 c2 09 8b 4d 08 03 51 78 89 d1 99 f7 f9 01 f0 5e 89 ec 5d c2 0c 00 00 00 00"
+        }
+      ],
+      "exact_contiguous_differences": [
+        {
+          "file_offset": 2334083,
+          "length": 55,
+          "source_hex": "56 a1 a8 7f 68 00 8b 88 d8 13 00 00 0f af 4d 10 8b 55 0c 8b b4 90 dc 13 00 00 01 ce ff 75 14 ff 75 10 ff 75 08 b8 40 de 65 00 ff d0 01 c6 89 f0 5e 89 ec 5d c2 10 00",
+          "release_hex": "ff 75 14 ff 75 10 ff 75 08 b8 40 de 65 00 ff d0 89 ec 5d c2 10 00 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90",
+          "rollback_hex": "56 a1 a8 7f 68 00 8b 88 d8 13 00 00 0f af 4d 10 8b 55 0c 8b b4 90 dc 13 00 00 01 ce ff 75 14 ff 75 10 ff 75 08 b8 40 de 65 00 ff d0 01 c6 89 f0 5e 89 ec 5d c2 10 00"
+        },
+        {
+          "file_offset": 2481694,
+          "length": 4,
+          "source_hex": "c2 0c 00 00",
+          "release_hex": "29 f8 c2 0c",
+          "rollback_hex": "c2 0c 00 00"
+        },
+        {
+          "file_offset": 2481737,
+          "length": 5,
+          "source_hex": "05 6b c0 14 83",
+          "release_hex": "0a 83 c6 1e 6b",
+          "rollback_hex": "05 6b c0 14 83"
+        },
+        {
+          "file_offset": 2481743,
+          "length": 45,
+          "source_hex": "3c 8b 4d 10 0f bf 49 55 8d 14 49 83 ea 03 0f af c2 8d 14 49 83 c2 09 8b 4d 08 03 51 78 89 d1 99 f7 f9 01 f0 5e 89 ec 5d c2 0c 00 00 00",
+          "release_hex": "14 83 c0 3c 8b 4d 10 0f bf 49 55 8d 14 49 83 ea 03 0f af c2 8d 14 49 83 c2 09 8b 4d 08 03 51 78 89 d1 99 f7 f9 01 f0 5e 89 ec 5d c2 0c",
+          "rollback_hex": "3c 8b 4d 10 0f bf 49 55 8d 14 49 83 ea 03 0f af c2 8d 14 49 83 c2 09 8b 4d 08 03 51 78 89 d1 99 f7 f9 01 f0 5e 89 ec 5d c2 0c 00 00 00"
+        }
+      ],
+      "formula_section": ".rdata",
+      "formula_section_rwx": true,
+      "astra_starting_skills_bytes_preserved": true,
+      "rollback_reconstructs_source": true
+    },
+    {
+      "name": "h3hota HD.exe",
+      "source_sha256": "297d5689994111d3844b1cb670dcb015ac6d92b47b993db6d7c12b2b026a8016",
+      "output_sha256": "bc95b4e2f6a6a0494c512c974e7bbcb64df4744562466b798a87da8836cb1207",
+      "logical_patch_regions": [
+        {
+          "label": "Full-corpse Cure total calculator",
+          "va": 6528384,
+          "file_offset": 2334080,
+          "length": 65,
+          "source_hex": "55 89 e5 56 a1 a8 7f 68 00 8b 88 d8 13 00 00 0f af 4d 10 8b 55 0c 8b b4 90 dc 13 00 00 01 ce ff 75 14 ff 75 10 ff 75 08 b8 40 de 65 00 ff d0 01 c6 89 f0 5e 89 ec 5d c2 10 00 90 90 90 90 90 90 90",
+          "release_hex": "55 89 e5 ff 75 14 ff 75 10 ff 75 08 b8 40 de 65 00 ff d0 89 ec 5d c2 10 00 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90",
+          "rollback_hex": "55 89 e5 56 a1 a8 7f 68 00 8b 88 d8 13 00 00 0f af 4d 10 8b 55 0c 8b b4 90 dc 13 00 00 01 ce ff 75 14 ff 75 10 ff 75 08 b8 40 de 65 00 ff d0 01 c6 89 f0 5e 89 ec 5d c2 10 00 90 90 90 90 90 90 90"
+        },
+        {
+          "label": "Uland/Astra Cure specialty dispatcher",
+          "va": 6675968,
+          "file_offset": 2481664,
+          "length": 35,
+          "source_hex": "8b 41 1a 83 f8 19 74 0c 3d aa 00 00 00 74 05 e9 4c 84 e8 ff 51 ff 75 0c 56 e8 22 00 00 00 c2 0c 00 00 00",
+          "release_hex": "8b 41 1a 83 f8 19 74 0c 3d aa 00 00 00 74 05 e9 4c 84 e8 ff 51 ff 75 0c 56 e8 22 00 00 00 29 f8 c2 0c 00",
+          "rollback_hex": "8b 41 1a 83 f8 19 74 0c 3d aa 00 00 00 74 05 e9 4c 84 e8 ff 51 ff 75 0c 56 e8 22 00 00 00 c2 0c 00 00 00"
+        },
+        {
+          "label": "Uland/Astra total Cure formula",
+          "va": 6676032,
+          "file_offset": 2481728,
+          "length": 61,
+          "source_hex": "55 89 e5 56 8b 45 0c 6b f0 05 6b c0 14 83 c0 3c 8b 4d 10 0f bf 49 55 8d 14 49 83 ea 03 0f af c2 8d 14 49 83 c2 09 8b 4d 08 03 51 78 89 d1 99 f7 f9 01 f0 5e 89 ec 5d c2 0c 00 00 00 00",
+          "release_hex": "55 89 e5 56 8b 45 0c 6b f0 0a 83 c6 1e 6b c0 14 83 c0 3c 8b 4d 10 0f bf 49 55 8d 14 49 83 ea 03 0f af c2 8d 14 49 83 c2 09 8b 4d 08 03 51 78 89 d1 99 f7 f9 01 f0 5e 89 ec 5d c2 0c 00",
+          "rollback_hex": "55 89 e5 56 8b 45 0c 6b f0 05 6b c0 14 83 c0 3c 8b 4d 10 0f bf 49 55 8d 14 49 83 ea 03 0f af c2 8d 14 49 83 c2 09 8b 4d 08 03 51 78 89 d1 99 f7 f9 01 f0 5e 89 ec 5d c2 0c 00 00 00 00"
+        }
+      ],
+      "exact_contiguous_differences": [
+        {
+          "file_offset": 2334083,
+          "length": 55,
+          "source_hex": "56 a1 a8 7f 68 00 8b 88 d8 13 00 00 0f af 4d 10 8b 55 0c 8b b4 90 dc 13 00 00 01 ce ff 75 14 ff 75 10 ff 75 08 b8 40 de 65 00 ff d0 01 c6 89 f0 5e 89 ec 5d c2 10 00",
+          "release_hex": "ff 75 14 ff 75 10 ff 75 08 b8 40 de 65 00 ff d0 89 ec 5d c2 10 00 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90",
+          "rollback_hex": "56 a1 a8 7f 68 00 8b 88 d8 13 00 00 0f af 4d 10 8b 55 0c 8b b4 90 dc 13 00 00 01 ce ff 75 14 ff 75 10 ff 75 08 b8 40 de 65 00 ff d0 01 c6 89 f0 5e 89 ec 5d c2 10 00"
+        },
+        {
+          "file_offset": 2481694,
+          "length": 4,
+          "source_hex": "c2 0c 00 00",
+          "release_hex": "29 f8 c2 0c",
+          "rollback_hex": "c2 0c 00 00"
+        },
+        {
+          "file_offset": 2481737,
+          "length": 5,
+          "source_hex": "05 6b c0 14 83",
+          "release_hex": "0a 83 c6 1e 6b",
+          "rollback_hex": "05 6b c0 14 83"
+        },
+        {
+          "file_offset": 2481743,
+          "length": 45,
+          "source_hex": "3c 8b 4d 10 0f bf 49 55 8d 14 49 83 ea 03 0f af c2 8d 14 49 83 c2 09 8b 4d 08 03 51 78 89 d1 99 f7 f9 01 f0 5e 89 ec 5d c2 0c 00 00 00",
+          "release_hex": "14 83 c0 3c 8b 4d 10 0f bf 49 55 8d 14 49 83 ea 03 0f af c2 8d 14 49 83 c2 09 8b 4d 08 03 51 78 89 d1 99 f7 f9 01 f0 5e 89 ec 5d c2 0c",
+          "rollback_hex": "3c 8b 4d 10 0f bf 49 55 8d 14 49 83 ea 03 0f af c2 8d 14 49 83 c2 09 8b 4d 08 03 51 78 89 d1 99 f7 f9 01 f0 5e 89 ec 5d c2 0c 00 00 00"
+        }
+      ],
+      "formula_section": ".rdata",
+      "formula_section_rwx": true,
+      "astra_starting_skills_bytes_preserved": true,
+      "rollback_reconstructs_source": true
+    }
+  ],
+  "text_updates": [
+    {
+      "archive": "Data/HotA_lng.lod",
+      "entry": "HeroSpec.txt",
+      "encoding": "gb18030",
+      "archive_sha256": "0f1b05667c648c4a672e367d47da7f41983ef6a1698939af501bc30a649a2f11",
+      "cure_text": "治愈术的效果随英雄等级和目标生物等级提升，并可永久复活己方阵亡单位。",
+      "archive_preserved_byte_for_byte": true
+    },
+    {
+      "archive": "Data/HotA_l_ext.lod",
+      "entry": "HeroSpec.txt",
+      "encoding": "gb18030",
+      "archive_sha256": "31fe8b8c6d4370fbd2e2ab814ca3e0f3c1732024b7bca3bdd870f985b8e2e7fc",
+      "cure_text": "治愈术的效果随英雄等级和目标生物等级提升，并可永久复活己方阵亡单位。",
+      "archive_preserved_byte_for_byte": true
+    }
+  ],
+  "formula": {
+    "all_masteries_total_formula": "H = 10P + 30 + floor((20P + 60) * 3(L - 1) / (3L + 16 - n))",
+    "rounding": "positive x86 integer division (floor)",
+    "target_tier_relation": "[combatStack+0x78] = 7 - n",
+    "mastery_behavior": {
+      "numeric_effect": "all Water Magic mastery levels use exact H",
+      "targeting_effect": "native Water Magic rules alone choose single-target or mass Cure"
+    },
+    "living_path_compensation": "dispatcher returns H minus the already-loaded native Cure base; CureCore then adds that native base and finishes at exactly H",
+    "components": [
+      {
+        "name": "cure_specialty_dispatch",
+        "va": 6675968,
+        "size": 35,
+        "assembly": "cure_specialty_dispatch:\n    mov eax, dword ptr [ecx + 0x1a]\n    cmp eax, 0x19\n    je use_new_formula\n    cmp eax, 0xaa\n    je use_new_formula\n    jmp 0x4e6260\nuse_new_formula:\n    push ecx\n    push dword ptr [ebp + 0x0c]\n    push esi\n    call 0x65de40\n    sub eax, edi\n    ret 0x0c"
+      },
+      {
+        "name": "specialist_cure_total",
+        "va": 6676032,
+        "size": 61,
+        "assembly": "specialist_cure_total:\n    push ebp\n    mov ebp, esp\n    push esi\n    mov eax, dword ptr [ebp + 0x0c]\n    imul esi, eax, 10\n    add esi, 30\n    imul eax, eax, 20\n    add eax, 60\n    mov ecx, dword ptr [ebp + 0x10]\n    movsx ecx, word ptr [ecx + 0x55]\n    lea edx, [ecx + ecx * 2]\n    sub edx, 3\n    imul eax, edx\n    lea edx, [ecx + ecx * 2]\n    add edx, 9\n    mov ecx, dword ptr [ebp + 0x08]\n    add edx, dword ptr [ecx + 0x78]\n    mov ecx, edx\n    cdq\n    idiv ecx\n    add eax, esi\n    pop esi\n    mov esp, ebp\n    pop ebp\n    ret 0x0c"
+      },
+      {
+        "name": "corpse_cure_total",
+        "va": 6528384,
+        "size": 25,
+        "padded_size": 65,
+        "assembly": "calc_cure_power:\n    push ebp\n    mov ebp, esp\n    push dword ptr [ebp + 0x14]\n    push dword ptr [ebp + 0x10]\n    push dword ptr [ebp + 0x08]\n    mov eax, 0x65de40\n    call eax\n    mov esp, ebp\n    pop ebp\n    ret 0x10"
+      }
+    ]
+  },
+  "formula_samples": [
+    {
+      "power": 1,
+      "hero_level": 1,
+      "creature_tier": 1,
+      "all_water_masteries": 40
+    },
+    {
+      "power": 1,
+      "hero_level": 1,
+      "creature_tier": 7,
+      "all_water_masteries": 40
+    },
+    {
+      "power": 1,
+      "hero_level": 10,
+      "creature_tier": 1,
+      "all_water_masteries": 88
+    },
+    {
+      "power": 1,
+      "hero_level": 10,
+      "creature_tier": 7,
+      "all_water_masteries": 95
+    },
+    {
+      "power": 10,
+      "hero_level": 10,
+      "creature_tier": 7,
+      "all_water_masteries": 310
+    }
+  ],
+  "astra_starting_skills": {
+    "skills": [
+      "Basic Wisdom",
+      "Basic Water Magic"
+    ],
+    "exe_file_offset": "0x0027D07C",
+    "va": "0x0067D07C",
+    "bytes": "01 00 00 00 07 00 00 00 10 00 00 00",
+    "preserved_in_both_executables": true
+  },
+  "runtime_inheritance": {
+    "cure_resurrection_logic_from_runtime_accepted_v1": true,
+    "cure_visual_and_sound_isolation_unchanged": true,
+    "combat_log_ordering_unchanged": true,
+    "elf_specialty_logic_unchanged": true,
+    "ordinary_resurrection_unchanged": true
+  },
+  "static_verification": {
+    "both_executable_call_contexts_verified": true,
+    "living_and_corpse_paths_finish_at_same_total_formula": true,
+    "non_specialists_tail_call_native_bonus": true,
+    "v101_formula_regions_matched_before_replacement": true,
+    "formula_cave_runtime_mapped_and_rwx": true,
+    "both_hero_spec_entries_preserved_and_verified": true,
+    "astra_starting_skill_bytes_preserved": true,
+    "hota_dat_preserved": true,
+    "only_expected_package_files_changed": true,
+    "release_zip_crc_test_passed": true
+  },
+  "runtime_acceptance": "required for new arithmetic; not claimed by static checks"
+}

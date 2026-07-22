@@ -7,7 +7,7 @@
 <details name="section">
 <summary><strong>🔴 中文说明</strong></summary>
 
-**当前版本下载：** [HOTA_NEW_HERO_V1.01.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.01.zip)
+**当前版本下载：** [HOTA_NEW_HERO_V1.02.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.02.zip)
 
 ## 埃尔芙
 
@@ -56,7 +56,7 @@
 <details name="section">
 <summary><strong>🔵 English Description</strong></summary>
 
-**Current version:** [Download HOTA_NEW_HERO_V1.01.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.01.zip)
+**Current version:** [Download HOTA_NEW_HERO_V1.02.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.02.zip)
 
 ## Elf Queen
 
