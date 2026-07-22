@@ -23,7 +23,11 @@
 
 **创作方向：** 原作中不存在的新兵种特长。
 
-## 尤兰德
+---
+
+## 治愈特长英雄
+
+### 尤兰德
 
 **英雄简介：** 尤兰德在选择德鲁伊之路前，曾在战场上做过大量的治疗工作，他在军队里学到的经验使他成为了今天出色的领导者。
 
@@ -37,7 +41,7 @@
 
 **创作方向：** 魔法创作。
 
-## 阿斯特拉
+### 阿斯特拉
 
 **英雄简介：** 阿斯特拉从不急着向别人说起她的往事，以致于很少有人知道她的来历。但谁都知道她为了学到神秘的水系魔法几乎访问了这片大陆所有的地方。后来她成为了海洋女祭司，在这里实现了精通水系魔法的夙愿。
 
@@ -50,6 +54,14 @@
 **初始技能：** 初级智慧术 / 初级水系魔法。
 
 **创作方向：** 魔法创作。
+
+### 当前治疗量公式
+
+```text
+H = 10P + 30 + floor((20P + 60) × 3(L - 1) / (3L + 16 - n))
+```
+
+其中 `H` 为最终治疗/复活生命值，`P` 为英雄力量，`L` 为英雄等级，`n` 为目标生物等级（1–7）。整数除法向下取整。水系魔法等级不改变 `H`，只决定治愈术是单体施放还是群体施放。
 
 </details>
 
@@ -72,7 +84,11 @@
 
 **Creative direction:** A new creature specialty not present in the original game.
 
-## Uland
+---
+
+## Cure Specialty Heroes
+
+### Uland
 
 **Hero biography:** Before choosing the path of the Druid, Uland spent a great deal of time healing the wounded on the battlefield. The experience he gained in the army made him the outstanding leader he is today.
 
@@ -86,7 +102,7 @@
 
 **Creative direction:** Magic-based specialty design.
 
-## Astra
+### Astra
 
 **Hero biography:** Astra never hurries to tell others about her past, so few people know where she came from. Everyone knows, however, that she traveled to nearly every corner of the continent in search of the secrets of Water Magic. She later became an Ocean Priestess and fulfilled her ambition of mastering Water Magic.
 
@@ -99,6 +115,14 @@
 **Starting skills:** Basic Wisdom / Basic Water Magic.
 
 **Creative direction:** Magic-based specialty design.
+
+### Current Cure Formula
+
+```text
+H = 10P + 30 + floor((20P + 60) × 3(L - 1) / (3L + 16 - n))
+```
+
+Here, `H` is the final pool of hit points available for healing and resurrection, `P` is the hero's Spell Power, `L` is the hero's level, and `n` is the target creature's tier (1–7). Integer division is rounded down. Water Magic mastery does not change `H`; it only determines whether Cure is cast on one target or as a mass spell.
 
 </details>
 
