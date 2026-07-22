@@ -7,7 +7,7 @@
 <details name="section">
 <summary><strong>🔴 中文说明</strong></summary>
 
-**当前版本下载：** [HOTA_NEW_HERO_V1.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.zip)
+**当前版本下载：** [HOTA_NEW_HERO_V1.01.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.01.zip)
 
 ## 埃尔芙
 
@@ -27,7 +27,7 @@
 
 **英雄简介：** 尤兰德在选择德鲁伊之路前，曾在战场上做过大量的治疗工作，他在军队里学到的经验使他成为了今天出色的领导者。
 
-**特长效果：** 治愈魔法可以永久复活友方单位。施放疗伤时，英雄等级每增加(8-n)，效果提高10%，其中n是目标生物的等级。
+**特长效果：** 治愈术的效果随英雄等级和目标生物等级提升，并可永久复活己方阵亡单位。
 
 **初始兵力：** 12–24 半人马 / 5–7 矮人 / 2–4 木精灵。
 
@@ -41,7 +41,7 @@
 
 **英雄简介：** 阿斯特拉从不急着向别人说起她的往事，以致于很少有人知道她的来历。但谁都知道她为了学到神秘的水系魔法几乎访问了这片大陆所有的地方。后来她成为了海洋女祭司，在这里实现了精通水系魔法的夙愿。
 
-**特长效果：** 治愈魔法可以永久复活友方单位。施放疗伤时，英雄等级每增加(8-n)，效果提高10%，其中n是目标生物的等级。
+**特长效果：** 治愈术的效果随英雄等级和目标生物等级提升，并可永久复活己方阵亡单位。
 
 **初始兵力：** 15–25 泉水精灵 / 6–9 水手 / 4–7 海贼。
 
@@ -56,7 +56,7 @@
 <details name="section">
 <summary><strong>🔵 English Description</strong></summary>
 
-**Current version:** [Download HOTA_NEW_HERO_V1.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.zip)
+**Current version:** [Download HOTA_NEW_HERO_V1.01.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.01.zip)
 
 ## Elf Queen
 
@@ -76,7 +76,7 @@
 
 **Hero biography:** Before choosing the path of the Druid, Uland spent a great deal of time healing the wounded on the battlefield. The experience he gained in the army made him the outstanding leader he is today.
 
-**Specialty effect:** Cure can permanently resurrect friendly units. When casting Cure, its effect increases by 10% for every (8-n) hero levels, where n is the target creature's level.
+**Specialty effect:** Cure becomes more effective with the hero's level and the target creature's level, and can permanently resurrect fallen friendly units.
 
 **Starting army:** 12–24 Centaurs / 5–7 Dwarves / 2–4 Wood Elves.
 
@@ -90,7 +90,7 @@
 
 **Hero biography:** Astra never hurries to tell others about her past, so few people know where she came from. Everyone knows, however, that she traveled to nearly every corner of the continent in search of the secrets of Water Magic. She later became an Ocean Priestess and fulfilled her ambition of mastering Water Magic.
 
-**Specialty effect:** Cure can permanently resurrect friendly units. When casting Cure, its effect increases by 10% for every (8-n) hero levels, where n is the target creature's level.
+**Specialty effect:** Cure becomes more effective with the hero's level and the target creature's level, and can permanently resurrect fallen friendly units.
 
 **Starting army:** 15–25 Nymphs / 6–9 Crew Mates / 4–7 Pirates.
 

@@ -8,7 +8,7 @@
 - [x] `diag01_runtime_validation.md`：实机日志确认两个 Cure 调用点确实执行。
 - [x] `stage2_release_acceptance.md`：活体治疗溢出复活、亡灵负例和战后永久性已经通过实机门禁。
 - [x] `stage3_corpse_research.md`：`TEST3` 已通过单体、群体、负例、永久性、重叠尸体和占格冲突的全部实机门禁。
-- [x] `stage4_visual_isolation.md` / `stage4_logdiag01_runtime_validation.md`：治愈演出隔离、起身状态、音效及单体/群体日志顺序均已通过；该运行逻辑由 `HOTA_NEW_HERO_V1` 继承。
+- [x] `stage4_visual_isolation.md` / `stage4_logdiag01_runtime_validation.md`：治愈演出隔离、起身状态、音效及单体/群体日志顺序均已通过；该运行逻辑由 `HOTA_NEW_HERO_V1.01` 继续继承。
 - [x] `stage4_release_acceptance.md`：TEST13 到正式 v2.6 的逐字节执行文件保留、双语言 LOD 文案、旧版归档与正式包哈希已经闭合。
 - [x] `stage3_test2_runtime_results.md`：九组截图结果和剩余单体故障边界已记录。
 
@@ -18,6 +18,7 @@
 - `runtime_modules.md` / `runtime_modules.json`：EXE、HotA DLL、HD DLL 与 patcher 的运行模块覆盖分析。
 - `../tools/analyze_pe.py`：生成 PE 静态清单。
 - `../tools/extract_lod.py`：安全列出/解包 H3 LOD。
-- `../tools/build_hota_new_hero_v1.py`：从已验收 v2.6 正式包可复现构建当前版本。
+- `../tools/build_hota_new_hero_v1.py`：从已验收 v2.6 正式包可复现构建历史 V1。
+- `../tools/build_hota_new_hero_v101.py`：从 V1 可复现构建当前 V1.01，并记录公式代码、回滚字节和逐文件哈希。
 
-Stage 4 运行时门禁已全部通过。当前正式版 `HOTA_NEW_HERO_V1` 继承该治愈运行逻辑，恢复阿德拉原始耗魔，并在两个语言 LOD 中使用“永久复活句 + 原始 `(8-n)` 等级增幅句”。
+Stage 4 运行时门禁已全部通过。当前正式版 `HOTA_NEW_HERO_V1.01` 继承该治愈运行逻辑，保持阿德拉原始耗魔，并将两位治愈特英雄改为新的统一等级公式和简化说明。

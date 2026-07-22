@@ -6,7 +6,7 @@
 - Never build on Patch_v1.9, v2.0, v2.1, v2.2, or v2.3.
 - Historical test packages and failed binaries are no longer retained in the
   repository. Their conclusions are preserved under `CHANGELOG/` and `analysis/`.
-- `Download/HOTA_NEW_HERO_V1.zip` is the current accepted formal release.
+- `Download/HOTA_NEW_HERO_V1.01.zip` is the current formal release.
 
 ## Current milestone
 
@@ -25,10 +25,16 @@ presentation/log-order gates passed:
 - The real single-target cast path performs an additional Cure effect/resistance
   check at `0x005A05FA`. For a fully dead specialist target, bypass it only after
   `GetResurrectionTarget(..., context=0)` returns that exact stack again.
-- `Download/HOTA_NEW_HERO_V1.zip` is the accepted formal release. Its Cure and
-  Elf runtime bytes inherit the runtime-accepted v2.6 implementation. Only the
-  exact Adela zero-cost-Bless hook/cave bytes were restored to clean HotA 1.8.0.
+- `Download/HOTA_NEW_HERO_V1.01.zip` inherits the runtime-accepted V1 Cure,
+  presentation, log-order, and Elf implementation. V1.01 changes only the
+  Uland/Astra Cure specialty arithmetic, both localized descriptions, and
+  release documentation; its new arithmetic still requires an in-game value check.
 - Astra starting skills remain Basic Wisdom + Basic Water Magic.
+- V1.01 expert-Water Cure uses
+  `H = 10P + 30 + floor((20P + 60) * 3(L - 1) / (3L + 16 - n))`.
+  Lower mastery levels preserve the native -20/-10 differences relative to
+  expert Water. Both living and fully dead specialist targets use the same
+  custom bonus routine; non-specialists tail-call the original bonus function.
 
 Stage 4 development history:
 
@@ -124,7 +130,7 @@ Stage 4 development history:
   to standing group 2 instead of leaving the creature on group 5 frame zero.
 - The scoped flag is cleared at the native public cleanup entry, including the
   autoresolve/no-animation branch.
-- Formal `HOTA_NEW_HERO_V1` keeps the tested Cure/Elf runtime implementation,
+- Formal `HOTA_NEW_HERO_V1` kept the tested Cure/Elf runtime implementation,
   restores Adela to native HotA 1.8.0 mana cost, removes the custom Adela line
   from both HeroSpec archives, and presents Cure as the added resurrection
   sentence followed by the original `(8-n)` scaling sentence.
@@ -146,7 +152,7 @@ Stage 4 development history:
 13. Produce a diagnostic hook first. The user must confirm a runtime log before resurrection logic is added.
 14. Never claim success from PE checks, ZIP integrity, disassembly, or static signatures alone.
 15. Every build must include input hashes, output hashes, changed offsets, original bytes, patched bytes, and rollback bytes.
-16. Keep the accepted `Download/HOTA_NEW_HERO_V1.zip` unchanged until a later formal release replaces it.
+16. Never overwrite a release payload in place; each later release receives a new versioned filename and SHA-256.
 17. Never allocate a code cave from a zero run without checking adjacent strings,
     terminators, tables, and startup data; preserve every semantic boundary byte.
 18. A distributed test build must pass a real startup-to-main-menu smoke test; static
@@ -174,6 +180,10 @@ Stage 4 development history:
 
 ## Release naming
 
+- After V1, adding a new hero or a new hero specialty increases the version by
+  `0.1`; a numerical adjustment to existing content increases it by `0.01`.
+- V1.01 is the first numerical-adjustment release under this rule.
+
 - Diagnostic builds: `Patch_v2.4_diagNN`
 - User Stage 2 test: `Patch_v2.4_STAGE2_TEST`
 - Withdrawn Stage 3 corpse test: `Patch_v2.5_STAGE3_TEST` (startup-broken; forensics only)
@@ -194,7 +204,8 @@ Stage 4 development history:
 - Stage 4 native Cure logger post-append rotation retest: `Patch_v2.6_VISUAL_TEST12`
 - Stage 4 one-run binary log-path diagnostic: `Patch_v2.6_VISUAL_LOGDIAG01`
 - Historical formal Stage 4 release: `Patch_v2.6`
-- Current formal release: `HOTA_NEW_HERO_V1`
+- Historical formal release: `HOTA_NEW_HERO_V1`
+- Current formal release: `HOTA_NEW_HERO_V1.01`
 - Do not reuse historical version numbers.
 
 ## GitHub release layout
