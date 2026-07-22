@@ -7,11 +7,13 @@
 <details name="section">
 <summary><strong>🔴 中文说明</strong></summary>
 
-**当前版本下载：** [HOTA_NEW_HERO_V1.03.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.03.zip)
+**当前版本下载：** [HOTA_NEW_HERO_V1.04.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.04.zip)
 
 ## 埃尔芙
 
 **英雄简介：** 埃尔芙是妖精一族的女王，她的名字长久以来只存在于吟游诗人的古老歌谣中。她以绝世容貌与卓越的战术才能闻名。当埃拉西亚陷入危难时，她打破避世誓言，响应元素城的召唤，亲率部众为这片大陆而战。
+
+**英雄阵营：** 元素城。
 
 **特长效果：** 仙灵和妖精杀伤力 +1，速度 +1。
 
@@ -19,9 +21,9 @@
 
 **初始指数：** 职业：位面行者；四维（攻击 / 防御 / 力量 / 知识）：3 / 1 / 1 / 1。
 
-**初始技能：** 初级战术 / 初级进攻。
+**初始技能：** 初级战术 / 初级进攻术。
 
-**创作方向：** 原作中不存在的新兵种特长。
+**创作方向：** 新兵种特长设计、战斗动画抓帧提取与全新英雄立绘创作。
 
 ---
 
@@ -31,7 +33,9 @@
 
 **英雄简介：** 尤兰德在选择德鲁伊之路前，曾在战场上做过大量的治疗工作，他在军队里学到的经验使他成为了今天出色的领导者。
 
-**特长效果：** 治愈术的效果随英雄等级和目标生物等级提升，并可永久复活己方阵亡单位。
+**英雄阵营：** 壁垒。
+
+**特长效果：** 治愈术的治疗量随英雄等级和目标生物等级提升，并可永久复活己方阵亡单位。
 
 **初始兵力：** 12–24 半人马 / 5–7 矮人 / 2–4 木精灵。
 
@@ -39,13 +43,15 @@
 
 **初始技能：** 初级智慧术 / 初级弹道术。
 
-**创作方向：** 魔法创作。
+**创作方向：** 原创魔法设计与新魔法机制开发。
 
 ### 阿斯特拉
 
 **英雄简介：** 阿斯特拉从不急着向别人说起她的往事，以致于很少有人知道她的来历。但谁都知道她为了学到神秘的水系魔法几乎访问了这片大陆所有的地方。后来她成为了海洋女祭司，在这里实现了精通水系魔法的夙愿。
 
-**特长效果：** 治愈术的效果随英雄等级和目标生物等级提升，并可永久复活己方阵亡单位。
+**英雄阵营：** 港口。
+
+**特长效果：** 治愈术的治疗量随英雄等级和目标生物等级提升，并可永久复活己方阵亡单位。
 
 **初始兵力：** 15–25 泉水精灵 / 6–9 水手 / 4–7 海贼。
 
@@ -53,7 +59,7 @@
 
 **初始技能：** 初级智慧术 / 初级水系魔法。
 
-**创作方向：** 魔法创作。
+**创作方向：** 原创魔法设计与新魔法机制开发。
 
 ### 当前治疗量公式
 
@@ -69,11 +75,13 @@ H = floor((11L + 10P + 19) × (clamp(n, 1, 7) + 11) / 12)
 <details name="section">
 <summary><strong>🔵 English Description</strong></summary>
 
-**Current version:** [Download HOTA_NEW_HERO_V1.03.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.03.zip)
+**Current version:** [Download HOTA_NEW_HERO_V1.04.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.04.zip)
 
 ## Elf Queen
 
 **Hero biography:** The Elf Queen is the queen of the fairies. For ages, her name existed only in the ancient songs of wandering bards. Renowned for her peerless beauty and outstanding tactical ability, she broke her vow of seclusion when Erathia fell into peril, answered the call of the Conflux, and personally led her people into battle for the land.
+
+**Hero faction:** Conflux.
 
 **Specialty effect:** Pixies and Sprites gain +1 Damage and +1 Speed.
 
@@ -83,7 +91,7 @@ H = floor((11L + 10P + 19) × (clamp(n, 1, 7) + 11) / 12)
 
 **Starting skills:** Basic Tactics / Basic Offense.
 
-**Creative direction:** A new creature specialty not present in the original game.
+**Creative direction:** New creature-specialty design, battle-animation frame extraction, and original hero artwork.
 
 ---
 
@@ -93,7 +101,9 @@ H = floor((11L + 10P + 19) × (clamp(n, 1, 7) + 11) / 12)
 
 **Hero biography:** Before choosing the path of the Druid, Uland spent a great deal of time healing the wounded on the battlefield. The experience he gained in the army made him the outstanding leader he is today.
 
-**Specialty effect:** Cure becomes more effective with the hero's level and the target creature's level, and can permanently resurrect fallen friendly units.
+**Hero faction:** Rampart.
+
+**Specialty effect:** Cure's healing amount increases with the hero's level and the target creature's level, and it can permanently resurrect fallen friendly units.
 
 **Starting army:** 12–24 Centaurs / 5–7 Dwarves / 2–4 Wood Elves.
 
@@ -101,13 +111,15 @@ H = floor((11L + 10P + 19) × (clamp(n, 1, 7) + 11) / 12)
 
 **Starting skills:** Basic Wisdom / Basic Ballistics.
 
-**Creative direction:** Magic-based specialty design.
+**Creative direction:** Original spell design and new spell-mechanic development.
 
 ### Astra
 
 **Hero biography:** Astra never hurries to tell others about her past, so few people know where she came from. Everyone knows, however, that she traveled to nearly every corner of the continent in search of the secrets of Water Magic. She later became an Ocean Priestess and fulfilled her ambition of mastering Water Magic.
 
-**Specialty effect:** Cure becomes more effective with the hero's level and the target creature's level, and can permanently resurrect fallen friendly units.
+**Hero faction:** Cove.
+
+**Specialty effect:** Cure's healing amount increases with the hero's level and the target creature's level, and it can permanently resurrect fallen friendly units.
 
 **Starting army:** 15–25 Nymphs / 6–9 Crew Mates / 4–7 Pirates.
 
@@ -115,7 +127,7 @@ H = floor((11L + 10P + 19) × (clamp(n, 1, 7) + 11) / 12)
 
 **Starting skills:** Basic Wisdom / Basic Water Magic.
 
-**Creative direction:** Magic-based specialty design.
+**Creative direction:** Original spell design and new spell-mechanic development.
 
 ### Current Cure Formula
 
