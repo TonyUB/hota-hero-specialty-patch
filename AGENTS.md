@@ -40,6 +40,20 @@ presentation/log-order gates passed:
   single-target versus mass-target rules remain unchanged. Both living and
   fully dead specialist targets finish at the same custom total;
   non-specialists tail-call the original bonus function.
+- Runtime testing of `HOTA_NEW_HERO_V1.04_LOG_TEST1` exposed a V1.03
+  implementation error that the earlier static sample matrix could not catch:
+  `H3CombatCreature +0x74` is its copied `H3CreatureInformation`, so `+0x78`
+  is the zero-based creature level `0..6`. V1.03 incorrectly evaluated
+  `7 - [stack+0x78]`, making a level-1 creature use tier 7. The active V1.04
+  candidate must instead use `clamp([stack+0x78] + 1, 1, 7)`.
+- `HOTA_NEW_HERO_V1.04_LOG_TEST1` is withdrawn. Its single-target treatment
+  line passed, but its mass treatment records were absent because it cleared
+  living records at the later corpse-scan initializer and did not hook the
+  direct mass-corpse calculator call at `0x00639C98`.
+- The Chinese HD pack's loose
+  `_HD3_Data\Packs\H3中文-基础资源\HeroSpec.txt` overrides both HotA LOD copies.
+  Any Cure-description release must patch and verify this loose file as well as
+  the two LOD entries.
 - V1.01 was withdrawn and its package removed: it incorrectly treated the
   requested formula as the expert-Water result and preserved native -20/-10
   mastery differences. Its SHA-256 and lesson remain in `CHANGELOG/`.
