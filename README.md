@@ -1,16 +1,11 @@
-<p align="center">
-  <a href="#chinese-content"><img alt="显示中文" src="https://img.shields.io/badge/中文-显示中文-b22222?style=for-the-badge&amp;logo=googletranslate&amp;logoColor=white"></a>
-  <a href="#english-content"><img alt="Show English" src="https://img.shields.io/badge/English-Show_English-1f6feb?style=for-the-badge&amp;logo=googletranslate&amp;logoColor=white"></a>
-  <a href="https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.zip"><img alt="Download HOTA_NEW_HERO_V1" src="https://img.shields.io/badge/Download-HOTA_NEW_HERO_V1-2ea44f?style=for-the-badge&amp;logo=github&amp;logoColor=white"></a>
-  <a href="#copyright-content"><img alt="版权声明 / Copyright Notice" src="https://img.shields.io/badge/Copyright-版权声明-d97706?style=for-the-badge&amp;logo=creativecommons&amp;logoColor=white"></a>
-</p>
+<h1 align="center">英雄无敌3-HOTA-新英雄特长开发专栏<br>Heroes of Might and Magic III: Horn of the Abyss — New Hero Specialty Development</h1>
 
-<details name="language" open>
+<p align="center"><sub>点击左侧三角图标，展开对应语言或版权声明的详细内容。<br>Click the triangle icon on the left to expand your preferred language or the copyright notice.</sub></p>
+
+<details name="section">
 <summary><strong>🔴 中文说明</strong></summary>
 
-<a id="chinese-content"></a>
-
-<h1 align="center">英雄无敌3-HOTA-新英雄特长开发专栏</h1>
+**当前版本下载：** [HOTA_NEW_HERO_V1.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.zip)
 
 ## 埃尔芙
 
@@ -19,6 +14,10 @@
 **特长效果：** 仙灵和妖精杀伤力 +1，速度 +1。
 
 **初始兵力：** 25 仙灵 / 25 仙灵 / 25 仙灵。
+
+**初始指数：** 职业：元素使；四维（攻击 / 防御 / 力量 / 知识）：0 / 0 / 3 / 3。
+
+**初始技能：** 初级智慧术 / 初级气系魔法。
 
 **创作方向：** 原作中不存在的新兵种特长。
 
@@ -30,6 +29,10 @@
 
 **初始兵力：** 12–24 半人马 / 5–7 矮人 / 2–4 木精灵。
 
+**初始指数：** 职业：德鲁伊；四维（攻击 / 防御 / 力量 / 知识）：0 / 2 / 1 / 2。
+
+**初始技能：** 初级智慧术 / 初级弹道术。
+
 **创作方向：** 魔法创作。
 
 ## 阿斯特拉
@@ -40,16 +43,18 @@
 
 **初始兵力：** 15–25 泉水精灵 / 6–9 水手 / 4–7 海贼。
 
+**初始指数：** 职业：领航员；四维（攻击 / 防御 / 力量 / 知识）：2 / 0 / 1 / 2。
+
+**初始技能：** 初级智慧术 / 初级水系魔法。
+
 **创作方向：** 魔法创作。
 
 </details>
 
-<details name="language">
+<details name="section">
 <summary><strong>🔵 English Description</strong></summary>
 
-<a id="english-content"></a>
-
-<h1 align="center">Heroes of Might and Magic III: Horn of the Abyss — New Hero Specialty Development</h1>
+**Current version:** [Download HOTA_NEW_HERO_V1.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.zip)
 
 ## Elf Queen
 
@@ -58,6 +63,10 @@
 **Specialty effect:** Pixies and Sprites gain +1 Damage and +1 Speed.
 
 **Starting army:** 25 Pixies / 25 Pixies / 25 Pixies.
+
+**Initial profile:** Class: Elementalist; primary stats (Attack / Defense / Power / Knowledge): 0 / 0 / 3 / 3.
+
+**Starting skills:** Basic Wisdom / Basic Air Magic.
 
 **Creative direction:** A new creature specialty not present in the original game.
 
@@ -69,6 +78,10 @@
 
 **Starting army:** 12–24 Centaurs / 5–7 Dwarves / 2–4 Wood Elves.
 
+**Initial profile:** Class: Druid; primary stats (Attack / Defense / Power / Knowledge): 0 / 2 / 1 / 2.
+
+**Starting skills:** Basic Wisdom / Basic Ballistics.
+
 **Creative direction:** Magic-based specialty design.
 
 ## Astra
@@ -79,14 +92,16 @@
 
 **Starting army:** 15–25 Nymphs / 6–9 Crew Mates / 4–7 Pirates.
 
+**Initial profile:** Class: Navigator; primary stats (Attack / Defense / Power / Knowledge): 2 / 0 / 1 / 2.
+
+**Starting skills:** Basic Wisdom / Basic Water Magic.
+
 **Creative direction:** Magic-based specialty design.
 
 </details>
 
-<details name="language">
+<details name="section">
 <summary><strong>🛡️ 版权声明 / Copyright Notice</strong></summary>
-
-<a id="copyright-content"></a>
 
 ## 版权声明与免责声明
 
