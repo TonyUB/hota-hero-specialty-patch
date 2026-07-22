@@ -6,12 +6,13 @@
 - Never build on Patch_v1.9, v2.0, v2.1, v2.2, or v2.3.
 - Historical test packages and failed binaries are no longer retained in the
   repository. Their conclusions are preserved under `CHANGELOG/` and `analysis/`.
-- `Download/HOTA_NEW_HERO_V1.03.zip` is the current formal release.
+- `Download/HOTA_NEW_HERO_V1.04.zip` is the current formal release.
 
 ## Current milestone
 
-Stage 4 is the current stable release. All Stage 3 gameplay gates and Stage 4
-presentation/log-order gates passed:
+V1.04 is the current stable release. All Stage 3 gameplay, Stage 4
+presentation/log-order, F6 arithmetic, per-stack treatment-log, and specialty
+detail-panel gates passed:
 
 - Preserve all accepted Stage 2 behavior for living stacks.
 - Uland and Astra may target a fully dead friendly stack with single-target Cure
@@ -25,10 +26,10 @@ presentation/log-order gates passed:
 - The real single-target cast path performs an additional Cure effect/resistance
   check at `0x005A05FA`. For a fully dead specialist target, bypass it only after
   `GetResurrectionTarget(..., context=0)` returns that exact stack again.
-- `Download/HOTA_NEW_HERO_V1.03.zip` inherits the runtime-accepted V1 Cure,
-  presentation, log-order, and Elf implementation. V1.03 changes only the
-  Uland/Astra Cure specialty arithmetic, Astra's default second skill, and
-  release documentation; both changes still require a new-map in-game check.
+- `Download/HOTA_NEW_HERO_V1.04.zip` inherits the runtime-accepted V1 Cure,
+  presentation, log-order, and Elf implementation. It corrects V1.03's
+  zero-based creature-tier conversion, adds per-stack localized treatment
+  lines, and synchronizes the HotA description/detail panel with F6.
 - Astra starts with Basic Wisdom + Basic Water Magic. The release performs this
   as a direct `HotA.dat` patch to `Heroes\hero170.str`: second-skill type `9`
   (Luck) becomes `16` (Water Magic), while its Basic level, spellbook, and
@@ -44,8 +45,8 @@ presentation/log-order gates passed:
   implementation error that the earlier static sample matrix could not catch:
   `H3CombatCreature +0x74` is its copied `H3CreatureInformation`, so `+0x78`
   is the zero-based creature level `0..6`. V1.03 incorrectly evaluated
-  `7 - [stack+0x78]`, making a level-1 creature use tier 7. The active V1.04
-  candidate must instead use `clamp([stack+0x78] + 1, 1, 7)`.
+  `7 - [stack+0x78]`, making a level-1 creature use tier 7. Formal V1.04 uses
+  `clamp([stack+0x78] + 1, 1, 7)`.
 - `HOTA_NEW_HERO_V1.04_LOG_TEST1` is withdrawn. Its single-target treatment
   line passed, but its mass treatment records were absent because it cleared
   living records at the later corpse-scan initializer and did not hook the
@@ -56,13 +57,14 @@ presentation/log-order gates passed:
   native resurrection lines”. It was not promoted because its terse
   `creature: +H` wording still needed localization and the specialty detail
   panel continued to use HotA.dat/HotA.dll's native `8-n` text and values.
-- `HOTA_NEW_HERO_V1.04_UI_TEST3` is the active candidate. It keeps all TEST2
+- `HOTA_NEW_HERO_V1.04_UI_TEST3` is the accepted release candidate. It keeps all TEST2
   settlement behavior, uses the localized `creature obtains H healing` line,
   updates `Heroes\hero170.str` inside HotA.dat, and redirects only Uland/Astra
   Cure specialty-panel calculations to the same F6 total. Its effect column is
   `H`; its integer bonus column is `floor((H-(5P+30))*100/(5P+30))`. Static,
-  reproducible-build, rollback, and standard/HD 12-second startup gates pass;
-  the new wording and panel still require one in-game confirmation.
+  reproducible-build, rollback, and standard/HD 12-second startup gates pass.
+  User testing confirmed the new wording, both detail panels, and all gameplay
+  paths; its runtime payload was promoted to formal V1.04.
 - The Chinese HD pack's loose
   `_HD3_Data\Packs\H3中文-基础资源\HeroSpec.txt` overrides both HotA LOD copies.
   Any Cure-description release must patch and verify this loose file as well as
@@ -218,7 +220,8 @@ Stage 4 development history:
 - After V1, adding a new hero or a new hero specialty increases the version by
   `0.1`; a numerical adjustment to existing content increases it by `0.01`.
 - V1.01 was the first numerical-adjustment release under this rule, but was
-  withdrawn. V1.02 corrected it; V1.03 is the next numerical/data adjustment.
+  withdrawn. V1.02 corrected it; V1.03 and V1.04 are subsequent numerical/data
+  adjustments.
 
 - Diagnostic builds: `Patch_v2.4_diagNN`
 - User Stage 2 test: `Patch_v2.4_STAGE2_TEST`
@@ -243,7 +246,8 @@ Stage 4 development history:
 - Historical formal release: `HOTA_NEW_HERO_V1`
 - Withdrawn numerical release: `HOTA_NEW_HERO_V1.01`
 - Historical numerical release: `HOTA_NEW_HERO_V1.02`
-- Current formal release: `HOTA_NEW_HERO_V1.03`
+- Historical numerical release: `HOTA_NEW_HERO_V1.03`
+- Current formal release: `HOTA_NEW_HERO_V1.04`
 - Do not reuse historical version numbers.
 
 ## GitHub release layout
