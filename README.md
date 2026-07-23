@@ -7,7 +7,7 @@
 <details name="section">
 <summary><strong>🔴 中文说明</strong></summary>
 
-**当前版本下载：** [HOTA_NEW_HERO_V1.05.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.05.zip)
+**当前版本下载：** [HOTA_NEW_HERO_V1.06.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.06.zip)
 
 ## 埃尔芙
 
@@ -71,12 +71,14 @@ H = floor(((11L + 29) × (clamp(n, 1, 7) + 11)) / 12)
 
 其中 `H` 为最终治疗/复活生命值，`P` 为英雄当前有效力量（最低为 0），`L` 为英雄等级（最低为 1），`n` 为目标生物等级（限定为 1–7），`w` 为水系魔法熟练度（无/初级/中级/高级分别取 0/1/2/3）。主乘积按整数运算向下取整，再叠加力量项与水系项；每增加 1 点力量，治疗量增加 5 点，中级/高级水系在无/初级水系基础上分别增加 10/20 点。原版单体/群体施法范围规则保持不变。
 
+魔法书会显示当前条件下对 1—7 级生物的治疗量范围；在战场上将鼠标悬停于存活的友方单位时，会显示该目标的精确治疗量。尸体悬停提示保持原版“治愈”文本。
+
 </details>
 
 <details name="section">
 <summary><strong>🔵 English Description</strong></summary>
 
-**Current version:** [Download HOTA_NEW_HERO_V1.05.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.05.zip)
+**Current version:** [Download HOTA_NEW_HERO_V1.06.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.06.zip)
 
 ## Elf Queen
 
@@ -139,6 +141,8 @@ H = floor(((11L + 29) × (clamp(n, 1, 7) + 11)) / 12)
 ```
 
 Here, `H` is the final pool of hit points available for healing and resurrection, `P` is the hero's current effective Spell Power (minimum 0), `L` is the hero's level (minimum 1), `n` is the target creature's tier (clamped to 1–7), and `w` is Water Magic mastery (0/1/2/3 for none/basic/advanced/expert). The main product is rounded down first, then the Spell Power and Water Magic terms are added. Each additional point of Spell Power adds 5 healing; Advanced/Expert Water Magic adds 10/20 over None/Basic. The original single-target and mass-cast range rules remain unchanged.
+
+The spell book displays the current Cure range for creature tiers 1–7. Hovering over a living friendly stack on the battlefield displays that target's exact healing amount. Corpse-hover text intentionally remains the native “Cure” label.
 
 </details>
 

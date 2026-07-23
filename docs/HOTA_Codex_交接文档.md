@@ -1,6 +1,6 @@
 # Heroes III HotA 1.8.0 自定义补丁项目——Codex 交接文档
 
-> **2026-07-22 更新：** 当前版本为 `HOTA_NEW_HERO_V1.05`。本文关于“阿德拉祝福零耗魔必须保留”的旧要求已被撤销；阿德拉现已完全恢复 HotA 1.8.0 原始状态。治愈尸体复活、演出隔离和日志顺序均已完成；V1.05 采用 F7 NativePower 治疗公式，并保留 `HotA.dat` 中阿斯特拉的初级智慧术 + 初级水系魔法。最新结论以 `AGENTS.md`、`CHANGELOG/`、`docs/HOTA_PRO回传_2026-07-22_F7_V1.05.md` 和 `Download/HOTA_NEW_HERO_V1.05_manifest.md` 为准。
+> **2026-07-23 更新：** 当前版本为 `HOTA_NEW_HERO_V1.06`。阿德拉保持 HotA 1.8.0 原始状态；治愈尸体复活、演出隔离、日志顺序和逐队治疗量均已完成。V1.06 继续使用 F7 NativePower 治疗公式，并新增两名治愈特长英雄的 UI 同步：魔法书显示 1—7 级目标的当前治疗量范围，悬停存活友军显示精确治疗量；尸体悬停仍使用原版“治愈”文本。用户已确认 UI_TEST2 全部项目通过，正式包复用同一 `HotA.dll`，并保留 `HotA.dat` 中阿斯特拉的初级智慧术 + 初级水系魔法。最新结论以 `AGENTS.md`、`CHANGELOG/`、`docs/PROJECT_STATUS.md` 和 `Download/HOTA_NEW_HERO_V1.06_manifest.md` 为准。
 
 **交接日期：** 2026-07-20  
 **交接目标：** 将项目从聊天式试错迁移为可复现、可调试、可验证的 Codex 工程。  
