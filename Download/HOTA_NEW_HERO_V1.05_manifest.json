@@ -1,0 +1,386 @@
+{
+  "schema_version": 1,
+  "build_name": "HOTA_NEW_HERO_V1.05",
+  "release": true,
+  "source_release": "HOTA_NEW_HERO_V1.04",
+  "source_zip_sha256": "60a2744a00e4759d4115c3e51c1aa434ae93d6324949349a923ab50931b0e7ad",
+  "zip_path": "HOTA_NEW_HERO_V1.05.zip",
+  "zip_size": 22177048,
+  "zip_sha256": "fcadf14fbbb411acef05def01b1b5a705b5cad4e2d473c8068677e9f0ef93d80",
+  "source_file_hashes": {
+    "_HD3_Data/Compability/#hota15/Files.ini": "2a942fe7b10dd0adc8f1341b301ff2a531d7090a616edfdbcd62252b5ace029a",
+    "_HD3_Data/Compability/#hota15/Pack.ini": "15db9fe45cd4f5ef9ddd5951e8a6772cf62e83226c269c92900f86c20edfe9de",
+    "_HD3_Data/Compability/#hota15/UN32.DEF": "17799a6988f9f37f08fca54e43de22ea6374409a0a477fa778bbde575a65768b",
+    "_HD3_Data/Compability/#hota15/UN44.DEF": "bba48ccbe9ab2dd3a2a822edaa267d47778fe82a33fb79bbca81aa112a40dcb7",
+    "_HD3_Data/Packs/H3中文-基础资源/HeroSpec.txt": "56c114f3601fb05e4d9a231405b41b449c05f904d6066ce7339410f9f401ea95",
+    "Data/HotA_l_ext.lod": "31fe8b8c6d4370fbd2e2ab814ca3e0f3c1732024b7bca3bdd870f985b8e2e7fc",
+    "Data/HotA_lng.lod": "0f1b05667c648c4a672e367d47da7f41983ef6a1698939af501bc30a649a2f11",
+    "Data/HPL005EL.PCX": "6a3f6e6957b763cbc8c41935e6b4675cfd2cc07171296e35e03609e15acc60cd",
+    "Data/HPS005EL.PCX": "e8c1a4d872ce344c212b2df15b710d3bddece84eab0daa184668fa1c83858f91",
+    "h3hota HD.exe": "91ffc17974091e0f7c1f3ac5fd95bd3259167f3621eecaee64b6da68062e318c",
+    "h3hota.exe": "aa7933be741576df85dc421c9fc6cef14a213df67c4a191d011e8f9692da96e0",
+    "HotA.dat": "283cd8cb1a3df3eb0acaf5c5054b509e8aad27c783a646d724c07d42a4e7174c",
+    "HotA.dll": "bfcd3c314da10808b5a2962b1b45a88b31c33984a36834acbe7396073ced3b22",
+    "安装说明.txt": "c63065f9993719d1c5b17b0fc46b2cfd90e2007437d4f2451b23388adaa648f5"
+  },
+  "package_file_hashes": {
+    "_HD3_Data/Compability/#hota15/Files.ini": "2a942fe7b10dd0adc8f1341b301ff2a531d7090a616edfdbcd62252b5ace029a",
+    "_HD3_Data/Compability/#hota15/Pack.ini": "15db9fe45cd4f5ef9ddd5951e8a6772cf62e83226c269c92900f86c20edfe9de",
+    "_HD3_Data/Compability/#hota15/UN32.DEF": "17799a6988f9f37f08fca54e43de22ea6374409a0a477fa778bbde575a65768b",
+    "_HD3_Data/Compability/#hota15/UN44.DEF": "bba48ccbe9ab2dd3a2a822edaa267d47778fe82a33fb79bbca81aa112a40dcb7",
+    "_HD3_Data/Packs/H3中文-基础资源/HeroSpec.txt": "56c114f3601fb05e4d9a231405b41b449c05f904d6066ce7339410f9f401ea95",
+    "Data/HotA_l_ext.lod": "31fe8b8c6d4370fbd2e2ab814ca3e0f3c1732024b7bca3bdd870f985b8e2e7fc",
+    "Data/HotA_lng.lod": "0f1b05667c648c4a672e367d47da7f41983ef6a1698939af501bc30a649a2f11",
+    "Data/HPL005EL.PCX": "6a3f6e6957b763cbc8c41935e6b4675cfd2cc07171296e35e03609e15acc60cd",
+    "Data/HPS005EL.PCX": "e8c1a4d872ce344c212b2df15b710d3bddece84eab0daa184668fa1c83858f91",
+    "h3hota HD.exe": "22e86983d225d88240c1c5c51c11e2f20ea5cc4ff69e9341c9c870f42915831e",
+    "h3hota.exe": "2e64a368d7e5d0cdebc3deaa8bf0beb37649a32f2201ea1c07306cba08b78abf",
+    "HotA.dat": "283cd8cb1a3df3eb0acaf5c5054b509e8aad27c783a646d724c07d42a4e7174c",
+    "HotA.dll": "bfcd3c314da10808b5a2962b1b45a88b31c33984a36834acbe7396073ced3b22",
+    "安装说明.txt": "db71680b46b877141265cf4999b55840663cad81fb22604a1f52fa3461e5825b"
+  },
+  "changed_package_files": [
+    "h3hota HD.exe",
+    "h3hota.exe",
+    "安装说明.txt"
+  ],
+  "executables": [
+    {
+      "name": "h3hota.exe",
+      "source_sha256": "aa7933be741576df85dc421c9fc6cef14a213df67c4a191d011e8f9692da96e0",
+      "output_sha256": "2e64a368d7e5d0cdebc3deaa8bf0beb37649a32f2201ea1c07306cba08b78abf",
+      "logical_patch_regions": [
+        {
+          "label": "F7 NativePower gameplay Cure calculator",
+          "va": 6676032,
+          "file_offset": 2481728,
+          "length": 80,
+          "source_hex": "55 89 e5 56 8b 4d 10 0f bf 49 55 6b c9 0b 8b 45 0c 6b c0 0a 01 c8 83 c0 13 8b 55 08 8b 72 78 46 83 fe 01 7d 05 be 01 00 00 00 83 fe 07 7e 05 be 07 00 00 00 83 c6 0b 0f af c6 99 b9 0c 00 00 00 f7 f9 03 45 14 5e 89 ec 5d c2 10 00 90 90 90 90",
+          "release_hex": "55 89 e5 56 8b 45 10 0f bf 40 55 6b c0 0b 83 c0 1d 8b 55 08 8b 72 78 46 83 fe 01 7d 05 be 01 00 00 00 83 fe 07 7e 05 be 07 00 00 00 83 c6 0b 0f af c6 99 b9 0c 00 00 00 f7 f9 8b 4d 0c 49 6b c9 05 01 c8 03 45 14 5e 89 ec 5d c2 10 00 90 90 90",
+          "rollback_hex": "55 89 e5 56 8b 4d 10 0f bf 49 55 6b c9 0b 8b 45 0c 6b c0 0a 01 c8 83 c0 13 8b 55 08 8b 72 78 46 83 fe 01 7d 05 be 01 00 00 00 83 fe 07 7e 05 be 07 00 00 00 83 c6 0b 0f af c6 99 b9 0c 00 00 00 f7 f9 03 45 14 5e 89 ec 5d c2 10 00 90 90 90 90"
+        },
+        {
+          "label": "F7 NativePower specialty-panel calculator",
+          "va": 6676224,
+          "file_offset": 2481920,
+          "length": 192,
+          "source_hex": "8b 41 1a 83 f8 19 74 0e 3d aa 00 00 00 74 07 b8 60 62 4e 00 ff e0 83 7c 24 04 25 75 f2 55 89 e5 83 ec 08 53 56 57 89 ce 6a 02 b8 40 e2 5b 00 ff d0 89 45 fc 6b c0 0a 0f bf 4e 55 6b c9 0b 01 c8 83 c0 13 8b 7d 0c 47 83 ff 01 7d 05 bf 01 00 00 00 83 ff 07 7e 05 bf 07 00 00 00 83 c7 0b 0f af c7 99 bb 0c 00 00 00 f7 fb 89 c7 89 f1 b8 10 52 4e 00 ff d0 50 6a 25 89 f1 b8 f0 52 4e 00 ff d0 83 f8 01 7e 12 83 e8 01 83 f8 02 7e 05 b8 02 00 00 00 6b c0 0a 01 c7 89 f8 83 7d 10 64 74 05 2b 45 10 eb 0f 8b 4d fc 8d 4c 89 1e 29 c8 6b c0 64 99 f7 f9 5f 5e 5b 89 ec 5d c2 0c 00 00 00 00 00",
+          "release_hex": "8b 41 1a 83 f8 19 74 0e 3d aa 00 00 00 74 07 b8 60 62 4e 00 ff e0 83 7c 24 04 25 75 f2 55 89 e5 83 ec 08 53 56 57 89 ce 6a 02 b8 40 e2 5b 00 ff d0 89 45 fc 0f bf 46 55 6b c0 0b 83 c0 1d 8b 7d 0c 47 83 ff 01 7d 05 bf 01 00 00 00 83 ff 07 7e 05 bf 07 00 00 00 83 c7 0b 0f af c7 99 bb 0c 00 00 00 f7 fb 89 c7 8b 4d fc 49 6b c9 05 01 cf 89 f1 b8 10 52 4e 00 ff d0 50 6a 25 89 f1 b8 f0 52 4e 00 ff d0 83 f8 01 7e 12 83 e8 01 83 f8 02 7e 05 b8 02 00 00 00 6b c0 0a 01 c7 89 f8 83 7d 10 64 74 05 2b 45 10 eb 0f 8b 4d fc 8d 4c 89 1e 29 c8 6b c0 64 99 f7 f9 5f 5e 5b 89 ec 5d c2 0c 00",
+          "rollback_hex": "8b 41 1a 83 f8 19 74 0e 3d aa 00 00 00 74 07 b8 60 62 4e 00 ff e0 83 7c 24 04 25 75 f2 55 89 e5 83 ec 08 53 56 57 89 ce 6a 02 b8 40 e2 5b 00 ff d0 89 45 fc 6b c0 0a 0f bf 4e 55 6b c9 0b 01 c8 83 c0 13 8b 7d 0c 47 83 ff 01 7d 05 bf 01 00 00 00 83 ff 07 7e 05 bf 07 00 00 00 83 c7 0b 0f af c7 99 bb 0c 00 00 00 f7 fb 89 c7 89 f1 b8 10 52 4e 00 ff d0 50 6a 25 89 f1 b8 f0 52 4e 00 ff d0 83 f8 01 7e 12 83 e8 01 83 f8 02 7e 05 b8 02 00 00 00 6b c0 0a 01 c7 89 f8 83 7d 10 64 74 05 2b 45 10 eb 0f 8b 4d fc 8d 4c 89 1e 29 c8 6b c0 64 99 f7 f9 5f 5e 5b 89 ec 5d c2 0c 00 00 00 00 00"
+        }
+      ],
+      "exact_contiguous_differences": [
+        {
+          "file_offset": 2481733,
+          "length": 1,
+          "source_hex": "4d",
+          "release_hex": "45",
+          "rollback_hex": "4d"
+        },
+        {
+          "file_offset": 2481737,
+          "length": 1,
+          "source_hex": "49",
+          "release_hex": "40",
+          "rollback_hex": "49"
+        },
+        {
+          "file_offset": 2481740,
+          "length": 1,
+          "source_hex": "c9",
+          "release_hex": "c0",
+          "rollback_hex": "c9"
+        },
+        {
+          "file_offset": 2481742,
+          "length": 27,
+          "source_hex": "8b 45 0c 6b c0 0a 01 c8 83 c0 13 8b 55 08 8b 72 78 46 83 fe 01 7d 05 be 01 00 00",
+          "release_hex": "83 c0 1d 8b 55 08 8b 72 78 46 83 fe 01 7d 05 be 01 00 00 00 83 fe 07 7e 05 be 07",
+          "rollback_hex": "8b 45 0c 6b c0 0a 01 c8 83 c0 13 8b 55 08 8b 72 78 46 83 fe 01 7d 05 be 01 00 00"
+        },
+        {
+          "file_offset": 2481770,
+          "length": 18,
+          "source_hex": "83 fe 07 7e 05 be 07 00 00 00 83 c6 0b 0f af c6 99 b9",
+          "release_hex": "00 00 83 c6 0b 0f af c6 99 b9 0c 00 00 00 f7 f9 8b 4d",
+          "rollback_hex": "83 fe 07 7e 05 be 07 00 00 00 83 c6 0b 0f af c6 99 b9"
+        },
+        {
+          "file_offset": 2481789,
+          "length": 16,
+          "source_hex": "00 00 00 f7 f9 03 45 14 5e 89 ec 5d c2 10 00 90",
+          "release_hex": "49 6b c9 05 01 c8 03 45 14 5e 89 ec 5d c2 10 00",
+          "rollback_hex": "00 00 00 f7 f9 03 45 14 5e 89 ec 5d c2 10 00 90"
+        },
+        {
+          "file_offset": 2481972,
+          "length": 90,
+          "source_hex": "6b c0 0a 0f bf 4e 55 6b c9 0b 01 c8 83 c0 13 8b 7d 0c 47 83 ff 01 7d 05 bf 01 00 00 00 83 ff 07 7e 05 bf 07 00 00 00 83 c7 0b 0f af c7 99 bb 0c 00 00 00 f7 fb 89 c7 89 f1 b8 10 52 4e 00 ff d0 50 6a 25 89 f1 b8 f0 52 4e 00 ff d0 83 f8 01 7e 12 83 e8 01 83 f8 02 7e 05 b8",
+          "release_hex": "0f bf 46 55 6b c0 0b 83 c0 1d 8b 7d 0c 47 83 ff 01 7d 05 bf 01 00 00 00 83 ff 07 7e 05 bf 07 00 00 00 83 c7 0b 0f af c7 99 bb 0c 00 00 00 f7 fb 89 c7 8b 4d fc 49 6b c9 05 01 cf 89 f1 b8 10 52 4e 00 ff d0 50 6a 25 89 f1 b8 f0 52 4e 00 ff d0 83 f8 01 7e 12 83 e8 01 83 f8",
+          "rollback_hex": "6b c0 0a 0f bf 4e 55 6b c9 0b 01 c8 83 c0 13 8b 7d 0c 47 83 ff 01 7d 05 bf 01 00 00 00 83 ff 07 7e 05 bf 07 00 00 00 83 c7 0b 0f af c7 99 bb 0c 00 00 00 f7 fb 89 c7 89 f1 b8 10 52 4e 00 ff d0 50 6a 25 89 f1 b8 f0 52 4e 00 ff d0 83 f8 01 7e 12 83 e8 01 83 f8 02 7e 05 b8"
+        },
+        {
+          "file_offset": 2482063,
+          "length": 48,
+          "source_hex": "00 00 00 6b c0 0a 01 c7 89 f8 83 7d 10 64 74 05 2b 45 10 eb 0f 8b 4d fc 8d 4c 89 1e 29 c8 6b c0 64 99 f7 f9 5f 5e 5b 89 ec 5d c2 0c 00 00 00 00",
+          "release_hex": "7e 05 b8 02 00 00 00 6b c0 0a 01 c7 89 f8 83 7d 10 64 74 05 2b 45 10 eb 0f 8b 4d fc 8d 4c 89 1e 29 c8 6b c0 64 99 f7 f9 5f 5e 5b 89 ec 5d c2 0c",
+          "rollback_hex": "00 00 00 6b c0 0a 01 c7 89 f8 83 7d 10 64 74 05 2b 45 10 eb 0f 8b 4d fc 8d 4c 89 1e 29 c8 6b c0 64 99 f7 f9 5f 5e 5b 89 ec 5d c2 0c 00 00 00 00"
+        }
+      ],
+      "formula_metadata": {
+        "assembly": "push ebp\n        mov ebp, esp\n        push esi\n        mov eax, dword ptr [ebp + 0x10]\n        movsx eax, word ptr [eax + 0x55]\n        imul eax, eax, 0x0b\n        add eax, 0x1d\n        mov edx, dword ptr [ebp + 0x08]\n        mov esi, dword ptr [edx + 0x78]\n        inc esi\n        cmp esi, 1\n        jge tier_min_ok\n        mov esi, 1\n    tier_min_ok:\n        cmp esi, 7\n        jle tier_max_ok\n        mov esi, 7\n    tier_max_ok:\n        add esi, 0x0b\n        imul eax, esi\n        cdq\n        mov ecx, 0x0c\n        idiv ecx\n        mov ecx, dword ptr [ebp + 0x0c]\n        dec ecx\n        imul ecx, ecx, 5\n        add eax, ecx\n        add eax, dword ptr [ebp + 0x14]\n        pop esi\n        mov esp, ebp\n        pop ebp\n        ret 0x10",
+        "source_size": 80,
+        "payload_size": 77,
+        "padded_size": 80,
+        "hero_level_source": "signed word at hero+0x55; live heroes are level >= 1",
+        "spell_power_source": "effective Cure power argument; runtime domain is non-negative",
+        "target_tier_source": "combatStack.info.level at +0x78 (0..6), converted with +1",
+        "water_bonus_source": "existing dispatcher argument: 10 * max(0, clamp(w,0,3) - 1)"
+      },
+      "ui_helper_assembly": "mov eax, dword ptr [ecx + 0x1a]\n    cmp eax, 0x19\n    je specialist\n    cmp eax, 0xaa\n    je specialist\nnative:\n    mov eax, 0x4e6260\n    jmp eax\nspecialist:\n    cmp dword ptr [esp + 0x04], 37\n    jne native\n    push ebp\n    mov ebp, esp\n    sub esp, 0x08\n    push ebx\n    push esi\n    push edi\n    mov esi, ecx\n    push 2\n    mov eax, 0x5be240\n    call eax\n    mov dword ptr [ebp - 0x04], eax\n    movsx eax, word ptr [esi + 0x55]\n    imul eax, eax, 11\n    add eax, 29\n    mov edi, dword ptr [ebp + 0x0c]\n    inc edi\n    cmp edi, 1\n    jge tier_min_ok\n    mov edi, 1\ntier_min_ok:\n    cmp edi, 7\n    jle tier_max_ok\n    mov edi, 7\ntier_max_ok:\n    add edi, 11\n    imul eax, edi\n    cdq\n    mov ebx, 12\n    idiv ebx\n    mov edi, eax\n    mov ecx, dword ptr [ebp - 0x04]\n    dec ecx\n    imul ecx, ecx, 5\n    add edi, ecx\n    mov ecx, esi\n    mov eax, 0x4e5210\n    call eax\n    push eax\n    push 37\n    mov ecx, esi\n    mov eax, 0x4e52f0\n    call eax\n    cmp eax, 1\n    jle water_ready\n    sub eax, 1\n    cmp eax, 2\n    jle water_capped\n    mov eax, 2\nwater_capped:\n    imul eax, eax, 10\n    add edi, eax\nwater_ready:\n    mov eax, edi\n    cmp dword ptr [ebp + 0x10], 100\n    je percentage\n    sub eax, dword ptr [ebp + 0x10]\n    jmp finished\npercentage:\n    mov ecx, dword ptr [ebp - 0x04]\n    lea ecx, [ecx + ecx * 4 + 30]\n    sub eax, ecx\n    imul eax, eax, 100\n    cdq\n    idiv ecx\nfinished:\n    pop edi\n    pop esi\n    pop ebx\n    mov esp, ebp\n    pop ebp\n    ret 0x0c",
+      "helper_section": ".rdata",
+      "helper_section_rwx": true,
+      "rollback_reconstructs_source": true
+    },
+    {
+      "name": "h3hota HD.exe",
+      "source_sha256": "91ffc17974091e0f7c1f3ac5fd95bd3259167f3621eecaee64b6da68062e318c",
+      "output_sha256": "22e86983d225d88240c1c5c51c11e2f20ea5cc4ff69e9341c9c870f42915831e",
+      "logical_patch_regions": [
+        {
+          "label": "F7 NativePower gameplay Cure calculator",
+          "va": 6676032,
+          "file_offset": 2481728,
+          "length": 80,
+          "source_hex": "55 89 e5 56 8b 4d 10 0f bf 49 55 6b c9 0b 8b 45 0c 6b c0 0a 01 c8 83 c0 13 8b 55 08 8b 72 78 46 83 fe 01 7d 05 be 01 00 00 00 83 fe 07 7e 05 be 07 00 00 00 83 c6 0b 0f af c6 99 b9 0c 00 00 00 f7 f9 03 45 14 5e 89 ec 5d c2 10 00 90 90 90 90",
+          "release_hex": "55 89 e5 56 8b 45 10 0f bf 40 55 6b c0 0b 83 c0 1d 8b 55 08 8b 72 78 46 83 fe 01 7d 05 be 01 00 00 00 83 fe 07 7e 05 be 07 00 00 00 83 c6 0b 0f af c6 99 b9 0c 00 00 00 f7 f9 8b 4d 0c 49 6b c9 05 01 c8 03 45 14 5e 89 ec 5d c2 10 00 90 90 90",
+          "rollback_hex": "55 89 e5 56 8b 4d 10 0f bf 49 55 6b c9 0b 8b 45 0c 6b c0 0a 01 c8 83 c0 13 8b 55 08 8b 72 78 46 83 fe 01 7d 05 be 01 00 00 00 83 fe 07 7e 05 be 07 00 00 00 83 c6 0b 0f af c6 99 b9 0c 00 00 00 f7 f9 03 45 14 5e 89 ec 5d c2 10 00 90 90 90 90"
+        },
+        {
+          "label": "F7 NativePower specialty-panel calculator",
+          "va": 6676224,
+          "file_offset": 2481920,
+          "length": 192,
+          "source_hex": "8b 41 1a 83 f8 19 74 0e 3d aa 00 00 00 74 07 b8 60 62 4e 00 ff e0 83 7c 24 04 25 75 f2 55 89 e5 83 ec 08 53 56 57 89 ce 6a 02 b8 40 e2 5b 00 ff d0 89 45 fc 6b c0 0a 0f bf 4e 55 6b c9 0b 01 c8 83 c0 13 8b 7d 0c 47 83 ff 01 7d 05 bf 01 00 00 00 83 ff 07 7e 05 bf 07 00 00 00 83 c7 0b 0f af c7 99 bb 0c 00 00 00 f7 fb 89 c7 89 f1 b8 10 52 4e 00 ff d0 50 6a 25 89 f1 b8 f0 52 4e 00 ff d0 83 f8 01 7e 12 83 e8 01 83 f8 02 7e 05 b8 02 00 00 00 6b c0 0a 01 c7 89 f8 83 7d 10 64 74 05 2b 45 10 eb 0f 8b 4d fc 8d 4c 89 1e 29 c8 6b c0 64 99 f7 f9 5f 5e 5b 89 ec 5d c2 0c 00 00 00 00 00",
+          "release_hex": "8b 41 1a 83 f8 19 74 0e 3d aa 00 00 00 74 07 b8 60 62 4e 00 ff e0 83 7c 24 04 25 75 f2 55 89 e5 83 ec 08 53 56 57 89 ce 6a 02 b8 40 e2 5b 00 ff d0 89 45 fc 0f bf 46 55 6b c0 0b 83 c0 1d 8b 7d 0c 47 83 ff 01 7d 05 bf 01 00 00 00 83 ff 07 7e 05 bf 07 00 00 00 83 c7 0b 0f af c7 99 bb 0c 00 00 00 f7 fb 89 c7 8b 4d fc 49 6b c9 05 01 cf 89 f1 b8 10 52 4e 00 ff d0 50 6a 25 89 f1 b8 f0 52 4e 00 ff d0 83 f8 01 7e 12 83 e8 01 83 f8 02 7e 05 b8 02 00 00 00 6b c0 0a 01 c7 89 f8 83 7d 10 64 74 05 2b 45 10 eb 0f 8b 4d fc 8d 4c 89 1e 29 c8 6b c0 64 99 f7 f9 5f 5e 5b 89 ec 5d c2 0c 00",
+          "rollback_hex": "8b 41 1a 83 f8 19 74 0e 3d aa 00 00 00 74 07 b8 60 62 4e 00 ff e0 83 7c 24 04 25 75 f2 55 89 e5 83 ec 08 53 56 57 89 ce 6a 02 b8 40 e2 5b 00 ff d0 89 45 fc 6b c0 0a 0f bf 4e 55 6b c9 0b 01 c8 83 c0 13 8b 7d 0c 47 83 ff 01 7d 05 bf 01 00 00 00 83 ff 07 7e 05 bf 07 00 00 00 83 c7 0b 0f af c7 99 bb 0c 00 00 00 f7 fb 89 c7 89 f1 b8 10 52 4e 00 ff d0 50 6a 25 89 f1 b8 f0 52 4e 00 ff d0 83 f8 01 7e 12 83 e8 01 83 f8 02 7e 05 b8 02 00 00 00 6b c0 0a 01 c7 89 f8 83 7d 10 64 74 05 2b 45 10 eb 0f 8b 4d fc 8d 4c 89 1e 29 c8 6b c0 64 99 f7 f9 5f 5e 5b 89 ec 5d c2 0c 00 00 00 00 00"
+        }
+      ],
+      "exact_contiguous_differences": [
+        {
+          "file_offset": 2481733,
+          "length": 1,
+          "source_hex": "4d",
+          "release_hex": "45",
+          "rollback_hex": "4d"
+        },
+        {
+          "file_offset": 2481737,
+          "length": 1,
+          "source_hex": "49",
+          "release_hex": "40",
+          "rollback_hex": "49"
+        },
+        {
+          "file_offset": 2481740,
+          "length": 1,
+          "source_hex": "c9",
+          "release_hex": "c0",
+          "rollback_hex": "c9"
+        },
+        {
+          "file_offset": 2481742,
+          "length": 27,
+          "source_hex": "8b 45 0c 6b c0 0a 01 c8 83 c0 13 8b 55 08 8b 72 78 46 83 fe 01 7d 05 be 01 00 00",
+          "release_hex": "83 c0 1d 8b 55 08 8b 72 78 46 83 fe 01 7d 05 be 01 00 00 00 83 fe 07 7e 05 be 07",
+          "rollback_hex": "8b 45 0c 6b c0 0a 01 c8 83 c0 13 8b 55 08 8b 72 78 46 83 fe 01 7d 05 be 01 00 00"
+        },
+        {
+          "file_offset": 2481770,
+          "length": 18,
+          "source_hex": "83 fe 07 7e 05 be 07 00 00 00 83 c6 0b 0f af c6 99 b9",
+          "release_hex": "00 00 83 c6 0b 0f af c6 99 b9 0c 00 00 00 f7 f9 8b 4d",
+          "rollback_hex": "83 fe 07 7e 05 be 07 00 00 00 83 c6 0b 0f af c6 99 b9"
+        },
+        {
+          "file_offset": 2481789,
+          "length": 16,
+          "source_hex": "00 00 00 f7 f9 03 45 14 5e 89 ec 5d c2 10 00 90",
+          "release_hex": "49 6b c9 05 01 c8 03 45 14 5e 89 ec 5d c2 10 00",
+          "rollback_hex": "00 00 00 f7 f9 03 45 14 5e 89 ec 5d c2 10 00 90"
+        },
+        {
+          "file_offset": 2481972,
+          "length": 90,
+          "source_hex": "6b c0 0a 0f bf 4e 55 6b c9 0b 01 c8 83 c0 13 8b 7d 0c 47 83 ff 01 7d 05 bf 01 00 00 00 83 ff 07 7e 05 bf 07 00 00 00 83 c7 0b 0f af c7 99 bb 0c 00 00 00 f7 fb 89 c7 89 f1 b8 10 52 4e 00 ff d0 50 6a 25 89 f1 b8 f0 52 4e 00 ff d0 83 f8 01 7e 12 83 e8 01 83 f8 02 7e 05 b8",
+          "release_hex": "0f bf 46 55 6b c0 0b 83 c0 1d 8b 7d 0c 47 83 ff 01 7d 05 bf 01 00 00 00 83 ff 07 7e 05 bf 07 00 00 00 83 c7 0b 0f af c7 99 bb 0c 00 00 00 f7 fb 89 c7 8b 4d fc 49 6b c9 05 01 cf 89 f1 b8 10 52 4e 00 ff d0 50 6a 25 89 f1 b8 f0 52 4e 00 ff d0 83 f8 01 7e 12 83 e8 01 83 f8",
+          "rollback_hex": "6b c0 0a 0f bf 4e 55 6b c9 0b 01 c8 83 c0 13 8b 7d 0c 47 83 ff 01 7d 05 bf 01 00 00 00 83 ff 07 7e 05 bf 07 00 00 00 83 c7 0b 0f af c7 99 bb 0c 00 00 00 f7 fb 89 c7 89 f1 b8 10 52 4e 00 ff d0 50 6a 25 89 f1 b8 f0 52 4e 00 ff d0 83 f8 01 7e 12 83 e8 01 83 f8 02 7e 05 b8"
+        },
+        {
+          "file_offset": 2482063,
+          "length": 48,
+          "source_hex": "00 00 00 6b c0 0a 01 c7 89 f8 83 7d 10 64 74 05 2b 45 10 eb 0f 8b 4d fc 8d 4c 89 1e 29 c8 6b c0 64 99 f7 f9 5f 5e 5b 89 ec 5d c2 0c 00 00 00 00",
+          "release_hex": "7e 05 b8 02 00 00 00 6b c0 0a 01 c7 89 f8 83 7d 10 64 74 05 2b 45 10 eb 0f 8b 4d fc 8d 4c 89 1e 29 c8 6b c0 64 99 f7 f9 5f 5e 5b 89 ec 5d c2 0c",
+          "rollback_hex": "00 00 00 6b c0 0a 01 c7 89 f8 83 7d 10 64 74 05 2b 45 10 eb 0f 8b 4d fc 8d 4c 89 1e 29 c8 6b c0 64 99 f7 f9 5f 5e 5b 89 ec 5d c2 0c 00 00 00 00"
+        }
+      ],
+      "formula_metadata": {
+        "assembly": "push ebp\n        mov ebp, esp\n        push esi\n        mov eax, dword ptr [ebp + 0x10]\n        movsx eax, word ptr [eax + 0x55]\n        imul eax, eax, 0x0b\n        add eax, 0x1d\n        mov edx, dword ptr [ebp + 0x08]\n        mov esi, dword ptr [edx + 0x78]\n        inc esi\n        cmp esi, 1\n        jge tier_min_ok\n        mov esi, 1\n    tier_min_ok:\n        cmp esi, 7\n        jle tier_max_ok\n        mov esi, 7\n    tier_max_ok:\n        add esi, 0x0b\n        imul eax, esi\n        cdq\n        mov ecx, 0x0c\n        idiv ecx\n        mov ecx, dword ptr [ebp + 0x0c]\n        dec ecx\n        imul ecx, ecx, 5\n        add eax, ecx\n        add eax, dword ptr [ebp + 0x14]\n        pop esi\n        mov esp, ebp\n        pop ebp\n        ret 0x10",
+        "source_size": 80,
+        "payload_size": 77,
+        "padded_size": 80,
+        "hero_level_source": "signed word at hero+0x55; live heroes are level >= 1",
+        "spell_power_source": "effective Cure power argument; runtime domain is non-negative",
+        "target_tier_source": "combatStack.info.level at +0x78 (0..6), converted with +1",
+        "water_bonus_source": "existing dispatcher argument: 10 * max(0, clamp(w,0,3) - 1)"
+      },
+      "ui_helper_assembly": "mov eax, dword ptr [ecx + 0x1a]\n    cmp eax, 0x19\n    je specialist\n    cmp eax, 0xaa\n    je specialist\nnative:\n    mov eax, 0x4e6260\n    jmp eax\nspecialist:\n    cmp dword ptr [esp + 0x04], 37\n    jne native\n    push ebp\n    mov ebp, esp\n    sub esp, 0x08\n    push ebx\n    push esi\n    push edi\n    mov esi, ecx\n    push 2\n    mov eax, 0x5be240\n    call eax\n    mov dword ptr [ebp - 0x04], eax\n    movsx eax, word ptr [esi + 0x55]\n    imul eax, eax, 11\n    add eax, 29\n    mov edi, dword ptr [ebp + 0x0c]\n    inc edi\n    cmp edi, 1\n    jge tier_min_ok\n    mov edi, 1\ntier_min_ok:\n    cmp edi, 7\n    jle tier_max_ok\n    mov edi, 7\ntier_max_ok:\n    add edi, 11\n    imul eax, edi\n    cdq\n    mov ebx, 12\n    idiv ebx\n    mov edi, eax\n    mov ecx, dword ptr [ebp - 0x04]\n    dec ecx\n    imul ecx, ecx, 5\n    add edi, ecx\n    mov ecx, esi\n    mov eax, 0x4e5210\n    call eax\n    push eax\n    push 37\n    mov ecx, esi\n    mov eax, 0x4e52f0\n    call eax\n    cmp eax, 1\n    jle water_ready\n    sub eax, 1\n    cmp eax, 2\n    jle water_capped\n    mov eax, 2\nwater_capped:\n    imul eax, eax, 10\n    add edi, eax\nwater_ready:\n    mov eax, edi\n    cmp dword ptr [ebp + 0x10], 100\n    je percentage\n    sub eax, dword ptr [ebp + 0x10]\n    jmp finished\npercentage:\n    mov ecx, dword ptr [ebp - 0x04]\n    lea ecx, [ecx + ecx * 4 + 30]\n    sub eax, ecx\n    imul eax, eax, 100\n    cdq\n    idiv ecx\nfinished:\n    pop edi\n    pop esi\n    pop ebx\n    mov esp, ebp\n    pop ebp\n    ret 0x0c",
+      "helper_section": ".rdata",
+      "helper_section_rwx": true,
+      "rollback_reconstructs_source": true
+    }
+  ],
+  "formula": {
+    "name": "F7 NativePower",
+    "expression": "floor(((11L + 29) * (clamp(n,1,7) + 11)) / 12) + 5 * (P - 1) + 10 * max(0, clamp(w,0,3) - 1)",
+    "integer_arithmetic": true,
+    "samples": [
+      {
+        "L": 1,
+        "P": 1,
+        "w": 1,
+        "tiers_1_to_7": [
+          40,
+          43,
+          46,
+          50,
+          53,
+          56,
+          60
+        ]
+      },
+      {
+        "L": 5,
+        "P": 1,
+        "w": 1,
+        "tiers_1_to_7": [
+          84,
+          91,
+          98,
+          105,
+          112,
+          119,
+          126
+        ]
+      },
+      {
+        "L": 2,
+        "P": 4,
+        "w": 2,
+        "tiers_1_to_7": [
+          76,
+          80,
+          84,
+          88,
+          93,
+          97,
+          101
+        ]
+      },
+      {
+        "L": 5,
+        "P": 4,
+        "w": 3,
+        "tiers_1_to_7": [
+          119,
+          126,
+          133,
+          140,
+          147,
+          154,
+          161
+        ]
+      },
+      {
+        "L": 10,
+        "P": 5,
+        "w": 1,
+        "tiers_1_to_7": [
+          159,
+          170,
+          182,
+          193,
+          205,
+          216,
+          228
+        ]
+      },
+      {
+        "L": 20,
+        "P": 10,
+        "w": 3,
+        "tiers_1_to_7": [
+          314,
+          334,
+          355,
+          376,
+          397,
+          417,
+          438
+        ]
+      },
+      {
+        "L": 30,
+        "P": 25,
+        "w": 3,
+        "tiers_1_to_7": [
+          499,
+          528,
+          558,
+          588,
+          618,
+          648,
+          678
+        ]
+      }
+    ],
+    "per_power_increment": 5,
+    "advanced_water_increment_over_basic": 10,
+    "expert_water_increment_over_basic": 20
+  },
+  "byte_preserved_from_v104": [
+    "Data/HPL005EL.PCX",
+    "Data/HPS005EL.PCX",
+    "Data/HotA_l_ext.lod",
+    "Data/HotA_lng.lod",
+    "HotA.dat",
+    "HotA.dll",
+    "_HD3_Data/Compability/#hota15/Files.ini",
+    "_HD3_Data/Compability/#hota15/Pack.ini",
+    "_HD3_Data/Compability/#hota15/UN32.DEF",
+    "_HD3_Data/Compability/#hota15/UN44.DEF",
+    "_HD3_Data/Packs/H3中文-基础资源/HeroSpec.txt"
+  ],
+  "static_verification": {
+    "both_executable_source_hashes_verified": true,
+    "f6_source_payloads_verified": true,
+    "f7_gameplay_and_ui_formulas_assembled": true,
+    "both_executables_receive_identical_logical_payloads": true,
+    "helper_runtime_mapped_and_rwx": true,
+    "rollback_reconstructs_v104_sources": true,
+    "only_expected_package_files_changed": true,
+    "formula_samples_match_f7_instruction": true,
+    "zip_crc_and_member_checks_passed": true
+  },
+  "runtime_acceptance": {
+    "status": "pending V1.05 smoke test",
+    "inherited_from_v104": [
+      "single and mass Cure",
+      "living and fully-dead friendly stacks",
+      "per-stack treatment totals and log order",
+      "permanent resurrection behavior",
+      "Cure-only audio and resurrection stand-up animation",
+      "Astra Basic Wisdom + Basic Water Magic"
+    ]
+  }
+}

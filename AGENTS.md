@@ -6,13 +6,16 @@
 - Never build on Patch_v1.9, v2.0, v2.1, v2.2, or v2.3.
 - Historical test packages and failed binaries are no longer retained in the
   repository. Their conclusions are preserved under `CHANGELOG/` and `analysis/`.
-- `Download/HOTA_NEW_HERO_V1.04.zip` is the current formal release.
+- `Download/HOTA_NEW_HERO_V1.05.zip` is the current formal release.
 
 ## Current milestone
 
-V1.04 is the current stable release. All Stage 3 gameplay, Stage 4
-presentation/log-order, F6 arithmetic, per-stack treatment-log, and specialty
-detail-panel gates passed:
+V1.05 is the current formal numerical release. It inherits all runtime-accepted
+V1.04 Stage 3 gameplay, Stage 4 presentation/log-order, per-stack treatment-log,
+and specialty-detail behavior byte-for-byte outside the two formula helpers.
+Its new F7 NativePower arithmetic has passed static, sample-matrix,
+standard/HD identity, rollback, ZIP CRC, and reproducible-build gates; a short
+V1.05 runtime smoke test is still recommended:
 
 - Preserve all accepted Stage 2 behavior for living stacks.
 - Uland and Astra may target a fully dead friendly stack with single-target Cure
@@ -26,7 +29,7 @@ detail-panel gates passed:
 - The real single-target cast path performs an additional Cure effect/resistance
   check at `0x005A05FA`. For a fully dead specialist target, bypass it only after
   `GetResurrectionTarget(..., context=0)` returns that exact stack again.
-- `Download/HOTA_NEW_HERO_V1.04.zip` inherits the runtime-accepted V1 Cure,
+- `Download/HOTA_NEW_HERO_V1.04.zip` historically inherited the runtime-accepted V1 Cure,
   presentation, log-order, and Elf implementation. It corrects V1.03's
   zero-based creature-tier conversion, adds per-stack localized treatment
   lines, and synchronizes the HotA description/detail panel with F6.
@@ -34,7 +37,15 @@ detail-panel gates passed:
   as a direct `HotA.dat` patch to `Heroes\hero170.str`: second-skill type `9`
   (Luck) becomes `16` (Water Magic), while its Basic level, spellbook, and
   starting Cure spell remain unchanged.
-- V1.03 Cure uses F6 Direct:
+- V1.05 Cure uses F7 NativePower:
+  `H = floor(((11L + 29) * (clamp(n,1,7) + 11)) / 12) + 5 * (P - 1) + 10 * max(0, clamp(w,0,3) - 1)`.
+  Here `L>=1`, effective `P>=0`, `n=1..7`, and `w=0/1/2/3` means
+  none/basic/advanced/expert Water Magic. Every extra point of Power adds 5;
+  Advanced/Expert Water add 10/20 over None/Basic after the integer division.
+  The standard and HD executables use the same payload, and the specialty
+  detail panel uses the same total. Native single-target versus mass-target
+  rules remain unchanged.
+- V1.03 and V1.04 historically used F6 Direct:
   `H = floor((11L + 10P + 19) * (clamp(n,1,7) + 11) / 12) + 10 * max(0, clamp(w,0,3) - 1)`.
   Here `w=0/1/2/3` means none/basic/advanced/expert Water Magic. The Water
   bonus is therefore `0/0/10/20` and is added after integer division. Native
@@ -247,7 +258,8 @@ Stage 4 development history:
 - Withdrawn numerical release: `HOTA_NEW_HERO_V1.01`
 - Historical numerical release: `HOTA_NEW_HERO_V1.02`
 - Historical numerical release: `HOTA_NEW_HERO_V1.03`
-- Current formal release: `HOTA_NEW_HERO_V1.04`
+- Historical numerical release: `HOTA_NEW_HERO_V1.04`
+- Current formal release: `HOTA_NEW_HERO_V1.05`
 - Do not reuse historical version numbers.
 
 ## GitHub release layout

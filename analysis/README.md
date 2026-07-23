@@ -11,6 +11,7 @@
 - [x] `stage4_visual_isolation.md` / `stage4_logdiag01_runtime_validation.md`：治愈演出隔离、起身状态、音效及单体/群体日志顺序均已通过；该运行逻辑由 `HOTA_NEW_HERO_V1.03` 继续继承。
 - [x] `stage4_release_acceptance.md`：TEST13 到正式 v2.6 的逐字节执行文件保留、双语言 LOD 文案、旧版归档与正式包哈希已经闭合。
 - [x] `stage3_test2_runtime_results.md`：九组截图结果和剩余单体故障边界已记录。
+- [x] `hymn_exclusive_spell_research.md`：壁垒/塔楼幸运特长英雄的“颂歌”专属魔法方案已保存；当前仅研究，不进入 V1.05。
 
 辅助产物：
 
@@ -23,5 +24,7 @@
 - `../tools/build_hota_new_hero_v102.py`：历史 V1.02 构建器；用于追溯上一版治疗公式。
 - `../tools/build_hota_new_hero_v103.py`：从 V1.02 可复现构建当前 V1.03，写入 F6 Direct 治疗公式，并在 `HotA.dat` 中把阿斯特拉的初级幸运术改为初级水系魔法。
 - `../tools/verify_hota_new_hero_v103.py`：校验双 EXE 公式、活体/尸体路径、阿斯特拉初始技能、LOD 文案、ZIP 成员与可复现哈希。
+- `../tools/build_hota_new_hero_v104.py` / `verify_hota_new_hero_v104.py`：构建并校验逐队中文治疗日志、零基兵种等级修正与特长详情同步。
+- `../tools/build_hota_new_hero_v105.py` / `verify_hota_new_hero_v105.py`：从已验收 V1.04 只替换 F7 NativePower 的实际治疗计算器和特长详情计算器，校验标准/HD 一致、公式样例、逐文件继承、完整回滚与可复现 ZIP。
 
-Stage 4 运行时门禁已全部通过。当前正式版 `HOTA_NEW_HERO_V1.03` 继承该治愈运行逻辑，保持阿德拉原始耗魔，采用 F6 Direct 治疗公式，并把阿斯特拉的初始技能设为初级智慧术 + 初级水系魔法。V1.03 的新数值与初始技能仍需在新开地图中做一次实机确认。
+Stage 4 与 V1.04 逐队治疗日志、详情面板运行时门禁均已通过。当前正式版 `HOTA_NEW_HERO_V1.05` 逐字节继承这些非公式逻辑，保持阿德拉原始耗魔、阿斯特拉初级智慧术 + 初级水系魔法，并采用 F7 NativePower 治疗公式。V1.05 新数值仍建议在新开地图中做一次实机冒烟确认。

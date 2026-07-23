@@ -7,7 +7,7 @@
 <details name="section">
 <summary><strong>🔴 中文说明</strong></summary>
 
-**当前版本下载：** [HOTA_NEW_HERO_V1.04.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.04.zip)
+**当前版本下载：** [HOTA_NEW_HERO_V1.05.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.05.zip)
 
 ## 埃尔芙
 
@@ -64,18 +64,19 @@
 ### 当前治疗量公式
 
 ```text
-H = floor((11L + 10P + 19) × (clamp(n, 1, 7) + 11) / 12)
+H = floor(((11L + 29) × (clamp(n, 1, 7) + 11)) / 12)
+    + 5 × (P - 1)
     + 10 × max(0, clamp(w, 0, 3) - 1)
 ```
 
-其中 `H` 为最终治疗/复活生命值，`P` 为英雄力量，`L` 为英雄等级，`n` 为目标生物等级（限定为 1–7），`w` 为水系魔法熟练度（无/初级/中级/高级分别取 0/1/2/3）。主公式按整数运算向下取整，随后中级/高级水系分别增加 10/20 点；原版单体/群体施法范围规则保持不变。
+其中 `H` 为最终治疗/复活生命值，`P` 为英雄当前有效力量（最低为 0），`L` 为英雄等级（最低为 1），`n` 为目标生物等级（限定为 1–7），`w` 为水系魔法熟练度（无/初级/中级/高级分别取 0/1/2/3）。主乘积按整数运算向下取整，再叠加力量项与水系项；每增加 1 点力量，治疗量增加 5 点，中级/高级水系在无/初级水系基础上分别增加 10/20 点。原版单体/群体施法范围规则保持不变。
 
 </details>
 
 <details name="section">
 <summary><strong>🔵 English Description</strong></summary>
 
-**Current version:** [Download HOTA_NEW_HERO_V1.04.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.04.zip)
+**Current version:** [Download HOTA_NEW_HERO_V1.05.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.05.zip)
 
 ## Elf Queen
 
@@ -132,11 +133,12 @@ H = floor((11L + 10P + 19) × (clamp(n, 1, 7) + 11) / 12)
 ### Current Cure Formula
 
 ```text
-H = floor((11L + 10P + 19) × (clamp(n, 1, 7) + 11) / 12)
+H = floor(((11L + 29) × (clamp(n, 1, 7) + 11)) / 12)
+    + 5 × (P - 1)
     + 10 × max(0, clamp(w, 0, 3) - 1)
 ```
 
-Here, `H` is the final pool of hit points available for healing and resurrection, `P` is the hero's Spell Power, `L` is the hero's level, `n` is the target creature's tier (clamped to 1–7), and `w` is Water Magic mastery (0/1/2/3 for none/basic/advanced/expert). The main expression is rounded down first, then Advanced/Expert Water Magic adds 10/20 points. The original single-target and mass-cast range rules remain unchanged.
+Here, `H` is the final pool of hit points available for healing and resurrection, `P` is the hero's current effective Spell Power (minimum 0), `L` is the hero's level (minimum 1), `n` is the target creature's tier (clamped to 1–7), and `w` is Water Magic mastery (0/1/2/3 for none/basic/advanced/expert). The main product is rounded down first, then the Spell Power and Water Magic terms are added. Each additional point of Spell Power adds 5 healing; Advanced/Expert Water Magic adds 10/20 over None/Basic. The original single-target and mass-cast range rules remain unchanged.
 
 </details>
 
