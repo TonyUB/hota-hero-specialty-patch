@@ -6,16 +6,18 @@
 - Never build on Patch_v1.9, v2.0, v2.1, v2.2, or v2.3.
 - Historical test packages and failed binaries are no longer retained in the
   repository. Their conclusions are preserved under `CHANGELOG/` and `analysis/`.
-- `Download/HOTA_NEW_HERO_V1.05.zip` is the current formal release.
+- `Download/HOTA_NEW_HERO_V1.06.zip` is the current formal release.
 
 ## Current milestone
 
-V1.05 is the current formal numerical release. It inherits all runtime-accepted
-V1.04 Stage 3 gameplay, Stage 4 presentation/log-order, per-stack treatment-log,
-and specialty-detail behavior byte-for-byte outside the two formula helpers.
-Its new F7 NativePower arithmetic has passed static, sample-matrix,
-standard/HD identity, rollback, ZIP CRC, and reproducible-build gates; a short
-V1.05 runtime smoke test is still recommended:
+V1.06 is the current formal numerical release. It inherits the complete V1.05
+gameplay payload and adds Cure UI synchronization for Uland and Astra. The
+spell book displays the current tier-1 through tier-7 F7 range, and hovering a
+living friendly stack displays that stack's exact F7 total. Corpse-hover text
+intentionally remains native Cure text. The user accepted all UI_TEST2 runtime
+items; the formal package is byte-identical to that accepted `HotA.dll` and has
+passed static, rollback, ZIP CRC, reproducible-build, and standard-executable
+startup gates:
 
 - Preserve all accepted Stage 2 behavior for living stacks.
 - Uland and Astra may target a fully dead friendly stack with single-target Cure
@@ -37,7 +39,7 @@ V1.05 runtime smoke test is still recommended:
   as a direct `HotA.dat` patch to `Heroes\hero170.str`: second-skill type `9`
   (Luck) becomes `16` (Water Magic), while its Basic level, spellbook, and
   starting Cure spell remain unchanged.
-- V1.05 Cure uses F7 NativePower:
+- V1.05 and V1.06 Cure use F7 NativePower:
   `H = floor(((11L + 29) * (clamp(n,1,7) + 11)) / 12) + 5 * (P - 1) + 10 * max(0, clamp(w,0,3) - 1)`.
   Here `L>=1`, effective `P>=0`, `n=1..7`, and `w=0/1/2/3` means
   none/basic/advanced/expert Water Magic. Every extra point of Power adds 5;
@@ -259,7 +261,8 @@ Stage 4 development history:
 - Historical numerical release: `HOTA_NEW_HERO_V1.02`
 - Historical numerical release: `HOTA_NEW_HERO_V1.03`
 - Historical numerical release: `HOTA_NEW_HERO_V1.04`
-- Current formal release: `HOTA_NEW_HERO_V1.05`
+- Historical numerical release: `HOTA_NEW_HERO_V1.05`
+- Current formal release: `HOTA_NEW_HERO_V1.06`
 - Do not reuse historical version numbers.
 
 ## GitHub release layout
