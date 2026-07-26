@@ -11,7 +11,7 @@
 
 ## 埃尔芙
 
-<img src="assets/portraits/elf-queen.png" alt="埃尔芙头像" height="36">
+<p><img src="assets/portraits/elf-queen.png" alt="埃尔芙头像" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/elf-queen.png" alt="埃尔芙特长图标" height="44"></p>
 
 **英雄简介：** 埃尔芙是妖精一族的女王，她的名字长久以来只存在于吟游诗人的古老歌谣中。她以绝世容貌与卓越的战术才能闻名。当埃拉西亚陷入危难时，她打破避世誓言，响应元素城的召唤，亲率部众为这片大陆而战。
 
@@ -35,7 +35,7 @@
 
 ### 马洛迪亚
 
-<img src="assets/portraits/melodia.png" alt="马洛迪亚头像" height="36">
+<p><img src="assets/portraits/melodia.png" alt="马洛迪亚头像" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/melodia.png" alt="马洛迪亚特长图标" height="44"></p>
 
 **英雄简介：** 马洛迪亚也许不是埃里技艺最精湛的德鲁伊，但她肯定是最幸运的德鲁伊。即使面对难以克服的困难，她也能奇迹般地取得胜利。在她率领的军队中，士兵们都乐意为她效命。
 
@@ -51,7 +51,7 @@
 
 ### 黛瑞丝
 
-<img src="assets/portraits/daremyth.png" alt="黛瑞丝头像" height="36">
+<p><img src="assets/portraits/daremyth.png" alt="黛瑞丝头像" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/daremyth.png" alt="黛瑞丝特长图标" height="44"></p>
 
 **英雄简介：** 黛瑞丝早就该死了。她随心所欲、无所不为的态度让她陷入了本不该生还的境地，但不知何故，她却毫发无损。
 
@@ -79,7 +79,7 @@
 
 ### 尤兰德
 
-<img src="assets/portraits/uland.png" alt="尤兰德头像" height="36">
+<p><img src="assets/portraits/uland.png" alt="尤兰德头像" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/uland.png" alt="尤兰德特长图标" height="44"></p>
 
 **英雄简介：** 尤兰德在选择德鲁伊之路前，曾在战场上做过大量的治疗工作，他在军队里学到的经验使他成为了今天出色的领导者。
 
@@ -95,7 +95,7 @@
 
 ### 阿斯特拉
 
-<img src="assets/portraits/astra.png" alt="阿斯特拉头像" height="36">
+<p><img src="assets/portraits/astra.png" alt="阿斯特拉头像" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/astra.png" alt="阿斯特拉特长图标" height="44"></p>
 
 **英雄简介：** 阿斯特拉从不急着向别人说起她的往事，以致于很少有人知道她的来历。但谁都知道她为了学到神秘的水系魔法几乎访问了这片大陆所有的地方。后来她成为了海洋女祭司，在这里实现了精通水系魔法的夙愿。
 
@@ -134,7 +134,7 @@ H = floor(((11L + 29) × (clamp(n, 1, 7) + 11)) / 12)
 
 ## Elf Queen
 
-<img src="assets/portraits/elf-queen.png" alt="Elf Queen portrait" height="36">
+<p><img src="assets/portraits/elf-queen.png" alt="Elf Queen portrait" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/elf-queen.png" alt="Elf Queen specialty icon" height="44"></p>
 
 **Hero biography:** The Elf Queen is the queen of the fairies. For ages, her name existed only in the ancient songs of wandering bards. Renowned for her peerless beauty and outstanding tactical ability, she broke her vow of seclusion when Erathia fell into peril, answered the call of the Conflux, and personally led her people into battle for the land.
 
@@ -158,7 +158,7 @@ New creature-specialty design, battle-animation frame extraction, and original h
 
 ### Melodia
 
-<img src="assets/portraits/melodia.png" alt="Melodia portrait" height="36">
+<p><img src="assets/portraits/melodia.png" alt="Melodia portrait" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/melodia.png" alt="Melodia specialty icon" height="44"></p>
 
 **Hero biography:** Melodia may not be the most skilled Druid in AvLee, but she is certainly the luckiest. Even against seemingly insurmountable odds, she has a miraculous way of achieving victory, and the soldiers in her army are always eager to serve under her command.
 
@@ -174,7 +174,7 @@ New creature-specialty design, battle-animation frame extraction, and original h
 
 ### Daremyth
 
-<img src="assets/portraits/daremyth.png" alt="Daremyth portrait" height="36">
+<p><img src="assets/portraits/daremyth.png" alt="Daremyth portrait" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/daremyth.png" alt="Daremyth specialty icon" height="44"></p>
 
 **Hero biography:** Daremyth should have died long ago. Her carefree, do-whatever-I-want attitude has led her into situations she should never have survived, yet somehow she has always emerged unscathed.
 
@@ -202,7 +202,7 @@ Fixed-stat specialty design with compatibility for native Luck-suppression mecha
 
 ### Uland
 
-<img src="assets/portraits/uland.png" alt="Uland portrait" height="36">
+<p><img src="assets/portraits/uland.png" alt="Uland portrait" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/uland.png" alt="Uland specialty icon" height="44"></p>
 
 **Hero biography:** Before choosing the path of the Druid, Uland spent a great deal of time healing the wounded on the battlefield. The experience he gained in the army made him the outstanding leader he is today.
 
@@ -218,7 +218,7 @@ Fixed-stat specialty design with compatibility for native Luck-suppression mecha
 
 ### Astra
 
-<img src="assets/portraits/astra.png" alt="Astra portrait" height="36">
+<p><img src="assets/portraits/astra.png" alt="Astra portrait" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/astra.png" alt="Astra specialty icon" height="44"></p>
 
 **Hero biography:** Astra never hurries to tell others about her past, so few people know where she came from. Everyone knows, however, that she traveled to nearly every corner of the continent in search of the secrets of Water Magic. She later became an Ocean Priestess and fulfilled her ambition of mastering Water Magic.
 
