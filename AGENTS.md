@@ -304,6 +304,9 @@ Stage 4 development history:
   `assets/specialties/`. Elf Queen keeps an individual creative direction;
   grouped Luck and Cure heroes use the group-level creative-direction fields
   described below. Adela must not appear in the landing README.
+- Store README specialty PNGs in their final upright orientation. Specialty
+  frames exported from the current D32F `UN44.DEF` require a 180-degree
+  correction before publication; do not publish the raw inverted orientation.
 - Render `Creative Direction`, `Additional Note`, and `Current Cure Formula`
   content as level-three headings followed by ordinary paragraphs. Do not add
   labels such as “shared by both heroes”; group placement already communicates
