@@ -11,6 +11,8 @@
 
 ## 埃尔芙
 
+<img src="assets/portraits/elf-queen.png" alt="埃尔芙头像" height="36">
+
 **英雄简介：** 埃尔芙是妖精一族的女王，她的名字长久以来只存在于吟游诗人的古老歌谣中。她以绝世容貌与卓越的战术才能闻名。当埃拉西亚陷入危难时，她打破避世誓言，响应元素城的召唤，亲率部众为这片大陆而战。
 
 **英雄阵营：** 元素城。
@@ -23,13 +25,17 @@
 
 **初始技能：** 初级战术 / 初级进攻术。
 
-**创作方向：** 新兵种特长设计、战斗动画抓帧提取与全新英雄立绘创作。
+### 创作方向
+
+新兵种特长设计、战斗动画抓帧提取与全新英雄立绘创作。
 
 ---
 
 ## 幸运特长英雄
 
 ### 马洛迪亚
+
+<img src="assets/portraits/melodia.png" alt="马洛迪亚头像" height="36">
 
 **英雄简介：** 马洛迪亚也许不是埃里技艺最精湛的德鲁伊，但她肯定是最幸运的德鲁伊。即使面对难以克服的困难，她也能奇迹般地取得胜利。在她率领的军队中，士兵们都乐意为她效命。
 
@@ -45,6 +51,8 @@
 
 ### 黛瑞丝
 
+<img src="assets/portraits/daremyth.png" alt="黛瑞丝头像" height="36">
+
 **英雄简介：** 黛瑞丝早就该死了。她随心所欲、无所不为的态度让她陷入了本不该生还的境地，但不知何故，她却毫发无损。
 
 **英雄阵营：** 塔楼。
@@ -57,15 +65,21 @@
 
 **初始技能：** 初级智慧术 / 初级智力；魔法书自带振奋。
 
-**额外说明（两名英雄共用）：** 厄运沙漏、诅咒之地等直接禁止幸运生效的效果仍然有效。
+### 额外说明
 
-**创作方向（两名英雄共用）：** 固定属性特长设计与原生幸运封锁机制兼容。
+厄运沙漏、诅咒之地等直接禁止幸运生效的效果仍然有效。
+
+### 创作方向
+
+固定属性特长设计与原生幸运封锁机制兼容。
 
 ---
 
 ## 治愈特长英雄
 
 ### 尤兰德
+
+<img src="assets/portraits/uland.png" alt="尤兰德头像" height="36">
 
 **英雄简介：** 尤兰德在选择德鲁伊之路前，曾在战场上做过大量的治疗工作，他在军队里学到的经验使他成为了今天出色的领导者。
 
@@ -81,6 +95,8 @@
 
 ### 阿斯特拉
 
+<img src="assets/portraits/astra.png" alt="阿斯特拉头像" height="36">
+
 **英雄简介：** 阿斯特拉从不急着向别人说起她的往事，以致于很少有人知道她的来历。但谁都知道她为了学到神秘的水系魔法几乎访问了这片大陆所有的地方。后来她成为了海洋女祭司，在这里实现了精通水系魔法的夙愿。
 
 **英雄阵营：** 港口。
@@ -93,7 +109,9 @@
 
 **初始技能：** 初级智慧术 / 初级水系魔法。
 
-**创作方向（两名英雄共用）：** 原创魔法设计与新魔法机制开发。
+### 创作方向
+
+原创魔法设计与新魔法机制开发。
 
 ### 当前治疗量公式
 
@@ -116,6 +134,8 @@ H = floor(((11L + 29) × (clamp(n, 1, 7) + 11)) / 12)
 
 ## Elf Queen
 
+<img src="assets/portraits/elf-queen.png" alt="Elf Queen portrait" height="36">
+
 **Hero biography:** The Elf Queen is the queen of the fairies. For ages, her name existed only in the ancient songs of wandering bards. Renowned for her peerless beauty and outstanding tactical ability, she broke her vow of seclusion when Erathia fell into peril, answered the call of the Conflux, and personally led her people into battle for the land.
 
 **Hero faction:** Conflux.
@@ -128,13 +148,17 @@ H = floor(((11L + 29) × (clamp(n, 1, 7) + 11)) / 12)
 
 **Starting skills:** Basic Tactics / Basic Offense.
 
-**Creative direction:** New creature-specialty design, battle-animation frame extraction, and original hero artwork.
+### Creative Direction
+
+New creature-specialty design, battle-animation frame extraction, and original hero artwork.
 
 ---
 
 ## Luck Specialty Heroes
 
 ### Melodia
+
+<img src="assets/portraits/melodia.png" alt="Melodia portrait" height="36">
 
 **Hero biography:** Melodia may not be the most skilled Druid in AvLee, but she is certainly the luckiest. Even against seemingly insurmountable odds, she has a miraculous way of achieving victory, and the soldiers in her army are always eager to serve under her command.
 
@@ -150,6 +174,8 @@ H = floor(((11L + 29) × (clamp(n, 1, 7) + 11)) / 12)
 
 ### Daremyth
 
+<img src="assets/portraits/daremyth.png" alt="Daremyth portrait" height="36">
+
 **Hero biography:** Daremyth should have died long ago. Her carefree, do-whatever-I-want attitude has led her into situations she should never have survived, yet somehow she has always emerged unscathed.
 
 **Hero faction:** Tower.
@@ -162,15 +188,21 @@ H = floor(((11L + 29) × (clamp(n, 1, 7) + 11)) / 12)
 
 **Starting skills:** Basic Wisdom / Basic Intelligence; the spell book starts with Mirth.
 
-**Additional note (shared by both heroes):** The Hourglass of the Evil Hour, Cursed Ground, and other effects that directly disable Luck remain effective.
+### Additional Note
 
-**Creative direction (shared by both heroes):** Fixed-stat specialty design with compatibility for native Luck-suppression mechanics.
+The Hourglass of the Evil Hour, Cursed Ground, and other effects that directly disable Luck remain effective.
+
+### Creative Direction
+
+Fixed-stat specialty design with compatibility for native Luck-suppression mechanics.
 
 ---
 
 ## Cure Specialty Heroes
 
 ### Uland
+
+<img src="assets/portraits/uland.png" alt="Uland portrait" height="36">
 
 **Hero biography:** Before choosing the path of the Druid, Uland spent a great deal of time healing the wounded on the battlefield. The experience he gained in the army made him the outstanding leader he is today.
 
@@ -186,6 +218,8 @@ H = floor(((11L + 29) × (clamp(n, 1, 7) + 11)) / 12)
 
 ### Astra
 
+<img src="assets/portraits/astra.png" alt="Astra portrait" height="36">
+
 **Hero biography:** Astra never hurries to tell others about her past, so few people know where she came from. Everyone knows, however, that she traveled to nearly every corner of the continent in search of the secrets of Water Magic. She later became an Ocean Priestess and fulfilled her ambition of mastering Water Magic.
 
 **Hero faction:** Cove.
@@ -198,7 +232,9 @@ H = floor(((11L + 29) × (clamp(n, 1, 7) + 11)) / 12)
 
 **Starting skills:** Basic Wisdom / Basic Water Magic.
 
-**Creative direction (shared by both heroes):** Original spell design and new spell-mechanic development.
+### Creative Direction
+
+Original spell design and new spell-mechanic development.
 
 ### Current Cure Formula
 
