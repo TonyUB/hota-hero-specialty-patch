@@ -24,3 +24,4 @@ baselines/hota180_clean/HotA_Settings.ini
 
 # Local build caches and generated test payloads are never published.
 build/
+.codex_deps/
