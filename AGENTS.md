@@ -296,21 +296,28 @@ Stage 4 development history:
 - Keep Chinese, English, and copyright content in mutually exclusive, same-page `<details name="section">` panels in the root `README.md`; all three panels are collapsed by default.
 - The README must contain exactly five hero sections per language: Elf Queen,
   Melodia, Daremyth, Uland, and Astra. Each hero keeps the common fields: hero
-  name, biography, specialty effect, starting army, initial profile (class plus
-  Attack/Defense/Power/Knowledge), and starting skills. Elf Queen keeps an
-  individual creative direction; grouped Luck and Cure heroes use the shared
-  creative-direction fields described below. Adela must not appear in the
-  landing README.
+  name, a local portrait immediately beneath the name, biography, specialty
+  effect, starting army, initial profile (class plus
+  Attack/Defense/Power/Knowledge), and starting skills. Render every portrait
+  from `assets/portraits/` at a compact height of 36 pixels. Elf Queen keeps an
+  individual creative direction; grouped Luck and Cure heroes use the
+  group-level creative-direction fields described below. Adela must not appear
+  in the landing README.
+- Render `Creative Direction`, `Additional Note`, and `Current Cure Formula`
+  content as level-three headings followed by ordinary paragraphs. Do not add
+  labels such as “shared by both heroes”; group placement already communicates
+  the scope.
 - In each language panel, place Melodia and Daremyth together beneath one
   horizontal divider and one Luck-specialty group heading. Each individual
   specialty effect states only fixed Luck `+3`. After both heroes, provide one
-  shared additional note for native hard-disable effects such as Hourglass of
-  the Evil Hour and Cursed Ground, followed by one shared creative direction.
+  group-level additional note for native hard-disable effects such as Hourglass
+  of the Evil Hour and Cursed Ground, followed by one group-level creative
+  direction.
 - In each language panel, place Uland and Astra together beneath one horizontal
   divider and one Cure-specialty group heading. After both heroes, provide one
-  shared creative direction, then show the current Cure formula. Every numerical
-  Cure update must update both README formulas to match the release manifest in
-  the same commit.
+  group-level creative direction, then show the current Cure formula. Every
+  numerical Cure update must update both README formulas to match the release
+  manifest in the same commit.
 - Show one bilingual large title and one bilingual expansion hint above the three
   collapsed panels. Do not restore the old badge/button row.
 - Keep a direct current-ZIP download link inside both language panels rather than
