@@ -7,7 +7,7 @@
 <details name="section">
 <summary><strong>🔴 中文说明</strong></summary>
 
-**当前版本下载：** [HOTA_NEW_HERO_V1.1.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.1.zip)
+**当前版本下载：** [HOTA_NEW_HERO_V1.11.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.11.zip)
 
 ## 埃尔芙
 
@@ -35,7 +35,7 @@
 
 **英雄阵营：** 壁垒。
 
-**特长效果：** 英雄所率领部队的幸运值始终为 +3；厄运沙漏、诅咒之地等直接禁止幸运生效的效果仍然有效。
+**特长效果：** 英雄所率领部队的幸运值始终为 +3。
 
 **初始兵力：** 12–24 半人马 / 5–7 矮人 / 2–4 木精灵。
 
@@ -43,15 +43,13 @@
 
 **初始技能：** 初级智慧术 / 初级神秘术；魔法书自带振奋。
 
-**创作方向：** 固定属性特长设计与原生幸运封锁机制兼容。
-
 ### 黛瑞丝
 
 **英雄简介：** 黛瑞丝早就该死了。她随心所欲、无所不为的态度让她陷入了本不该生还的境地，但不知何故，她却毫发无损。
 
 **英雄阵营：** 塔楼。
 
-**特长效果：** 英雄所率领部队的幸运值始终为 +3；厄运沙漏、诅咒之地等直接禁止幸运生效的效果仍然有效。
+**特长效果：** 英雄所率领部队的幸运值始终为 +3。
 
 **初始兵力：** 30–40 精怪 / 5–7 石像鬼 / 4–5 铁魔像。
 
@@ -59,7 +57,9 @@
 
 **初始技能：** 初级智慧术 / 初级智力；魔法书自带振奋。
 
-**创作方向：** 固定属性特长设计与原生幸运封锁机制兼容。
+**额外说明（两名英雄共用）：** 厄运沙漏、诅咒之地等直接禁止幸运生效的效果仍然有效。
+
+**创作方向（两名英雄共用）：** 固定属性特长设计与原生幸运封锁机制兼容。
 
 ---
 
@@ -79,8 +79,6 @@
 
 **初始技能：** 初级智慧术 / 初级弹道术。
 
-**创作方向：** 原创魔法设计与新魔法机制开发。
-
 ### 阿斯特拉
 
 **英雄简介：** 阿斯特拉从不急着向别人说起她的往事，以致于很少有人知道她的来历。但谁都知道她为了学到神秘的水系魔法几乎访问了这片大陆所有的地方。后来她成为了海洋女祭司，在这里实现了精通水系魔法的夙愿。
@@ -95,7 +93,7 @@
 
 **初始技能：** 初级智慧术 / 初级水系魔法。
 
-**创作方向：** 原创魔法设计与新魔法机制开发。
+**创作方向（两名英雄共用）：** 原创魔法设计与新魔法机制开发。
 
 ### 当前治疗量公式
 
@@ -114,7 +112,7 @@ H = floor(((11L + 29) × (clamp(n, 1, 7) + 11)) / 12)
 <details name="section">
 <summary><strong>🔵 English Description</strong></summary>
 
-**Current version:** [Download HOTA_NEW_HERO_V1.1.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.1.zip)
+**Current version:** [Download HOTA_NEW_HERO_V1.11.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.11.zip)
 
 ## Elf Queen
 
@@ -142,7 +140,7 @@ H = floor(((11L + 29) × (clamp(n, 1, 7) + 11)) / 12)
 
 **Hero faction:** Rampart.
 
-**Specialty effect:** The Luck of all troops under the hero's command is always +3. The Hourglass of the Evil Hour, Cursed Ground, and other effects that directly disable Luck remain effective.
+**Specialty effect:** The Luck of all troops under the hero's command is always +3.
 
 **Starting army:** 12–24 Centaurs / 5–7 Dwarves / 2–4 Wood Elves.
 
@@ -150,15 +148,13 @@ H = floor(((11L + 29) × (clamp(n, 1, 7) + 11)) / 12)
 
 **Starting skills:** Basic Wisdom / Basic Mysticism; the spell book starts with Mirth.
 
-**Creative direction:** Fixed-stat specialty design with compatibility for native Luck-suppression mechanics.
-
 ### Daremyth
 
 **Hero biography:** Daremyth should have died long ago. Her carefree, do-whatever-I-want attitude has led her into situations she should never have survived, yet somehow she has always emerged unscathed.
 
 **Hero faction:** Tower.
 
-**Specialty effect:** The Luck of all troops under the hero's command is always +3. The Hourglass of the Evil Hour, Cursed Ground, and other effects that directly disable Luck remain effective.
+**Specialty effect:** The Luck of all troops under the hero's command is always +3.
 
 **Starting army:** 30–40 Apprentice Gremlins / 5–7 Stone Gargoyles / 4–5 Iron Golems.
 
@@ -166,7 +162,9 @@ H = floor(((11L + 29) × (clamp(n, 1, 7) + 11)) / 12)
 
 **Starting skills:** Basic Wisdom / Basic Intelligence; the spell book starts with Mirth.
 
-**Creative direction:** Fixed-stat specialty design with compatibility for native Luck-suppression mechanics.
+**Additional note (shared by both heroes):** The Hourglass of the Evil Hour, Cursed Ground, and other effects that directly disable Luck remain effective.
+
+**Creative direction (shared by both heroes):** Fixed-stat specialty design with compatibility for native Luck-suppression mechanics.
 
 ---
 
@@ -186,8 +184,6 @@ H = floor(((11L + 29) × (clamp(n, 1, 7) + 11)) / 12)
 
 **Starting skills:** Basic Wisdom / Basic Ballistics.
 
-**Creative direction:** Original spell design and new spell-mechanic development.
-
 ### Astra
 
 **Hero biography:** Astra never hurries to tell others about her past, so few people know where she came from. Everyone knows, however, that she traveled to nearly every corner of the continent in search of the secrets of Water Magic. She later became an Ocean Priestess and fulfilled her ambition of mastering Water Magic.
@@ -202,7 +198,7 @@ H = floor(((11L + 29) × (clamp(n, 1, 7) + 11)) / 12)
 
 **Starting skills:** Basic Wisdom / Basic Water Magic.
 
-**Creative direction:** Original spell design and new spell-mechanic development.
+**Creative direction (shared by both heroes):** Original spell design and new spell-mechanic development.
 
 ### Current Cure Formula
 

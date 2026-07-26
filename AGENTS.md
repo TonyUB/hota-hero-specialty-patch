@@ -6,11 +6,19 @@
 - Never build on Patch_v1.9, v2.0, v2.1, v2.2, or v2.3.
 - Historical test packages and failed binaries are no longer retained in the
   repository. Their conclusions are preserved under `CHANGELOG/` and `analysis/`.
-- `Download/HOTA_NEW_HERO_V1.1.zip` is the current formal release.
+- `Download/HOTA_NEW_HERO_V1.11.zip` is the current formal release.
 
 ## Current milestone
 
-V1.1 is the current formal specialty release. It inherits the complete V1.06
+V1.11 is the current formal documentation release. It inherits every gameplay
+and resource file from V1.1 byte-for-byte and changes only the root installation
+text plus repository presentation. In the landing README, Melodia and Daremyth
+now show only fixed Luck `+3` in their individual specialty-effect fields; the
+native Hourglass/Cursed Ground hard-disable boundary is one shared additional
+note, and the two heroes share one creative-direction field. Uland and Astra
+also share one creative-direction field. Chinese and English layouts match.
+
+V1.1 is the inherited formal specialty release. It inherits the complete V1.06
 gameplay payload and adds fixed-Luck specialties for Melodia (hero ID 29) and
 Daremyth (hero ID 43). After the native Cursed Ground / Hourglass hard-disable
 gate passes, both heroes return final Luck `+3`, bypassing ordinary positive
@@ -279,24 +287,30 @@ Stage 4 development history:
 - Historical numerical release: `HOTA_NEW_HERO_V1.04`
 - Historical numerical release: `HOTA_NEW_HERO_V1.05`
 - Historical numerical release: `HOTA_NEW_HERO_V1.06`
-- Current formal specialty release: `HOTA_NEW_HERO_V1.1`
+- Historical formal specialty release: `HOTA_NEW_HERO_V1.1`
+- Current formal documentation release: `HOTA_NEW_HERO_V1.11`
 - Do not reuse historical version numbers.
 
 ## GitHub release layout
 
 - Keep Chinese, English, and copyright content in mutually exclusive, same-page `<details name="section">` panels in the root `README.md`; all three panels are collapsed by default.
 - The README must contain exactly five hero sections per language: Elf Queen,
-  Melodia, Daremyth, Uland, and Astra. Each uses the same template: hero name, biography, specialty
-  effect, starting army, initial profile (class plus Attack/Defense/Power/Knowledge),
-  starting skills, and creative direction. Adela must not appear in the landing README.
+  Melodia, Daremyth, Uland, and Astra. Each hero keeps the common fields: hero
+  name, biography, specialty effect, starting army, initial profile (class plus
+  Attack/Defense/Power/Knowledge), and starting skills. Elf Queen keeps an
+  individual creative direction; grouped Luck and Cure heroes use the shared
+  creative-direction fields described below. Adela must not appear in the
+  landing README.
 - In each language panel, place Melodia and Daremyth together beneath one
-  horizontal divider and one Luck-specialty group heading. State that ordinary
-  numeric Luck modifiers cannot change their `+3`, while native hard-disable
-  effects such as Hourglass of the Evil Hour remain effective.
+  horizontal divider and one Luck-specialty group heading. Each individual
+  specialty effect states only fixed Luck `+3`. After both heroes, provide one
+  shared additional note for native hard-disable effects such as Hourglass of
+  the Evil Hour and Cursed Ground, followed by one shared creative direction.
 - In each language panel, place Uland and Astra together beneath one horizontal
-  divider and one Cure-specialty group heading. Show the current Cure formula
-  after Astra. Every numerical Cure update must update both README formulas to
-  match the release manifest in the same commit.
+  divider and one Cure-specialty group heading. After both heroes, provide one
+  shared creative direction, then show the current Cure formula. Every numerical
+  Cure update must update both README formulas to match the release manifest in
+  the same commit.
 - Show one bilingual large title and one bilingual expansion hint above the three
   collapsed panels. Do not restore the old badge/button row.
 - Keep a direct current-ZIP download link inside both language panels rather than

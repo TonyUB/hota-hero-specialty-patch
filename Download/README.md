@@ -1,12 +1,14 @@
 # Download
 
-当前唯一正式补丁：[`HOTA_NEW_HERO_V1.1.zip`](./HOTA_NEW_HERO_V1.1.zip)
+当前唯一正式补丁：[`HOTA_NEW_HERO_V1.11.zip`](./HOTA_NEW_HERO_V1.11.zip)
 
 ```text
-SHA-256 4ea5e0549f591cb3b43fce2af621b0806ce7d6608c1f82eaa30525c1ec516883
+SHA-256 6d262426f4f5cd77ac9dd110dba8d97134d4602993eb284aa2ed2f4a4354bbde
 ```
 
-- `HOTA_NEW_HERO_V1.1_README.md`：安装、功能、实机验收与静态验收摘要。
-- `HOTA_NEW_HERO_V1.1_manifest.md` / `.json`：构建来源、精确字节回滚、幸运 Hook、英雄数据、资源边界、治愈公式和逐文件校验记录。
+- `HOTA_NEW_HERO_V1.11_README.md`：安装、功能与本次分组说明调整摘要。
+- `HOTA_NEW_HERO_V1.11_manifest.md` / `.json`：V1.1 来源哈希、说明文件边界、治疗公式和逐文件校验记录。
+
+V1.11 是说明与排版小版本：包内只有根目录安装说明改变，全部游戏文件与正式 V1.1 逐字节一致。
 
 历史版本只保留文字日志；旧补丁目录 `OLD/` 仅保留可信 `Patch_v1.8.zip`。
