@@ -7,7 +7,7 @@
 <details name="section">
 <summary><strong>🔴 中文说明</strong></summary>
 
-**当前版本下载：** [HOTA_NEW_HERO_V1.06.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.06.zip)
+**当前版本下载：** [HOTA_NEW_HERO_V1.1.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.1.zip)
 
 ## 埃尔芙
 
@@ -24,6 +24,42 @@
 **初始技能：** 初级战术 / 初级进攻术。
 
 **创作方向：** 新兵种特长设计、战斗动画抓帧提取与全新英雄立绘创作。
+
+---
+
+## 幸运特长英雄
+
+### 马洛迪亚
+
+**英雄简介：** 马洛迪亚也许不是埃里技艺最精湛的德鲁伊，但她肯定是最幸运的德鲁伊。即使面对难以克服的困难，她也能奇迹般地取得胜利。在她率领的军队中，士兵们都乐意为她效命。
+
+**英雄阵营：** 壁垒。
+
+**特长效果：** 英雄所率领部队的幸运值始终为 +3；厄运沙漏、诅咒之地等直接禁止幸运生效的效果仍然有效。
+
+**初始兵力：** 12–24 半人马 / 5–7 矮人 / 2–4 木精灵。
+
+**初始指数：** 职业：德鲁伊；四维（攻击 / 防御 / 力量 / 知识）：0 / 2 / 1 / 2。
+
+**初始技能：** 初级智慧术 / 初级神秘术；魔法书自带振奋。
+
+**创作方向：** 固定属性特长设计与原生幸运封锁机制兼容。
+
+### 黛瑞丝
+
+**英雄简介：** 黛瑞丝早就该死了。她随心所欲、无所不为的态度让她陷入了本不该生还的境地，但不知何故，她却毫发无损。
+
+**英雄阵营：** 塔楼。
+
+**特长效果：** 英雄所率领部队的幸运值始终为 +3；厄运沙漏、诅咒之地等直接禁止幸运生效的效果仍然有效。
+
+**初始兵力：** 30–40 精怪 / 5–7 石像鬼 / 4–5 铁魔像。
+
+**初始指数：** 职业：术士；四维（攻击 / 防御 / 力量 / 知识）：0 / 0 / 2 / 3。
+
+**初始技能：** 初级智慧术 / 初级智力；魔法书自带振奋。
+
+**创作方向：** 固定属性特长设计与原生幸运封锁机制兼容。
 
 ---
 
@@ -78,7 +114,7 @@ H = floor(((11L + 29) × (clamp(n, 1, 7) + 11)) / 12)
 <details name="section">
 <summary><strong>🔵 English Description</strong></summary>
 
-**Current version:** [Download HOTA_NEW_HERO_V1.06.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.06.zip)
+**Current version:** [Download HOTA_NEW_HERO_V1.1.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.1.zip)
 
 ## Elf Queen
 
@@ -95,6 +131,42 @@ H = floor(((11L + 29) × (clamp(n, 1, 7) + 11)) / 12)
 **Starting skills:** Basic Tactics / Basic Offense.
 
 **Creative direction:** New creature-specialty design, battle-animation frame extraction, and original hero artwork.
+
+---
+
+## Luck Specialty Heroes
+
+### Melodia
+
+**Hero biography:** Melodia may not be the most skilled Druid in AvLee, but she is certainly the luckiest. Even against seemingly insurmountable odds, she has a miraculous way of achieving victory, and the soldiers in her army are always eager to serve under her command.
+
+**Hero faction:** Rampart.
+
+**Specialty effect:** The Luck of all troops under the hero's command is always +3. The Hourglass of the Evil Hour, Cursed Ground, and other effects that directly disable Luck remain effective.
+
+**Starting army:** 12–24 Centaurs / 5–7 Dwarves / 2–4 Wood Elves.
+
+**Initial profile:** Class: Druid; primary stats (Attack / Defense / Power / Knowledge): 0 / 2 / 1 / 2.
+
+**Starting skills:** Basic Wisdom / Basic Mysticism; the spell book starts with Mirth.
+
+**Creative direction:** Fixed-stat specialty design with compatibility for native Luck-suppression mechanics.
+
+### Daremyth
+
+**Hero biography:** Daremyth should have died long ago. Her carefree, do-whatever-I-want attitude has led her into situations she should never have survived, yet somehow she has always emerged unscathed.
+
+**Hero faction:** Tower.
+
+**Specialty effect:** The Luck of all troops under the hero's command is always +3. The Hourglass of the Evil Hour, Cursed Ground, and other effects that directly disable Luck remain effective.
+
+**Starting army:** 30–40 Apprentice Gremlins / 5–7 Stone Gargoyles / 4–5 Iron Golems.
+
+**Initial profile:** Class: Wizard; primary stats (Attack / Defense / Power / Knowledge): 0 / 0 / 2 / 3.
+
+**Starting skills:** Basic Wisdom / Basic Intelligence; the spell book starts with Mirth.
+
+**Creative direction:** Fixed-stat specialty design with compatibility for native Luck-suppression mechanics.
 
 ---
 

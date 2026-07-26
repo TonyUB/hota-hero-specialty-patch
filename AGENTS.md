@@ -6,11 +6,22 @@
 - Never build on Patch_v1.9, v2.0, v2.1, v2.2, or v2.3.
 - Historical test packages and failed binaries are no longer retained in the
   repository. Their conclusions are preserved under `CHANGELOG/` and `analysis/`.
-- `Download/HOTA_NEW_HERO_V1.06.zip` is the current formal release.
+- `Download/HOTA_NEW_HERO_V1.1.zip` is the current formal release.
 
 ## Current milestone
 
-V1.06 is the current formal numerical release. It inherits the complete V1.05
+V1.1 is the current formal specialty release. It inherits the complete V1.06
+gameplay payload and adds fixed-Luck specialties for Melodia (hero ID 29) and
+Daremyth (hero ID 43). After the native Cursed Ground / Hourglass hard-disable
+gate passes, both heroes return final Luck `+3`, bypassing ordinary positive
+and negative numeric modifiers. The native hard-disable return remains before
+the new hook and therefore still prevents lucky strikes. Melodia starts with
+Basic Wisdom + Basic Mysticism; Daremyth keeps Basic Wisdom + Basic
+Intelligence; both spell books start with Mirth. The standard and HD
+executables, two HotA LOD copies, and the loose Chinese HeroSpec override match
+the user-accepted `HOTA_NEW_HERO_V1.1_LUCK_TEST1` byte-for-byte.
+
+V1.06 is the inherited formal numerical release. It inherits the complete V1.05
 gameplay payload and adds Cure UI synchronization for Uland and Astra. The
 spell book displays the current tier-1 through tier-7 F7 range, and hovering a
 living friendly stack displays that stack's exact F7 total. Corpse-hover text
@@ -218,7 +229,12 @@ Stage 4 development history:
 - Other heroes use HotA 1.8.0 starting-army ranges.
 - Adela is fully native HotA 1.8.0; Bless uses the original mana cost and no
   custom Adela behavior or README section may be reintroduced.
-- Melodia, Solmyr, and Loynis remain at native HotA 1.8.0 behavior.
+- Melodia and Daremyth return final Luck `+3` after native hard-disable gates.
+  Hourglass of the Evil Hour, Cursed Ground, and equivalent native disable
+  effects remain effective. Melodia starts with Basic Wisdom + Basic
+  Mysticism; Daremyth keeps Basic Wisdom + Basic Intelligence; both start with
+  Mirth in their spell books.
+- Solmyr and Loynis remain at native HotA 1.8.0 behavior.
 - Preserve D32F 215-frame UN44/UN32 files and Elf Queen frame 141.
 
 ## Required deliverables before gameplay patching
@@ -262,16 +278,21 @@ Stage 4 development history:
 - Historical numerical release: `HOTA_NEW_HERO_V1.03`
 - Historical numerical release: `HOTA_NEW_HERO_V1.04`
 - Historical numerical release: `HOTA_NEW_HERO_V1.05`
-- Current formal release: `HOTA_NEW_HERO_V1.06`
+- Historical numerical release: `HOTA_NEW_HERO_V1.06`
+- Current formal specialty release: `HOTA_NEW_HERO_V1.1`
 - Do not reuse historical version numbers.
 
 ## GitHub release layout
 
 - Keep Chinese, English, and copyright content in mutually exclusive, same-page `<details name="section">` panels in the root `README.md`; all three panels are collapsed by default.
-- The README must contain exactly three hero sections per language: Elf Queen,
-  Uland, and Astra. Each uses the same template: hero name, biography, specialty
+- The README must contain exactly five hero sections per language: Elf Queen,
+  Melodia, Daremyth, Uland, and Astra. Each uses the same template: hero name, biography, specialty
   effect, starting army, initial profile (class plus Attack/Defense/Power/Knowledge),
   starting skills, and creative direction. Adela must not appear in the landing README.
+- In each language panel, place Melodia and Daremyth together beneath one
+  horizontal divider and one Luck-specialty group heading. State that ordinary
+  numeric Luck modifiers cannot change their `+3`, while native hard-disable
+  effects such as Hourglass of the Evil Hour remain effective.
 - In each language panel, place Uland and Astra together beneath one horizontal
   divider and one Cure-specialty group heading. Show the current Cure formula
   after Astra. Every numerical Cure update must update both README formulas to
