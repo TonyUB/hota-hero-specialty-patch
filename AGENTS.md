@@ -299,10 +299,11 @@ Stage 4 development history:
   name, a local portrait immediately beneath the name, biography, specialty
   effect, starting army, initial profile (class plus
   Attack/Defense/Power/Knowledge), and starting skills. Render every portrait
-  from `assets/portraits/` at a compact height of 36 pixels. Elf Queen keeps an
-  individual creative direction; grouped Luck and Cure heroes use the
-  group-level creative-direction fields described below. Adela must not appear
-  in the landing README.
+  from `assets/portraits/` at a height of 72 pixels. On the same line, follow it
+  with four nonbreaking spaces and that hero's 44-pixel specialty icon from
+  `assets/specialties/`. Elf Queen keeps an individual creative direction;
+  grouped Luck and Cure heroes use the group-level creative-direction fields
+  described below. Adela must not appear in the landing README.
 - Render `Creative Direction`, `Additional Note`, and `Current Cure Formula`
   content as level-three headings followed by ordinary paragraphs. Do not add
   labels such as “shared by both heroes”; group placement already communicates
