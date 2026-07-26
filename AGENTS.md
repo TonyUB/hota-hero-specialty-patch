@@ -6,17 +6,19 @@
 - Never build on Patch_v1.9, v2.0, v2.1, v2.2, or v2.3.
 - Historical test packages and failed binaries are no longer retained in the
   repository. Their conclusions are preserved under `CHANGELOG/` and `analysis/`.
-- `Download/HOTA_NEW_HERO_V1.11.zip` is the current formal release.
+- `Download/HOTA_NEW_HERO_V1.12.zip` is the current formal release.
 
 ## Current milestone
 
-V1.11 is the current formal documentation release. It inherits every gameplay
-and resource file from V1.1 byte-for-byte and changes only the root installation
-text plus repository presentation. In the landing README, Melodia and Daremyth
-now show only fixed Luck `+3` in their individual specialty-effect fields; the
-native Hourglass/Cursed Ground hard-disable boundary is one shared additional
-note, and the two heroes share one creative-direction field. Uland and Astra
-also share one creative-direction field. Chinese and English layouts match.
+V1.12 is the current formal specialty release. It preserves V1.11's accepted
+fixed Luck `+3` for Melodia and Daremyth and adds a per-stack, per-battle first
+active attack guarantee. Only active melee/ranged commands consume eligibility;
+retaliation, wait, defend, and spellcasting do not. Repeated hits within the
+same command share the guarantee, and subsequent commands use native `+3` Luck.
+The native Hourglass/Cursed Ground hard-disable boundary still takes priority.
+The formal payload removes TEST2's diagnostic writer and passed reproducible
+builds, independent verification, runtime hook inspection, and standard/HD
+startup gates. Chinese and English landing-page descriptions match.
 
 V1.1 is the inherited formal specialty release. It inherits the complete V1.06
 gameplay payload and adds fixed-Luck specialties for Melodia (hero ID 29) and
@@ -204,6 +206,37 @@ Stage 4 development history:
   from both HeroSpec archives, and presents Cure as the added resurrection
   sentence followed by the original `(8-n)` scaling sentence.
 
+V1.2 first-active-attack development:
+
+- `FIRSTATTACK_DIAG03` captured 38 calls from the two true HotA.dll physical
+  attack callbacks and proved that original argument 2 is the attacking stack.
+  Static HotA 1.8.0 disassembly independently confirmed `stack+0x70` as the
+  native lucky-strike flag and showed that both callbacks clear it at the end
+  of a hit.
+- `FIRSTATTACK_DIAG04` captured 25 attack calls. Its `activeStack` candidate was
+  null throughout and was rejected. The EXE action dispatch table instead
+  proves that ranged action 6 enters at `0x00478D70` and melee action 7 enters
+  at `0x00478B94`, with `EBX` holding the active stack before any retaliation
+  or repeated-hit callbacks occur.
+- `HOTA_NEW_HERO_V1.2_FIRSTATTACK_TEST1` failed functional testing even though
+  its log proved the action qualification, per-stack consumption, specialist
+  gate, and attacker matching were correct. The callback changed `isLucky`
+  from 0 to 1, but did so before HotA's true Luck roll overwrote the flag.
+- Static tracing then located HotA's actual Luck function at preferred VA
+  `0x10133880`; its native success path writes `stack+0x70=1` at `0x101338DD`
+  and continues through the normal animation, sound, combat-log and damage
+  path. `HOTA_NEW_HERO_V1.2_FIRSTATTACK_TEST2` hooks this function entry. The
+  user confirmed all tested attack types work and approved formal release. The
+  proven action 6/7 bookkeeping and post-hard-disable side gate remain
+  unchanged, so retaliation cannot consume
+  or inherit the guarantee and Hourglass/Cursed Ground still take priority.
+- Formal `HOTA_NEW_HERO_V1.12` combines the accepted V1.11 fixed-Luck `+3`
+  return with the accepted TEST2 first-active-attack path. Its formal payload
+  removes all binary diagnostic-file writing. Two deterministic builds,
+  independent verification, runtime fixed-`+3` and HotA Luck-hook inspection,
+  and both standard/HD startup gates passed. Future work must use V1.12 as the
+  release baseline, never TEST1/TEST2 or any diagnostic package.
+
 ## Non-negotiable rules
 
 1. Prove the runtime execution path before patching gameplay logic.
@@ -288,7 +321,7 @@ Stage 4 development history:
 - Historical numerical release: `HOTA_NEW_HERO_V1.05`
 - Historical numerical release: `HOTA_NEW_HERO_V1.06`
 - Historical formal specialty release: `HOTA_NEW_HERO_V1.1`
-- Current formal documentation release: `HOTA_NEW_HERO_V1.11`
+- Current formal release: `HOTA_NEW_HERO_V1.12`
 - Do not reuse historical version numbers.
 
 ## GitHub release layout

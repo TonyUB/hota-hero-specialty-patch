@@ -7,7 +7,7 @@
 <details name="section">
 <summary><strong>🔴 中文说明</strong></summary>
 
-**当前版本下载：** [HOTA_NEW_HERO_V1.11.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.11.zip)
+**当前版本下载：** [HOTA_NEW_HERO_V1.12.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.12.zip)
 
 ## 埃尔芙
 
@@ -41,7 +41,7 @@
 
 **英雄阵营：** 壁垒。
 
-**特长效果：** 英雄所率领部队的幸运值始终为 +3。
+**特长效果：** 英雄所率领部队的幸运值始终为 +3，且每支部队在每场战斗中首次主动攻击时必定触发幸运。
 
 **初始兵力：** 12–24 半人马 / 5–7 矮人 / 2–4 木精灵。
 
@@ -57,7 +57,7 @@
 
 **英雄阵营：** 塔楼。
 
-**特长效果：** 英雄所率领部队的幸运值始终为 +3。
+**特长效果：** 英雄所率领部队的幸运值始终为 +3，且每支部队在每场战斗中首次主动攻击时必定触发幸运。
 
 **初始兵力：** 30–40 精怪 / 5–7 石像鬼 / 4–5 铁魔像。
 
@@ -71,7 +71,7 @@
 
 ### 创作方向
 
-固定属性特长设计与原生幸运封锁机制兼容。
+固定幸运特长与首次攻击必定幸运机制设计，并兼容原生幸运封锁规则。
 
 ---
 
@@ -130,7 +130,7 @@ H = floor(((11L + 29) × (clamp(n, 1, 7) + 11)) / 12)
 <details name="section">
 <summary><strong>🔵 English Description</strong></summary>
 
-**Current version:** [Download HOTA_NEW_HERO_V1.11.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.11.zip)
+**Current version:** [Download HOTA_NEW_HERO_V1.12.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.12.zip)
 
 ## Elf Queen
 
@@ -164,7 +164,7 @@ New creature-specialty design, battle-animation frame extraction, and original h
 
 **Hero faction:** Rampart.
 
-**Specialty effect:** The Luck of all troops under the hero's command is always +3.
+**Specialty effect:** The Luck of all troops under the hero's command is always +3, and each troop is guaranteed to trigger Luck on its first active attack in every battle.
 
 **Starting army:** 12–24 Centaurs / 5–7 Dwarves / 2–4 Wood Elves.
 
@@ -180,7 +180,7 @@ New creature-specialty design, battle-animation frame extraction, and original h
 
 **Hero faction:** Tower.
 
-**Specialty effect:** The Luck of all troops under the hero's command is always +3.
+**Specialty effect:** The Luck of all troops under the hero's command is always +3, and each troop is guaranteed to trigger Luck on its first active attack in every battle.
 
 **Starting army:** 30–40 Apprentice Gremlins / 5–7 Stone Gargoyles / 4–5 Iron Golems.
 
@@ -194,7 +194,7 @@ The Hourglass of the Evil Hour, Cursed Ground, and other effects that directly d
 
 ### Creative Direction
 
-Fixed-stat specialty design with compatibility for native Luck-suppression mechanics.
+Fixed-Luck specialty design and a guaranteed first-attack Luck mechanic, with compatibility for native Luck-suppression rules.
 
 ---
 
