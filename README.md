@@ -7,11 +7,11 @@
 <details name="section">
 <summary><strong>🔴 中文说明</strong></summary>
 
-**当前版本下载：** [HOTA_NEW_HERO_V1.12.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.12.zip)
+**当前版本下载：** [HOTA_NEW_HERO_V1.13.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.13.zip)
 
 ## 埃尔芙
 
-<p><img src="assets/portraits/elf-queen.png" alt="埃尔芙头像" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/elf-queen.png" alt="埃尔芙特长图标" height="44"></p>
+<p><img src="assets/portraits/elf-queen.png" alt="埃尔芙头像" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/elf-queen.png" alt="埃尔芙特长图标" height="72"></p>
 
 **英雄简介：** 埃尔芙是妖精一族的女王，她的名字长久以来只存在于吟游诗人的古老歌谣中。她以绝世容貌与卓越的战术才能闻名。当埃拉西亚陷入危难时，她打破避世誓言，响应元素城的召唤，亲率部众为这片大陆而战。
 
@@ -35,7 +35,7 @@
 
 ### 马洛迪亚
 
-<p><img src="assets/portraits/melodia.png" alt="马洛迪亚头像" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/melodia.png" alt="马洛迪亚特长图标" height="44"></p>
+<p><img src="assets/portraits/melodia.png" alt="马洛迪亚头像" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/melodia.png" alt="马洛迪亚特长图标" height="72">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spellbook/spellbook.png" alt="魔法书" title="魔法书" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spells/mirth.png" alt="初始法术：振奋" title="初始法术：振奋" height="72"></p>
 
 **英雄简介：** 马洛迪亚也许不是埃里技艺最精湛的德鲁伊，但她肯定是最幸运的德鲁伊。即使面对难以克服的困难，她也能奇迹般地取得胜利。在她率领的军队中，士兵们都乐意为她效命。
 
@@ -51,7 +51,7 @@
 
 ### 黛瑞丝
 
-<p><img src="assets/portraits/daremyth.png" alt="黛瑞丝头像" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/daremyth.png" alt="黛瑞丝特长图标" height="44"></p>
+<p><img src="assets/portraits/daremyth.png" alt="黛瑞丝头像" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/daremyth.png" alt="黛瑞丝特长图标" height="72">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spellbook/spellbook.png" alt="魔法书" title="魔法书" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spells/magic-arrow.png" alt="初始法术：魔法神箭" title="初始法术：魔法神箭" height="72"></p>
 
 **英雄简介：** 黛瑞丝早就该死了。她随心所欲、无所不为的态度让她陷入了本不该生还的境地，但不知何故，她却毫发无损。
 
@@ -63,7 +63,7 @@
 
 **初始指数：** 职业：术士；四维（攻击 / 防御 / 力量 / 知识）：0 / 0 / 2 / 3。
 
-**初始技能：** 初级智慧术 / 初级智力；魔法书自带振奋。
+**初始技能：** 初级智慧术 / 初级智力；魔法书自带魔法神箭。
 
 ### 额外说明
 
@@ -79,7 +79,7 @@
 
 ### 尤兰德
 
-<p><img src="assets/portraits/uland.png" alt="尤兰德头像" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/uland.png" alt="尤兰德特长图标" height="44"></p>
+<p><img src="assets/portraits/uland.png" alt="尤兰德头像" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/uland.png" alt="尤兰德特长图标" height="72">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spellbook/spellbook.png" alt="魔法书" title="魔法书" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spells/cure.png" alt="初始法术：治愈" title="初始法术：治愈" height="72"></p>
 
 **英雄简介：** 尤兰德在选择德鲁伊之路前，曾在战场上做过大量的治疗工作，他在军队里学到的经验使他成为了今天出色的领导者。
 
@@ -91,11 +91,11 @@
 
 **初始指数：** 职业：德鲁伊；四维（攻击 / 防御 / 力量 / 知识）：0 / 2 / 1 / 2。
 
-**初始技能：** 初级智慧术 / 初级弹道术。
+**初始技能：** 初级智慧术 / 初级弹道术；魔法书自带治愈。
 
 ### 阿斯特拉
 
-<p><img src="assets/portraits/astra.png" alt="阿斯特拉头像" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/astra.png" alt="阿斯特拉特长图标" height="44"></p>
+<p><img src="assets/portraits/astra.png" alt="阿斯特拉头像" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/astra.png" alt="阿斯特拉特长图标" height="72">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spellbook/spellbook.png" alt="魔法书" title="魔法书" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spells/cure.png" alt="初始法术：治愈" title="初始法术：治愈" height="72"></p>
 
 **英雄简介：** 阿斯特拉从不急着向别人说起她的往事，以致于很少有人知道她的来历。但谁都知道她为了学到神秘的水系魔法几乎访问了这片大陆所有的地方。后来她成为了海洋女祭司，在这里实现了精通水系魔法的夙愿。
 
@@ -107,7 +107,7 @@
 
 **初始指数：** 职业：领航员；四维（攻击 / 防御 / 力量 / 知识）：2 / 0 / 1 / 2。
 
-**初始技能：** 初级智慧术 / 初级水系魔法。
+**初始技能：** 初级智慧术 / 初级水系魔法；魔法书自带治愈。
 
 ### 创作方向
 
@@ -130,11 +130,11 @@ H = floor(((11L + 29) × (clamp(n, 1, 7) + 11)) / 12)
 <details name="section">
 <summary><strong>🔵 English Description</strong></summary>
 
-**Current version:** [Download HOTA_NEW_HERO_V1.12.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.12.zip)
+**Current version:** [Download HOTA_NEW_HERO_V1.13.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.13.zip)
 
 ## Elf Queen
 
-<p><img src="assets/portraits/elf-queen.png" alt="Elf Queen portrait" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/elf-queen.png" alt="Elf Queen specialty icon" height="44"></p>
+<p><img src="assets/portraits/elf-queen.png" alt="Elf Queen portrait" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/elf-queen.png" alt="Elf Queen specialty icon" height="72"></p>
 
 **Hero biography:** The Elf Queen is the queen of the fairies. For ages, her name existed only in the ancient songs of wandering bards. Renowned for her peerless beauty and outstanding tactical ability, she broke her vow of seclusion when Erathia fell into peril, answered the call of the Conflux, and personally led her people into battle for the land.
 
@@ -158,7 +158,7 @@ New creature-specialty design, battle-animation frame extraction, and original h
 
 ### Melodia
 
-<p><img src="assets/portraits/melodia.png" alt="Melodia portrait" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/melodia.png" alt="Melodia specialty icon" height="44"></p>
+<p><img src="assets/portraits/melodia.png" alt="Melodia portrait" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/melodia.png" alt="Melodia specialty icon" height="72">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spellbook/spellbook.png" alt="Spell book" title="Spell book" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spells/mirth.png" alt="Starting spell: Mirth" title="Starting spell: Mirth" height="72"></p>
 
 **Hero biography:** Melodia may not be the most skilled Druid in AvLee, but she is certainly the luckiest. Even against seemingly insurmountable odds, she has a miraculous way of achieving victory, and the soldiers in her army are always eager to serve under her command.
 
@@ -174,7 +174,7 @@ New creature-specialty design, battle-animation frame extraction, and original h
 
 ### Daremyth
 
-<p><img src="assets/portraits/daremyth.png" alt="Daremyth portrait" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/daremyth.png" alt="Daremyth specialty icon" height="44"></p>
+<p><img src="assets/portraits/daremyth.png" alt="Daremyth portrait" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/daremyth.png" alt="Daremyth specialty icon" height="72">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spellbook/spellbook.png" alt="Spell book" title="Spell book" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spells/magic-arrow.png" alt="Starting spell: Magic Arrow" title="Starting spell: Magic Arrow" height="72"></p>
 
 **Hero biography:** Daremyth should have died long ago. Her carefree, do-whatever-I-want attitude has led her into situations she should never have survived, yet somehow she has always emerged unscathed.
 
@@ -186,7 +186,7 @@ New creature-specialty design, battle-animation frame extraction, and original h
 
 **Initial profile:** Class: Wizard; primary stats (Attack / Defense / Power / Knowledge): 0 / 0 / 2 / 3.
 
-**Starting skills:** Basic Wisdom / Basic Intelligence; the spell book starts with Mirth.
+**Starting skills:** Basic Wisdom / Basic Intelligence; the spell book starts with Magic Arrow.
 
 ### Additional Note
 
@@ -202,7 +202,7 @@ Fixed-Luck specialty design and a guaranteed first-attack Luck mechanic, with co
 
 ### Uland
 
-<p><img src="assets/portraits/uland.png" alt="Uland portrait" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/uland.png" alt="Uland specialty icon" height="44"></p>
+<p><img src="assets/portraits/uland.png" alt="Uland portrait" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/uland.png" alt="Uland specialty icon" height="72">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spellbook/spellbook.png" alt="Spell book" title="Spell book" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spells/cure.png" alt="Starting spell: Cure" title="Starting spell: Cure" height="72"></p>
 
 **Hero biography:** Before choosing the path of the Druid, Uland spent a great deal of time healing the wounded on the battlefield. The experience he gained in the army made him the outstanding leader he is today.
 
@@ -214,11 +214,11 @@ Fixed-Luck specialty design and a guaranteed first-attack Luck mechanic, with co
 
 **Initial profile:** Class: Druid; primary stats (Attack / Defense / Power / Knowledge): 0 / 2 / 1 / 2.
 
-**Starting skills:** Basic Wisdom / Basic Ballistics.
+**Starting skills:** Basic Wisdom / Basic Ballistics; the spell book starts with Cure.
 
 ### Astra
 
-<p><img src="assets/portraits/astra.png" alt="Astra portrait" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/astra.png" alt="Astra specialty icon" height="44"></p>
+<p><img src="assets/portraits/astra.png" alt="Astra portrait" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/astra.png" alt="Astra specialty icon" height="72">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spellbook/spellbook.png" alt="Spell book" title="Spell book" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spells/cure.png" alt="Starting spell: Cure" title="Starting spell: Cure" height="72"></p>
 
 **Hero biography:** Astra never hurries to tell others about her past, so few people know where she came from. Everyone knows, however, that she traveled to nearly every corner of the continent in search of the secrets of Water Magic. She later became an Ocean Priestess and fulfilled her ambition of mastering Water Magic.
 
@@ -230,7 +230,7 @@ Fixed-Luck specialty design and a guaranteed first-attack Luck mechanic, with co
 
 **Initial profile:** Class: Navigator; primary stats (Attack / Defense / Power / Knowledge): 2 / 0 / 1 / 2.
 
-**Starting skills:** Basic Wisdom / Basic Water Magic.
+**Starting skills:** Basic Wisdom / Basic Water Magic; the spell book starts with Cure.
 
 ### Creative Direction
 

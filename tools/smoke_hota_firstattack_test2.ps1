@@ -5,6 +5,8 @@ param(
     [string]$GameRoot,
     [Parameter(Mandatory = $true)]
     [string]$RuntimeReader,
+    [ValidateSet('h3hota.exe', 'h3hota HD.exe')]
+    [string]$ExecutableName = 'h3hota.exe',
     [switch]$RequireFixedPlusThree
 )
 
@@ -21,7 +23,11 @@ $direct = $null
 
 try {
     $running = Get-Process -ErrorAction SilentlyContinue |
-        Where-Object { $_.ProcessName -like 'h3hota*' }
+        Where-Object {
+            $_.ProcessName -like 'h3hota*' -and
+            $_.Path -and
+            $_.Path.StartsWith($resolvedGame, [System.StringComparison]::OrdinalIgnoreCase)
+        }
     if ($running) { throw 'An h3hota process is already running.' }
 
     foreach ($name in $expectedFiles) {
@@ -60,7 +66,7 @@ try {
 
     $before = Get-Date
     $direct = Start-Process `
-        -FilePath (Join-Path $resolvedGame 'h3hota.exe') `
+        -FilePath (Join-Path $resolvedGame $ExecutableName) `
         -WorkingDirectory $resolvedGame `
         -WindowStyle Hidden `
         -PassThru
@@ -73,7 +79,7 @@ try {
     if (-not $started) {
         throw 'Standard executable did not survive the smoke-test window.'
     }
-    'STANDARD_SMOKE_SURVIVED=1'
+    'SMOKE_SURVIVED=1 EXECUTABLE={0}' -f $ExecutableName
 }
 finally {
     if ($direct) {

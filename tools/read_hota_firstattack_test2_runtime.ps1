@@ -62,7 +62,11 @@ function Test-BytePattern {
 
 $resolvedRoot = (Resolve-Path -LiteralPath $GameRoot).Path
 $existing = Get-Process -ErrorAction SilentlyContinue |
-    Where-Object { $_.ProcessName -like 'h3hota*' }
+    Where-Object {
+        $_.ProcessName -like 'h3hota*' -and
+        $_.Path -and
+        $_.Path.StartsWith($resolvedRoot, [System.StringComparison]::OrdinalIgnoreCase)
+    }
 if ($existing) { throw 'An h3hota process is already running.' }
 
 $started = @()
@@ -76,6 +80,8 @@ try {
     $started = Get-Process -ErrorAction SilentlyContinue |
         Where-Object {
             $_.ProcessName -like 'h3hota*' -and
+            $_.Path -and
+            $_.Path.StartsWith($resolvedRoot, [System.StringComparison]::OrdinalIgnoreCase) -and
             $_.StartTime -ge $before.AddSeconds(-2)
         }
     $process = $started | Select-Object -First 1
