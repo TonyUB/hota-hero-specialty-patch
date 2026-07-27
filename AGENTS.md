@@ -6,11 +6,21 @@
 - Never build on Patch_v1.9, v2.0, v2.1, v2.2, or v2.3.
 - Historical test packages and failed binaries are no longer retained in the
   repository. Their conclusions are preserved under `CHANGELOG/` and `analysis/`.
-- `Download/HOTA_NEW_HERO_V1.12.zip` is the current formal release.
+- `Download/HOTA_NEW_HERO_V1.13.zip` is the current formal release.
 
 ## Current milestone
 
-V1.12 is the current formal specialty release. It preserves V1.11's accepted
+V1.13 is the current formal data release. It inherits V1.12 byte-for-byte
+except for Daremyth's starting-spell field in the standard and HD executables
+and the root installation text. Daremyth keeps Basic Wisdom + Basic
+Intelligence and her spellbook, but starts with Magic Arrow (ID 15) instead of
+Mirth (ID 49). Melodia continues to start with Mirth; Uland and Astra continue
+to start with Cure. The fixed Luck `+3`, per-stack first-active-attack
+guarantee, native hard-disable boundary, Cure system, and every other gameplay
+path remain unchanged. Full-record checks, PE checksums, deterministic builds,
+independent verification, rollback, and standard/HD startup gates pass.
+
+V1.12 is the inherited formal specialty release. It preserves V1.11's accepted
 fixed Luck `+3` for Melodia and Daremyth and adds a per-stack, per-battle first
 active attack guarantee. Only active melee/ranged commands consume eligibility;
 retaliation, wait, defend, and spellcasting do not. Repeated hits within the
@@ -236,6 +246,12 @@ V1.2 first-active-attack development:
   independent verification, runtime fixed-`+3` and HotA Luck-hook inspection,
   and both standard/HD startup gates passed. Future work must use V1.12 as the
   release baseline, never TEST1/TEST2 or any diagnostic package.
+- Formal `HOTA_NEW_HERO_V1.13` uses V1.12 as its sole source and changes only
+  Daremyth's starting-spell dword at EXE file offset `0x0027AD64` from Mirth
+  (`31 00 00 00`) to Magic Arrow (`0F 00 00 00`), plus each EXE checksum and
+  the root installation text. The full Daremyth record, skills, spellbook flag,
+  rollback bytes, package member set, and all non-EXE gameplay files are
+  verified. Future work must use V1.13 as the release baseline.
 
 ## Non-negotiable rules
 
@@ -272,9 +288,9 @@ V1.2 first-active-attack development:
   custom Adela behavior or README section may be reintroduced.
 - Melodia and Daremyth return final Luck `+3` after native hard-disable gates.
   Hourglass of the Evil Hour, Cursed Ground, and equivalent native disable
-  effects remain effective. Melodia starts with Basic Wisdom + Basic
-  Mysticism; Daremyth keeps Basic Wisdom + Basic Intelligence; both start with
-  Mirth in their spell books.
+  effects remain effective. Melodia starts with Basic Wisdom + Basic Mysticism
+  and Mirth; Daremyth keeps Basic Wisdom + Basic Intelligence and starts with
+  Magic Arrow in her spell book.
 - Solmyr and Loynis remain at native HotA 1.8.0 behavior.
 - Preserve D32F 215-frame UN44/UN32 files and Elf Queen frame 141.
 
@@ -321,7 +337,8 @@ V1.2 first-active-attack development:
 - Historical numerical release: `HOTA_NEW_HERO_V1.05`
 - Historical numerical release: `HOTA_NEW_HERO_V1.06`
 - Historical formal specialty release: `HOTA_NEW_HERO_V1.1`
-- Current formal release: `HOTA_NEW_HERO_V1.12`
+- Historical formal specialty release: `HOTA_NEW_HERO_V1.12`
+- Current formal release: `HOTA_NEW_HERO_V1.13`
 - Do not reuse historical version numbers.
 
 ## GitHub release layout
@@ -333,8 +350,13 @@ V1.2 first-active-attack development:
   effect, starting army, initial profile (class plus
   Attack/Defense/Power/Knowledge), and starting skills. Render every portrait
   from `assets/portraits/` at a height of 72 pixels. On the same line, follow it
-  with four nonbreaking spaces and that hero's 44-pixel specialty icon from
-  `assets/specialties/`. Elf Queen keeps an individual creative direction;
+  with four nonbreaking spaces and that hero's 72-pixel-high specialty icon
+  from `assets/specialties/`. For every hero whose record has a spellbook,
+  follow the specialty with twelve nonbreaking spaces and the 72-pixel-high
+  native spellbook icon from `assets/spellbook/`, then four nonbreaking spaces
+  and the 72-pixel-high current starting-spell icon from `assets/spells/`.
+  Elf Queen's current record has no spellbook and must not display those two
+  icons. Elf Queen keeps an individual creative direction;
   grouped Luck and Cure heroes use the group-level creative-direction fields
   described below. Adela must not appear in the landing README.
 - Store README specialty PNGs in their final upright orientation. Specialty

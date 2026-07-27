@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "build_name": "HOTA_NEW_HERO_V1.13",
+  "formal_release": true,
+  "source_release": "HOTA_NEW_HERO_V1.12",
+  "source_zip_sha256": "4f47975798842e10b1c36be495b46d92d6fd03a94daacec96672919b6d64ac30",
+  "zip_path": "HOTA_NEW_HERO_V1.13.zip",
+  "zip_size": 22188696,
+  "zip_sha256": "ade07aa267b98af897a23ac97917cdc0d375e75171745a56faf6686f66753767",
+  "formula": "floor(((11L + 29) * (clamp(n,1,7) + 11)) / 12) + 5 * (P - 1) + 10 * max(0, clamp(w,0,3) - 1)",
+  "changed_package_files": [
+    "h3hota HD.exe",
+    "h3hota.exe",
+    "安装说明.txt"
+  ],
+  "source_file_hashes": {
+    "_HD3_Data/Compability/#hota15/Files.ini": "2a942fe7b10dd0adc8f1341b301ff2a531d7090a616edfdbcd62252b5ace029a",
+    "_HD3_Data/Compability/#hota15/Pack.ini": "15db9fe45cd4f5ef9ddd5951e8a6772cf62e83226c269c92900f86c20edfe9de",
+    "_HD3_Data/Compability/#hota15/UN32.DEF": "17799a6988f9f37f08fca54e43de22ea6374409a0a477fa778bbde575a65768b",
+    "_HD3_Data/Compability/#hota15/UN44.DEF": "bba48ccbe9ab2dd3a2a822edaa267d47778fe82a33fb79bbca81aa112a40dcb7",
+    "_HD3_Data/Packs/H3中文-基础资源/HeroSpec.txt": "ad31b7594ac28b5fda52cd9796ea13d7ff9fc0c4a913117ae571fa7797902988",
+    "Data/HotA_l_ext.lod": "7ed4f3ec8136b5f7d875f8035f7acf963a4145c456b294c17db1975171801912",
+    "Data/HotA_lng.lod": "c3c02802565122ff746c6d24489787a9611395ca692605b2fbb676ef92ec1d70",
+    "Data/HPL005EL.PCX": "6a3f6e6957b763cbc8c41935e6b4675cfd2cc07171296e35e03609e15acc60cd",
+    "Data/HPS005EL.PCX": "e8c1a4d872ce344c212b2df15b710d3bddece84eab0daa184668fa1c83858f91",
+    "h3hota HD.exe": "a6d31886d5ffd369d884e92c07c44e5bac1e7a2c5770052bd38f7b117b9768e6",
+    "h3hota.exe": "dcb0a8c5a9fe65846ffc600a23fae367ed962b03de900c3324462a63025efd83",
+    "HotA.dat": "283cd8cb1a3df3eb0acaf5c5054b509e8aad27c783a646d724c07d42a4e7174c",
+    "HotA.dll": "91dcd4b9b41646ef6745d0b251f95f2259ea7f671234da11faeae8b78ecbe83a",
+    "安装说明.txt": "706bc22a25883b01d0b13c74b274d0445b8d4d024bed1884fdc7c08fb36b9909"
+  },
+  "package_file_hashes": {
+    "_HD3_Data/Compability/#hota15/Files.ini": "2a942fe7b10dd0adc8f1341b301ff2a531d7090a616edfdbcd62252b5ace029a",
+    "_HD3_Data/Compability/#hota15/Pack.ini": "15db9fe45cd4f5ef9ddd5951e8a6772cf62e83226c269c92900f86c20edfe9de",
+    "_HD3_Data/Compability/#hota15/UN32.DEF": "17799a6988f9f37f08fca54e43de22ea6374409a0a477fa778bbde575a65768b",
+    "_HD3_Data/Compability/#hota15/UN44.DEF": "bba48ccbe9ab2dd3a2a822edaa267d47778fe82a33fb79bbca81aa112a40dcb7",
+    "_HD3_Data/Packs/H3中文-基础资源/HeroSpec.txt": "ad31b7594ac28b5fda52cd9796ea13d7ff9fc0c4a913117ae571fa7797902988",
+    "Data/HotA_l_ext.lod": "7ed4f3ec8136b5f7d875f8035f7acf963a4145c456b294c17db1975171801912",
+    "Data/HotA_lng.lod": "c3c02802565122ff746c6d24489787a9611395ca692605b2fbb676ef92ec1d70",
+    "Data/HPL005EL.PCX": "6a3f6e6957b763cbc8c41935e6b4675cfd2cc07171296e35e03609e15acc60cd",
+    "Data/HPS005EL.PCX": "e8c1a4d872ce344c212b2df15b710d3bddece84eab0daa184668fa1c83858f91",
+    "h3hota HD.exe": "a6bb571cb7336a942fdaa349540c4878d070f2cf9b96ce3a6b5bde9200c4e68d",
+    "h3hota.exe": "123c686860c5eee2d6df201151a58aaf158d609e602ca85a27f25251d9b2ced1",
+    "HotA.dat": "283cd8cb1a3df3eb0acaf5c5054b509e8aad27c783a646d724c07d42a4e7174c",
+    "HotA.dll": "91dcd4b9b41646ef6745d0b251f95f2259ea7f671234da11faeae8b78ecbe83a",
+    "安装说明.txt": "d1079e20660e42ba51d6ea2dc0d260376ee26babc9ca5eef401a6144f968678c"
+  },
+  "executables": [
+    {
+      "name": "h3hota.exe",
+      "source_sha256": "dcb0a8c5a9fe65846ffc600a23fae367ed962b03de900c3324462a63025efd83",
+      "output_sha256": "123c686860c5eee2d6df201151a58aaf158d609e602ca85a27f25251d9b2ced1",
+      "source_size": 2936832,
+      "output_size": 2936832,
+      "daremyth_hero_id": 43,
+      "hero_record_size": 92,
+      "hero_record_offset": 2600260,
+      "starting_spell_file_offset": 2600292,
+      "starting_spell": {
+        "source_id": 49,
+        "source_name": "Mirth",
+        "output_id": 15,
+        "output_name": "Magic Arrow",
+        "source_hex": "31 00 00 00",
+        "patched_hex": "0f 00 00 00",
+        "rollback_hex": "31 00 00 00"
+      },
+      "secondary_skills_unchanged": true,
+      "spellbook_flag_unchanged": true,
+      "pe_checksum_offset": 352,
+      "pe_checksum_valid": true,
+      "rollback_reconstructs_source": true,
+      "contiguous_differences": [
+        {
+          "offset": 352,
+          "length": 1,
+          "source_hex": "7e",
+          "patched_hex": "5c",
+          "rollback_hex": "7e"
+        },
+        {
+          "offset": 2600292,
+          "length": 1,
+          "source_hex": "31",
+          "patched_hex": "0f",
+          "rollback_hex": "31"
+        }
+      ]
+    },
+    {
+      "name": "h3hota HD.exe",
+      "source_sha256": "a6d31886d5ffd369d884e92c07c44e5bac1e7a2c5770052bd38f7b117b9768e6",
+      "output_sha256": "a6bb571cb7336a942fdaa349540c4878d070f2cf9b96ce3a6b5bde9200c4e68d",
+      "source_size": 2936832,
+      "output_size": 2936832,
+      "daremyth_hero_id": 43,
+      "hero_record_size": 92,
+      "hero_record_offset": 2600260,
+      "starting_spell_file_offset": 2600292,
+      "starting_spell": {
+        "source_id": 49,
+        "source_name": "Mirth",
+        "output_id": 15,
+        "output_name": "Magic Arrow",
+        "source_hex": "31 00 00 00",
+        "patched_hex": "0f 00 00 00",
+        "rollback_hex": "31 00 00 00"
+      },
+      "secondary_skills_unchanged": true,
+      "spellbook_flag_unchanged": true,
+      "pe_checksum_offset": 352,
+      "pe_checksum_valid": true,
+      "rollback_reconstructs_source": true,
+      "contiguous_differences": [
+        {
+          "offset": 352,
+          "length": 2,
+          "source_hex": "0d c3",
+          "patched_hex": "eb c2",
+          "rollback_hex": "0d c3"
+        },
+        {
+          "offset": 2600292,
+          "length": 1,
+          "source_hex": "31",
+          "patched_hex": "0f",
+          "rollback_hex": "31"
+        }
+      ]
+    }
+  ],
+  "installation_text": {
+    "encoding": "utf-8",
+    "source_sha256": "c5ab311c6561d34a9ea6f1d3dade8f1021d1e3eddbcf67d282b99e2bfdce09ed",
+    "output_sha256": "f57b20784d216f64c6f2abc7e6adbc94c5295a36aef4f96b83c088eb5c4af3d8",
+    "replacements": [
+      {
+        "old": "HOTA_NEW_HERO_V1.12 安装与功能说明",
+        "new": "HOTA_NEW_HERO_V1.13 安装与功能说明",
+        "count": 1
+      },
+      {
+        "old": "V1.12 小版本说明：",
+        "new": "V1.13 小版本说明：\n- 黛瑞丝的初始二级技能保持初级智慧术 + 初级智力；魔法书初始法术由振奋改为魔法神箭。\n- 除上述初始法术和版本说明外，全部游戏机制与正式 V1.12 保持一致。",
+        "count": 1
+      },
+      {
+        "old": "- 黛瑞丝：初级智慧术 + 初级智力；魔法书初始自带振奋。",
+        "new": "- 黛瑞丝：初级智慧术 + 初级智力；魔法书初始自带魔法神箭。",
+        "count": 1
+      }
+    ]
+  },
+  "behavior": {
+    "daremyth_secondary_skills": [
+      "Basic Wisdom",
+      "Basic Intelligence"
+    ],
+    "daremyth_starting_spell": {
+      "id": 15,
+      "name": "Magic Arrow"
+    },
+    "melodia_starting_spell": {
+      "id": 49,
+      "name": "Mirth"
+    },
+    "uland_and_astra_starting_spell": {
+      "id": 37,
+      "name": "Cure"
+    },
+    "all_v112_gameplay_mechanics_preserved": true
+  },
+  "static_verification": {
+    "source_hashes_verified": true,
+    "daremyth_complete_source_record_verified": true,
+    "only_starting_spell_field_and_pe_checksums_changed_in_exes": true,
+    "full_executable_rollback_verified": true,
+    "zip_crc_and_member_checks_passed": true
+  }
+}
