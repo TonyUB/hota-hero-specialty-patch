@@ -1,0 +1,767 @@
+{
+  "schema_version": 1,
+  "build_name": "HOTA_NEW_HERO_V1.2",
+  "formal_release": true,
+  "source_release": "HOTA_NEW_HERO_V1.14",
+  "source_zip_sha256": "8077624b88dc83762b77c34cb8645a4907cf2f3bc0538ae0684da713edd4ed85",
+  "zip_path": "HOTA_NEW_HERO_V1.2.zip",
+  "zip_size": 22196592,
+  "zip_sha256": "3de5113085c0ac8e03f18dad474535d0c0c4844b7f5acb9efce40a211086447c",
+  "formula": "floor(((11L + 29) * (clamp(n,1,7) + 11)) / 12) + 5 * (P - 1) + 10 * max(0, clamp(w,0,3) - 1)",
+  "changed_package_files": [
+    "Data/HotA_l_ext.lod",
+    "Data/HotA_lng.lod",
+    "_HD3_Data/Compability/#hota15/UN32.DEF",
+    "_HD3_Data/Compability/#hota15/UN44.DEF",
+    "_HD3_Data/Packs/H3中文-基础资源/HeroSpec.txt",
+    "h3hota HD.exe",
+    "h3hota.exe",
+    "安装说明.txt"
+  ],
+  "source_file_hashes": {
+    "_HD3_Data/Compability/#hota15/Files.ini": "2a942fe7b10dd0adc8f1341b301ff2a531d7090a616edfdbcd62252b5ace029a",
+    "_HD3_Data/Compability/#hota15/Pack.ini": "15db9fe45cd4f5ef9ddd5951e8a6772cf62e83226c269c92900f86c20edfe9de",
+    "_HD3_Data/Compability/#hota15/UN32.DEF": "17799a6988f9f37f08fca54e43de22ea6374409a0a477fa778bbde575a65768b",
+    "_HD3_Data/Compability/#hota15/UN44.DEF": "bba48ccbe9ab2dd3a2a822edaa267d47778fe82a33fb79bbca81aa112a40dcb7",
+    "_HD3_Data/Packs/H3中文-基础资源/HeroSpec.txt": "ad31b7594ac28b5fda52cd9796ea13d7ff9fc0c4a913117ae571fa7797902988",
+    "Data/HotA_l_ext.lod": "7ed4f3ec8136b5f7d875f8035f7acf963a4145c456b294c17db1975171801912",
+    "Data/HotA_lng.lod": "c3c02802565122ff746c6d24489787a9611395ca692605b2fbb676ef92ec1d70",
+    "Data/HPL005EL.PCX": "6a3f6e6957b763cbc8c41935e6b4675cfd2cc07171296e35e03609e15acc60cd",
+    "Data/HPS005EL.PCX": "e8c1a4d872ce344c212b2df15b710d3bddece84eab0daa184668fa1c83858f91",
+    "h3hota HD.exe": "f0f1615ca0700cdf7a5f79917b4d43794c7c99731c279867c1a54857a0cbf42e",
+    "h3hota.exe": "eccb8163cdda269318d8da52d4889a4d4e0ed5388e88994ddbb578f5777cfee6",
+    "HotA.dat": "283cd8cb1a3df3eb0acaf5c5054b509e8aad27c783a646d724c07d42a4e7174c",
+    "HotA.dll": "91dcd4b9b41646ef6745d0b251f95f2259ea7f671234da11faeae8b78ecbe83a",
+    "安装说明.txt": "b292d1908dea251767aa567e84f6702714fa58cd1133ffdf10cb7c31ab33e3c1"
+  },
+  "package_file_hashes": {
+    "_HD3_Data/Compability/#hota15/Files.ini": "2a942fe7b10dd0adc8f1341b301ff2a531d7090a616edfdbcd62252b5ace029a",
+    "_HD3_Data/Compability/#hota15/Pack.ini": "15db9fe45cd4f5ef9ddd5951e8a6772cf62e83226c269c92900f86c20edfe9de",
+    "_HD3_Data/Compability/#hota15/UN32.DEF": "c2fbf848a57b3c4d4a387d2f59299d3cd5d4fe41a6e5053a442ad30b607aec63",
+    "_HD3_Data/Compability/#hota15/UN44.DEF": "cc7b8261089a3f0f1f38d25205017f594c8f027d8cd4a393d034b2b479becc78",
+    "_HD3_Data/Packs/H3中文-基础资源/HeroSpec.txt": "d2ad21b452c978478474d369e3882aabfad59c372f974cb52a21febc97cc8934",
+    "Data/HotA_l_ext.lod": "c51c8db3e6012e8769310b7ad1c338da45c319ae94b9162a837a864311b7a439",
+    "Data/HotA_lng.lod": "25ebd2b3b87b778af0f99a904712f51881ab0171e746c3694d50ce490c22a7c3",
+    "Data/HPL005EL.PCX": "6a3f6e6957b763cbc8c41935e6b4675cfd2cc07171296e35e03609e15acc60cd",
+    "Data/HPS005EL.PCX": "e8c1a4d872ce344c212b2df15b710d3bddece84eab0daa184668fa1c83858f91",
+    "h3hota HD.exe": "b149193a610edb69852880b99b7171fbe78d81ad159d88e041fefc73391ea773",
+    "h3hota.exe": "f536332e37bc5d1fb503c65189223bd84ac9a96d662c147493aea29ade83535e",
+    "HotA.dat": "283cd8cb1a3df3eb0acaf5c5054b509e8aad27c783a646d724c07d42a4e7174c",
+    "HotA.dll": "91dcd4b9b41646ef6745d0b251f95f2259ea7f671234da11faeae8b78ecbe83a",
+    "安装说明.txt": "c6f7e7ee8f365460f495dd45073b1f5a8b03a2d29b930314017e228e3bc80d77"
+  },
+  "executables": [
+    {
+      "name": "h3hota.exe",
+      "source_sha256": "eccb8163cdda269318d8da52d4889a4d4e0ed5388e88994ddbb578f5777cfee6",
+      "output_sha256": "f536332e37bc5d1fb503c65189223bd84ac9a96d662c147493aea29ade83535e",
+      "source_size": 2936832,
+      "output_size": 2936832,
+      "scholar_components": [
+        {
+          "name": "scholar_h2",
+          "va": "0x006E7D80",
+          "length": 50,
+          "slot_end_va": "0x006E7DC0",
+          "sha256": "737eb7052e72b924c118e1bf32c90ffd0439ce7ccf6f6ca8360d756a784dfe74",
+          "assembly": "mov byte ptr [0x6e7ef0], 0\n            cmp dword ptr [ecx + 0x1a], 24\n            je meeting_specialist\n            cmp dword ptr [edx + 0x1a], 24\n            jne meeting_flag_ready\nmeeting_specialist:\n            mov byte ptr [0x6e7ef0], 1\nmeeting_flag_ready:\n            mov al, byte ptr [edx + 0xdb]\n            cmp dword ptr [edx + 0x1a], 24\n            jne scholar_h2_ready\n            test al, al\n            jle scholar_h2_ready\n            inc al\nscholar_h2_ready:\n            push 0x4a25d1\n            ret"
+        },
+        {
+          "name": "scholar_h1",
+          "va": "0x006E7DC0",
+          "length": 24,
+          "slot_end_va": "0x006E7E00",
+          "sha256": "ef1f54cf90466a7fceb437cb47b1e74760e1569ad50469d5d1556c6f119ef74e",
+          "assembly": "mov cl, byte ptr [edi + 0xdb]\n            cmp dword ptr [edi + 0x1a], 24\n            jne scholar_h1_ready\n            test cl, cl\n            jle scholar_h1_ready\n            inc cl\nscholar_h1_ready:\n            push 0x4a25e2\n            ret"
+        },
+        {
+          "name": "wisdom_edi",
+          "va": "0x006E7E00",
+          "length": 26,
+          "slot_end_va": "0x006E7E40",
+          "sha256": "8c4a9fc5f0d96862006f6cfba58bca245bb5ea559d52fb68e6a508b97deeb67d",
+          "assembly": "movsx eax, byte ptr [edi + 0xd0]\n            add eax, 2\n            cmp byte ptr [0x6e7ef0], 0\n            je wisdom_edi_ready\n            inc eax\nwisdom_edi_ready:\n            push 0x4a2661\n            ret"
+        },
+        {
+          "name": "wisdom_ebx",
+          "va": "0x006E7E40",
+          "length": 26,
+          "slot_end_va": "0x006E7EF0",
+          "sha256": "ebf5dfb5c4e0eebc7c1bd8279d6cd297e5a880dbf79b922c51d23d9f30b4afd9",
+          "assembly": "movsx eax, byte ptr [ebx + 0xd0]\n            add eax, 2\n            cmp byte ptr [0x6e7ef0], 0\n            je wisdom_ebx_ready\n            inc eax\nwisdom_ebx_ready:\n            push 0x4a2686\n            ret"
+        }
+      ],
+      "scholar_hooks": [
+        {
+          "name": "hero2 Scholar contribution and specialist-active flag",
+          "va": "0x004A25CB",
+          "file_offset": "0xA25CB",
+          "source_hex": "8a 82 db 00 00 00",
+          "patched_hex": "e9 b0 57 24 00 90",
+          "rollback_hex": "8a 82 db 00 00 00",
+          "wrapper_va": "0x006E7D80",
+          "continue_va": "0x004A25D1"
+        },
+        {
+          "name": "hero1 Scholar contribution",
+          "va": "0x004A25DC",
+          "file_offset": "0xA25DC",
+          "source_hex": "8a 8f db 00 00 00",
+          "patched_hex": "e9 df 57 24 00 90",
+          "rollback_hex": "8a 8f db 00 00 00",
+          "wrapper_va": "0x006E7DC0",
+          "continue_va": "0x004A25E2"
+        },
+        {
+          "name": "ordered hero EDI Wisdom receive cap",
+          "va": "0x004A2657",
+          "file_offset": "0xA2657",
+          "source_hex": "0f be 87 d0 00 00 00 83 c0 02",
+          "patched_hex": "e9 a4 57 24 00 90 90 90 90 90",
+          "rollback_hex": "0f be 87 d0 00 00 00 83 c0 02",
+          "wrapper_va": "0x006E7E00",
+          "continue_va": "0x004A2661"
+        },
+        {
+          "name": "ordered hero EBX Wisdom receive cap",
+          "va": "0x004A267C",
+          "file_offset": "0xA267C",
+          "source_hex": "0f be 83 d0 00 00 00 83 c0 02",
+          "patched_hex": "e9 bf 57 24 00 90 90 90 90 90",
+          "rollback_hex": "0f be 83 d0 00 00 00 83 c0 02",
+          "wrapper_va": "0x006E7E40",
+          "continue_va": "0x004A2686"
+        }
+      ],
+      "coronius": {
+        "hero_id": 24,
+        "hero_record_file_offset": "0x27A670",
+        "hero_record_unchanged": true,
+        "starting_spell": {
+          "id": 55,
+          "name": "Slayer"
+        },
+        "native_specialty_record_file_offset": "0x2787E0",
+        "native_specialty_source_type": 3,
+        "native_specialty_output_type": -1,
+        "native_slayer_bonus_bypassed": true
+      },
+      "diagnostic_entry_hook_absent": true,
+      "diagnostic_strings_absent": true,
+      "formal_luck3_prefix_preserved": true,
+      "pe_checksum_offset": "0x160",
+      "pe_checksum_valid": true,
+      "rollback_reconstructs_source": true,
+      "contiguous_differences": [
+        {
+          "file_offset": 352,
+          "length": 3,
+          "source_hex": "50 6d 2d",
+          "release_hex": "f9 de 2c",
+          "rollback_hex": "50 6d 2d"
+        },
+        {
+          "file_offset": 665035,
+          "length": 4,
+          "source_hex": "8a 82 db 00",
+          "release_hex": "e9 b0 57 24",
+          "rollback_hex": "8a 82 db 00"
+        },
+        {
+          "file_offset": 665040,
+          "length": 1,
+          "source_hex": "00",
+          "release_hex": "90",
+          "rollback_hex": "00"
+        },
+        {
+          "file_offset": 665052,
+          "length": 4,
+          "source_hex": "8a 8f db 00",
+          "release_hex": "e9 df 57 24",
+          "rollback_hex": "8a 8f db 00"
+        },
+        {
+          "file_offset": 665057,
+          "length": 1,
+          "source_hex": "00",
+          "release_hex": "90",
+          "rollback_hex": "00"
+        },
+        {
+          "file_offset": 665175,
+          "length": 4,
+          "source_hex": "0f be 87 d0",
+          "release_hex": "e9 a4 57 24",
+          "rollback_hex": "0f be 87 d0"
+        },
+        {
+          "file_offset": 665180,
+          "length": 5,
+          "source_hex": "00 00 83 c0 02",
+          "release_hex": "90 90 90 90 90",
+          "rollback_hex": "00 00 83 c0 02"
+        },
+        {
+          "file_offset": 665212,
+          "length": 4,
+          "source_hex": "0f be 83 d0",
+          "release_hex": "e9 bf 57 24",
+          "rollback_hex": "0f be 83 d0"
+        },
+        {
+          "file_offset": 665217,
+          "length": 5,
+          "source_hex": "00 00 83 c0 02",
+          "release_hex": "90 90 90 90 90",
+          "rollback_hex": "00 00 83 c0 02"
+        },
+        {
+          "file_offset": 2590688,
+          "length": 4,
+          "source_hex": "03 00 00 00",
+          "release_hex": "ff ff ff ff",
+          "rollback_hex": "03 00 00 00"
+        },
+        {
+          "file_offset": 2936192,
+          "length": 5,
+          "source_hex": "00 00 00 00 00",
+          "release_hex": "c6 05 f0 7e 6e",
+          "rollback_hex": "00 00 00 00 00"
+        },
+        {
+          "file_offset": 2936199,
+          "length": 17,
+          "source_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+          "release_hex": "83 79 1a 18 74 06 83 7a 1a 18 75 07 c6 05 f0 7e 6e",
+          "rollback_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+        },
+        {
+          "file_offset": 2936217,
+          "length": 4,
+          "source_hex": "00 00 00 00",
+          "release_hex": "01 8a 82 db",
+          "rollback_hex": "00 00 00 00"
+        },
+        {
+          "file_offset": 2936224,
+          "length": 16,
+          "source_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+          "release_hex": "83 7a 1a 18 75 06 84 c0 7e 02 fe c0 68 d1 25 4a",
+          "rollback_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+        },
+        {
+          "file_offset": 2936241,
+          "length": 1,
+          "source_hex": "00",
+          "release_hex": "c3",
+          "rollback_hex": "00"
+        },
+        {
+          "file_offset": 2936256,
+          "length": 3,
+          "source_hex": "00 00 00",
+          "release_hex": "8a 8f db",
+          "rollback_hex": "00 00 00"
+        },
+        {
+          "file_offset": 2936262,
+          "length": 16,
+          "source_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+          "release_hex": "83 7f 1a 18 75 06 84 c9 7e 02 fe c1 68 e2 25 4a",
+          "rollback_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+        },
+        {
+          "file_offset": 2936279,
+          "length": 1,
+          "source_hex": "00",
+          "release_hex": "c3",
+          "rollback_hex": "00"
+        },
+        {
+          "file_offset": 2936320,
+          "length": 4,
+          "source_hex": "00 00 00 00",
+          "release_hex": "0f be 87 d0",
+          "rollback_hex": "00 00 00 00"
+        },
+        {
+          "file_offset": 2936327,
+          "length": 8,
+          "source_hex": "00 00 00 00 00 00 00 00",
+          "release_hex": "83 c0 02 80 3d f0 7e 6e",
+          "rollback_hex": "00 00 00 00 00 00 00 00"
+        },
+        {
+          "file_offset": 2936337,
+          "length": 7,
+          "source_hex": "00 00 00 00 00 00 00",
+          "release_hex": "74 01 40 68 61 26 4a",
+          "rollback_hex": "00 00 00 00 00 00 00"
+        },
+        {
+          "file_offset": 2936345,
+          "length": 1,
+          "source_hex": "00",
+          "release_hex": "c3",
+          "rollback_hex": "00"
+        },
+        {
+          "file_offset": 2936384,
+          "length": 4,
+          "source_hex": "00 00 00 00",
+          "release_hex": "0f be 83 d0",
+          "rollback_hex": "00 00 00 00"
+        },
+        {
+          "file_offset": 2936391,
+          "length": 8,
+          "source_hex": "00 00 00 00 00 00 00 00",
+          "release_hex": "83 c0 02 80 3d f0 7e 6e",
+          "rollback_hex": "00 00 00 00 00 00 00 00"
+        },
+        {
+          "file_offset": 2936401,
+          "length": 7,
+          "source_hex": "00 00 00 00 00 00 00",
+          "release_hex": "74 01 40 68 86 26 4a",
+          "rollback_hex": "00 00 00 00 00 00 00"
+        },
+        {
+          "file_offset": 2936409,
+          "length": 1,
+          "source_hex": "00",
+          "release_hex": "c3",
+          "rollback_hex": "00"
+        }
+      ]
+    },
+    {
+      "name": "h3hota HD.exe",
+      "source_sha256": "f0f1615ca0700cdf7a5f79917b4d43794c7c99731c279867c1a54857a0cbf42e",
+      "output_sha256": "b149193a610edb69852880b99b7171fbe78d81ad159d88e041fefc73391ea773",
+      "source_size": 2936832,
+      "output_size": 2936832,
+      "scholar_components": [
+        {
+          "name": "scholar_h2",
+          "va": "0x006E7D80",
+          "length": 50,
+          "slot_end_va": "0x006E7DC0",
+          "sha256": "737eb7052e72b924c118e1bf32c90ffd0439ce7ccf6f6ca8360d756a784dfe74",
+          "assembly": "mov byte ptr [0x6e7ef0], 0\n            cmp dword ptr [ecx + 0x1a], 24\n            je meeting_specialist\n            cmp dword ptr [edx + 0x1a], 24\n            jne meeting_flag_ready\nmeeting_specialist:\n            mov byte ptr [0x6e7ef0], 1\nmeeting_flag_ready:\n            mov al, byte ptr [edx + 0xdb]\n            cmp dword ptr [edx + 0x1a], 24\n            jne scholar_h2_ready\n            test al, al\n            jle scholar_h2_ready\n            inc al\nscholar_h2_ready:\n            push 0x4a25d1\n            ret"
+        },
+        {
+          "name": "scholar_h1",
+          "va": "0x006E7DC0",
+          "length": 24,
+          "slot_end_va": "0x006E7E00",
+          "sha256": "ef1f54cf90466a7fceb437cb47b1e74760e1569ad50469d5d1556c6f119ef74e",
+          "assembly": "mov cl, byte ptr [edi + 0xdb]\n            cmp dword ptr [edi + 0x1a], 24\n            jne scholar_h1_ready\n            test cl, cl\n            jle scholar_h1_ready\n            inc cl\nscholar_h1_ready:\n            push 0x4a25e2\n            ret"
+        },
+        {
+          "name": "wisdom_edi",
+          "va": "0x006E7E00",
+          "length": 26,
+          "slot_end_va": "0x006E7E40",
+          "sha256": "8c4a9fc5f0d96862006f6cfba58bca245bb5ea559d52fb68e6a508b97deeb67d",
+          "assembly": "movsx eax, byte ptr [edi + 0xd0]\n            add eax, 2\n            cmp byte ptr [0x6e7ef0], 0\n            je wisdom_edi_ready\n            inc eax\nwisdom_edi_ready:\n            push 0x4a2661\n            ret"
+        },
+        {
+          "name": "wisdom_ebx",
+          "va": "0x006E7E40",
+          "length": 26,
+          "slot_end_va": "0x006E7EF0",
+          "sha256": "ebf5dfb5c4e0eebc7c1bd8279d6cd297e5a880dbf79b922c51d23d9f30b4afd9",
+          "assembly": "movsx eax, byte ptr [ebx + 0xd0]\n            add eax, 2\n            cmp byte ptr [0x6e7ef0], 0\n            je wisdom_ebx_ready\n            inc eax\nwisdom_ebx_ready:\n            push 0x4a2686\n            ret"
+        }
+      ],
+      "scholar_hooks": [
+        {
+          "name": "hero2 Scholar contribution and specialist-active flag",
+          "va": "0x004A25CB",
+          "file_offset": "0xA25CB",
+          "source_hex": "8a 82 db 00 00 00",
+          "patched_hex": "e9 b0 57 24 00 90",
+          "rollback_hex": "8a 82 db 00 00 00",
+          "wrapper_va": "0x006E7D80",
+          "continue_va": "0x004A25D1"
+        },
+        {
+          "name": "hero1 Scholar contribution",
+          "va": "0x004A25DC",
+          "file_offset": "0xA25DC",
+          "source_hex": "8a 8f db 00 00 00",
+          "patched_hex": "e9 df 57 24 00 90",
+          "rollback_hex": "8a 8f db 00 00 00",
+          "wrapper_va": "0x006E7DC0",
+          "continue_va": "0x004A25E2"
+        },
+        {
+          "name": "ordered hero EDI Wisdom receive cap",
+          "va": "0x004A2657",
+          "file_offset": "0xA2657",
+          "source_hex": "0f be 87 d0 00 00 00 83 c0 02",
+          "patched_hex": "e9 a4 57 24 00 90 90 90 90 90",
+          "rollback_hex": "0f be 87 d0 00 00 00 83 c0 02",
+          "wrapper_va": "0x006E7E00",
+          "continue_va": "0x004A2661"
+        },
+        {
+          "name": "ordered hero EBX Wisdom receive cap",
+          "va": "0x004A267C",
+          "file_offset": "0xA267C",
+          "source_hex": "0f be 83 d0 00 00 00 83 c0 02",
+          "patched_hex": "e9 bf 57 24 00 90 90 90 90 90",
+          "rollback_hex": "0f be 83 d0 00 00 00 83 c0 02",
+          "wrapper_va": "0x006E7E40",
+          "continue_va": "0x004A2686"
+        }
+      ],
+      "coronius": {
+        "hero_id": 24,
+        "hero_record_file_offset": "0x27A670",
+        "hero_record_unchanged": true,
+        "starting_spell": {
+          "id": 55,
+          "name": "Slayer"
+        },
+        "native_specialty_record_file_offset": "0x2787E0",
+        "native_specialty_source_type": 3,
+        "native_specialty_output_type": -1,
+        "native_slayer_bonus_bypassed": true
+      },
+      "diagnostic_entry_hook_absent": true,
+      "diagnostic_strings_absent": true,
+      "formal_luck3_prefix_preserved": true,
+      "pe_checksum_offset": "0x160",
+      "pe_checksum_valid": true,
+      "rollback_reconstructs_source": true,
+      "contiguous_differences": [
+        {
+          "file_offset": 352,
+          "length": 2,
+          "source_hex": "df c2",
+          "release_hex": "88 34",
+          "rollback_hex": "df c2"
+        },
+        {
+          "file_offset": 665035,
+          "length": 4,
+          "source_hex": "8a 82 db 00",
+          "release_hex": "e9 b0 57 24",
+          "rollback_hex": "8a 82 db 00"
+        },
+        {
+          "file_offset": 665040,
+          "length": 1,
+          "source_hex": "00",
+          "release_hex": "90",
+          "rollback_hex": "00"
+        },
+        {
+          "file_offset": 665052,
+          "length": 4,
+          "source_hex": "8a 8f db 00",
+          "release_hex": "e9 df 57 24",
+          "rollback_hex": "8a 8f db 00"
+        },
+        {
+          "file_offset": 665057,
+          "length": 1,
+          "source_hex": "00",
+          "release_hex": "90",
+          "rollback_hex": "00"
+        },
+        {
+          "file_offset": 665175,
+          "length": 4,
+          "source_hex": "0f be 87 d0",
+          "release_hex": "e9 a4 57 24",
+          "rollback_hex": "0f be 87 d0"
+        },
+        {
+          "file_offset": 665180,
+          "length": 5,
+          "source_hex": "00 00 83 c0 02",
+          "release_hex": "90 90 90 90 90",
+          "rollback_hex": "00 00 83 c0 02"
+        },
+        {
+          "file_offset": 665212,
+          "length": 4,
+          "source_hex": "0f be 83 d0",
+          "release_hex": "e9 bf 57 24",
+          "rollback_hex": "0f be 83 d0"
+        },
+        {
+          "file_offset": 665217,
+          "length": 5,
+          "source_hex": "00 00 83 c0 02",
+          "release_hex": "90 90 90 90 90",
+          "rollback_hex": "00 00 83 c0 02"
+        },
+        {
+          "file_offset": 2590688,
+          "length": 4,
+          "source_hex": "03 00 00 00",
+          "release_hex": "ff ff ff ff",
+          "rollback_hex": "03 00 00 00"
+        },
+        {
+          "file_offset": 2936192,
+          "length": 5,
+          "source_hex": "00 00 00 00 00",
+          "release_hex": "c6 05 f0 7e 6e",
+          "rollback_hex": "00 00 00 00 00"
+        },
+        {
+          "file_offset": 2936199,
+          "length": 17,
+          "source_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+          "release_hex": "83 79 1a 18 74 06 83 7a 1a 18 75 07 c6 05 f0 7e 6e",
+          "rollback_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+        },
+        {
+          "file_offset": 2936217,
+          "length": 4,
+          "source_hex": "00 00 00 00",
+          "release_hex": "01 8a 82 db",
+          "rollback_hex": "00 00 00 00"
+        },
+        {
+          "file_offset": 2936224,
+          "length": 16,
+          "source_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+          "release_hex": "83 7a 1a 18 75 06 84 c0 7e 02 fe c0 68 d1 25 4a",
+          "rollback_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+        },
+        {
+          "file_offset": 2936241,
+          "length": 1,
+          "source_hex": "00",
+          "release_hex": "c3",
+          "rollback_hex": "00"
+        },
+        {
+          "file_offset": 2936256,
+          "length": 3,
+          "source_hex": "00 00 00",
+          "release_hex": "8a 8f db",
+          "rollback_hex": "00 00 00"
+        },
+        {
+          "file_offset": 2936262,
+          "length": 16,
+          "source_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+          "release_hex": "83 7f 1a 18 75 06 84 c9 7e 02 fe c1 68 e2 25 4a",
+          "rollback_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+        },
+        {
+          "file_offset": 2936279,
+          "length": 1,
+          "source_hex": "00",
+          "release_hex": "c3",
+          "rollback_hex": "00"
+        },
+        {
+          "file_offset": 2936320,
+          "length": 4,
+          "source_hex": "00 00 00 00",
+          "release_hex": "0f be 87 d0",
+          "rollback_hex": "00 00 00 00"
+        },
+        {
+          "file_offset": 2936327,
+          "length": 8,
+          "source_hex": "00 00 00 00 00 00 00 00",
+          "release_hex": "83 c0 02 80 3d f0 7e 6e",
+          "rollback_hex": "00 00 00 00 00 00 00 00"
+        },
+        {
+          "file_offset": 2936337,
+          "length": 7,
+          "source_hex": "00 00 00 00 00 00 00",
+          "release_hex": "74 01 40 68 61 26 4a",
+          "rollback_hex": "00 00 00 00 00 00 00"
+        },
+        {
+          "file_offset": 2936345,
+          "length": 1,
+          "source_hex": "00",
+          "release_hex": "c3",
+          "rollback_hex": "00"
+        },
+        {
+          "file_offset": 2936384,
+          "length": 4,
+          "source_hex": "00 00 00 00",
+          "release_hex": "0f be 83 d0",
+          "rollback_hex": "00 00 00 00"
+        },
+        {
+          "file_offset": 2936391,
+          "length": 8,
+          "source_hex": "00 00 00 00 00 00 00 00",
+          "release_hex": "83 c0 02 80 3d f0 7e 6e",
+          "rollback_hex": "00 00 00 00 00 00 00 00"
+        },
+        {
+          "file_offset": 2936401,
+          "length": 7,
+          "source_hex": "00 00 00 00 00 00 00",
+          "release_hex": "74 01 40 68 86 26 4a",
+          "rollback_hex": "00 00 00 00 00 00 00"
+        },
+        {
+          "file_offset": 2936409,
+          "length": 1,
+          "source_hex": "00",
+          "release_hex": "c3",
+          "rollback_hex": "00"
+        }
+      ]
+    }
+  ],
+  "language_resources": [
+    {
+      "relative_path": "Data/HotA_lng.lod",
+      "source_sha256": "c3c02802565122ff746c6d24489787a9611395ca692605b2fbb676ef92ec1d70",
+      "output_sha256": "25ebd2b3b87b778af0f99a904712f51881ab0171e746c3694d50ce490c22a7c3",
+      "member_source_sha256": "3561d235e969e312501283139b407dd9c997b54802369d1d40d7e869c34a0efd",
+      "member_output_sha256": "efbfac82de87f6513c7a5a9b656b44b520e0f0206b65c3818c707b59d8ff066b",
+      "text": {
+        "source_record_sha256": "3964e3e08689b7833880d4827ca6b224cbf9cc471eb78c37f5cee79b4248e6ca",
+        "output_record_sha256": "dad019e17f84e1dc9d598c3aa60e367b496a1a9ffab0b1a6f18659d686c50c61",
+        "source_length": 119,
+        "output_length": 116,
+        "replacement_count": 1
+      },
+      "only_target_directory_entry_changed": true
+    },
+    {
+      "relative_path": "Data/HotA_l_ext.lod",
+      "source_sha256": "7ed4f3ec8136b5f7d875f8035f7acf963a4145c456b294c17db1975171801912",
+      "output_sha256": "c51c8db3e6012e8769310b7ad1c338da45c319ae94b9162a837a864311b7a439",
+      "member_source_sha256": "3561d235e969e312501283139b407dd9c997b54802369d1d40d7e869c34a0efd",
+      "member_output_sha256": "efbfac82de87f6513c7a5a9b656b44b520e0f0206b65c3818c707b59d8ff066b",
+      "text": {
+        "source_record_sha256": "3964e3e08689b7833880d4827ca6b224cbf9cc471eb78c37f5cee79b4248e6ca",
+        "output_record_sha256": "dad019e17f84e1dc9d598c3aa60e367b496a1a9ffab0b1a6f18659d686c50c61",
+        "source_length": 119,
+        "output_length": 116,
+        "replacement_count": 1
+      },
+      "only_target_directory_entry_changed": true
+    },
+    {
+      "relative_path": "_HD3_Data/Packs/H3中文-基础资源/HeroSpec.txt",
+      "source_sha256": "ad31b7594ac28b5fda52cd9796ea13d7ff9fc0c4a913117ae571fa7797902988",
+      "output_sha256": "d2ad21b452c978478474d369e3882aabfad59c372f974cb52a21febc97cc8934",
+      "text": {
+        "source_record_sha256": "aa994a3396d81ccbb53832a78216492a8bf8bf092f458e546998079da2537c6a",
+        "output_record_sha256": "67f12e257f42175db7609c9533aeb5fcefc8f94b94acafa2c91ad05b4a92f4fc",
+        "source_length": 118,
+        "output_length": 106,
+        "replacement_count": 1
+      }
+    }
+  ],
+  "specialty_icons": {
+    "native_expert_scholar_sources": [
+      {
+        "source_sha256": "298f31e75e045fcb1195d870efbed8d7f5ecb81bab18e0ffc89ccc6a81c91aee",
+        "frame_index": 59,
+        "frame_name": "skill19c.pcx",
+        "compression": 1,
+        "size": [
+          44,
+          44
+        ]
+      },
+      {
+        "source_sha256": "e56aeeaa81e36d08aaeb86b296ef9903b7f3100ecd81e11c6df8922937afd213",
+        "frame_index": 59,
+        "frame_name": "skl3219c.pcx",
+        "compression": 1,
+        "size": [
+          32,
+          32
+        ]
+      }
+    ],
+    "d32f": [
+      {
+        "path": "C:/Users/verac/Documents/Codex/2026-07-20/zh/local_test_output/build_v12_formal/HOTA_NEW_HERO_V1.2/_HD3_Data/Compability/#hota15/UN32.DEF",
+        "source_sha256": "17799a6988f9f37f08fca54e43de22ea6374409a0a477fa778bbde575a65768b",
+        "output_sha256": "c2fbf848a57b3c4d4a387d2f59299d3cd5d4fe41a6e5053a442ad30b607aec63",
+        "frame_index": 24,
+        "frame_offset": "0x19237",
+        "data_offset": "0x19257",
+        "data_length": 4096,
+        "metadata_prefix_hex": "08 00 00 00 00 00 00 00",
+        "metadata_prefix_preserved": true,
+        "visible_data_offset": "0x1925F",
+        "visible_data_length": 4088,
+        "all_other_bytes_preserved": true,
+        "rollback_verified": true
+      },
+      {
+        "path": "C:/Users/verac/Documents/Codex/2026-07-20/zh/local_test_output/build_v12_formal/HOTA_NEW_HERO_V1.2/_HD3_Data/Compability/#hota15/UN44.DEF",
+        "source_sha256": "bba48ccbe9ab2dd3a2a822edaa267d47778fe82a33fb79bbca81aa112a40dcb7",
+        "output_sha256": "cc7b8261089a3f0f1f38d25205017f594c8f027d8cd4a393d034b2b479becc78",
+        "frame_index": 24,
+        "frame_offset": "0x2E837",
+        "data_offset": "0x2E857",
+        "data_length": 7744,
+        "metadata_prefix_hex": "08 00 00 00 00 00 00 00",
+        "metadata_prefix_preserved": true,
+        "visible_data_offset": "0x2E85F",
+        "visible_data_length": 7736,
+        "all_other_bytes_preserved": true,
+        "rollback_verified": true
+      }
+    ],
+    "coronius_frame": 24,
+    "source_frame": 59,
+    "source_frame_names": [
+      "skill19c.pcx",
+      "skl3219c.pcx"
+    ],
+    "per_frame_metadata_preserved": true,
+    "portrait_resources_added_or_modified": false
+  },
+  "installation_text": {
+    "source_sha256": "b292d1908dea251767aa567e84f6702714fa58cd1133ffdf10cb7c31ab33e3c1",
+    "output_sha256": "c6f7e7ee8f365460f495dd45073b1f5a8b03a2d29b930314017e228e3bc80d77",
+    "encoding": "utf-8",
+    "complete_replacement": true
+  },
+  "behavior": {
+    "coronius_secondary_skills": [
+      "Basic Wisdom",
+      "Basic Scholar"
+    ],
+    "coronius_starting_spell": {
+      "id": 55,
+      "name": "Slayer"
+    },
+    "coronius_native_slayer_specialty_disabled": true,
+    "scholar_contribution_bonus": 1,
+    "meeting_wisdom_cap_bonus": 1,
+    "native_spell_level_cap": 5,
+    "all_v114_gameplay_preserved": true
+  },
+  "formalization": {
+    "diagnostic_entry_hook_absent": true,
+    "diagnostic_strings_absent": true,
+    "test_log_writer_removed": true
+  },
+  "static_verification": {
+    "source_hashes_verified": true,
+    "approved_executable_bytes_only": true,
+    "full_executable_rollback_verified": true,
+    "zip_crc_and_member_checks_passed": true
+  }
+}
