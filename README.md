@@ -25,6 +25,10 @@
 
 **初始技能：** 初级战术 / 初级进攻术。
 
+### 创作难度
+
+★<img src="assets/ui/half-star.svg" alt="半星" title="半星" height="16">☆（1.5 / 3）
+
 ### 创作方向
 
 新兵种特长设计、战斗动画抓帧提取与全新英雄立绘创作。
@@ -48,6 +52,10 @@
 **初始指数：** 职业：德鲁伊；四维（攻击 / 防御 / 力量 / 知识）：0 / 2 / 1 / 2。
 
 **初始技能：** 初级智慧术 / 初级学术；魔法书自带屠戮。
+
+### 创作难度
+
+★☆☆（1 / 3）
 
 ### 创作方向
 
@@ -88,6 +96,10 @@
 **初始指数：** 职业：术士；四维（攻击 / 防御 / 力量 / 知识）：0 / 0 / 2 / 3。
 
 **初始技能：** 初级智慧术 / 初级智力；魔法书自带观天。
+
+### 创作难度
+
+★<img src="assets/ui/half-star.svg" alt="半星" title="半星" height="16">☆（1.5 / 3）
 
 ### 额外说明
 
@@ -133,6 +145,10 @@
 
 **初始技能：** 初级智慧术 / 初级水系魔法；魔法书自带治愈。
 
+### 创作难度
+
+★★<img src="assets/ui/half-star.svg" alt="半星" title="半星" height="16">（2.5 / 3）
+
 ### 创作方向
 
 原创魔法设计与新魔法机制开发。
@@ -172,6 +188,10 @@ H = floor(((11L + 29) × (clamp(n, 1, 7) + 11)) / 12)
 
 **Starting skills:** Basic Tactics / Basic Offense.
 
+### Creation Difficulty
+
+★<img src="assets/ui/half-star.svg" alt="Half star" title="Half star" height="16">☆ (1.5 / 3)
+
 ### Creative Direction
 
 New creature-specialty design, battle-animation frame extraction, and original hero artwork.
@@ -195,6 +215,10 @@ New creature-specialty design, battle-animation frame extraction, and original h
 **Initial profile:** Class: Druid; primary stats (Attack / Defense / Power / Knowledge): 0 / 2 / 1 / 2.
 
 **Starting skills:** Basic Wisdom / Basic Scholar; the spell book starts with Slayer.
+
+### Creation Difficulty
+
+★☆☆ (1 / 3)
 
 ### Creative Direction
 
@@ -235,6 +259,10 @@ Native secondary-skill specialty redesign and bidirectional hero-interaction rul
 **Initial profile:** Class: Wizard; primary stats (Attack / Defense / Power / Knowledge): 0 / 0 / 2 / 3.
 
 **Starting skills:** Basic Wisdom / Basic Intelligence; the spell book starts with View Air.
+
+### Creation Difficulty
+
+★<img src="assets/ui/half-star.svg" alt="Half star" title="Half star" height="16">☆ (1.5 / 3)
 
 ### Additional Note
 
@@ -279,6 +307,10 @@ Fixed-Luck specialty design and a guaranteed first-attack Luck mechanic, with co
 **Initial profile:** Class: Navigator; primary stats (Attack / Defense / Power / Knowledge): 2 / 0 / 1 / 2.
 
 **Starting skills:** Basic Wisdom / Basic Water Magic; the spell book starts with Cure.
+
+### Creation Difficulty
+
+★★<img src="assets/ui/half-star.svg" alt="Half star" title="Half star" height="16"> (2.5 / 3)
 
 ### Creative Direction
 

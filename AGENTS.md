@@ -399,21 +399,26 @@ V1.2 first-active-attack development:
 - Store README specialty PNGs in their final upright orientation. Specialty
   frames exported from the current D32F `UN44.DEF` require a 180-degree
   correction before publication; do not publish the raw inverted orientation.
-- Render `Creative Direction`, `Additional Note`, and `Current Cure Formula`
-  content as level-three headings followed by ordinary paragraphs. Do not add
-  labels such as “shared by both heroes”; group placement already communicates
-  the scope.
+- Render `Creation Difficulty`, `Creative Direction`, `Additional Note`, and
+  `Current Cure Formula` content as level-three headings followed by ordinary
+  paragraphs. Do not add labels such as “shared by both heroes”; group
+  placement already communicates the scope. Creation difficulty has a
+  three-star maximum: use the Unicode black five-point star `★` for full stars,
+  `assets/ui/half-star.svg` for half stars, and `☆` for unused stars. Elf Queen
+  is 1.5/3, Coronius is 1/3, the shared Luck group is 1.5/3, and the shared Cure
+  group is 2.5/3. Keep the same ratings and layout in both languages.
 - In each language panel, place Melodia and Daremyth together beneath one
   horizontal divider and one Luck-specialty group heading. Each individual
-  specialty effect states only fixed Luck `+3`. After both heroes, provide one
-  group-level additional note for native hard-disable effects such as Hourglass
-  of the Evil Hour and Cursed Ground, followed by one group-level creative
-  direction.
+  specialty effect states fixed Luck `+3` and the per-stack guaranteed first
+  active-attack Luck effect. After both heroes, provide one group-level creation
+  difficulty, one group-level additional note for native hard-disable effects
+  such as Hourglass of the Evil Hour and Cursed Ground, followed by one
+  group-level creative direction.
 - In each language panel, place Uland and Astra together beneath one horizontal
   divider and one Cure-specialty group heading. After both heroes, provide one
-  group-level creative direction, then show the current Cure formula. Every
-  numerical Cure update must update both README formulas to match the release
-  manifest in the same commit.
+  group-level creation difficulty and one group-level creative direction, then
+  show the current Cure formula. Every numerical Cure update must update both
+  README formulas to match the release manifest in the same commit.
 - Show one bilingual large title and one bilingual expansion hint above the three
   collapsed panels. Do not restore the old badge/button row.
 - Keep a direct current-ZIP download link inside both language panels rather than
