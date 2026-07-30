@@ -7,7 +7,7 @@
 <details name="section">
 <summary><strong>🔴 中文说明</strong></summary>
 
-**当前版本下载：** [HOTA_NEW_HERO_V1.13.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.13.zip)
+**当前版本下载：** [HOTA_NEW_HERO_V1.14.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.14.zip)
 
 ## 埃尔芙
 
@@ -47,11 +47,11 @@
 
 **初始指数：** 职业：德鲁伊；四维（攻击 / 防御 / 力量 / 知识）：0 / 2 / 1 / 2。
 
-**初始技能：** 初级智慧术 / 初级神秘术；魔法书自带振奋。
+**初始技能：** 初级智慧术 / 初级领导术；魔法书自带振奋。
 
 ### 黛瑞丝
 
-<p><img src="assets/portraits/daremyth.png" alt="黛瑞丝头像" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/daremyth.png" alt="黛瑞丝特长图标" height="72">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spellbook/spellbook.png" alt="魔法书" title="魔法书" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spells/magic-arrow.png" alt="初始法术：魔法神箭" title="初始法术：魔法神箭" height="72"></p>
+<p><img src="assets/portraits/daremyth.png" alt="黛瑞丝头像" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/daremyth.png" alt="黛瑞丝特长图标" height="72">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spellbook/spellbook.png" alt="魔法书" title="魔法书" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spells/view-air.png" alt="初始法术：观天" title="初始法术：观天" height="72"></p>
 
 **英雄简介：** 黛瑞丝早就该死了。她随心所欲、无所不为的态度让她陷入了本不该生还的境地，但不知何故，她却毫发无损。
 
@@ -63,7 +63,7 @@
 
 **初始指数：** 职业：术士；四维（攻击 / 防御 / 力量 / 知识）：0 / 0 / 2 / 3。
 
-**初始技能：** 初级智慧术 / 初级智力；魔法书自带魔法神箭。
+**初始技能：** 初级智慧术 / 初级智力；魔法书自带观天。
 
 ### 额外说明
 
@@ -130,7 +130,7 @@ H = floor(((11L + 29) × (clamp(n, 1, 7) + 11)) / 12)
 <details name="section">
 <summary><strong>🔵 English Description</strong></summary>
 
-**Current version:** [Download HOTA_NEW_HERO_V1.13.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.13.zip)
+**Current version:** [Download HOTA_NEW_HERO_V1.14.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.14.zip)
 
 ## Elf Queen
 
@@ -170,11 +170,11 @@ New creature-specialty design, battle-animation frame extraction, and original h
 
 **Initial profile:** Class: Druid; primary stats (Attack / Defense / Power / Knowledge): 0 / 2 / 1 / 2.
 
-**Starting skills:** Basic Wisdom / Basic Mysticism; the spell book starts with Mirth.
+**Starting skills:** Basic Wisdom / Basic Leadership; the spell book starts with Mirth.
 
 ### Daremyth
 
-<p><img src="assets/portraits/daremyth.png" alt="Daremyth portrait" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/daremyth.png" alt="Daremyth specialty icon" height="72">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spellbook/spellbook.png" alt="Spell book" title="Spell book" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spells/magic-arrow.png" alt="Starting spell: Magic Arrow" title="Starting spell: Magic Arrow" height="72"></p>
+<p><img src="assets/portraits/daremyth.png" alt="Daremyth portrait" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/daremyth.png" alt="Daremyth specialty icon" height="72">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spellbook/spellbook.png" alt="Spell book" title="Spell book" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spells/view-air.png" alt="Starting spell: View Air" title="Starting spell: View Air" height="72"></p>
 
 **Hero biography:** Daremyth should have died long ago. Her carefree, do-whatever-I-want attitude has led her into situations she should never have survived, yet somehow she has always emerged unscathed.
 
@@ -186,7 +186,7 @@ New creature-specialty design, battle-animation frame extraction, and original h
 
 **Initial profile:** Class: Wizard; primary stats (Attack / Defense / Power / Knowledge): 0 / 0 / 2 / 3.
 
-**Starting skills:** Basic Wisdom / Basic Intelligence; the spell book starts with Magic Arrow.
+**Starting skills:** Basic Wisdom / Basic Intelligence; the spell book starts with View Air.
 
 ### Additional Note
 
