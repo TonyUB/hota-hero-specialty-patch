@@ -8,4 +8,4 @@
 
 仓库不再保存历史测试 ZIP、解压目录、失败二进制、原始运行日志或测试清单。今后每次正式修改或诊断尝试都必须先新增一个独立 Markdown 日志，再清理临时产物。
 
-当前正式版本：[`HOTA_NEW_HERO_V1.13`](./releases/HOTA_NEW_HERO_V1.13.md)。
+当前正式版本：[`HOTA_NEW_HERO_V1.14`](./releases/HOTA_NEW_HERO_V1.14.md)。

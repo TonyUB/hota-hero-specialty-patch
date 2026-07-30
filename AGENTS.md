@@ -6,11 +6,20 @@
 - Never build on Patch_v1.9, v2.0, v2.1, v2.2, or v2.3.
 - Historical test packages and failed binaries are no longer retained in the
   repository. Their conclusions are preserved under `CHANGELOG/` and `analysis/`.
-- `Download/HOTA_NEW_HERO_V1.13.zip` is the current formal release.
+- `Download/HOTA_NEW_HERO_V1.14.zip` is the current formal release.
 
 ## Current milestone
 
-V1.13 is the current formal data release. It inherits V1.12 byte-for-byte
+V1.14 is the current formal balance release. It inherits every V1.13 gameplay
+mechanic and changes only two default-hero fields in both executables: Melodia's
+second secondary skill changes from Basic Mysticism (ID 8) to Basic Leadership
+(ID 6), while Daremyth's starting spell changes from Magic Arrow (ID 15) to
+View Air (ID 5). Melodia keeps Basic Wisdom, her spellbook, and Mirth;
+Daremyth keeps Basic Wisdom + Basic Intelligence and her spellbook. Full-record
+checks, allowed-byte checks, PE checksums, deterministic builds, independent
+verification, rollback, and standard/HD startup gates pass.
+
+V1.13 is the inherited formal data release. It inherits V1.12 byte-for-byte
 except for Daremyth's starting-spell field in the standard and HD executables
 and the root installation text. Daremyth keeps Basic Wisdom + Basic
 Intelligence and her spellbook, but starts with Magic Arrow (ID 15) instead of
@@ -251,7 +260,13 @@ V1.2 first-active-attack development:
   (`31 00 00 00`) to Magic Arrow (`0F 00 00 00`), plus each EXE checksum and
   the root installation text. The full Daremyth record, skills, spellbook flag,
   rollback bytes, package member set, and all non-EXE gameplay files are
-  verified. Future work must use V1.13 as the release baseline.
+  verified. It is the sole formal source used to build V1.14.
+- Formal `HOTA_NEW_HERO_V1.14` uses V1.13 as its sole source. In both EXEs it
+  changes Melodia `record + 0x14` from Mysticism (`08 00 00 00`) to Leadership
+  (`06 00 00 00`) and Daremyth `record + 0x20` from Magic Arrow
+  (`0F 00 00 00`) to View Air (`05 00 00 00`), plus each PE checksum and the
+  root installation text. All other bytes and gameplay paths are preserved.
+  Future work must use V1.14 as the release baseline.
 
 ## Non-negotiable rules
 
@@ -288,9 +303,9 @@ V1.2 first-active-attack development:
   custom Adela behavior or README section may be reintroduced.
 - Melodia and Daremyth return final Luck `+3` after native hard-disable gates.
   Hourglass of the Evil Hour, Cursed Ground, and equivalent native disable
-  effects remain effective. Melodia starts with Basic Wisdom + Basic Mysticism
+  effects remain effective. Melodia starts with Basic Wisdom + Basic Leadership
   and Mirth; Daremyth keeps Basic Wisdom + Basic Intelligence and starts with
-  Magic Arrow in her spell book.
+  View Air in her spell book.
 - Solmyr and Loynis remain at native HotA 1.8.0 behavior.
 - Preserve D32F 215-frame UN44/UN32 files and Elf Queen frame 141.
 
@@ -338,7 +353,8 @@ V1.2 first-active-attack development:
 - Historical numerical release: `HOTA_NEW_HERO_V1.06`
 - Historical formal specialty release: `HOTA_NEW_HERO_V1.1`
 - Historical formal specialty release: `HOTA_NEW_HERO_V1.12`
-- Current formal release: `HOTA_NEW_HERO_V1.13`
+- Historical formal balance release: `HOTA_NEW_HERO_V1.13`
+- Current formal release: `HOTA_NEW_HERO_V1.14`
 - Do not reuse historical version numbers.
 
 ## GitHub release layout
