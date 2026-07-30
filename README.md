@@ -7,7 +7,7 @@
 <details name="section">
 <summary><strong>🔴 中文说明</strong></summary>
 
-**当前版本下载：** [HOTA_NEW_HERO_V1.14.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.14.zip)
+**当前版本下载：** [HOTA_NEW_HERO_V1.2.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.2.zip)
 
 ## 埃尔芙
 
@@ -28,6 +28,30 @@
 ### 创作方向
 
 新兵种特长设计、战斗动画抓帧提取与全新英雄立绘创作。
+
+---
+
+## 学术特长英雄
+
+### 克洛尼斯
+
+<p><img src="assets/portraits/coronius.png" alt="克洛尼斯头像" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/coronius.png" alt="克洛尼斯特长图标" height="72">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spellbook/spellbook.png" alt="魔法书" title="魔法书" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spells/slayer.png" alt="初始法术：屠戮" title="初始法术：屠戮" height="72"></p>
+
+**英雄简介：** 克洛尼斯曾在埃拉西亚的魔法学院中学习过，但他很快就厌倦了那呆板的教学方式，毅然离开学院，到埃里拜一名隐士为师。
+
+**英雄阵营：** 壁垒。
+
+**特长效果：** 学术的效果提升一级；与其他英雄会面时，双方通过智慧术学习魔法的等级上限也提升一级。
+
+**初始兵力：** 12–24 半人马 / 5–7 矮人 / 2–4 木精灵。
+
+**初始指数：** 职业：德鲁伊；四维（攻击 / 防御 / 力量 / 知识）：0 / 2 / 1 / 2。
+
+**初始技能：** 初级智慧术 / 初级学术；魔法书自带屠戮。
+
+### 创作方向
+
+原生辅助技能特长重构与双向英雄交互规则扩展。
 
 ---
 
@@ -130,7 +154,7 @@ H = floor(((11L + 29) × (clamp(n, 1, 7) + 11)) / 12)
 <details name="section">
 <summary><strong>🔵 English Description</strong></summary>
 
-**Current version:** [Download HOTA_NEW_HERO_V1.14.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.14.zip)
+**Current version:** [Download HOTA_NEW_HERO_V1.2.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.2.zip)
 
 ## Elf Queen
 
@@ -151,6 +175,30 @@ H = floor(((11L + 29) × (clamp(n, 1, 7) + 11)) / 12)
 ### Creative Direction
 
 New creature-specialty design, battle-animation frame extraction, and original hero artwork.
+
+---
+
+## Scholar Specialty Hero
+
+### Coronius
+
+<p><img src="assets/portraits/coronius.png" alt="Coronius portrait" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/coronius.png" alt="Coronius specialty icon" height="72">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spellbook/spellbook.png" alt="Spell book" title="Spell book" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spells/slayer.png" alt="Starting spell: Slayer" title="Starting spell: Slayer" height="72"></p>
+
+**Hero biography:** Coronius attended the University of Erathia for one semester before deciding that academics were overrated. He left Erathia for AvLee and found a Druid who could teach by example.
+
+**Hero faction:** Rampart.
+
+**Specialty effect:** Scholar functions one mastery level higher. When meeting another hero, the maximum spell level that both heroes may learn through Wisdom is also increased by one.
+
+**Starting army:** 12–24 Centaurs / 5–7 Dwarves / 2–4 Wood Elves.
+
+**Initial profile:** Class: Druid; primary stats (Attack / Defense / Power / Knowledge): 0 / 2 / 1 / 2.
+
+**Starting skills:** Basic Wisdom / Basic Scholar; the spell book starts with Slayer.
+
+### Creative Direction
+
+Native secondary-skill specialty redesign and bidirectional hero-interaction rule expansion.
 
 ---
 

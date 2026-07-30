@@ -6,11 +6,27 @@
 - Never build on Patch_v1.9, v2.0, v2.1, v2.2, or v2.3.
 - Historical test packages and failed binaries are no longer retained in the
   repository. Their conclusions are preserved under `CHANGELOG/` and `analysis/`.
-- `Download/HOTA_NEW_HERO_V1.14.zip` is the current formal release.
+- `Download/HOTA_NEW_HERO_V1.2.zip` is the current formal release.
 
 ## Current milestone
 
-V1.14 is the current formal balance release. It inherits every V1.13 gameplay
+V1.2 is the current formal specialty release. It uses V1.14 as its sole
+source and replaces Coronius's native Slayer specialty with the accepted
+Scholar specialty. Coronius's Scholar contribution functions one level higher;
+when he participates in a hero meeting, both heroes' Wisdom receive caps also
+increase by one, with the native level-5 ceiling retained. Four local wrappers
+inside the previously empty `.luck3` tail implement the calculations without
+temporarily changing hero fields. Coronius keeps Basic Wisdom + Basic Scholar,
+his spell book, and starting Slayer. His native specialty-table type changes
+from spell specialty `3` to the game's existing disabled value `-1`, so the old
+Slayer bonus panel and runtime amplification are unreachable. The correct
+native Expert Scholar frame is `59` (`skill19c` / `skl3219c`). Formal V1.2
+removes the diagnostic entry hook, log strings, and writer used by tests. Full
+rollback, independent verification, deterministic builds, and standard startup
+to the main menu pass; the user accepted all TEST04 gameplay and presentation
+items before formalization.
+
+V1.14 is the inherited formal balance release. It inherits every V1.13 gameplay
 mechanic and changes only two default-hero fields in both executables: Melodia's
 second secondary skill changes from Basic Mysticism (ID 8) to Basic Leadership
 (ID 6), while Daremyth's starting spell changes from Magic Arrow (ID 15) to
@@ -266,7 +282,8 @@ V1.2 first-active-attack development:
   (`06 00 00 00`) and Daremyth `record + 0x20` from Magic Arrow
   (`0F 00 00 00`) to View Air (`05 00 00 00`), plus each PE checksum and the
   root installation text. All other bytes and gameplay paths are preserved.
-  Future work must use V1.14 as the release baseline.
+  V1.14 is the sole source used to build formal V1.2. Future work must use
+  formal V1.2 as the release baseline.
 
 ## Non-negotiable rules
 
@@ -307,6 +324,9 @@ V1.2 first-active-attack development:
   and Mirth; Daremyth keeps Basic Wisdom + Basic Intelligence and starts with
   View Air in her spell book.
 - Solmyr and Loynis remain at native HotA 1.8.0 behavior.
+- Coronius keeps Basic Wisdom + Basic Scholar and starts with Slayer. His old
+  native Slayer specialty is disabled; the accepted Scholar contribution and
+  bilateral Wisdom-cap bonuses replace it, with the native level-5 ceiling.
 - Preserve D32F 215-frame UN44/UN32 files and Elf Queen frame 141.
 
 ## Required deliverables before gameplay patching
@@ -354,14 +374,15 @@ V1.2 first-active-attack development:
 - Historical formal specialty release: `HOTA_NEW_HERO_V1.1`
 - Historical formal specialty release: `HOTA_NEW_HERO_V1.12`
 - Historical formal balance release: `HOTA_NEW_HERO_V1.13`
-- Current formal release: `HOTA_NEW_HERO_V1.14`
+- Historical formal balance release: `HOTA_NEW_HERO_V1.14`
+- Current formal specialty release: `HOTA_NEW_HERO_V1.2`
 - Do not reuse historical version numbers.
 
 ## GitHub release layout
 
 - Keep Chinese, English, and copyright content in mutually exclusive, same-page `<details name="section">` panels in the root `README.md`; all three panels are collapsed by default.
-- The README must contain exactly five hero sections per language: Elf Queen,
-  Melodia, Daremyth, Uland, and Astra. Each hero keeps the common fields: hero
+- The README must contain exactly six hero sections per language: Elf Queen,
+  Coronius, Melodia, Daremyth, Uland, and Astra. Each hero keeps the common fields: hero
   name, a local portrait immediately beneath the name, biography, specialty
   effect, starting army, initial profile (class plus
   Attack/Defense/Power/Knowledge), and starting skills. Render every portrait
