@@ -1,0 +1,12 @@
+# Public release portal: implementation sources and private experience must never be added here.
+analysis/
+baselines/
+tools/
+tmp/
+uploads/
+.private-experience/
+AGENTS.md
+*.bin
+*.dmp
+*.log
+

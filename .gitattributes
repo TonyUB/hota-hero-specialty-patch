@@ -1,0 +1,13 @@
+* text=auto
+*.md text eol=lf
+*.ps1 text eol=crlf
+*.json text eol=lf
+*.zip binary
+*.exe binary
+*.dll binary
+*.dat binary
+*.lod binary
+*.pcx binary
+*.png binary
+*.def binary
+baselines/Patch_v1.8/** -text -diff
