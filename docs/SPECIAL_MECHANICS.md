@@ -1,5 +1,29 @@
 # 特殊功能详解 / Special Mechanics
 
+## 矮人特长重制 / Dwarf Specialty Rework
+
+| 项目 | 当前正式规则 |
+| --- | --- |
+| 专属英雄 | 尤佛瑞汀。 |
+| 攻击与防御 | 总值为 `基础值 × 2 + floor(基础值 × floor(英雄等级 ÷ 2) ÷ 5)`；即1级约为基础值的200%，每2级再增加20%基础值，10级达到300%。 |
+| 速度 | 矮人和战斗矮人均固定增加3点速度，最终分别为6与8；不随英雄等级继续增长。 |
+| 不变属性 | 杀伤力与生命值保持兵种原生数值。 |
+| 冒险地图移动力 | 以特长结算后的速度养步：仅矮人为1700，仅战斗矮人为1830；两者同时存在时按较慢的矮人取1700。 |
+| 原生修正 | 后勤术、移动宝物、马厩、地形等修正继续按原生顺序结算。 |
+| 初始技能 | 初级进攻术与初级幸运术。 |
+
+| Item | Current release behavior |
+| --- | --- |
+| Specialty hero | Ufretin. |
+| Attack and Defense | `base × 2 + floor(base × floor(hero level ÷ 2) ÷ 5)`. Level 1 is approximately 200% of base; every 2 levels add another 20% of base; level 10 reaches 300%. |
+| Speed | Dwarves and Battle Dwarves each gain a fixed +3 Speed, ending at 6 and 8 respectively. Speed does not scale further with level. |
+| Unchanged stats | Damage and Hit Points remain native. |
+| Adventure movement | Uses specialty-adjusted Speed: Dwarf-only 1700, Battle-Dwarf-only 1830, and both together 1700 under the native slowest-stack rule. |
+| Native modifiers | Logistics, movement artifacts, Stables, terrain, and other native modifiers retain their original settlement order. |
+| Starting skills | Basic Offense and Basic Luck. |
+
+---
+
 ## 破灭重塑 / Ruinous Reforging
 
 ![献祭按钮 / Sacrifice button](../assets/ui/erebus-sacrifice.png)

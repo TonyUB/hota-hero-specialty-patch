@@ -9,7 +9,7 @@
 <details name="section">
 <summary><strong>🔴 中文说明</strong></summary>
 
-**当前版本下载：** [HOTA_NEW_HERO_V1.35.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.35.zip)
+**当前版本下载：** [HOTA_NEW_HERO_V1.4.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.4.zip)
 
 ## 厄瑞玻斯
 
@@ -150,6 +150,34 @@ H = HotA 1.8.0 原生结算：每达到一个完整的 (8−n) 英雄等级区�
 
 ---
 
+## 尤佛瑞汀
+
+<p><img src="assets/portraits/ufretin.png" alt="尤佛瑞汀头像" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/ufretin.png" alt="矮人特长图标" height="72"></p>
+
+**英雄简介：** 矮人巡逻兵并不常见，但对于尤佛瑞汀来说，这些技能几乎是天生的。他已经成为地表矮人的偶像，也是矮人中天生的领袖。
+
+**英雄阵营：** 壁垒。
+
+**特长效果：** 矮人和战斗矮人的基础攻击与防御提高100%，速度提高3；英雄每2级额外提高其20%的基础攻击与防御。
+
+**最终速度：** 矮人 6，战斗矮人 8；冒险地图养步使用特长加成后的速度，并保留后勤术、宝物、马厩与地形等原生修正。
+
+**初始兵力：** 12–24 半人马 / 5–7 矮人 / 2–4 木精灵。
+
+**初始指数：** 职业：巡林客；四维（攻击 / 防御 / 力量 / 知识）：1 / 3 / 1 / 1。
+
+**初始技能：** 初级进攻术 / 初级幸运术。
+
+### 创作难度
+
+★★★<img src="assets/ui/half-star.svg" alt="半星" title="半星" height="16">☆（3.5 / 5）
+
+### 创作方向
+
+兵种属性重构、逐级攻防成长，以及战斗与冒险地图速度结算同步。
+
+---
+
 ## 幸运特长英雄
 
 ### 马洛迪亚
@@ -229,7 +257,7 @@ H = HotA 1.8.0 原生结算：每达到一个完整的 (8−n) 英雄等级区�
 <details name="section">
 <summary><strong>🔵 English Description</strong></summary>
 
-**Current version:** [Download HOTA_NEW_HERO_V1.35.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.35.zip)
+**Current version:** [Download HOTA_NEW_HERO_V1.4.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.4.zip)
 
 ## Erebus
 
@@ -367,6 +395,34 @@ H = native HotA 1.8.0 settlement: add 10% of B for every complete
 ### Creative Direction
 
 New creature-specialty design, battle-animation frame extraction, and original hero artwork.
+
+---
+
+## Ufretin
+
+<p><img src="assets/portraits/ufretin.png" alt="Ufretin portrait" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/ufretin.png" alt="Dwarf specialty icon" height="72"></p>
+
+**Hero biography:** Dwarf patrolmen are rare, but these skills seem almost natural to Ufretin. He has become an idol of the surface dwarves and a born leader among his people.
+
+**Hero faction:** Rampart.
+
+**Specialty effect:** Dwarves and Battle Dwarves gain 100% of their base Attack and Defense and +3 Speed. Every 2 hero levels add another 20% of their base Attack and Defense.
+
+**Final Speed:** Dwarves 6; Battle Dwarves 8. Adventure-map movement uses the specialty-adjusted speed while preserving native Logistics, artifact, Stable, terrain, and other modifiers.
+
+**Starting army:** 12–24 Centaurs / 5–7 Dwarves / 2–4 Wood Elves.
+
+**Initial profile:** Class: Ranger; primary stats (Attack / Defense / Power / Knowledge): 1 / 3 / 1 / 1.
+
+**Starting skills:** Basic Offense / Basic Luck.
+
+### Creation Difficulty
+
+★★★<img src="assets/ui/half-star.svg" alt="Half star" title="Half star" height="16">☆ (3.5 / 5)
+
+### Creative Direction
+
+Creature-stat reconstruction, level-scaled Attack/Defense growth, and synchronized combat/adventure-map speed settlement.
 
 ---
 
