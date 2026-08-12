@@ -17,8 +17,6 @@
 
 <p><img src="assets/portraits/erebus.png" alt="厄瑞玻斯头像" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/erebus.png" alt="破灭重塑特长图标" height="72">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spellbook/spellbook.png" alt="魔法书" title="魔法书" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spells/sorrow.png" alt="初始魔法：悲泣" title="初始魔法：悲泣" height="72"></p>
 
-**英雄创作历史：** 详细诊断、失败复盘与技术路线已转入私有经验库；[申请借阅](docs/EXPERIENCE_ACCESS.md)。
-
 **特殊功能详解：** <img src="assets/ui/erebus-sacrifice.png" alt="献祭按钮" title="献祭" height="32" align="middle"> [查看献祭的完整允许范围、禁止范围与实现边界](docs/SPECIAL_MECHANICS.md#破灭重塑--ruinous-reforging)
 
 **英雄简介：** 厄瑞玻斯是远古时代最早诞生的纯血黑龙之一。他自愿拥抱死亡并凭借自身意志重生，成为世间第一位鬼龙之王。环绕其身的破灭之力扭曲了死灵法则，在他的威压下，普通亡灵的骨骸会崩解重组，化作令人胆寒的骨龙为他而战。
@@ -238,8 +236,6 @@ H = HotA 1.8.0 原生结算：每达到一个完整的 (8−n) 英雄等级区�
 <a href="assets/ui/erebus-sacrifice-window-annotated-en.png"><img src="assets/ui/erebus-sacrifice-window-annotated-en.png" alt="Erebus creature information window: Sacrifice button location" title="Click to view the Sacrifice button location" height="210" align="right"></a>
 
 <p><img src="assets/portraits/erebus.png" alt="Erebus portrait" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/erebus.png" alt="Ruinous Reforging specialty icon" height="72">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spellbook/spellbook.png" alt="Spell book" title="Spell book" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spells/sorrow.png" alt="Starting spell: Sorrow" title="Starting spell: Sorrow" height="72"></p>
-
-**Hero development history:** Detailed diagnostics, failure reviews, and implementation routes are maintained in the private experience repository; [request access](docs/EXPERIENCE_ACCESS.md).
 
 **Special mechanic guide:** <img src="assets/ui/erebus-sacrifice.png" alt="Sacrifice button" title="Sacrifice" height="32" align="middle"> [See the complete eligibility, exclusion, and implementation rules](docs/SPECIAL_MECHANICS.md#破灭重塑--ruinous-reforging)
 
