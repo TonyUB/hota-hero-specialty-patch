@@ -162,7 +162,7 @@ H = HotA 1.8.0 原生结算：每达到一个完整的 (8−n) 英雄等级区�
 
 **最终速度：** 矮人 6，战斗矮人 8；冒险地图养步使用特长加成后的速度，并保留后勤术、宝物、马厩与地形等原生修正。
 
-**初始兵力：** 12–24 半人马 / 5–7 矮人 / 2–4 木精灵。
+**初始兵力：** 三组矮人。
 
 **初始指数：** 职业：巡林客；四维（攻击 / 防御 / 力量 / 知识）：1 / 3 / 1 / 1。
 
@@ -170,11 +170,11 @@ H = HotA 1.8.0 原生结算：每达到一个完整的 (8−n) 英雄等级区�
 
 ### 创作难度
 
-★★★<img src="assets/ui/half-star.svg" alt="半星" title="半星" height="16">☆（3.5 / 5）
+★☆☆☆☆（1 / 5）
 
 ### 创作方向
 
-兵种属性重构、逐级攻防成长，以及战斗与冒险地图速度结算同步。
+兵种特长模板调用、修改。
 
 ---
 
@@ -410,7 +410,7 @@ New creature-specialty design, battle-animation frame extraction, and original h
 
 **Final Speed:** Dwarves 6; Battle Dwarves 8. Adventure-map movement uses the specialty-adjusted speed while preserving native Logistics, artifact, Stable, terrain, and other modifiers.
 
-**Starting army:** 12–24 Centaurs / 5–7 Dwarves / 2–4 Wood Elves.
+**Starting army:** Three stacks of Dwarves.
 
 **Initial profile:** Class: Ranger; primary stats (Attack / Defense / Power / Knowledge): 1 / 3 / 1 / 1.
 
@@ -418,11 +418,11 @@ New creature-specialty design, battle-animation frame extraction, and original h
 
 ### Creation Difficulty
 
-★★★<img src="assets/ui/half-star.svg" alt="Half star" title="Half star" height="16">☆ (3.5 / 5)
+★☆☆☆☆ (1 / 5)
 
 ### Creative Direction
 
-Creature-stat reconstruction, level-scaled Attack/Defense growth, and synchronized combat/adventure-map speed settlement.
+Creature-specialty template reuse and modification.
 
 ---
 
