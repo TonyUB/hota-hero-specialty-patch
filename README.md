@@ -162,7 +162,7 @@ H = HotA 1.8.0 原生结算：每达到一个完整的 (8−n) 英雄等级区�
 
 **最终速度：** 矮人 6，战斗矮人 8；冒险地图养步使用特长加成后的速度，并保留后勤术、宝物、马厩与地形等原生修正。
 
-**初始兵力：** 三组矮人。
+**初始兵力：** 5–7 矮人 / 5–7 矮人 / 5–7 矮人。
 
 **初始指数：** 职业：巡林客；四维（攻击 / 防御 / 力量 / 知识）：1 / 3 / 1 / 1。
 
@@ -410,7 +410,7 @@ New creature-specialty design, battle-animation frame extraction, and original h
 
 **Final Speed:** Dwarves 6; Battle Dwarves 8. Adventure-map movement uses the specialty-adjusted speed while preserving native Logistics, artifact, Stable, terrain, and other modifiers.
 
-**Starting army:** Three stacks of Dwarves.
+**Starting army:** 5–7 Dwarves / 5–7 Dwarves / 5–7 Dwarves.
 
 **Initial profile:** Class: Ranger; primary stats (Attack / Defense / Power / Knowledge): 1 / 3 / 1 / 1.
 
