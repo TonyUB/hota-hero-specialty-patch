@@ -1,5 +1,43 @@
 # 特殊功能详解 / Special Mechanics
 
+## 阿萨泽尔战争机器 / Azazel War Machines
+
+### 中文规则
+
+| 项目 | 当前正式规则 |
+| --- | --- |
+| 专属英雄 | 仅阿萨泽尔（英雄 ID 63）获得本套战争机器规则。 |
+| 初始配置 | 地狱战士职业“大魔鬼”，初始四维 `2/2/1/1`，初级弹道术、初级炮术，携带弩车与补给车，不携带急救帐篷；无魔法书和初始法术。 |
+| 额外射击 | 弩车、加农炮和投石车每次原生行动额外射击 1 次；额外射击属于同一次原生行动的扩展，不伪造速度、士气或 done 状态。 |
+| 战后修复 | 仅在胜利后修复战前已经拥有、战斗中被摧毁的战争机器。失败、撤退和投降不触发专属修复。 |
+| 补给车增益 | 英雄至少掌握初级弹道术且己方补给车存活时，普通射手、弩车和加农炮攻击力 +4；补给车被摧毁后立即失效。 |
+| 补给车伤害上限 | 每次物理命中最多使补给车损失当前最大生命值的 40%；战斗日志与最终伤害同步。 |
+| 中级炮术 | 中级及以上炮术使弩车和加农炮攻击部队时，按向上取整后的 50% 原生有效防御结算。普通射手不获得该效果。 |
+| 高级炮术 | 弩车和加农炮攻击部队时无视射程与城墙惩罚，光标和伤害预览同步为无惩罚结果；普通射手不受益。 |
+| 城墙目标 | 加农炮攻击城墙时保留原生城防结算与额外射击，不进入对部队使用的 50% 防御或无视惩罚层。 |
+| 双高级优先级 | 同时掌握高级弹道术和高级炮术时，每回合逻辑优先级为投石车 > 弩车/加农炮 > 箭塔 > 原生后续行动。 |
+| 原生边界 | 不新增投石车城防结构伤害日志；原生普通射手、非目标英雄和其他战争机器规则保持不变。 |
+| 说明同步 | 补给车静态说明及弩车、加农炮、投石车动态说明均显示当前规则。 |
+
+### English Rules
+
+| Item | Current release behavior |
+| --- | --- |
+| Specialty hero | Only Azazel (hero ID 63) receives this war-machine rule set. |
+| Starting profile | Inferno might class Demoniac, `2/2/1/1` primary skills, Basic Ballistics and Basic Artillery, a Ballista and Ammo Cart, no First Aid Tent, and no spell book or starting spell. |
+| Extra shots | The Ballista, Cannon, and Catapult fire one additional shot during each native action. This extends the same action and does not fake Speed, Morale, or done-state values. |
+| Post-battle repair | Only victory repairs war machines that were owned before battle and destroyed during it. Defeat, retreat, and surrender do not trigger specialty repair. |
+| Ammo Cart bonus | With at least Basic Ballistics and a living friendly Ammo Cart, ordinary shooters, the Ballista, and the Cannon gain +4 Attack. The bonus disappears immediately when the cart is destroyed. |
+| Ammo Cart damage cap | Each physical hit can remove at most 40% of the Ammo Cart's current maximum HP; combat-log damage and settled damage remain synchronized. |
+| Advanced Artillery | Advanced or Expert Artillery makes Ballista and Cannon attacks against creatures use 50% of native effective Defense, rounded upward. Ordinary shooters do not gain this effect. |
+| Expert Artillery | Ballista and Cannon attacks against creatures ignore range and wall penalties, with cursor and damage preview synchronized. Ordinary shooters remain native. |
+| Wall targets | Cannon attacks against walls retain native siege resolution and the extra shot; creature-defense and no-penalty layers do not apply to wall targets. |
+| Dual-Expert priority | With both Expert Ballistics and Expert Artillery, the logical per-round priority is Catapult > Ballista/Cannon > towers > native continuation. |
+| Native boundaries | No new Catapult structural-damage log is added. Ordinary shooters, non-target heroes, and unrelated war-machine behavior remain native. |
+| Description sync | Static Ammo Cart text and dynamic Ballista, Cannon, and Catapult descriptions expose the active rules. |
+
+---
+
 ## 破灭重塑 / Ruinous Reforging
 
 ![献祭按钮 / Sacrifice button](../assets/ui/erebus-sacrifice.png)

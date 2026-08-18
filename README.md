@@ -9,7 +9,37 @@
 <details name="section">
 <summary><strong>🔴 中文说明</strong></summary>
 
-**当前版本下载：** [HOTA_NEW_HERO_V1.35.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.35.zip)
+**当前版本下载：** [HOTA_NEW_HERO_V1.5.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.5.zip)
+
+## 阿萨泽尔
+
+<p><img src="assets/portraits/azazel.png" alt="阿萨泽尔头像" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/azazel.png" alt="阿萨泽尔战争机器特长图标" height="72"></p>
+
+**英雄简介：** 在被提拔为恶魔将军之前，阿萨泽尔曾是地狱深渊中最冷酷的军械监工。在他看来，血肉注定会衰败，钢铁与烈火才是最可靠的毁灭手段。阿萨泽尔在战争机器的制造与运用上有着非凡天赋，并因此在地狱军中迅速崭露头角。经他改良的攻城器械不仅能摧毁坚固的城防，也能在野战中撕开最严密的阵线。
+
+**英雄阵营：** 地狱。
+
+**特长效果：** 战争机器——弩车、加农炮和投石车每次原生行动额外射击 1 次；胜利后修复战前拥有且被摧毁的战争机器。补给车存活且英雄至少掌握初级弹道术时，普通射手、弩车和加农炮攻击力 +4；补给车每次物理命中最多损失当前最大生命值的 40%。中级及以上炮术使弩车和加农炮攻击部队时按 50% 有效防御结算；高级炮术还使其无视射程与城墙惩罚。同时掌握高级弹道术和高级炮术时，战争机器按逻辑优先级行动。
+
+**初始兵力：** 20–30 小恶魔 / 5–7 歌革 / 4–5 地狱猎犬；携带弩车和补给车，不携带急救帐篷。
+
+**初始指数：** 职业：大魔鬼；四维（攻击 / 防御 / 力量 / 知识）：2 / 2 / 1 / 1。
+
+**初始技能：** 初级弹道术 / 初级炮术；无魔法书与初始法术。
+
+### 创作难度
+
+★★★★★（5 / 5）
+
+### 创作方向
+
+战争机器行动链扩展、战后修复与动态增益、补给车伤害边界、炮术防御与距离规则、双高级技能逻辑行动优先级，以及头像、特长图集和动态说明的完整整合。
+
+### 战争机器使用说明
+
+- [查看阿萨泽尔战争机器特长的完整中英文规则](docs/SPECIAL_MECHANICS.md#阿萨泽尔战争机器--azazel-war-machines)
+
+---
 
 ## 厄瑞玻斯
 
@@ -229,7 +259,37 @@ H = HotA 1.8.0 原生结算：每达到一个完整的 (8−n) 英雄等级区�
 <details name="section">
 <summary><strong>🔵 English Description</strong></summary>
 
-**Current version:** [Download HOTA_NEW_HERO_V1.35.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.35.zip)
+**Current version:** [Download HOTA_NEW_HERO_V1.5.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.5.zip)
+
+## Azazel
+
+<p><img src="assets/portraits/azazel.png" alt="Azazel portrait" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/azazel.png" alt="Azazel war-machine specialty icon" height="72"></p>
+
+**Biography:** Before his promotion to demon general, Azazel was the most ruthless armaments overseer in the infernal abyss. To him, flesh is destined to decay; steel and fire are the only reliable instruments of destruction. His extraordinary gift for designing and operating war machines carried him rapidly through the infernal ranks. The siege engines he improved can shatter fortified defenses and tear open even the tightest field formations.
+
+**Faction:** Inferno.
+
+**Specialty effect:** War Machines — the Ballista, Cannon, and Catapult fire one additional shot during each native action, and war machines owned before battle are repaired after victory if destroyed. While the Ammo Cart lives and Azazel has at least Basic Ballistics, ordinary shooters, the Ballista, and the Cannon gain +4 Attack. Each physical hit can remove at most 40% of the Ammo Cart's current maximum HP. Advanced or Expert Artillery makes the Ballista and Cannon resolve attacks against creatures using 50% effective Defense; Expert Artillery also removes range and wall penalties for them. With both Expert Ballistics and Expert Artillery, war machines act by logical priority.
+
+**Starting army:** 20–30 Imps / 5–7 Gogs / 4–5 Hell Hounds; starts with a Ballista and Ammo Cart, but no First Aid Tent.
+
+**Initial profile:** Class: Demoniac; primary skills (Attack / Defense / Power / Knowledge): 2 / 2 / 1 / 1.
+
+**Starting skills:** Basic Ballistics / Basic Artillery; no spell book or starting spell.
+
+### Creation Difficulty
+
+★★★★★ (5 / 5)
+
+### Creative Direction
+
+War-machine action-chain extensions, post-combat repair and dynamic bonuses, Ammo Cart damage boundaries, Artillery defense and range rules, logical dual-Expert action priority, and complete portrait, specialty-atlas, and dynamic-description integration.
+
+### War Machine Rules
+
+- [Read the complete bilingual rules for Azazel's War Machines specialty](docs/SPECIAL_MECHANICS.md#阿萨泽尔战争机器--azazel-war-machines)
+
+---
 
 ## Erebus
 
