@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "release": "HOTA_NEW_HERO_V1.5",
+  "status": "FORMAL_RELEASE",
+  "release_date": "2026-08-18",
+  "package": "HOTA_NEW_HERO_V1.5.zip",
+  "package_sha256": "9b38a4103d936f5da4dd0a9dcee22123af8e8b8049a069e9314dcd57762bce20",
+  "package_size": 22656182,
+  "accepted_test_parent": {
+    "package": "HOTA_AZAZEL_WARMACHINE_TEST17.zip",
+    "sha256": "5e8ec0e6b5cf4376ba28ac3e35d1aa3b8eb6b114e0744ad381752be656e979c3"
+  },
+  "accepted_mechanics_parent": {
+    "package": "HOTA_XARFAX_WARMACHINE_TEST15.zip",
+    "sha256": "fb26b8f6c71d1ac468dc3002be1ac8a4eb7abe41ae92c102cdc394a1df9d5ccd"
+  },
+  "promotion_rule": "All 21 gameplay members are byte-identical to user-accepted TEST17; only the root installation text is formalized.",
+  "hero": {
+    "id": 63,
+    "name": "阿萨泽尔",
+    "faction": "地狱",
+    "class": "大魔鬼",
+    "class_id": 6,
+    "initial_primary": [
+      2,
+      2,
+      1,
+      1
+    ],
+    "initial_skills": [
+      "初级弹道术",
+      "初级炮术"
+    ],
+    "spellbook": false,
+    "starting_spell": null,
+    "specialty_icon": "投石车"
+  },
+  "verification": {
+    "user_runtime_acceptance": true,
+    "deterministic_double_build": true,
+    "zip_crc": true,
+    "gameplay_payload_identical_to_test17": true,
+    "pe_checksums": true,
+    "accepted_war_machine_sections_frozen": [
+      ".wmxs1",
+      ".wmxb2",
+      ".wm09",
+      ".wm11",
+      ".wm12",
+      ".wm15"
+    ],
+    "atlas_frame_count": 215,
+    "atlas_changed_frame": 63
+  },
+  "members": {
+    "Data/HPL005EL.PCX": "6a3f6e6957b763cbc8c41935e6b4675cfd2cc07171296e35e03609e15acc60cd",
+    "Data/HPL063Dm.PCX": "f94667a2c1e7566bc0a5f6489e1bd8690cfb426fb5778e5c33719dc5170c664c",
+    "Data/HPL064DK.PCX": "cf309e8927532236ff8fd58eabcd1a4a13236fb28343cf509acf638ef50e4581",
+    "Data/HPS005EL.PCX": "e8c1a4d872ce344c212b2df15b710d3bddece84eab0daa184668fa1c83858f91",
+    "Data/HPS063Dm.PCX": "a20b6a1d1b56384a819bade2946bf678d50cee7bb779a6120d325a1096b131ca",
+    "Data/HPS064DK.PCX": "43712d0dca21dd03e02829bb3525a3c863e2d24a879959146e661e24ef9d0005",
+    "Data/HotA_l_ext.lod": "f5e1b7fa583cba4b59e773d984a74880b1597855349197e91a1f5e4c13179139",
+    "Data/HotA_lng.lod": "b7e2c3381c84cbea4cab1d82fd4d2b023ec46805742662d901ed0b859cf42223",
+    "HotA.dat": "d2af255d38d36f3dea4cf6cc94f60c3dcc9109699de7069e53783c6fe6b80568",
+    "HotA.dll": "f91e48958b18d527deb7ef4b19d09330ba25b955788d755e3c930972ed731ee9",
+    "_HD3_Data/Compability/#hota15/E64IVCR.DEF": "9573b3b7eeb4b56d34188d8bbadfaf0ce44deb68f7059e7455d0fc46aae7e742",
+    "_HD3_Data/Compability/#hota15/Files.ini": "1135e65494de34d95679ca3fd58a6e7afae297127ed1a554bc21b514ec6d0997",
+    "_HD3_Data/Compability/#hota15/Pack.ini": "15db9fe45cd4f5ef9ddd5951e8a6772cf62e83226c269c92900f86c20edfe9de",
+    "_HD3_Data/Compability/#hota15/UN32.DEF": "8298a285b02ab23a5fc51eb124e207758f7735b1b1d84a02827211a7529cee21",
+    "_HD3_Data/Compability/#hota15/UN44.DEF": "cc9b9c0ac43fcbd7e5879f9926bfeb07ba73ec28e7f3f521d73c4af5af6e6099",
+    "_HD3_Data/Packs/H3中文-基础资源/HCTRAITS.TXT": "2c8121f9f29ba86859bc9454d281ebeed8cfcb7ec9a6355efe70efc6b0ffe7a1",
+    "_HD3_Data/Packs/H3中文-基础资源/HOTRAITS.TXT": "27eb17ac4d769f7478ca56c471ff915743fd4f11eaf57cd4afaf94fabf359b54",
+    "_HD3_Data/Packs/H3中文-基础资源/HeroBios.txt": "2e6640e1a1b98c002361d0626dd92e8c83aad1e74a8709165f922bc90a2f3220",
+    "_HD3_Data/Packs/H3中文-基础资源/HeroSpec.txt": "0ebca023cfd4405331f9655bdb15dd3437f0ea02f66089ac1b72ad593dc40f95",
+    "h3hota HD.exe": "e67594804c8ad9b170f41a884ba39f2a4c472a50bbc17043032105c163d402c7",
+    "h3hota.exe": "7cab551e2113a556fed3369cf7927d76731d0b36e6530cf49bd008a2dc0f10af",
+    "安装说明.txt": "e8cbe9603cc18ccb8e0b164410655829fece000e90653474322a7d4a6d44780e"
+  }
+}
