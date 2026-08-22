@@ -26,7 +26,7 @@
 | Dig eligibility | Native terrain, Grail, hole, and other restrictions remain. Olega may dig after moving, provided she has at least 100 current movement points when Dig is used. |
 | Movement settlement | A successful dig still lets the native flow drain all remaining movement, naturally limiting successful digging to once per day. |
 | Obelisk information | Every successful dig selects uniformly from Obelisks that exist on the map and have not been visited by the current team, then uses the native visit flow to synchronize the puzzle map, team visit state, message, and window. |
-| Exhausted Obelisks | If none remain, the Obelisk branch is skipped while digging and the reward still resolve normally. |
+| Exhausted Obelisks | If none remain, the Obelisk branch is skipped while digging and the reward still resolves normally. |
 | Daily reward | Every successful dig awards one tier: 70% random treasure-class artifact + 350 gold; 15% random minor artifact + 1,000 gold; 10% random major artifact + 2,000 gold; 5% random relic artifact + 4,000 gold. |
 | Daily determinism | Reloading or moving to another legal tile on the same day keeps the same tier and artifact; the next day produces a new result. |
 | Artifact pool | Uses map-allowed artifacts of the selected class. Completed combination artifacts are excluded; ordinary items and combination components remain eligible. The formal range primarily covers executable artifact IDs 0—143. |
