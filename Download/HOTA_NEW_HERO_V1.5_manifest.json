@@ -84,7 +84,7 @@
     "supersedes_zip_sha256": "de61ee100071dfef38679c41738ae59b2ead099fa6f8d845f066262a0e0a5a07",
     "portrait_changes": "Only HPL pixels (36,13), (39,45) and HPS pixel (30,6) were remapped away from reserved palette index 0.",
     "specialty_icon_change": "Horizontal mirror compensation before the existing 180-degree D32F storage transform.",
-    "view_air_landing_asset": "H3sprite.lod / spells.def frame 5 / Sp06VwAr.pcx; published PNG SHA-256 db133d2480cbb925e0dead705a12cf2ea1e5c1a8c2b868cdad2e97a4f047b9cc.",
+    "view_air_landing_asset": "User-confirmed in-game hero-profile visual: cloud/sky crystal ball; clean H3sprite.lod / spells.def frame 3 / Sp04VwEr.pcx; published PNG SHA-256 719fe87c66554da83c33008f03f2ce5f1638d924fa2eeeaff8f9fda9cf6337bc. Internal frame naming is not sufficient for landing-page semantic validation.",
     "landing_page_change": "Explicit View Air ID 5, starting army, 2/1/1/1 primary skills, 3.5/5 difficulty, and revised creative direction."
   }
 }

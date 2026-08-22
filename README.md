@@ -13,7 +13,7 @@
 
 ## 奥蕾加
 
-<p><img src="assets/portraits/olega.png" alt="奥蕾加头像" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/olega.png" alt="奥蕾加寻宝术特长图标" height="72">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spellbook/spellbook.png" alt="魔法书" title="魔法书" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spells/view-air.png" alt="初始魔法：观天（法术 ID 5）" title="初始魔法：观天（法术 ID 5）" height="72"></p>
+<p><img src="assets/portraits/olega.png" alt="奥蕾加头像" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/olega.png" alt="奥蕾加寻宝术特长图标" height="72">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spellbook/spellbook.png" alt="魔法书" title="魔法书" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spells/view-air.png?rev=719fe87c" alt="初始魔法：观天（法术 ID 5）" title="初始魔法：观天（法术 ID 5）" height="72"></p>
 
 **英雄简介：** 与传统的战斗法师不同，奥蕾加将全部魔法天赋都用于探索未知的宝物。当克鲁罗德的其他法师在战场上制造毁灭时，她却运用法术来透视王国的贫瘠废土。凭借独有的寻宝术，她总能从荒芜之地发掘出深埋地底的宝藏。
 
@@ -230,7 +230,7 @@ H = HotA 1.8.0 原生结算：每达到一个完整的 (8−n) 英雄等级区�
 
 ### 黛瑞丝
 
-<p><img src="assets/portraits/daremyth.png" alt="黛瑞丝头像" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/daremyth.png" alt="黛瑞丝特长图标" height="72">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spellbook/spellbook.png" alt="魔法书" title="魔法书" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spells/view-air.png" alt="初始魔法：观天" title="初始魔法：观天" height="72"></p>
+<p><img src="assets/portraits/daremyth.png" alt="黛瑞丝头像" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/daremyth.png" alt="黛瑞丝特长图标" height="72">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spellbook/spellbook.png" alt="魔法书" title="魔法书" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spells/view-air.png?rev=719fe87c" alt="初始魔法：观天" title="初始魔法：观天" height="72"></p>
 
 **英雄简介：** 黛瑞丝早就该死了。她随心所欲、无所不为的态度让她陷入了本不该生还的境地，但不知何故，她却毫发无损。
 
@@ -293,7 +293,7 @@ H = HotA 1.8.0 原生结算：每达到一个完整的 (8−n) 英雄等级区�
 
 ## Olega
 
-<p><img src="assets/portraits/olega.png" alt="Olega portrait" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/olega.png" alt="Olega Treasure Hunt specialty icon" height="72">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spellbook/spellbook.png" alt="Spell book" title="Spell book" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spells/view-air.png" alt="Starting spell: View Air (spell ID 5)" title="Starting spell: View Air (spell ID 5)" height="72"></p>
+<p><img src="assets/portraits/olega.png" alt="Olega portrait" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/olega.png" alt="Olega Treasure Hunt specialty icon" height="72">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spellbook/spellbook.png" alt="Spell book" title="Spell book" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spells/view-air.png?rev=719fe87c" alt="Starting spell: View Air (spell ID 5)" title="Starting spell: View Air (spell ID 5)" height="72"></p>
 
 **Hero biography:** Unlike traditional Battle Mages, Olega devotes all of her magical talent to exploring for unknown treasures. While Krewlod's other mages use magic to wreak destruction on the battlefield, she employs her spells to peer beneath the kingdom's barren wastes. With her unique Treasure Hunt specialty, she can always unearth treasures buried deep beneath desolate lands.
 
@@ -510,7 +510,7 @@ New creature-specialty design, battle-animation frame extraction, and original h
 
 ### Daremyth
 
-<p><img src="assets/portraits/daremyth.png" alt="Daremyth portrait" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/daremyth.png" alt="Daremyth specialty icon" height="72">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spellbook/spellbook.png" alt="Spell book" title="Spell book" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spells/view-air.png" alt="Starting spell: View Air" title="Starting spell: View Air" height="72"></p>
+<p><img src="assets/portraits/daremyth.png" alt="Daremyth portrait" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/daremyth.png" alt="Daremyth specialty icon" height="72">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spellbook/spellbook.png" alt="Spell book" title="Spell book" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spells/view-air.png?rev=719fe87c" alt="Starting spell: View Air" title="Starting spell: View Air" height="72"></p>
 
 **Hero biography:** Daremyth should have died long ago. Her carefree, do-whatever-I-want attitude has led her into situations she should never have survived, yet somehow she has always emerged unscathed.
 
