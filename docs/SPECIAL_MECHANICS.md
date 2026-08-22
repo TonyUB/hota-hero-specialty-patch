@@ -1,5 +1,41 @@
 # 特殊功能详解 / Special Mechanics
 
+## 奥蕾加寻宝术 / Olega Treasure Hunt
+
+### 中文规则
+
+| 项目 | 当前正式规则 |
+| --- | --- |
+| 专属英雄 | 仅奥蕾加（英雄 ID 110）获得寻宝术；原生鹰眼术特长已停用。 |
+| 挖掘资格 | 保留原生地块、圣杯、坑洞和其他限制，但奥蕾加移动后仍可挖掘；点击挖掘时至少需要 100 点当前行动力。 |
+| 行动力结算 | 成功挖掘后仍由原生流程把剩余行动力清零，因此自然保持每天最多一次成功挖掘。 |
+| 方尖塔信息 | 每次成功挖掘会在地图真实存在、且本队尚未访问的方尖塔中等概率选择一座，并调用原生访问流程同步藏宝图、队伍访问状态、提示和窗口。 |
+| 方尖塔耗尽 | 没有未访问方尖塔时跳过该分支，但挖掘与奖励仍继续。 |
+| 每日奖励 | 每次成功挖掘必得一档：70% 为随机一级宝物 + 350 金币；15% 为随机二级宝物 + 1000 金币；10% 为随机三级宝物 + 2000 金币；5% 为随机四级宝物 + 4000 金币。 |
+| 每日确定性 | 同一天、同一存档反复挖掘或更换合法地块，档位与具体宝物保持相同；进入下一天后生成新结果。 |
+| 宝物池 | 使用对应等级且地图允许的宝物；完整组合神器排除，普通单件与组合部件仍可进入。当前正式范围主要覆盖 EXE 中 0—143 号宝物。 |
+| 四级宝保底 | 未实际获得四级宝时保底进度每次 +5；连续 19 次未出后，第 20 次强制尝试四级宝。自然或保底获得四级宝后归零。 |
+| 奖励窗口 | 使用通用奖励窗口显示金币与实际宝物；关闭后立即刷新冒险地图资源栏。 |
+| 初始配置 | 据点战斗法师，初级智慧术与初级侦察术，魔法书实际掌握观天。 |
+
+### English Rules
+
+| Item | Current release behavior |
+| --- | --- |
+| Specialty hero | Only Olega (hero ID 110) receives Treasure Hunt; the native Eagle Eye specialty type is disabled. |
+| Dig eligibility | Native terrain, Grail, hole, and other restrictions remain. Olega may dig after moving, provided she has at least 100 current movement points when Dig is used. |
+| Movement settlement | A successful dig still lets the native flow drain all remaining movement, naturally limiting successful digging to once per day. |
+| Obelisk information | Every successful dig selects uniformly from Obelisks that exist on the map and have not been visited by the current team, then uses the native visit flow to synchronize the puzzle map, team visit state, message, and window. |
+| Exhausted Obelisks | If none remain, the Obelisk branch is skipped while digging and the reward still resolves normally. |
+| Daily reward | Every successful dig awards one tier: 70% random treasure-class artifact + 350 gold; 15% random minor artifact + 1,000 gold; 10% random major artifact + 2,000 gold; 5% random relic artifact + 4,000 gold. |
+| Daily determinism | Reloading or moving to another legal tile on the same day keeps the same tier and artifact; the next day produces a new result. |
+| Artifact pool | Uses map-allowed artifacts of the selected class. Completed combination artifacts are excluded; ordinary items and combination components remain eligible. The formal range primarily covers executable artifact IDs 0—143. |
+| Relic pity | Each result without an actual relic adds 5 pity points. After 19 consecutive misses, the 20th dig forces a relic attempt. A natural or forced relic resets the cycle. |
+| Reward window | The general reward window shows the gold and actual artifact; closing it immediately refreshes the adventure-map resource bar. |
+| Starting profile | Stronghold Battle Mage with Basic Wisdom, Basic Scouting, and View Air actually learned in the starting spell book. |
+
+---
+
 ## 阿萨泽尔战争机器 / Azazel War Machines
 
 ### 中文规则
