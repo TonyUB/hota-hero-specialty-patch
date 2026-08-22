@@ -4,4 +4,4 @@ HOTA_NEW_HERO_V1.5
 English: Heroes of Might and Magic III: Horn of the Abyss — New Hero Specialty Development
 
 Download: https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.5.zip
-SHA-256: de61ee100071dfef38679c41738ae59b2ead099fa6f8d845f066262a0e0a5a07
+SHA-256: 0e4694c051d6156bb0c9e8373fcdbf8cf56a5750202000c1dc0ab0d8e23965a0

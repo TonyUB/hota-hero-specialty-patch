@@ -2,11 +2,11 @@
   "schema_version": 1,
   "build": "HOTA_NEW_HERO_V1.5",
   "release_date": "2026-08-22",
-  "classification": "FORMAL_RELEASE",
+  "classification": "FORMAL_RELEASE_HOTFIX",
   "zip": {
     "filename": "HOTA_NEW_HERO_V1.5.zip",
-    "size": 22698901,
-    "sha256": "de61ee100071dfef38679c41738ae59b2ead099fa6f8d845f066262a0e0a5a07",
+    "size": 22699132,
+    "sha256": "0e4694c051d6156bb0c9e8373fcdbf8cf56a5750202000c1dc0ab0d8e23965a0",
     "members": 27
   },
   "parent": {
@@ -23,11 +23,28 @@
       "Basic Wisdom",
       "Basic Scouting"
     ],
+    "starting_army": [
+      "20-30 Goblins",
+      "5-7 Wolf Riders",
+      "5-6 Orcs"
+    ],
+    "primary_skills": {
+      "attack": 2,
+      "defense": 1,
+      "power": 1,
+      "knowledge": 1
+    },
     "starting_spell": {
       "id": 5,
       "name": "View Air / 观天"
     },
-    "specialty": "Treasure Hunt / 寻宝术"
+    "specialty": "Treasure Hunt / 寻宝术",
+    "creation_difficulty": "3.5/5",
+    "creative_direction": [
+      "post-movement digging",
+      "Obelisk-state synchronization",
+      "hard-pity mechanism design"
+    ]
   },
   "mechanic": {
     "minimum_current_movement": 100,
@@ -46,10 +63,10 @@
   "key_hashes": {
     "h3hota.exe": "e662e44aa3434b6b5f0b2a7db89aa4f82f883cbc4af4345a37a92dfa73b1d054",
     "h3hota HD.exe": "65eb482080383f77664c29df135d1f1d0c3157ea1ce35479e9396c55325b028e",
-    "Data/HPL110BM.PCX": "5d02fe080479f16e960c1c15b8e922ef0da232728f67e097e70b6f8e55b9b98f",
-    "Data/HPS110BM.PCX": "9169a9bc694701a9d4ecfd4db019e971d71621706661bbf45fec0a7a1683693c",
-    "UN44.DEF": "00d4bc31aa8c349cbe0cb75ef01fe72792d77e1a9314aa7781c6766c4b9af09d",
-    "UN32.DEF": "dedd583f4a15b0ed9d18e71e0bdc0a2198becfdd0a7167eb26d7339910e432cb"
+    "Data/HPL110BM.PCX": "62d01ddc43936fc5493b30dd902896d66ddd4131d5c0c133d14451cde69218f3",
+    "Data/HPS110BM.PCX": "dbbfd67e3fa91e039272b32dc3d33085f40fe7b9b05354957d78aba6f2ffd7fd",
+    "UN44.DEF": "85095777d821c99a9f9b704f4cfa0bd6a9e92b31ec5a931a5551b4b18388da31",
+    "UN32.DEF": "f670e23ba4bd2cfc5e8a627be8e44d670d80ad95b97b4ae8358f6a570b6d6c22"
   },
   "verification": {
     "independent_verifier_passed": true,
@@ -59,6 +76,15 @@
     "only_target_atlas_frames_changed": true,
     "loose_portraits_are_standard_zsoft_pcx": true,
     "zip_crc_valid": true,
-    "deterministic_double_build": true
+    "deterministic_double_build": true,
+    "portrait_reserved_index_black_dots_fixed": true,
+    "treasure_icon_in_game_mirror_compensated": true
+  },
+  "hotfix": {
+    "supersedes_zip_sha256": "de61ee100071dfef38679c41738ae59b2ead099fa6f8d845f066262a0e0a5a07",
+    "portrait_changes": "Only HPL pixels (36,13), (39,45) and HPS pixel (30,6) were remapped away from reserved palette index 0.",
+    "specialty_icon_change": "Horizontal mirror compensation before the existing 180-degree D32F storage transform.",
+    "view_air_landing_asset": "H3sprite.lod / spells.def frame 5 / Sp06VwAr.pcx; published PNG SHA-256 db133d2480cbb925e0dead705a12cf2ea1e5c1a8c2b868cdad2e97a4f047b9cc.",
+    "landing_page_change": "Explicit View Air ID 5, starting army, 2/1/1/1 primary skills, 3.5/5 difficulty, and revised creative direction."
   }
 }

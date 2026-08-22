@@ -16,7 +16,8 @@
 | 宝物池 | 使用对应等级且地图允许的宝物；完整组合神器排除，普通单件与组合部件仍可进入。当前正式范围主要覆盖 EXE 中 0—143 号宝物。 |
 | 四级宝保底 | 未实际获得四级宝时保底进度每次 +5；连续 19 次未出后，第 20 次强制尝试四级宝。自然或保底获得四级宝后归零。 |
 | 奖励窗口 | 使用通用奖励窗口显示金币与实际宝物；关闭后立即刷新冒险地图资源栏。 |
-| 初始配置 | 据点战斗法师，初级智慧术与初级侦察术，魔法书实际掌握观天。 |
+| 初始配置 | 据点战斗法师；攻击 2、防御 1、力量 1、知识 1；20–30 大耳怪、5–7 恶狼骑士、5–6 半兽人；初级智慧术与初级侦察术；魔法书实际掌握观天（法术 ID 5）。 |
+| 界面热修 | 头像中三个误用保留调色板索引 0 的皮肤像素已重映射，消除额头与下颌黑点；宝箱图标已补偿实机水平镜像。 |
 
 ### English Rules
 
@@ -32,7 +33,8 @@
 | Artifact pool | Uses map-allowed artifacts of the selected class. Completed combination artifacts are excluded; ordinary items and combination components remain eligible. The formal range primarily covers executable artifact IDs 0—143. |
 | Relic pity | Each result without an actual relic adds 5 pity points. After 19 consecutive misses, the 20th dig forces a relic attempt. A natural or forced relic resets the cycle. |
 | Reward window | The general reward window shows the gold and actual artifact; closing it immediately refreshes the adventure-map resource bar. |
-| Starting profile | Stronghold Battle Mage with Basic Wisdom, Basic Scouting, and View Air actually learned in the starting spell book. |
+| Starting profile | Stronghold Battle Mage; Attack 2, Defense 1, Power 1, Knowledge 1; 20–30 Goblins, 5–7 Wolf Riders, 5–6 Orcs; Basic Wisdom and Basic Scouting; View Air (spell ID 5) actually learned in the starting spell book. |
+| Interface hotfix | Three skin pixels that incorrectly used reserved palette index 0 were remapped to remove the forehead/chin black dots; the treasure-chest icon now compensates for observed in-game horizontal mirroring. |
 
 ---
 
