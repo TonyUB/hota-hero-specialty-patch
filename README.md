@@ -13,7 +13,7 @@
 
 ## 奥蕾加
 
-<p><img src="assets/portraits/olega.png" alt="奥蕾加头像" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/olega.png" alt="奥蕾加寻宝术特长图标" height="72">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spellbook/spellbook.png" alt="魔法书" title="魔法书" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spells/view-air.png" alt="初始魔法：观天" title="初始魔法：观天" height="72"></p>
+<p><img src="assets/portraits/olega.png" alt="奥蕾加头像" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/olega.png" alt="奥蕾加寻宝术特长图标" height="72">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spellbook/spellbook.png" alt="魔法书" title="魔法书" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spells/view-air.png" alt="初始魔法：观天（法术 ID 5）" title="初始魔法：观天（法术 ID 5）" height="72"></p>
 
 **英雄简介：** 与传统的战斗法师不同，奥蕾加将全部魔法天赋都用于探索未知的宝物。当克鲁罗德的其他法师在战场上制造毁灭时，她却运用法术来透视王国的贫瘠废土。凭借独有的寻宝术，她总能从荒芜之地发掘出深埋地底的宝藏。
 
@@ -21,19 +21,19 @@
 
 **特长效果：** 寻宝术——英雄可以在移动后挖掘，但至少需要 100 点行动力。每次成功挖掘会随机获得一座尚未访问的方尖塔所提供的藏宝图信息，以及奖池中的一项奖励。
 
-**初始兵力：** 沿用奥力斯的原生据点兵力配置。
+**初始兵力：** 20–30 大耳怪 / 5–7 恶狼骑士 / 5–6 半兽人。
 
-**初始指数：** 职业：战斗法师；四维沿用 HotA 1.8.0 原生战斗法师配置。
+**初始指数：** 职业：战斗法师；四维（攻击 / 防御 / 力量 / 知识）：2 / 1 / 1 / 1。
 
-**初始技能：** 初级智慧术 / 初级侦察术；魔法书初始掌握观天。
+**初始技能：** 初级智慧术 / 初级侦察术；魔法书实际初始法术为观天（View Air，法术 ID 5）。
 
 ### 创作难度
 
-★★★★★（5 / 5）
+★★★<img src="assets/ui/half-star.svg" alt="半星" title="半星" height="16">☆（3.5 / 5）
 
 ### 创作方向
 
-移动后挖掘、原生方尖塔状态同步、分档宝物与金币奖励、每日确定性、四级宝保底，以及头像、特长图集、文本和初始魔法的完整整合。
+移动后挖掘、方尖塔状态同步、大保底机制设计。
 
 ### 寻宝术使用说明
 
@@ -293,7 +293,7 @@ H = HotA 1.8.0 原生结算：每达到一个完整的 (8−n) 英雄等级区�
 
 ## Olega
 
-<p><img src="assets/portraits/olega.png" alt="Olega portrait" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/olega.png" alt="Olega Treasure Hunt specialty icon" height="72">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spellbook/spellbook.png" alt="Spell book" title="Spell book" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spells/view-air.png" alt="Starting spell: View Air" title="Starting spell: View Air" height="72"></p>
+<p><img src="assets/portraits/olega.png" alt="Olega portrait" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/olega.png" alt="Olega Treasure Hunt specialty icon" height="72">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spellbook/spellbook.png" alt="Spell book" title="Spell book" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spells/view-air.png" alt="Starting spell: View Air (spell ID 5)" title="Starting spell: View Air (spell ID 5)" height="72"></p>
 
 **Hero biography:** Unlike traditional Battle Mages, Olega devotes all of her magical talent to exploring for unknown treasures. While Krewlod's other mages use magic to wreak destruction on the battlefield, she employs her spells to peer beneath the kingdom's barren wastes. With her unique Treasure Hunt specialty, she can always unearth treasures buried deep beneath desolate lands.
 
@@ -301,19 +301,19 @@ H = HotA 1.8.0 原生结算：每达到一个完整的 (8−n) 英雄等级区�
 
 **Specialty effect:** Treasure Hunt — the hero may dig after moving, but must retain at least 100 movement points. Every successful dig randomly reveals the treasure-map information granted by one unvisited Obelisk and awards one result from the prize pool.
 
-**Starting army:** Retains Oris's native Stronghold army configuration.
+**Starting army:** 20–30 Goblins / 5–7 Wolf Riders / 5–6 Orcs.
 
-**Initial profile:** Class: Battle Mage; native HotA 1.8.0 Battle Mage primary-stat profile.
+**Initial profile:** Class: Battle Mage; primary skills (Attack / Defense / Power / Knowledge): 2 / 1 / 1 / 1.
 
-**Starting skills:** Basic Wisdom / Basic Scouting; the spell book starts with View Air.
+**Starting skills:** Basic Wisdom / Basic Scouting; the actual starting spell is View Air (spell ID 5).
 
 ### Creation Difficulty
 
-★★★★★ (5 / 5)
+★★★<img src="assets/ui/half-star.svg" alt="Half star" title="Half star" height="16">☆ (3.5 / 5)
 
 ### Creative Direction
 
-Post-movement digging, native Obelisk-state synchronization, tiered artifact-and-gold rewards, deterministic daily results, a relic-tier pity cycle, and complete portrait, specialty-atlas, text, and starting-spell integration.
+Post-movement digging, Obelisk-state synchronization, and hard-pity mechanism design.
 
 ### Treasure Hunt Guide
 
