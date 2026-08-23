@@ -11,13 +11,20 @@
 | 行动力结算 | 成功挖掘后仍由原生流程把剩余行动力清零，因此自然保持每天最多一次成功挖掘。 |
 | 方尖塔信息 | 每次成功挖掘会在地图真实存在、且本队尚未访问的方尖塔中等概率选择一座，并调用原生访问流程同步藏宝图、队伍访问状态、提示和窗口。 |
 | 方尖塔耗尽 | 没有未访问方尖塔时跳过该分支，但挖掘与奖励仍继续。 |
-| 每日奖励 | 每次成功挖掘必得一档：70% 为随机一级宝物 + 350 金币；15% 为随机二级宝物 + 1000 金币；10% 为随机三级宝物 + 2000 金币；5% 为随机四级宝物 + 4000 金币。 |
+| 每日奖励 | 每次成功挖掘必得一档：80% 为四等奖宝物 + 350 金币；15% 为三等奖宝物 + 1000 金币；4% 为二等奖宝物 + 2000 金币；1% 为一等奖宝物 + 4000 金币。 |
 | 每日确定性 | 同一天、同一存档反复挖掘或更换合法地块，档位与具体宝物保持相同；进入下一天后生成新结果。 |
-| 宝物池 | 使用对应等级且地图允许的宝物；完整组合神器排除，普通单件与组合部件仍可进入。当前正式范围主要覆盖 EXE 中 0—143 号宝物。 |
-| 四级宝保底 | 未实际获得四级宝时保底进度每次 +5；连续 19 次未出后，第 20 次强制尝试四级宝。自然或保底获得四级宝后归零。 |
-| 奖励窗口 | 使用通用奖励窗口显示金币与实际宝物；关闭后立即刷新冒险地图资源栏。 |
+| 宝物池 | 使用四份显式名单，不再按原始宝物等级自动扫描；地图禁用的宝物仍会跳过。四/三/二/一等奖池分别为 44 / 32 / 40 / 17 项，并安全纳入指定 HotA 新宝物。 |
+| 一等奖保底 | 未实际获得一等奖时保底进度每次 +5；连续 19 次未出后，第 20 次强制进入一等奖池。自然或保底获得一等奖后归零。 |
+| 奖励窗口 | 使用通用奖励窗口显示金币与实际宝物；非一等奖提示末尾显示当前保底进度（XX/100），关闭后立即刷新冒险地图资源栏。 |
 | 初始配置 | 据点战斗法师；攻击 2、防御 1、力量 1、知识 1；20–30 大耳怪、5–7 恶狼骑士、5–6 半兽人；初级智慧术与初级侦察术；魔法书实际掌握观天（法术 ID 5）。 |
-| 界面热修 | 头像中三个误用保留调色板索引 0 的皮肤像素已重映射，消除额头与下颌黑点；宝箱图标已补偿实机水平镜像。 |
+| 界面热修 | 使用最终确认的 V7 大小头像；两张头像均无可见调色板索引 0，宝箱图标保留实机水平镜像补偿。 |
+
+### 完整奖池
+
+- **四等奖（80%，44 项）：** 人马战斧（7）、黑魔剑（8）、豺狼人连枷（9）、矮人王盾（13）、尖啸灵盾（14）、豺狼王盾（15）、纯白独角盔（19）、骷髅冠（20）、混沌之冠（21）、藤木胸甲（25）、骨质护甲（26）、巨蜥蜴鳞甲（27）、龙眼戒（37）、龙骨胫甲（41）、龙眼指环（45）、幸运四叶草（46）、预言卡（47）、幸运鸟（48）、英勇勋章（49）、勇气勋章（50）、勇气之印（51）、窥镜（52）、望远镜（53）、精灵木弓（60）、魔力神符（73）、魔力护符（74）、魔力秘球（75）、魔法项圈（76）、魔法戒（77）、魔法披风（78）、禁锢之灵（84）、恶运沙漏（85）、活力之戒（94）、迅捷项链（97）、冷静挂件（100）、神圣挂件（102）、生命挂件（103）、死亡挂件（104）、自由意志挂件（105）、持久记忆挂件（107）、军团之足（118）、压制符文（152）、恶魔马蹄铁（153）、压抑之戒（156）。
+- **三等奖（15%，32 项）：** 狂魔棒（10）、地狱烈焰剑（11）、狂魔盾（16）、邪盾（17）、至高法师王冠（22）、地狱风暴冠（23）、独眼王护身甲（28）、硫磺胸甲（29）、奇迹战甲（31）、赤龙火舌剑（38）、龙翼袍（42）、独角鬃弓弦（61）、天羽箭（62）、政治家勋章（66）、礼仪之戒（67）、大使勋带（68）、骑术手套（70）、永恒之球（92）、生命之戒（95）、神行靴（98）、第二视线挂件（101）、负极挂件（106）、无尽矿石车（112）、无尽木材车（114）、军团之胯（119）、军团之躯（120）、远行者长靴（151）、魔鬼面具（155）、堕落坠饰（157）、日蚀护符（162）、落日印章（163）、光逝战甲（164）。
+- **二等奖（4%，40 项）：** 泰坦短剑（12）、守护神之盾（18）、雷电头盔（24）、泰坦战甲（30）、圣靴（32）、天国祝福项链（33）、勇气狮盾（34）、审判之剑（35）、神谕之冠（36）、龙鳞盾（39）、龙鳞甲（40）、龙牙项链（43）、龙牙冠（44）、旅行者之戒（69）、天使之翼（72）、苍穹之球（79）、淤泥之球（80）、烈焰之球（81）、豪雨之球（82）、水系魔法书（88）、黄金弓（91）、活力血瓶（96）、极速披风（99）、勇气挂件（108）、无尽水晶披风（109）、无尽宝石戒指（110）、无尽水银瓶（111）、无限硫磺指环（113）、无尽黄金囊（115）、无尽黄金袋（116）、无尽黄金包（117）、军团之臂（121）、军团之首（122）、战争枷锁（125）、巫师之井（138）、法师之戒（139）、统御三叉戟（147）、海军荣耀之盾（148）、皇家鱼人战甲（149）、七海之冠（150）。
+- **一等奖（1%，17 项）：** 火系魔法书（86）、气系魔法书（87）、土系魔法书（89）、弱点之球（93）、魔法师之帽（124）、末日之刃（128）、天使联盟（129）、长生灵药（131）、诅咒铠甲（132）、军团雕像（133）、龙父神力（134）、泰坦之雷（135）、狙击弓（137）、丰收之角（140）、外交官斗篷（141）、食人魔铁拳（143）、金鹅（160）。
 
 ### English Rules
 
@@ -28,13 +35,20 @@
 | Movement settlement | A successful dig still lets the native flow drain all remaining movement, naturally limiting successful digging to once per day. |
 | Obelisk information | Every successful dig selects uniformly from Obelisks that exist on the map and have not been visited by the current team, then uses the native visit flow to synchronize the puzzle map, team visit state, message, and window. |
 | Exhausted Obelisks | If none remain, the Obelisk branch is skipped while digging and the reward still resolves normally. |
-| Daily reward | Every successful dig awards one tier: 70% random treasure-class artifact + 350 gold; 15% random minor artifact + 1,000 gold; 10% random major artifact + 2,000 gold; 5% random relic artifact + 4,000 gold. |
+| Daily reward | Every successful dig awards one result: 80% fourth prize + 350 gold; 15% third prize + 1,000 gold; 4% second prize + 2,000 gold; 1% first prize + 4,000 gold. |
 | Daily determinism | Reloading or moving to another legal tile on the same day keeps the same tier and artifact; the next day produces a new result. |
-| Artifact pool | Uses map-allowed artifacts of the selected class. Completed combination artifacts are excluded; ordinary items and combination components remain eligible. The formal range primarily covers executable artifact IDs 0—143. |
-| Relic pity | Each result without an actual relic adds 5 pity points. After 19 consecutive misses, the 20th dig forces a relic attempt. A natural or forced relic resets the cycle. |
-| Reward window | The general reward window shows the gold and actual artifact; closing it immediately refreshes the adventure-map resource bar. |
+| Artifact pool | Uses four explicit lists instead of scanning native artifact classes. Map-disabled entries are skipped. The fourth/third/second/first-prize pools contain 44 / 32 / 40 / 17 entries and include the selected HotA artifacts. |
+| First-prize pity | Each result below first prize adds 5 pity points. After 19 consecutive misses, the 20th dig is forced into the first-prize pool. A natural or forced first prize resets the cycle. |
+| Reward window | The general reward window shows the gold and actual artifact. Non-first-prize text appends the current pity value as (XX/100); closing the window immediately refreshes the adventure-map resource bar. |
 | Starting profile | Stronghold Battle Mage; Attack 2, Defense 1, Power 1, Knowledge 1; 20–30 Goblins, 5–7 Wolf Riders, 5–6 Orcs; Basic Wisdom and Basic Scouting; View Air (spell ID 5) actually learned in the starting spell book. |
-| Interface hotfix | Three skin pixels that incorrectly used reserved palette index 0 were remapped to remove the forehead/chin black dots; the treasure-chest icon now compensates for observed in-game horizontal mirroring. |
+| Interface hotfix | Uses the final approved V7 large and small portraits; neither portrait contains visible reserved palette index 0, and the treasure-chest icon retains the in-game horizontal-mirror compensation. |
+
+### Exact Pool IDs
+
+- **Fourth prize (80%, 44 entries):** 7, 8, 9, 13, 14, 15, 19, 20, 21, 25, 26, 27, 37, 41, 45, 46, 47, 48, 49, 50, 51, 52, 53, 60, 73, 74, 75, 76, 77, 78, 84, 85, 94, 97, 100, 102, 103, 104, 105, 107, 118, 152, 153, 156.
+- **Third prize (15%, 32 entries):** 10, 11, 16, 17, 22, 23, 28, 29, 31, 38, 42, 61, 62, 66, 67, 68, 70, 92, 95, 98, 101, 106, 112, 114, 119, 120, 151, 155, 157, 162, 163, 164.
+- **Second prize (4%, 40 entries):** 12, 18, 24, 30, 32, 33, 34, 35, 36, 39, 40, 43, 44, 69, 72, 79, 80, 81, 82, 88, 91, 96, 99, 108, 109, 110, 111, 113, 115, 116, 117, 121, 122, 125, 138, 139, 147, 148, 149, 150.
+- **First prize (1%, 17 entries):** 86, 87, 89, 93, 124, 128, 129, 131, 132, 133, 134, 135, 137, 140, 141, 143, 160.
 
 ---
 
