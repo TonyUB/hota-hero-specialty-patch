@@ -9,7 +9,7 @@
 <details name="section">
 <summary><strong>🔴 中文说明</strong></summary>
 
-**当前版本下载：** [HOTA_NEW_HERO_V1.51.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.51.zip)
+**当前版本下载：** [HOTA_NEW_HERO_V1.52.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.52.zip)
 
 ## 奥蕾加
 
@@ -19,7 +19,7 @@
 
 **英雄阵营：** 据点。
 
-**特长效果：** 寻宝术——英雄可以在移动后挖掘，但至少需要 100 点行动力。每次成功挖掘会随机获得一座尚未访问的方尖塔所提供的藏宝图信息，以及奖池中的一项奖励。四等奖、三等奖、二等奖、一等奖概率依次为 80% / 15% / 4% / 1%；未出一等奖时累积保底，第 20 次强制进入一等奖池。
+**特长效果：** 寻宝术——英雄可以在移动后挖掘，但至少需要 100 点行动力。普通挖掘会同步一座尚未访问的方尖塔信息，并按 59% / 25% / 10% / 5% / 1% 获得四等奖、三等奖、二等奖、一等奖或特等奖。连续 12 次未获一等奖或特等奖时，第 13 次固定获得一等奖；连续 28 次未获特等奖时，第 29 次固定获得特等奖。真正挖出原版圣杯的当天不结算寻宝术。
 
 **初始兵力：** 20–30 大耳怪 / 5–7 恶狼骑士 / 5–6 半兽人。
 
@@ -33,7 +33,7 @@
 
 ### 创作方向
 
-移动后挖掘、方尖塔状态同步、大保底机制设计。
+移动后挖掘、方尖塔状态同步、12 / 28 大小保底与圣杯边界整合。
 
 ### 寻宝术使用说明
 
@@ -289,7 +289,7 @@ H = HotA 1.8.0 原生结算：每达到一个完整的 (8−n) 英雄等级区�
 <details name="section">
 <summary><strong>🔵 English Description</strong></summary>
 
-**Current version:** [Download HOTA_NEW_HERO_V1.51.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.51.zip)
+**Current version:** [Download HOTA_NEW_HERO_V1.52.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.52.zip)
 
 ## Olega
 
@@ -299,7 +299,7 @@ H = HotA 1.8.0 原生结算：每达到一个完整的 (8−n) 英雄等级区�
 
 **Hero faction:** Stronghold.
 
-**Specialty effect:** Treasure Hunt — the hero may dig after moving, but must retain at least 100 movement points. Every successful dig randomly reveals the treasure-map information granted by one unvisited Obelisk and awards one result from the prize pool. Fourth, third, second, and first prizes have 80% / 15% / 4% / 1% probabilities. Results below first prize build pity, and the 20th attempt is forced into the first-prize pool.
+**Specialty effect:** Treasure Hunt — the hero may dig after moving, but must retain at least 100 movement points. A normal dig reveals one unvisited Obelisk and awards a fourth-, third-, second-, first-, or special-prize result at 59% / 25% / 10% / 5% / 1%. After 12 digs without a first or special prize, dig 13 is forced to first prize; after 28 digs without a special prize, dig 29 is forced to special prize. A genuine native Grail dig skips Treasure Hunt settlement for that day.
 
 **Starting army:** 20–30 Goblins / 5–7 Wolf Riders / 5–6 Orcs.
 
@@ -313,7 +313,7 @@ H = HotA 1.8.0 原生结算：每达到一个完整的 (8−n) 英雄等级区�
 
 ### Creative Direction
 
-Post-movement digging, Obelisk-state synchronization, and hard-pity mechanism design.
+Digging after movement, synchronized Obelisk state, dual 12 / 28 pity cycles, and native Grail boundary integration.
 
 ### Treasure Hunt Guide
 
