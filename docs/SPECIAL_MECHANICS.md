@@ -20,12 +20,7 @@
 | 初始配置 | 据点战斗法师；攻击 2、防御 1、力量 1、知识 1；20–30 大耳怪、5–7 恶狼骑士、5–6 半兽人；初级智慧术与初级侦察术；魔法书实际掌握观天（法术 ID 5）。 |
 | 界面热修 | 使用最终确认的 V7 大小头像；两张头像均无可见调色板索引 0，宝箱图标保留实机水平镜像补偿。 |
 
-### 奖池边界
-
-- **普通四档：** 四等奖使用原生一级宝物类型 `0x02`，三等奖使用二级类型 `0x04`，二等奖使用三级类型 `0x08`，一等奖使用四级类型 `0x10`；巫师之井（138）与法师之戒（139）强制只进入一等奖。
-- **特等奖固定池（17 项）：** 86、87、89、93、124、128、129、131、132、133、134、135、137、140、141、143、160。
-- **所有档位排除（23 项）：** 54、55、56、57、58、59、63、64、65、71、83、90、123、126、127、130、136、142、154、158、159、161、165；144、145、146 为无效非宝物 ID，同样不会入池。
-- **动态限制：** 特等奖固定池不会重复进入普通池；地图规则禁用的宝物在当前地图上自动跳过。
+完整图标列表见：[奖池详情](OLEGA_PRIZE_POOLS.md#prize-pool-gallery)。
 
 ### English Rules
 
@@ -45,12 +40,7 @@
 | Starting profile | Stronghold Battle Mage; Attack 2, Defense 1, Power 1, Knowledge 1; 20–30 Goblins, 5–7 Wolf Riders, 5–6 Orcs; Basic Wisdom and Basic Scouting; View Air (spell ID 5) actually learned in the starting spell book. |
 | Interface hotfix | Uses the final approved V7 large and small portraits; neither portrait contains visible reserved palette index 0, and the treasure-chest icon retains the in-game horizontal-mirror compensation. |
 
-### Pool Boundaries
-
-- **Four normal tiers:** fourth uses native level-1 type `0x02`, third uses level-2 type `0x04`, second uses level-3 type `0x08`, and first uses level-4 type `0x10`; IDs 138 and 139 are forced first-prize only.
-- **Fixed special pool (17):** 86, 87, 89, 93, 124, 128, 129, 131, 132, 133, 134, 135, 137, 140, 141, 143, 160.
-- **Excluded from every tier (23):** 54, 55, 56, 57, 58, 59, 63, 64, 65, 71, 83, 90, 123, 126, 127, 130, 136, 142, 154, 158, 159, 161, 165. Invalid non-artifact IDs 144, 145, and 146 are also excluded.
-- **Dynamic limits:** fixed special entries never duplicate into normal pools; artifacts disabled by the current map are skipped.
+See the complete icon gallery: [奖池详情](OLEGA_PRIZE_POOLS.md#prize-pool-gallery).
 
 ---
 

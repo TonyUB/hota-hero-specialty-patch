@@ -19,21 +19,21 @@
 
 **英雄阵营：** 据点。
 
-**特长效果：** 寻宝术——英雄可以在移动后挖掘，但至少需要 100 点行动力。普通挖掘会同步一座尚未访问的方尖塔信息，并按 59% / 25% / 10% / 5% / 1% 获得四等奖、三等奖、二等奖、一等奖或特等奖。连续 12 次未获一等奖或特等奖时，第 13 次固定获得一等奖；连续 28 次未获特等奖时，第 29 次固定获得特等奖。真正挖出原版圣杯的当天不结算寻宝术。
+**特长效果：** 寻宝术——英雄可以在移动后挖掘，但至少需要 100 点行动力。每次成功挖掘会随机获得一座尚未访问的方尖塔所提供的藏宝图信息，以及奖池中的一项奖励。
 
 **初始兵力：** 20–30 大耳怪 / 5–7 恶狼骑士 / 5–6 半兽人。
 
 **初始指数：** 职业：战斗法师；四维（攻击 / 防御 / 力量 / 知识）：2 / 1 / 1 / 1。
 
-**初始技能：** 初级智慧术 / 初级侦察术；魔法书实际初始法术为观天（View Air，法术 ID 5）。
+**初始技能：** 初级智慧术 / 初级侦察术。
 
 ### 创作难度
 
-★★★<img src="assets/ui/half-star.svg" alt="半星" title="半星" height="16">☆（3.5 / 5）
+★★★★☆（4 / 5）
 
 ### 创作方向
 
-移动后挖掘、方尖塔状态同步、12 / 28 大小保底与圣杯边界整合。
+移动后挖掘、方尖塔同步、大小保底机制设计。
 
 ### 寻宝术使用说明
 
@@ -206,7 +206,7 @@ H = HotA 1.8.0 原生结算：每达到一个完整的 (8−n) 英雄等级区�
 
 ### 创作方向
 
-新兵种特长设计、战斗动画抓帧提取与全新英雄立绘创作。
+项目开始之地，一切原创英雄的技术路线奠基；新兵种特长设计、战斗动画抓帧提取与全新英雄立绘创作。
 
 ---
 
@@ -299,21 +299,21 @@ H = HotA 1.8.0 原生结算：每达到一个完整的 (8−n) 英雄等级区�
 
 **Hero faction:** Stronghold.
 
-**Specialty effect:** Treasure Hunt — the hero may dig after moving, but must retain at least 100 movement points. A normal dig reveals one unvisited Obelisk and awards a fourth-, third-, second-, first-, or special-prize result at 59% / 25% / 10% / 5% / 1%. After 12 digs without a first or special prize, dig 13 is forced to first prize; after 28 digs without a special prize, dig 29 is forced to special prize. A genuine native Grail dig skips Treasure Hunt settlement for that day.
+**Specialty effect:** Treasure Hunt — the hero may dig after moving, but must retain at least 100 movement points. Each successful dig randomly reveals the treasure-map information granted by one unvisited Obelisk and awards one result from the prize pool.
 
 **Starting army:** 20–30 Goblins / 5–7 Wolf Riders / 5–6 Orcs.
 
 **Initial profile:** Class: Battle Mage; primary skills (Attack / Defense / Power / Knowledge): 2 / 1 / 1 / 1.
 
-**Starting skills:** Basic Wisdom / Basic Scouting; the actual starting spell is View Air (spell ID 5).
+**Starting skills:** Basic Wisdom / Basic Scouting.
 
 ### Creation Difficulty
 
-★★★<img src="assets/ui/half-star.svg" alt="Half star" title="Half star" height="16">☆ (3.5 / 5)
+★★★★☆ (4 / 5)
 
 ### Creative Direction
 
-Digging after movement, synchronized Obelisk state, dual 12 / 28 pity cycles, and native Grail boundary integration.
+Digging after movement, synchronized Obelisk state, and dual pity mechanism design.
 
 ### Treasure Hunt Guide
 
@@ -486,7 +486,7 @@ H = native HotA 1.8.0 settlement: add 10% of B for every complete
 
 ### Creative Direction
 
-New creature-specialty design, battle-animation frame extraction, and original hero artwork.
+Where the project began and the technical foundation for every original hero; new creature-specialty design, battle-animation frame extraction, and original hero artwork.
 
 ---
 
