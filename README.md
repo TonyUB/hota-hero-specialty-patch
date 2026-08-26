@@ -284,6 +284,8 @@ H = HotA 1.8.0 原生结算：每达到一个完整的 (8−n) 英雄等级区�
 
 原生辅助技能特长重构与双向英雄交互规则扩展。
 
+[娱乐包下载](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_ENTERTAINMENT_V0.1.zip)&nbsp;&nbsp;&nbsp;&nbsp;[娱乐包将领说明](docs/ENTERTAINMENT_PACK_GENERALS.md#中文说明)
+
 </details>
 
 <details name="section">
@@ -563,6 +565,8 @@ Fixed Luck, guaranteed Luck on every stack's first active attack, and compatibil
 ### Creative Direction
 
 Native secondary-skill specialty redesign and bidirectional hero-interaction rule expansion.
+
+[Entertainment Pack Download](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_ENTERTAINMENT_V0.1.zip)&nbsp;&nbsp;&nbsp;&nbsp;[Entertainment Pack Generals](docs/ENTERTAINMENT_PACK_GENERALS.md#english-description)
 
 </details>
 
