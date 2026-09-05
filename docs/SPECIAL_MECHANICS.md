@@ -1,6 +1,6 @@
 # 特殊功能详解 / Special Mechanics
 
-## 奥蕾加寻宝术 / Olega Treasure Hunt
+## 奥蕾加寻宝术 / Orega Treasure Hunt
 
 ### 中文规则
 
@@ -26,8 +26,8 @@
 
 | Item | Current release behavior |
 | --- | --- |
-| Specialty hero | Only Olega (hero ID 110) receives Treasure Hunt; the native Eagle Eye specialty type is disabled. |
-| Dig eligibility | Native terrain, Grail, hole, and other restrictions remain. Olega may dig after moving, provided she has at least 100 current movement points when Dig is used. |
+| Specialty hero | Only Orega (hero ID 110) receives Treasure Hunt; the native Eagle Eye specialty type is disabled. |
+| Dig eligibility | Native terrain, Grail, hole, and other restrictions remain. Orega may dig after moving, provided she has at least 100 current movement points when Dig is used. |
 | Movement settlement | A successful dig still lets the native flow drain all remaining movement, naturally limiting successful digging to once per day. |
 | Obelisk information | Every successful dig selects uniformly from Obelisks that exist on the map and have not been visited by the current team, then uses the native visit flow to synchronize the puzzle map, team visit state, message, and window. |
 | Exhausted Obelisks | If none remain, the Obelisk branch is skipped while digging and the reward still resolves normally. |

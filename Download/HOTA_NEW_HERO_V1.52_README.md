@@ -16,7 +16,7 @@ V1.52 以正式 V1.51 为唯一父输入，将奥蕾加寻宝术改为五档奖�
 
 ## English Summary
 
-V1.52 uses formal V1.51 as its sole parent. Olega's Treasure Hunt now has five reward tiers at `59% / 25% / 10% / 5% / 1%`, paying `350 / 500 / 1000 / 2000 / 4000` gold. The four normal tiers are selected dynamically from native HotA artifact types, while the special tier uses a fixed 17-artifact pool.
+V1.52 uses formal V1.51 as its sole parent. Orega's Treasure Hunt now has five reward tiers at `59% / 25% / 10% / 5% / 1%`, paying `350 / 500 / 1000 / 2000 / 4000` gold. The four normal tiers are selected dynamically from native HotA artifact types, while the special tier uses a fixed 17-artifact pool.
 
 After 12 digs without a first or special prize, dig 13 is forced to first prize. After 28 digs without special prize, dig 29 is forced to special prize, with large pity taking priority. The reward window reports both counters. A genuine native Grail dig keeps the native Grail flow and skips Treasure Hunt's Obelisk, reward, and pity settlement for that day; an actual special-prize artifact plays the native Grail sound.
 

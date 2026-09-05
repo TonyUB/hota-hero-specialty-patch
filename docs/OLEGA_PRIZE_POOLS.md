@@ -1,4 +1,4 @@
-# 奥蕾加寻宝术：奖池详情 / Olega Treasure Hunt: Prize Pool Details
+# 奥蕾加寻宝术：奖池详情 / Orega Treasure Hunt: Prize Pool Details
 
 本页按宝物 ID 展示 V1.52 在**未额外禁用宝物的地图**上的完整候选池。若地图规则禁用某件宝物，运行时会自动跳过该项；同一次挖掘仍只从命中的奖档中选择奖励。
 
