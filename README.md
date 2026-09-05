@@ -9,7 +9,7 @@
 <details name="section">
 <summary><strong>🔴 中文说明</strong></summary>
 
-**当前版本下载：** [HOTA_NEW_HERO_V1.52.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.52.zip)&nbsp;&nbsp;&nbsp;&nbsp;**手册下载：** [HOTA_NEW_HERO_V1.52_HERO_HANDBOOK.docx](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Manual/HOTA_NEW_HERO_V1.52_HERO_HANDBOOK.docx)
+**当前版本下载：** [HOTA_NEW_HERO_V1.53.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.53.zip)&nbsp;&nbsp;&nbsp;&nbsp;**手册下载：** [HOTA_NEW_HERO_V1.52_HERO_HANDBOOK.docx](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Manual/HOTA_NEW_HERO_V1.52_HERO_HANDBOOK.docx)
 
 ## 奥蕾加
 
@@ -51,7 +51,7 @@
 
 **特长效果：** 战争机器——弩车、加农炮和投石车每次原生行动额外射击 1 次；胜利后修复战前拥有且被摧毁的战争机器。补给车存活且英雄至少掌握初级弹道术时，普通射手、弩车和加农炮攻击力 +4；补给车每次物理命中最多损失当前最大生命值的 40%。中级及以上炮术使弩车和加农炮攻击部队时按 50% 有效防御结算；高级炮术还使其无视射程与城墙惩罚。同时掌握高级弹道术和高级炮术时，战争机器按逻辑优先级行动。
 
-**初始兵力：** 20–30 小恶魔 / 5–7 歌革 / 4–5 地狱猎犬；携带弩车和补给车，不携带急救帐篷。
+**初始兵力：** 20–30 小恶魔 / 4–5 地狱猎犬；携带弩车和补给车。
 
 **初始指数：** 职业：大魔鬼；四维（攻击 / 防御 / 力量 / 知识）：2 / 2 / 1 / 1。
 
@@ -291,7 +291,7 @@ H = HotA 1.8.0 原生结算：每达到一个完整的 (8−n) 英雄等级区�
 <details name="section">
 <summary><strong>🔵 English Description</strong></summary>
 
-**Current version:** [Download HOTA_NEW_HERO_V1.52.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.52.zip)&nbsp;&nbsp;&nbsp;&nbsp;**Handbook:** [Download HOTA_NEW_HERO_V1.52_HERO_HANDBOOK.docx](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Manual/HOTA_NEW_HERO_V1.52_HERO_HANDBOOK.docx)
+**Current version:** [Download HOTA_NEW_HERO_V1.53.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.53.zip)&nbsp;&nbsp;&nbsp;&nbsp;**Handbook:** [Download HOTA_NEW_HERO_V1.52_HERO_HANDBOOK.docx](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Manual/HOTA_NEW_HERO_V1.52_HERO_HANDBOOK.docx)
 
 ## Orega
 
@@ -333,7 +333,7 @@ Digging after movement, synchronized Obelisk state, and dual pity mechanism desi
 
 **Specialty effect:** War Machines — the Ballista, Cannon, and Catapult fire one additional shot during each native action, and war machines owned before battle are repaired after victory if destroyed. While the Ammo Cart lives and Azazel has at least Basic Ballistics, ordinary shooters, the Ballista, and the Cannon gain +4 Attack. Each physical hit can remove at most 40% of the Ammo Cart's current maximum HP. Advanced or Expert Artillery makes the Ballista and Cannon resolve attacks against creatures using 50% effective Defense; Expert Artillery also removes range and wall penalties for them. With both Expert Ballistics and Expert Artillery, war machines act by logical priority.
 
-**Starting army:** 20–30 Imps / 5–7 Gogs / 4–5 Hell Hounds; starts with a Ballista and Ammo Cart, but no First Aid Tent.
+**Starting army:** 20–30 Imps / 4–5 Hell Hounds; starts with a Ballista and Ammo Cart.
 
 **Initial profile:** Class: Demoniac; primary skills (Attack / Defense / Power / Knowledge): 2 / 2 / 1 / 1.
 

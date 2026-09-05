@@ -51,7 +51,7 @@ See the complete icon gallery: [奖池详情](OLEGA_PRIZE_POOLS.md#prize-pool-ga
 | 项目 | 当前正式规则 |
 | --- | --- |
 | 专属英雄 | 仅阿萨泽尔（英雄 ID 63）获得本套战争机器规则。 |
-| 初始配置 | 地狱战士职业“大魔鬼”，初始四维 `2/2/1/1`，初级弹道术、初级炮术，携带弩车与补给车，不携带急救帐篷；无魔法书和初始法术。 |
+| 初始配置 | 地狱战士职业“大魔鬼”，初始四维 `2/2/1/1`，初级弹道术、初级炮术，携带弩车与补给车；无魔法书和初始法术。 |
 | 额外射击 | 弩车、加农炮和投石车每次原生行动额外射击 1 次；额外射击属于同一次原生行动的扩展，不伪造速度、士气或 done 状态。 |
 | 战后修复 | 仅在胜利后修复战前已经拥有、战斗中被摧毁的战争机器。失败、撤退和投降不触发专属修复。 |
 | 补给车增益 | 英雄至少掌握初级弹道术且己方补给车存活时，普通射手、弩车和加农炮攻击力 +4；补给车被摧毁后立即失效。 |
@@ -68,7 +68,7 @@ See the complete icon gallery: [奖池详情](OLEGA_PRIZE_POOLS.md#prize-pool-ga
 | Item | Current release behavior |
 | --- | --- |
 | Specialty hero | Only Azazel (hero ID 63) receives this war-machine rule set. |
-| Starting profile | Inferno might class Demoniac, `2/2/1/1` primary skills, Basic Ballistics and Basic Artillery, a Ballista and Ammo Cart, no First Aid Tent, and no spell book or starting spell. |
+| Starting profile | Inferno might class Demoniac, `2/2/1/1` primary skills, Basic Ballistics and Basic Artillery, a Ballista and Ammo Cart, and no spell book or starting spell. |
 | Extra shots | The Ballista, Cannon, and Catapult fire one additional shot during each native action. This extends the same action and does not fake Speed, Morale, or done-state values. |
 | Post-battle repair | Only victory repairs war machines that were owned before battle and destroyed during it. Defeat, retreat, and surrender do not trigger specialty repair. |
 | Ammo Cart bonus | With at least Basic Ballistics and a living friendly Ammo Cart, ordinary shooters, the Ballista, and the Cannon gain +4 Attack. The bonus disappears immediately when the cart is destroyed. |
