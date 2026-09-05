@@ -5,8 +5,8 @@
   "classification": "FORMAL_RELEASE",
   "package": {
     "file": "HOTA_NEW_HERO_V1.53.zip",
-    "sha256": "9f9530034e5bd930b0325efb8b5dd5239f594d57b71490e910819628fc6e08e3",
-    "size": 22700957,
+    "sha256": "0426646a000341165aa3837141bfe9c8dc34226681dde15402d0f880b5dd2a53",
+    "size": 22699601,
     "members": 27
   },
   "parent": {
@@ -14,14 +14,15 @@
     "sha256": "8f29a5d0b61ac8ce0fb1b4ec73b95686559aeb0ef54c4807be6c7f61c99cf2e3"
   },
   "azazel_starting_army": {
-    "reference_hero": "Pyre",
-    "record": "20-30 Imp / 1-1 Ballista / 4-5 HellHound",
-    "ammo_cart_grant": "unchanged"
+    "reference_hero": "Pyre outer troop ranges only",
+    "record": "20-30 Imp / 0-0 Gog / 4-5 HellHound",
+    "ballista_sentinel_copied": false,
+    "ballista_and_ammo_cart_grants": "unchanged"
   },
   "changed_game_members": {
-    "Data/HotA_lng.lod": "500b94df310ffa834d1385c715b19a489e541ea0ed59931def03830e2c04a396",
-    "Data/HotA_l_ext.lod": "f3d68bedbfc090ac86c231cd6336fd76a933c3e7c7c4322a2707752ce0b97908",
-    "_HD3_Data/Packs/H3中文-基础资源/HOTRAITS.TXT": "d07f76aa0cc250022145b1dc9d4a2aab083ac4edf0fd1b03ce9b58f578c1a79a"
+    "Data/HotA_lng.lod": "e138e40067429a194d78c85549cfd7205da998936a4421166e91539904817225",
+    "Data/HotA_l_ext.lod": "b1daef83c1cb13cabb67a5759b5c14ffa193a67ca6c2408bcf5d8902df010829",
+    "_HD3_Data/Packs/H3中文-基础资源/HOTRAITS.TXT": "121b069aa3bcdc250c2d9c6b2bf205b38950c4471c204f259beb4e5c41d4b9b0"
   },
   "verification": {
     "deterministic_double_build": true,
