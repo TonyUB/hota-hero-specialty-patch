@@ -13,8 +13,6 @@
 
 ## 第一大类  原创英雄
 
-按奥蕾加、厄瑞玻斯、阿萨泽尔（战争机器）、埃尔芙的顺序排列。
-
 ### 奥蕾加
 
 <p><img src="assets/portraits/olega.png?rev=2182958b" alt="奥蕾加头像" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/olega.png" alt="奥蕾加寻宝术特长图标" height="72">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spellbook/spellbook.png" alt="魔法书" title="魔法书" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spells/view-air.png?rev=719fe87c" alt="初始魔法：观天（法术 ID 5）" title="初始魔法：观天（法术 ID 5）" height="72"></p>
@@ -145,8 +143,6 @@
 ---
 
 ## 第二大类  原版英雄加强
-
-按两个治愈特长、两个幸运特长、学术特长的顺序排列。
 
 ### 治愈特长英雄
 
@@ -298,8 +294,6 @@ H = HotA 1.8.0 原生结算：每达到一个完整的 (8−n) 英雄等级区�
 
 ## Category One  Original Heroes
 
-Presented in this order: Orega, Erebus, Azazel and War Machines, then the Elf Queen.
-
 ### Orega
 
 <p><img src="assets/portraits/olega.png?rev=2182958b" alt="Orega portrait" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/olega.png" alt="Orega Treasure Hunt specialty icon" height="72">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spellbook/spellbook.png" alt="Spell book" title="Spell book" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spells/view-air.png?rev=719fe87c" alt="Starting spell: View Air (spell ID 5)" title="Starting spell: View Air (spell ID 5)" height="72"></p>
@@ -430,8 +424,6 @@ Where the project began and the technical foundation for every original hero; ne
 ---
 
 ## Category Two  Enhanced Original Heroes
-
-Presented in this order: the two Cure specialists, the two Luck specialists, and the Scholar specialist.
 
 ### Cure Specialty Heroes
 
