@@ -52,8 +52,9 @@ See the complete icon gallery: [奖池详情](OLEGA_PRIZE_POOLS.md#prize-pool-ga
 | --- | --- |
 | 专属英雄 | 仅阿萨泽尔（英雄 ID 63）获得本套战争机器规则。 |
 | 初始配置 | 地狱战士职业“大魔鬼”，初始四维 `2/2/1/1`，初级弹道术、初级炮术，携带弩车与补给车；无魔法书和初始法术。 |
+| 初始兵力 | 正常初始军队为一队 `4–5` 地狱猎犬；撤退或战败后按原生最低军队规则返回酒馆时为一队 `1` 小恶魔。静态选将预览可能仍显示未修改的默认模板，以进入游戏后的实际军队为准。 |
 | 额外射击 | 弩车、加农炮和投石车每次原生行动额外射击 1 次；额外射击属于同一次原生行动的扩展，不伪造速度、士气或 done 状态。 |
-| 战后修复 | 仅在胜利后修复战前已经拥有、战斗中被摧毁的战争机器。失败、撤退和投降不触发专属修复。 |
+| 战后修复 | 仅在胜利后按现有规则修复战前已经拥有、战斗中被摧毁的战争机器。失败、撤退和投降不触发专属修复；守城战中被摧毁的急救帐篷和补给车不恢复。守城弩车状态尚未确认，不从前述结果外推。 |
 | 补给车增益 | 英雄至少掌握初级弹道术且己方补给车存活时，普通射手、弩车和加农炮攻击力 +4；补给车被摧毁后立即失效。 |
 | 补给车伤害上限 | 每次物理命中最多使补给车损失当前最大生命值的 40%；战斗日志与最终伤害同步。 |
 | 中级炮术 | 中级及以上炮术使弩车和加农炮攻击部队时，按向上取整后的 50% 原生有效防御结算。普通射手不获得该效果。 |
@@ -69,8 +70,9 @@ See the complete icon gallery: [奖池详情](OLEGA_PRIZE_POOLS.md#prize-pool-ga
 | --- | --- |
 | Specialty hero | Only Azazel (hero ID 63) receives this war-machine rule set. |
 | Starting profile | Inferno might class Demoniac, `2/2/1/1` primary skills, Basic Ballistics and Basic Artillery, a Ballista and Ammo Cart, and no spell book or starting spell. |
+| Starting army | A normal new Azazel has one stack of `4–5` Hell Hounds. After defeat or retreat, the native minimum-army tavern return has one Imp. The unchanged static pre-game template may retain its inherited preview; the in-game army is authoritative. |
 | Extra shots | The Ballista, Cannon, and Catapult fire one additional shot during each native action. This extends the same action and does not fake Speed, Morale, or done-state values. |
-| Post-battle repair | Only victory repairs war machines that were owned before battle and destroyed during it. Defeat, retreat, and surrender do not trigger specialty repair. |
+| Post-battle repair | Victory repairs pre-battle machines under the current implementation. Defeat, retreat, and surrender do not trigger specialty repair. A First Aid Tent or Ammo Cart destroyed while defending a siege is not restored. Defensive Ballista behavior has not been established and is not inferred from those results. |
 | Ammo Cart bonus | With at least Basic Ballistics and a living friendly Ammo Cart, ordinary shooters, the Ballista, and the Cannon gain +4 Attack. The bonus disappears immediately when the cart is destroyed. |
 | Ammo Cart damage cap | Each physical hit can remove at most 40% of the Ammo Cart's current maximum HP; combat-log damage and settled damage remain synchronized. |
 | Advanced Artillery | Advanced or Expert Artillery makes Ballista and Cannon attacks against creatures use 50% of native effective Defense, rounded upward. Ordinary shooters do not gain this effect. |

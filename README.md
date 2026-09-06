@@ -95,7 +95,7 @@
 
 **英雄阵营：** 地狱。
 
-**特长效果：** 战争机器——弩车、加农炮和投石车每次原生行动额外射击 1 次；胜利后修复战前拥有且被摧毁的战争机器。补给车存活且英雄至少掌握初级弹道术时，普通射手、弩车和加农炮攻击力 +4；补给车每次物理命中最多损失当前最大生命值的 40%。中级及以上炮术使弩车和加农炮攻击部队时按 50% 有效防御结算；高级炮术还使其无视射程与城墙惩罚。同时掌握高级弹道术和高级炮术时，战争机器按逻辑优先级行动。
+**特长效果：** 战争机器——弩车、加农炮和投石车每次原生行动额外射击 1 次；胜利后按现有规则修复战前拥有且被摧毁的战争机器。守城战中被摧毁的急救帐篷和补给车不恢复。补给车存活且英雄至少掌握初级弹道术时，普通射手、弩车和加农炮攻击力 +4；补给车每次物理命中最多损失当前最大生命值的 40%。中级及以上炮术使弩车和加农炮攻击部队时按 50% 有效防御结算；高级炮术还使其无视射程与城墙惩罚。同时掌握高级弹道术和高级炮术时，战争机器按逻辑优先级行动。
 
 **初始兵力：** 4–5 地狱猎犬；携带弩车和补给车。
 
@@ -376,7 +376,7 @@ Creature-conversion framework design, base-HP sacrifice settlement, custom butto
 
 **Faction:** Inferno.
 
-**Specialty effect:** War Machines — the Ballista, Cannon, and Catapult fire one additional shot during each native action, and war machines owned before battle are repaired after victory if destroyed. While the Ammo Cart lives and Azazel has at least Basic Ballistics, ordinary shooters, the Ballista, and the Cannon gain +4 Attack. Each physical hit can remove at most 40% of the Ammo Cart's current maximum HP. Advanced or Expert Artillery makes the Ballista and Cannon resolve attacks against creatures using 50% effective Defense; Expert Artillery also removes range and wall penalties for them. With both Expert Ballistics and Expert Artillery, war machines act by logical priority.
+**Specialty effect:** War Machines — the Ballista, Cannon, and Catapult fire one additional shot during each native action, and war machines owned before battle are repaired after victory under the current rules. A First Aid Tent or Ammo Cart destroyed while defending a siege is not restored. While the Ammo Cart lives and Azazel has at least Basic Ballistics, ordinary shooters, the Ballista, and the Cannon gain +4 Attack. Each physical hit can remove at most 40% of the Ammo Cart's current maximum HP. Advanced or Expert Artillery makes the Ballista and Cannon resolve attacks against creatures using 50% effective Defense; Expert Artillery also removes range and wall penalties for them. With both Expert Ballistics and Expert Artillery, war machines act by logical priority.
 
 **Starting army:** 4–5 Hell Hounds; starts with a Ballista and Ammo Cart.
 

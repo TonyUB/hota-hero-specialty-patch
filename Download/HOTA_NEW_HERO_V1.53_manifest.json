@@ -1,33 +1,45 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "build": "HOTA_NEW_HERO_V1.53",
   "release_date": "2026-09-05",
-  "classification": "FORMAL_RELEASE",
+  "classification": "FORMAL_RELEASE_FROM_USER_ACCEPTED_TEST02",
   "package": {
     "file": "HOTA_NEW_HERO_V1.53.zip",
-    "sha256": "0426646a000341165aa3837141bfe9c8dc34226681dde15402d0f880b5dd2a53",
-    "size": 22699601,
+    "sha256": "1628cf4addf40e3d0f569682ef8179c3d20d3bc1709a5498e42e3572fb7c950f",
+    "size": 22696914,
     "members": 27
   },
   "parent": {
     "build": "HOTA_NEW_HERO_V1.52",
     "sha256": "8f29a5d0b61ac8ce0fb1b4ec73b95686559aeb0ef54c4807be6c7f61c99cf2e3"
   },
+  "accepted_candidate": {
+    "build": "HOTA_V152_AZAZEL_DOG_ONLY_TEST02",
+    "sha256": "27d281feeea5c3a7d0a4236d0c3cfa855ff8567323e66a291c3ea1f2a9f42a3c",
+    "game_members_promoted_byte_for_byte": 23,
+    "user_runtime_evidence": "no crash reported"
+  },
   "azazel_starting_army": {
-    "reference_hero": "Pyre outer troop ranges only",
-    "record": "20-30 Imp / 0-0 Gog / 4-5 HellHound",
-    "ballista_sentinel_copied": false,
-    "ballista_and_ammo_cart_grants": "unchanged"
+    "normal_actual_army": "one 4-5 Hell Hound stack",
+    "minimum_army_request": "native one Imp",
+    "static_pre_game_template": "unchanged; preview may retain inherited display",
+    "ballista_and_ammo_cart_grants": "existing runtime path unchanged"
   },
   "changed_game_members": {
-    "Data/HotA_lng.lod": "e138e40067429a194d78c85549cfd7205da998936a4421166e91539904817225",
-    "Data/HotA_l_ext.lod": "b1daef83c1cb13cabb67a5759b5c14ffa193a67ca6c2408bcf5d8902df010829",
-    "_HD3_Data/Packs/H3中文-基础资源/HOTRAITS.TXT": "121b069aa3bcdc250c2d9c6b2bf205b38950c4471c204f259beb4e5c41d4b9b0"
+    "h3hota.exe": "171c465668b0185f0f1e547283c9b1322a978c91be2b3bce3019471b54544cfc",
+    "h3hota HD.exe": "7aa7131de092f7ba1b9f5a5ea68a76bc064329155cf308a730ef19af72565233"
   },
   "verification": {
-    "deterministic_double_build": true,
-    "independent_package_verifier": "PASS",
-    "standard_and_hd_startup_smoke": "PASS",
-    "all_other_game_members_frozen_from_v152": true
+    "exact_rebuild_of_TEST02": true,
+    "deterministic_formal_packaging": true,
+    "all_21_non_executable_game_members_frozen_from_v152": true,
+    "default_hotraits_templates_unchanged": true,
+    "user_confirmed_no_crash": true,
+    "full_lifecycle_matrix_proven": false
+  },
+  "accepted_limitations": {
+    "defensive_siege": "destroyed First Aid Tent and Ammo Cart are not restored",
+    "defensive_ballista": "not established",
+    ".wm17_reopened": false
   }
 }
