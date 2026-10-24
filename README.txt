@@ -1,6 +1,5 @@
-HOTA_NEW_HERO_V1.6
+HOTA_NEW_HERO_V1.61
 
-英雄无敌3 HOTA 新英雄特长 / HotA New Hero Specialties
-Download: https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.6.zip
-Handbook: https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Manual/HOTA_NEW_HERO_V1.6_HERO_HANDBOOK.docx
-SHA-256: c99859c9f014f121b8982656de16a903277bc60fd482e76126c3a9251f5b0e7c
+Download: https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.61.zip
+Handbook: https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Manual/HOTA_NEW_HERO_V1.61_HERO_HANDBOOK.docx
+SHA-256: e40da0f200d3f70d595abab840770f89e756c8ad395f4bcd5a9e4ca9cce750fc

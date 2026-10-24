@@ -1,25 +1,7 @@
-# 版本包保留与历史还原规则
+# 正式版本保留与还原
 
-生效日期：2026-08-18；最近更新：2026-10-20
+当前V1.61：SHA-256 `e40da0f200d3f70d595abab840770f89e756c8ad395f4bcd5a9e4ca9cce750fc`。上一版V1.6：SHA-256 `c99859c9f014f121b8982656de16a903277bc60fd482e76126c3a9251f5b0e7c`。
 
-## GitHub 文件保留范围
+V1.6门帘固定于公开提交[c128a71](https://github.com/TonyUB/hota-hero-specialty-patch/blob/c128a71c34bf5cead40bd79e0adfae6cc6153eaa/README.md)，保持原文不变；其原Download和Manual文件保留原地址和字节，以兼容该门帘的固定下载链接。首页只显示一个1.6历史入口。
 
-- `Download/` 的主线补丁只保留当前正式版 `HOTA_NEW_HERO_V1.6.zip` 及其 README、清单；独立娱乐包只保留当前最新版本。
-- `OLD/` 只保留当前版本更新前的一份正式基底 `HOTA_NEW_HERO_V1.53.zip` 及说明。
-- 更早版本不继续占用当前下载目录；测试包、诊断包也不在公开仓库长期分发。
-
-## 更老版本的还原方法
-
-删除旧安装包不等于删除历史：每次正式修改必须在 `CHANGELOG/` 记录输入版本、修改内容、验收父节点、哈希与关键回滚边界；详细地址、构建器和失败经验保存在私人经验仓库。
-
-已移除的早期 `Patch_v1.8.zip` 可从 Git 历史提交 `1ea5db4764a1f96c5d4ca8dac62ff5c46d307223` 的路径 `OLD/Patch_v1.8.zip` 取回，其 SHA-256 为：
-
-```text
-c0aa1a327bf13e2935b45d29beb1b82ff790a4d82d7b5a5860422b8a86b30d0a
-```
-
-V1.35 的原始发布树可由提交 `dbd5406` 取回。V1.4 正式包可由公开提交 `741a825` 所在发布树取回，SHA-256 为 `effc379e756bb5f41d56580fb329b54e2c122730effcea3a0189b7235216e9ba`。V1.5 可由 V1.51 的父发布树取回，SHA-256 为 `0e4694c051d6156bb0c9e8373fcdbf8cf56a5750202000c1dc0ab0d8e23965a0`。V1.51 可由公开提交 `0f0f592` 的发布树取回，SHA-256 为 `40a25130a828194452367075618fb57ad4f3382ef78e104eb844233c14f9d5b5`。V1.52 已由 V1.53 替换；可从发布前提交 `9070272bc5504dd127d29c39ee477e317b38a589` 的 `OLD/HOTA_NEW_HERO_V1.52.zip` 取回，SHA-256 为 `8f29a5d0b61ac8ce0fb1b4ec73b95686559aeb0ef54c4807be6c7f61c99cf2e3`。
-
-当下一正式版发布时，将当时的当前版移入 `OLD/`，替换现有上一版包；被替换包的哈希和还原锚点必须先写入本文件或对应发布记录。
-
-V1.6 当前 SHA-256 为 `c99859c9f014f121b8982656de16a903277bc60fd482e76126c3a9251f5b0e7c`；唯一上一版 V1.53 位于 `OLD/`，SHA-256 为 `1628cf4addf40e3d0f569682ef8179c3d20d3bc1709a5498e42e3572fb7c950f`。旧版手册可从上述发布前提交的 Manual 目录恢复；当前 Manual 只保留 V1.6。
+更早V1.53从同一公开提交的`OLD/HOTA_NEW_HERO_V1.53.zip`恢复，SHA-256 `1628cf4addf40e3d0f569682ef8179c3d20d3bc1709a5498e42e3572fb7c950f`；当前OLD轮换为V1.6。历史Release保持不变。
