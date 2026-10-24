@@ -6,10 +6,12 @@
 
 <p align="center"><sub><a href="docs/EXPERIENCE_ACCESS.md">开发经验资料访问与借阅申请 / Development Experience Access Request</a></sub></p>
 
-<details name="section">
+<p align="center"><strong>当前版本 / Latest：1.61</strong> · <strong>历史版本 / History：</strong><a href="https://github.com/TonyUB/hota-hero-specialty-patch/blob/c128a71c34bf5cead40bd79e0adfae6cc6153eaa/README.md">1.6</a></p>
+
+<details name="section" open>
 <summary><strong>🔴 中文说明</strong></summary>
 
-**当前版本下载：** [HOTA_NEW_HERO_V1.6.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.6.zip)&nbsp;&nbsp;&nbsp;&nbsp;**手册下载：** [HOTA_NEW_HERO_V1.6_HERO_HANDBOOK.docx](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Manual/HOTA_NEW_HERO_V1.6_HERO_HANDBOOK.docx)
+**当前版本下载：** [HOTA_NEW_HERO_V1.61.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.61.zip)&nbsp;&nbsp;&nbsp;&nbsp;**手册下载：** [HOTA_NEW_HERO_V1.61_HERO_HANDBOOK.docx](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Manual/HOTA_NEW_HERO_V1.61_HERO_HANDBOOK.docx)
 
 ## 第一大类  原创英雄
 
@@ -19,19 +21,21 @@
 
 **英雄简介：** 作为埃里半人马部落中极具威望的领袖，瓦伦拒绝让自己的族人仅仅充当精灵大军的附庸。他极其了解半人马的习性与技巧，创建了独属于自己的精英半人马部队。精通射术的半人马射手与来去如风的半人马斥候，让埃里的敌人们尝尽了苦头。
 
-**英雄阵营：** 壁垒；替换原鹰眼术英雄马尔凯姆，克兰保持原样。
+**英雄阵营：** 壁垒阵营；替换原鹰眼术英雄马尔凯姆。
 
-**特长效果：** 人马统领——半人马兵种的速度+1，且每1级增加其10%的攻击和防御（向上取整）。你可以用金币把麾下的半人马升级为射手或者斥候。
+**特长效果：** 人马统领——半人马兵种的速度+1，且每1级增加其10%的攻击和防御（向上取整）。你可以用金币把麾下的半人马升级为首领、射手或斥候，并互相转换。
 
-**初始兵力：** 24 / 12 / 12 半人马，共 48 只。
+**初始兵力：** 24 半人马 / 12 半人马 / 12 半人马。
 
-**初始指数：** 职业：游侠；四维（攻击 / 防御 / 力量 / 知识）：1 / 3 / 1 / 1。
+**职业：** 游侠
+
+**四维：** 1/3/1/1
 
 **初始技能：** 初级进攻术 / 初级箭术；无魔法书与初始法术。
 
 #### 创作难度
 
-★★★★★（5 / 5）
+★★★★<img src="assets/ui/half-star.svg" alt="半星" title="半星" height="16">（4.5 / 5）
 
 #### 创作方向
 
@@ -39,7 +43,7 @@
 
 #### 人马统领使用说明
 
-- 从瓦伦麾下半人马的兵种信息窗点击原升级按钮，选择兵种和升级数量。仅基础半人马可用，半人马首领不能转换。
+- 从瓦伦麾下半人马的兵种信息窗点击原升级按钮，选择兵种和升级数量。首领、斥候、射手可以相互转换；首领与斥候互转免费，转为射手每只补10金币，射手转回首领或斥候免费且不退差价。高级人马不能转回基础半人马。
 - 从左到右：半人马首领 20 金币、半人马射手 30 金币、半人马斥候 20 金币，均为每只升级费用。
 - 射手基础速度 7，可射击且无距离、城墙惩罚；斥候基础速度 12，可以飞行，其余战斗数值与基础半人马一致。
 - 升级优先合并同种部队，再使用第一个空位；整队转换可释放原槽位。没有可合并部队和可用空位时提示队伍已满。
@@ -53,19 +57,21 @@
 
 **英雄简介：** 塔博克是泰塔利亚边境一个部落的酋长。他只对沼泽深处的九头怪感兴趣。凡是由他统领的九头怪，总能在混战中给敌人留下极其惨痛的教训。
 
-**英雄阵营：** 要塞；替换原鹰眼术英雄蒂娃。
+**英雄阵营：** 要塞阵营；替换原鹰眼术英雄蒂娃。
 
 **特长效果：** 九头之主——英雄麾下的九头怪和终极九头怪获得钻地移动能力。九头怪每回合额外反击一次，终极九头怪可无限反击。
 
 **初始兵力：** 1 九头怪。
 
-**初始指数：** 职业：驯兽师；四维（攻击 / 防御 / 力量 / 知识）：0 / 4 / 1 / 1。
+**职业：** 驯兽师
+
+**四维：** 0/4/1/1
 
 **初始技能：** 初级防御术 / 初级进攻术；无魔法书与初始法术。
 
 #### 创作难度
 
-★★★★★（5 / 5）
+★★★★<img src="assets/ui/half-star.svg" alt="半星" title="半星" height="16">（4.5 / 5）
 
 #### 创作方向
 
@@ -84,13 +90,15 @@
 
 **英雄简介：** 与传统的战斗法师不同，奥蕾加将全部魔法天赋都用于探索未知的宝物。当克鲁罗德的其他法师在战场上制造毁灭时，她却运用法术来透视王国的贫瘠废土。凭借独有的寻宝术，她总能从荒芜之地发掘出深埋地底的宝藏。
 
-**英雄阵营：** 据点。
+**英雄阵营：** 据点阵营；替换原鹰眼术英雄奥力斯。
 
-**特长效果：** 寻宝术——英雄可以在移动后挖掘，但至少需要 100 点行动力。每次成功挖掘会随机获得一座尚未访问的方尖塔所提供的藏宝图信息，以及奖池中的一项奖励。
+**特长效果：** 寻宝术——英雄可以在移动后挖掘，但至少需要200点行动力。每次挖掘会随机获得一座尚未访问的方尖塔所提供的藏宝图信息，以及奖池中的一项奖励。
 
 **初始兵力：** 20–30 大耳怪 / 5–7 恶狼骑士 / 5–6 半兽人。
 
-**初始指数：** 职业：战斗法师；四维（攻击 / 防御 / 力量 / 知识）：2 / 1 / 1 / 1。
+**职业：** 战斗法师
+
+**四维：** 2/1/1/1
 
 **初始技能：** 初级智慧术 / 初级侦察术。
 
@@ -113,13 +121,15 @@
 
 **英雄简介：** 在被提拔为恶魔将军之前，阿萨泽尔曾是地狱深渊中最冷酷的军械监工。在他看来，血肉注定会衰败，钢铁与烈火才是最可靠的毁灭手段。阿萨泽尔在战争机器的制造与运用上有着非凡天赋，并因此在地狱军中迅速崭露头角。经他改良的攻城器械不仅能摧毁坚固的城防，也能在野战中撕开最严密的阵线。
 
-**英雄阵营：** 地狱。
+**英雄阵营：** 地狱阵营；替换原连珠火球英雄夏洛克斯。
 
-**特长效果：** 战争机器——弩车、加农炮和投石车每次原生行动额外射击 1 次；胜利后按现有规则修复战前拥有且被摧毁的战争机器。守城战中被摧毁的急救帐篷和补给车不恢复。补给车存活且英雄至少掌握初级弹道术时，普通射手、弩车和加农炮攻击力 +4；补给车每次物理命中最多损失当前最大生命值的 40%。中级及以上炮术使弩车和加农炮攻击部队时按 50% 有效防御结算；高级炮术还使其无视射程与城墙惩罚。同时掌握高级弹道术和高级炮术时，战争机器按逻辑优先级行动。
+**特长效果：** 战争机器——弩车、加农炮和投石车每次行动额外射击1次；胜利后修复战前拥有且被摧毁的战争机器。补给车存活时，射手、弩车和加农炮攻击力+4，补给车单次受击最多损失40%最大生命。中级及以上炮术使弩车和加农炮对部队无视50%防御；高级炮术还使其无视射程与城墙惩罚；同时掌握高级弹道术和高级炮术时，战争机器优先行动。
 
-**初始兵力：** 4–5 地狱猎犬；携带弩车和补给车。
+**初始兵力：** 4–5 地狱猎犬 / 1 弩车。
 
-**初始指数：** 职业：大魔鬼；四维（攻击 / 防御 / 力量 / 知识）：2 / 2 / 1 / 1。
+**职业：** 大魔鬼
+
+**四维：** 2/2/1/1
 
 **初始技能：** 初级弹道术 / 初级炮术；无魔法书与初始法术。
 
@@ -146,13 +156,15 @@
 
 **英雄简介：** 厄瑞玻斯是远古时代最早诞生的纯血黑龙之一。他自愿拥抱死亡并凭借自身意志重生，成为世间第一位鬼龙之王。环绕其身的破灭之力扭曲了死灵法则，在他的威压下，普通亡灵的骨骸会崩解重组，化作令人胆寒的骨龙为他而战。
 
-**英雄阵营：** 墓园。
+**英雄阵营：** 墓园阵营；替换原行尸英雄斯强克。
 
-**特长效果：** 破灭重塑——允许英雄将麾下的1—6级墓园亡灵单位重塑为骨龙。当军中存在龙族单位时，非龙单位无法加入战斗。单支部队可生成的骨龙数量为：`部队数量 × 兵种基础生命值 ÷（240 × 等级倍率）`（向下取整）。
+**特长效果：** 破灭重塑——允许英雄将麾下1-6级墓园兵种转化为骨龙，有龙族时，非龙单位不能参战。
 
 **初始兵力：** 1 骨龙。
 
-**初始指数：** 职业：死亡骑士；四维（攻击 / 防御 / 力量 / 知识）：1 / 2 / 2 / 1。
+**职业：** 死亡骑士
+
+**四维：** 1/2/2/1
 
 **初始技能：** 中级招魂术；魔法书自带悲泣。
 
@@ -166,11 +178,11 @@
 
 #### 破灭重塑使用说明
 
-- 等级倍率按来源兵种等级计算：1级 2.0、2级 1.8、3级 1.6、4级 1.4、5级 1.2、6级 1.0；对应生命门槛为 `240 × 等级倍率`。
+- 骷髅兵和骷髅勇士每60只转化1只骨龙，自动计算最大数量，余数放入空兵槽；需要保留余数而没有空位时提示部队已满，不结算。其他兵种的等级倍率按来源兵种等级计算：1级 2.0、2级 1.8、3级 1.6、4级 1.4、5级 1.2、6级 1.0；对应生命门槛为 `240 × 等级倍率`。
 - 仅能在冒险地图中厄瑞玻斯自己的英雄军队兵种信息窗使用；战斗、城镇驻军及另一名英雄的军队不能直接献祭。
 - 可献祭墓园 1—6 级基础及升级兵种；骨龙、鬼龙及其他不在白名单中的生物不能献祭。
 - 只读取兵种数据库基础生命值，不计算生命类宝物、血瓶、急救术或其他临时加成。
-- 结果在原兵槽生成，不需要空余兵槽，也不自动与已有骨龙合并；生命值余数会被舍弃。
+- 骨龙在原兵槽生成。骷髅兵和骷髅勇士按上述规则保留余数；其他兵种维持原有整队献祭结算。
 - 结果为 0、来源不合格或取消操作时，部队保持不变。
 - 厄瑞玻斯的原升级按钮已专用于献祭；如需普通城镇升级，请先把部队交给其他英雄。
 - 按钮、右键说明、确认弹窗和结算均正常。
@@ -187,13 +199,15 @@
 
 **英雄简介：** 埃尔芙是妖精一族的女王，她的名字长久以来只存在于吟游诗人的古老歌谣中。她以绝世容貌与卓越的战术才能闻名。当埃拉西亚陷入危难时，她打破避世誓言，响应元素城的召唤，亲率部众为这片大陆而战。
 
-**英雄阵营：** 元素城。
+**英雄阵营：** 元素城阵营；替换原毁灭之光英雄阿奈尔。
 
-**特长效果：** 仙灵和妖精杀伤力 +1，速度 +1。
+**特长效果：** 仙灵——仙灵和妖精杀伤力+1，速度+1。
 
 **初始兵力：** 25 仙灵 / 25 仙灵 / 25 仙灵。
 
-**初始指数：** 职业：位面行者；四维（攻击 / 防御 / 力量 / 知识）：3 / 1 / 1 / 1。
+**职业：** 位面行者
+
+**四维：** 3/1/1/1
 
 **初始技能：** 初级战术 / 初级进攻术。
 
@@ -217,13 +231,15 @@
 
 **英雄简介：** 尤兰德在选择德鲁伊之路前，曾在战场上做过大量的治疗工作，他在军队里学到的经验使他成为了今天出色的领导者。
 
-**英雄阵营：** 壁垒。
+**英雄阵营：** 壁垒阵营。
 
-**特长效果：** 治愈魔法可以永久复活友方单位。施放治愈时，英雄等级每增加（8−n）级，效果提高10%，其中 n 为目标生物等级。
+**特长效果：** 疗伤——治愈魔法可以永久复活友方单位。施放疗伤时，英雄等级每增加(8-n)，效果提高10%，其中n是目标生物的等级。
 
 **初始兵力：** 12–24 半人马 / 5–7 矮人 / 2–4 木精灵。
 
-**初始指数：** 职业：德鲁伊；四维（攻击 / 防御 / 力量 / 知识）：0 / 2 / 1 / 2。
+**职业：** 德鲁伊
+
+**四维：** 0/2/1/2
 
 **初始技能：** 初级智慧术 / 初级弹道术；魔法书自带治愈。
 
@@ -231,15 +247,17 @@
 
 <p><img src="assets/portraits/astra.png" alt="阿斯特拉头像" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/astra.png" alt="阿斯特拉特长图标" height="72">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spellbook/spellbook.png" alt="魔法书" title="魔法书" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spells/cure.png" alt="初始魔法：治愈" title="初始魔法：治愈" height="72"></p>
 
-**英雄简介：** 阿斯特拉从不急着向别人说起她的往事，以至于很少有人知道她的来历。但谁都知道她为了学到神秘的水系魔法几乎访问了这片大陆所有的地方。后来她成为了海洋女祭司，在这里实现了精通水系魔法的夙愿。
+**英雄简介：** 阿斯特拉从不急着向别人说起她的往事，以致于很少有人知道她的来历。但谁都知道她为了学到神秘的水系魔法几乎访问了这片大陆所有的地方。后来她成为了海洋女祭司，在这里实现了精通水系魔法的夙愿。
 
-**英雄阵营：** 港口。
+**英雄阵营：** 港口阵营。
 
-**特长效果：** 治愈魔法可以永久复活友方单位。施放治愈时，英雄等级每增加（8−n）级，效果提高10%，其中 n 为目标生物等级。
+**特长效果：** 治愈——治愈魔法可以永久复活友方单位。施放治愈时，英雄等级每增加(8-n)，效果提高10%，其中n是目标生物的等级。
 
 **初始兵力：** 15–25 泉水精灵 / 6–9 水手 / 4–7 海贼。
 
-**初始指数：** 职业：领航员；四维（攻击 / 防御 / 力量 / 知识）：2 / 0 / 1 / 2。
+**职业：** 领航员
+
+**四维：** 2/0/1/2
 
 **初始技能：** 初级智慧术 / 初级水系魔法；魔法书自带治愈。
 
@@ -281,15 +299,17 @@ H = HotA 1.8.0 原生结算：每达到一个完整的 (8−n) 英雄等级区�
 
 <p><img src="assets/portraits/melodia.png" alt="马洛迪亚头像" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/melodia.png" alt="马洛迪亚特长图标" height="72">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spellbook/spellbook.png" alt="魔法书" title="魔法书" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spells/mirth.png" alt="初始魔法：振奋" title="初始魔法：振奋" height="72"></p>
 
-**英雄简介：** 马洛迪亚也许不是埃里技艺最精湛的德鲁伊，但她肯定是最幸运的德鲁伊。即使面对难以克服的困难，她也能奇迹般地取得胜利。在她率领的军队中，士兵们都乐意为她效命。
+**英雄简介：** 马洛迪亚也许不是埃里技艺最精湛的德鲁伊，但她肯定是最幸运的德鲁伊。即使面对难以克服的困难，她也能奇迹般的取得胜利。在她率领的军队中，士兵们都乐意为她效命。
 
-**英雄阵营：** 壁垒。
+**英雄阵营：** 壁垒阵营。
 
-**特长效果：** 英雄所率领部队的幸运值始终为 +3，且每支部队在每场战斗中首次主动攻击时必定触发幸运。
+**特长效果：** 幸运之神——英雄所率领部队的幸运值始终为+3，且每支部队在每场战斗中首次主动攻击时必定触发幸运。
 
 **初始兵力：** 12–24 半人马 / 5–7 矮人 / 2–4 木精灵。
 
-**初始指数：** 职业：德鲁伊；四维（攻击 / 防御 / 力量 / 知识）：0 / 2 / 1 / 2。
+**职业：** 德鲁伊
+
+**四维：** 0/2/1/2
 
 **初始技能：** 初级智慧术 / 初级领导术；魔法书自带振奋。
 
@@ -299,13 +319,15 @@ H = HotA 1.8.0 原生结算：每达到一个完整的 (8−n) 英雄等级区�
 
 **英雄简介：** 黛瑞丝早就该死了。她随心所欲、无所不为的态度让她陷入了本不该生还的境地，但不知何故，她却毫发无损。
 
-**英雄阵营：** 塔楼。
+**英雄阵营：** 塔楼阵营。
 
-**特长效果：** 英雄所率领部队的幸运值始终为 +3，且每支部队在每场战斗中首次主动攻击时必定触发幸运。
+**特长效果：** 幸运之神——英雄所率领部队的幸运值始终为+3，且每支部队在每场战斗中首次主动攻击时必定触发幸运。
 
 **初始兵力：** 30–40 精怪 / 5–7 石像鬼 / 4–5 铁魔像。
 
-**初始指数：** 职业：术士；四维（攻击 / 防御 / 力量 / 知识）：0 / 0 / 2 / 3。
+**职业：** 术士
+
+**四维：** 0/0/2/3
 
 **初始技能：** 初级智慧术 / 初级智力；魔法书自带观天。
 
@@ -328,15 +350,17 @@ H = HotA 1.8.0 原生结算：每达到一个完整的 (8−n) 英雄等级区�
 
 <p><img src="assets/portraits/coronius.png" alt="克洛尼斯头像" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/coronius.png" alt="克洛尼斯特长图标" height="72">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spellbook/spellbook.png" alt="魔法书" title="魔法书" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spells/slayer.png" alt="初始魔法：屠戮" title="初始魔法：屠戮" height="72"></p>
 
-**英雄简介：** 克洛尼斯曾在埃拉西亚的魔法学院中学习过，但他很快就厌倦了那呆板的教学方式，毅然离开学院，到埃里拜一名隐士为师。
+**英雄简介：** 克洛尼斯在埃拉西亚大学上了一个学期之后，他意识到他高估了这里的学术能力，然后他离开了埃拉西亚，在埃里找到了一个能言传身教的德鲁伊老师
 
-**英雄阵营：** 壁垒。
+**英雄阵营：** 壁垒阵营。
 
-**特长效果：** 学术的效果提升一级；与其他英雄会面时，双方通过智慧术学习魔法的等级上限也提升一级。
+**特长效果：** 学术——学术的效果提升一级；与其他英雄会面时，双方通过智慧术学习魔法的等级上限也提升一级。
 
 **初始兵力：** 12–24 半人马 / 5–7 矮人 / 2–4 木精灵。
 
-**初始指数：** 职业：德鲁伊；四维（攻击 / 防御 / 力量 / 知识）：0 / 2 / 1 / 2。
+**职业：** 德鲁伊
+
+**四维：** 0/2/1/2
 
 **初始技能：** 初级智慧术 / 初级学术；魔法书自带屠戮。
 
@@ -355,7 +379,7 @@ H = HotA 1.8.0 原生结算：每达到一个完整的 (8−n) 英雄等级区�
 <details name="section">
 <summary><strong>🔵 English Description</strong></summary>
 
-**Current version:** [Download HOTA_NEW_HERO_V1.6.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.6.zip)&nbsp;&nbsp;&nbsp;&nbsp;**Handbook:** [Download HOTA_NEW_HERO_V1.6_HERO_HANDBOOK.docx](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Manual/HOTA_NEW_HERO_V1.6_HERO_HANDBOOK.docx)
+**Current version:** [Download HOTA_NEW_HERO_V1.61.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.61.zip)&nbsp;&nbsp;&nbsp;&nbsp;**Handbook:** [Download HOTA_NEW_HERO_V1.61_HERO_HANDBOOK.docx](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Manual/HOTA_NEW_HERO_V1.61_HERO_HANDBOOK.docx)
 
 ## Category One  Original Heroes
 
@@ -365,19 +389,21 @@ H = HotA 1.8.0 原生结算：每达到一个完整的 (8−n) 英雄等级区�
 
 **Hero biography:** Valen is a highly respected leader among the centaur tribes of AvLee. Refusing to let his people serve merely as auxiliaries to the elven armies, he draws on a deep understanding of their nature and skills to form elite centaur troops of his own. His expert Centaur Archers and swift Centaur Scouts have made the enemies of AvLee suffer dearly.
 
-**Hero faction:** Rampart. Replaces Malcom, the Eagle Eye specialist; Clancy remains unchanged.
+**Hero faction:** Rampart; replaces Malcom, the Eagle Eye specialist.
 
-**Specialty effect:** Centaur Command — All four centaur types gain +1 Speed and an Attack and Defense bonus equal to 10% of their own base values per hero level, rounded up. Gold can upgrade base Centaurs into Centaur Captains, Centaur Archers, or Centaur Scouts.
+**Specialty effect:** Centaur Command — Centaur creatures gain +1 Speed and 10% Attack and Defense per hero level, rounded up. You can spend gold to upgrade Centaurs under your command into Captains, Archers, or Scouts, and convert between them.
 
-**Starting army:** 24 / 12 / 12 Centaurs, 48 in total.
+**Starting army:** 24 Centaurs / 12 Centaurs / 12 Centaurs.
 
-**Initial profile:** Class: Ranger; primary stats (Attack / Defense / Power / Knowledge): 1 / 3 / 1 / 1.
+**Class:** Ranger
+
+**Primary stats:** 1/3/1/1
 
 **Starting skills:** Basic Offense / Basic Archery; no spell book or starting spell.
 
 #### Creation Difficulty
 
-★★★★★ (5 / 5)
+★★★★<img src="assets/ui/half-star.svg" alt="Half star" title="Half star" height="16"> (4.5 / 5)
 
 #### Creative Direction
 
@@ -385,7 +411,7 @@ Two new creatures, native three-choice quantity upgrades, shooting and flight, c
 
 #### Centaur Command Guide
 
-- Click the normal upgrade button in a base Centaur stack’s information window under Valen, then choose the unit and quantity. Centaur Captains cannot convert.
+- Click the normal upgrade button in a base Centaur stack’s information window under Valen, then choose the unit and quantity. Captains, Scouts, and Archers can convert between each other. Captain–Scout conversion is free; converting to Archers costs 10 gold per creature. Archers convert to Captains or Scouts for free, without a refund. Advanced centaurs cannot convert back to base Centaurs.
 - Left to right, the per-unit upgrade fees are: Centaur Captain 20 gold, Centaur Archer 30 gold, Centaur Scout 20 gold.
 - Archers have base Speed 7, shoot, and ignore distance and wall penalties. Scouts fly with base Speed 12 and otherwise use base-Centaur combat statistics.
 - Upgraded troops merge with an existing same-type stack or use the first free slot. Converting a full source stack can release its slot. If neither merging nor a free slot is possible, the native army-full warning appears.
@@ -399,19 +425,21 @@ Two new creatures, native three-choice quantity upgrades, shooting and flight, c
 
 **Hero biography:** Tabok is the chieftain of a tribe on the borders of Tatalia. He cares only for the Hydras that dwell deep in the swamps. Under his command, these creatures inflict devastating punishment on their enemies in the chaos of battle.
 
-**Hero faction:** Fortress. Replaces Tiva, the Eagle Eye specialist.
+**Hero faction:** Fortress; replaces Tiva, the Eagle Eye specialist.
 
-**Specialty effect:** Lord of Hydras — Hydras and Chaos Hydras under the hero’s command move by burrowing. Hydras gain one additional retaliation per round; Chaos Hydras retaliate without limit.
+**Specialty effect:** Lord of Hydras — Hydras and Chaos Hydras under the hero’s command gain burrowing movement. Hydras gain one additional retaliation per round; Chaos Hydras retaliate without limit.
 
 **Starting army:** 1 Hydra.
 
-**Initial profile:** Class: Beastmaster; primary stats (Attack / Defense / Power / Knowledge): 0 / 4 / 1 / 1.
+**Class:** Beastmaster
+
+**Primary stats:** 0/4/1/1
 
 **Starting skills:** Basic Armorer / Basic Offense; no spell book or starting spell.
 
 #### Creation Difficulty
 
-★★★★★ (5 / 5)
+★★★★<img src="assets/ui/half-star.svg" alt="Half star" title="Half star" height="16"> (4.5 / 5)
 
 #### Creative Direction
 
@@ -430,13 +458,15 @@ Hero-scoped burrowing, separate retaliation rules for both Hydra types, custom d
 
 **Hero biography:** Unlike traditional Battle Mages, Orega devotes all of her magical talent to exploring for unknown treasures. While Krewlod's other mages use magic to wreak destruction on the battlefield, she employs her spells to peer beneath the kingdom's barren wastes. With her unique Treasure Hunt specialty, she can always unearth treasures buried deep beneath desolate lands.
 
-**Hero faction:** Stronghold.
+**Hero faction:** Stronghold; replaces Oris, the Eagle Eye specialist.
 
-**Specialty effect:** Treasure Hunt — the hero may dig after moving, but must retain at least 100 movement points. Each successful dig randomly reveals the treasure-map information granted by one unvisited Obelisk and awards one result from the prize pool.
+**Specialty effect:** Treasure Hunt — The hero may dig after moving, but needs at least 200 movement points. Each dig randomly reveals the treasure-map information from one unvisited Obelisk and grants one reward from the prize pool.
 
 **Starting army:** 20–30 Goblins / 5–7 Wolf Riders / 5–6 Orcs.
 
-**Initial profile:** Class: Battle Mage; primary skills (Attack / Defense / Power / Knowledge): 2 / 1 / 1 / 1.
+**Class:** Battle Mage
+
+**Primary stats:** 2/1/1/1
 
 **Starting skills:** Basic Wisdom / Basic Scouting.
 
@@ -459,13 +489,15 @@ Digging after movement, synchronized Obelisk state, and dual pity mechanism desi
 
 **Hero biography:** Before his promotion to demon general, Azazel was the most ruthless armaments overseer in the infernal abyss. To him, flesh is destined to decay; steel and fire are the only reliable instruments of destruction. His extraordinary gift for designing and operating war machines carried him rapidly through the infernal ranks. The siege engines he improved can shatter fortified defenses and tear open even the tightest field formations.
 
-**Hero faction:** Inferno.
+**Hero faction:** Inferno; replaces Xarfax, the Fireball specialist.
 
-**Specialty effect:** War Machines — the Ballista, Cannon, and Catapult fire one additional shot during each native action, and war machines owned before battle are repaired after victory under the current rules. A First Aid Tent or Ammo Cart destroyed while defending a siege is not restored. While the Ammo Cart lives and Azazel has at least Basic Ballistics, ordinary shooters, the Ballista, and the Cannon gain +4 Attack. Each physical hit can remove at most 40% of the Ammo Cart's current maximum HP. Advanced or Expert Artillery makes the Ballista and Cannon resolve attacks against creatures using 50% effective Defense; Expert Artillery also removes range and wall penalties for them. With both Expert Ballistics and Expert Artillery, war machines act by logical priority.
+**Specialty effect:** War Machines — The Ballista, Cannon, and Catapult fire one additional shot per action; victory repairs war machines owned before battle that were destroyed. While the Ammo Cart survives, shooters, the Ballista, and the Cannon gain +4 Attack; a single hit removes at most 40% of the cart’s maximum HP. Advanced or Expert Artillery lets the Ballista and Cannon ignore 50% Defense against creatures; Expert Artillery also removes range and wall penalties. With both Expert Ballistics and Expert Artillery, war machines act first.
 
-**Starting army:** 4–5 Hell Hounds; starts with a Ballista and Ammo Cart.
+**Starting army:** 4–5 Hell Hounds / 1 Ballista.
 
-**Initial profile:** Class: Demoniac; primary skills (Attack / Defense / Power / Knowledge): 2 / 2 / 1 / 1.
+**Class:** Demoniac
+
+**Primary stats:** 2/2/1/1
 
 **Starting skills:** Basic Ballistics / Basic Artillery; no spell book or starting spell.
 
@@ -492,13 +524,15 @@ War-machine action-chain extensions, post-combat repair and dynamic bonuses, Amm
 
 **Hero biography:** Erebus was one of the earliest pure-blooded Black Dragons born in the ancient age. He willingly embraced death and, through sheer force of will, returned as the world's first Ghost Dragon king. The power of annihilation surrounding him twists the laws of necromancy; under his dominion, the bones of lesser undead collapse and reform into terrifying Bone Dragons that fight for him.
 
-**Hero faction:** Necropolis.
+**Hero faction:** Necropolis; replaces Straker, the Walking Dead specialist.
 
-**Specialty effect:** Ruinous Reforging — Allows the hero to reforge Necropolis undead creatures of tiers 1–6 under his command into Bone Dragons. When the army contains a dragon, non-dragon units cannot enter combat. Bone Dragons generated from a single stack: `stack count × creature database base HP / (240 × tier multiplier)` (rounded down).
+**Specialty effect:** Ruinous Reforging — Allows the hero to convert tier 1–6 Necropolis creatures under his command into Bone Dragons. When dragons are present, non-dragon units cannot enter combat.
 
 **Starting army:** 1 Bone Dragon.
 
-**Initial profile:** Class: Death Knight; primary stats (Attack / Defense / Power / Knowledge): 1 / 2 / 2 / 1.
+**Class:** Death Knight
+
+**Primary stats:** 1/2/2/1
 
 **Starting skills:** Advanced Necromancy; the spell book starts with Sorrow.
 
@@ -512,11 +546,11 @@ Creature-conversion framework design, base-HP sacrifice settlement, custom butto
 
 #### Ruinous Reforging Rules
 
-- The source creature's tier multiplier is 2.0 / 1.8 / 1.6 / 1.4 / 1.2 / 1.0 for tiers 1–6 respectively; the required HP threshold is `240 × tier multiplier`.
+- Skeletons and Skeleton Warriors convert at 60 per Bone Dragon. The maximum number is calculated automatically and any remaining skeletons use a free army slot. If a remainder requires a slot and none is free, the native army-full warning appears and nothing is changed. Other creatures retain the tier multiplier of 2.0 / 1.8 / 1.6 / 1.4 / 1.2 / 1.0 for tiers 1–6 respectively; the required HP threshold is `240 × tier multiplier`.
 - Available only from Erebus's own hero-army creature window on the adventure map; never in combat, a town garrison, or another hero's army.
 - Eligible sources are Necropolis tier 1–6 base and upgraded creatures. Bone Dragons, Ghost Dragons, and other non-whitelisted creatures are excluded.
 - Only database base HP is used; artifacts, Elixir-style bonuses, First Aid, and temporary effects are ignored.
-- The result replaces the source stack in the same slot, needs no free slot, and never auto-merges. Fractional HP is discarded.
+- Bone Dragons replace the source stack in the same slot. Skeletons and Skeleton Warriors retain their remainder in a free slot; other creatures retain their existing whole-stack settlement.
 - An ineligible source, a zero result, or canceling leaves the army unchanged.
 - Erebus's one native upgrade button is dedicated to sacrifice; transfer troops to another hero for ordinary town upgrades.
 - The button, right-click help, confirmation dialog, and settlement all work normally.
@@ -533,13 +567,15 @@ Creature-conversion framework design, base-HP sacrifice settlement, custom butto
 
 **Hero biography:** The Elf Queen is the queen of the fairies. For ages, her name existed only in the ancient songs of wandering bards. Renowned for her peerless beauty and outstanding tactical ability, she broke her vow of seclusion when Erathia fell into peril, answered the call of the Conflux, and personally led her people into battle for the land.
 
-**Hero faction:** Conflux.
+**Hero faction:** Conflux; replaces Aenain, the Disrupting Ray specialist.
 
-**Specialty effect:** Pixies and Sprites gain +1 Damage and +1 Speed.
+**Specialty effect:** Pixies — Pixies and Sprites gain +1 Damage and +1 Speed.
 
 **Starting army:** 25 Pixies / 25 Pixies / 25 Pixies.
 
-**Initial profile:** Class: Planeswalker; primary stats (Attack / Defense / Power / Knowledge): 3 / 1 / 1 / 1.
+**Class:** Planeswalker
+
+**Primary stats:** 3/1/1/1
 
 **Starting skills:** Basic Tactics / Basic Offense.
 
@@ -565,11 +601,13 @@ Where the project began and the technical foundation for every original hero; ne
 
 **Hero faction:** Rampart.
 
-**Specialty effect:** Cure can permanently resurrect friendly units. For every complete (8 − n) hero levels, its effect increases by 10%, where n is the target creature's tier.
+**Specialty effect:** Cure — Cure can permanently resurrect friendly units. When Cure is cast, its effect increases by 10% for every (8−n) hero levels, where n is the target creature’s tier.
 
 **Starting army:** 12–24 Centaurs / 5–7 Dwarves / 2–4 Wood Elves.
 
-**Initial profile:** Class: Druid; primary stats (Attack / Defense / Power / Knowledge): 0 / 2 / 1 / 2.
+**Class:** Druid
+
+**Primary stats:** 0/2/1/2
 
 **Starting skills:** Basic Wisdom / Basic Ballistics; the spell book starts with Cure.
 
@@ -581,11 +619,13 @@ Where the project began and the technical foundation for every original hero; ne
 
 **Hero faction:** Cove.
 
-**Specialty effect:** Cure can permanently resurrect friendly units. For every complete (8 − n) hero levels, its effect increases by 10%, where n is the target creature's tier.
+**Specialty effect:** Cure — Cure can permanently resurrect friendly units. When Cure is cast, its effect increases by 10% for every (8−n) hero levels, where n is the target creature’s tier.
 
 **Starting army:** 15–25 Nymphs / 6–9 Crew Mates / 4–7 Pirates.
 
-**Initial profile:** Class: Navigator; primary stats (Attack / Defense / Power / Knowledge): 2 / 0 / 1 / 2.
+**Class:** Navigator
+
+**Primary stats:** 2/0/1/2
 
 **Starting skills:** Basic Wisdom / Basic Water Magic; the spell book starts with Cure.
 
@@ -631,11 +671,13 @@ H = native HotA 1.8.0 settlement: add 10% of B for every complete
 
 **Hero faction:** Rampart.
 
-**Specialty effect:** The Luck of all troops under the hero's command is always +3, and each troop is guaranteed to trigger Luck on its first active attack in every battle.
+**Specialty effect:** Fortune — The army’s Luck is always +3, and each stack’s first active attack in each battle always triggers Luck.
 
 **Starting army:** 12–24 Centaurs / 5–7 Dwarves / 2–4 Wood Elves.
 
-**Initial profile:** Class: Druid; primary stats (Attack / Defense / Power / Knowledge): 0 / 2 / 1 / 2.
+**Class:** Druid
+
+**Primary stats:** 0/2/1/2
 
 **Starting skills:** Basic Wisdom / Basic Leadership; the spell book starts with Mirth.
 
@@ -647,11 +689,13 @@ H = native HotA 1.8.0 settlement: add 10% of B for every complete
 
 **Hero faction:** Tower.
 
-**Specialty effect:** The Luck of all troops under the hero's command is always +3, and each troop is guaranteed to trigger Luck on its first active attack in every battle.
+**Specialty effect:** Fortune — The army’s Luck is always +3, and each stack’s first active attack in each battle always triggers Luck.
 
 **Starting army:** 30–40 Apprentice Gremlins / 5–7 Stone Gargoyles / 4–5 Iron Golems.
 
-**Initial profile:** Class: Wizard; primary stats (Attack / Defense / Power / Knowledge): 0 / 0 / 2 / 3.
+**Class:** Wizard
+
+**Primary stats:** 0/0/2/3
 
 **Starting skills:** Basic Wisdom / Basic Intelligence; the spell book starts with View Air.
 
@@ -674,15 +718,17 @@ Fixed Luck, guaranteed Luck on every stack's first active attack, and compatibil
 
 <p><img src="assets/portraits/coronius.png" alt="Coronius portrait" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/coronius.png" alt="Coronius specialty icon" height="72">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spellbook/spellbook.png" alt="Spell book" title="Spell book" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spells/slayer.png" alt="Starting spell: Slayer" title="Starting spell: Slayer" height="72"></p>
 
-**Hero biography:** Coronius attended the University of Erathia for one semester before deciding that academics were overrated. He left Erathia for AvLee and found a Druid who could teach by example.
+**Hero biography:** After one semester at the university in Erathia, Coronius realized that he had overestimated its academic standards. He left Erathia and found a Druid in AvLee who could teach him by word and example.
 
 **Hero faction:** Rampart.
 
-**Specialty effect:** Scholar functions one mastery level higher. When meeting another hero, the maximum spell level that both heroes may learn through Wisdom is also increased by one.
+**Specialty effect:** Scholar — Scholar works one level higher; when meeting another hero, the spell-level cap imposed by Wisdom also increases by one for both heroes.
 
 **Starting army:** 12–24 Centaurs / 5–7 Dwarves / 2–4 Wood Elves.
 
-**Initial profile:** Class: Druid; primary stats (Attack / Defense / Power / Knowledge): 0 / 2 / 1 / 2.
+**Class:** Druid
+
+**Primary stats:** 0/2/1/2
 
 **Starting skills:** Basic Wisdom / Basic Scholar; the spell book starts with Slayer.
 

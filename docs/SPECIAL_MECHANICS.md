@@ -5,7 +5,7 @@
 
 瓦伦替换壁垒鹰眼术英雄马尔凯姆（ID 28），克兰保留独角兽特长。四种半人马都获得固定 +1 速度；在 L 级时，攻击加成为 `ceil(兵种基础攻击 × L / 10)`，防御同理。英雄本身、宝物及其他原生加成另行结算。特长窗口统一用“半人马兵种”显示当前与下一级累计百分比，两组显示不因兵种数量增加而拆行。
 
-在冒险地图打开瓦伦自己的基础半人马信息窗，点击原升级按钮，即进入原生三选数量窗口。仅基础半人马（ID 14）是来源；首领与两种新兵均不能互转。每只费用如下：
+在冒险地图打开瓦伦自己的基础半人马信息窗，点击原升级按钮，即进入原生三选数量窗口。基础半人马（ID 14）的原有升级方式不变。首领、斥候、射手可以相互转换；首领与斥候互转免费，转为射手每只补10金币，射手转回首领或斥候免费且不退差价。高级人马不能转回基础半人马。每只费用如下：
 
 | 顺序 | 目标兵种 | 升级金币 | 基础速度 | 能力 |
 | --- | --- | ---: | ---: | --- |
@@ -17,7 +17,7 @@
 
 两种新兵的常规声音采用基础半人马资源，射击沿用已确认的弓箭声音，斥候飞行使用飞马音效。战斗动画包括阴影、轻微站立循环、鼠标悬停动作与原生行动高亮。新增射手和斥候是专属升级产物，未添加城镇建筑或地图招募点。
 
-**English.** Valen replaces Malcom (hero 28), leaving Clancy unchanged. All four centaur types gain +1 Speed and `ceil(base stat × hero level / 10)` to Attack and Defense separately. The specialty panel groups them as centaur creatures and shows only the current and next-level cumulative percentages. Use the normal upgrade button on Valen’s own base Centaurs on the adventure map. Only base Centaurs are eligible; Captains and the new variants cannot convert. Left-to-right fees are 20 / 30 / 20 gold per creature. Archers have base Speed 7, 24 shots, and no distance or wall penalties; Scouts fly at base Speed 12, with other combat statistics matching base Centaurs. Native settlement, same-type merging, the first free slot, full-source slot release, cancellation, and army-full rejection apply. Gold and both army panels refresh after each purchase without closing the window. No new town dwelling or map recruitment site is added.
+**English.** Valen replaces Malcom (hero 28), leaving Clancy unchanged. All four centaur types gain +1 Speed and `ceil(base stat × hero level / 10)` to Attack and Defense separately. The specialty panel groups them as centaur creatures and shows only the current and next-level cumulative percentages. Use the normal upgrade button on Valen’s own base Centaurs on the adventure map. Base Centaurs retain the existing upgrade options. Captains, Scouts, and Archers can convert between each other. Captain–Scout conversion is free; converting to Archers costs 10 gold per creature. Archers convert to Captains or Scouts for free, without a refund. Advanced centaurs cannot convert back to base Centaurs. Left-to-right fees are 20 / 30 / 20 gold per creature. Archers have base Speed 7, 24 shots, and no distance or wall penalties; Scouts fly at base Speed 12, with other combat statistics matching base Centaurs. Native settlement, same-type merging, the first free slot, full-source slot release, cancellation, and army-full rejection apply. Gold and both army panels refresh after each purchase without closing the window. No new town dwelling or map recruitment site is added.
 
 <a id="tabok-lord-of-hydras"></a>
 ## 塔博克九头之主 / Tabok Lord of Hydras
@@ -37,7 +37,7 @@
 | 项目 | 当前正式规则 |
 | --- | --- |
 | 专属英雄 | 仅奥蕾加（英雄 ID 110）获得寻宝术；原生鹰眼术特长已停用。 |
-| 挖掘资格 | 保留原生地块、圣杯、坑洞和其他限制，但奥蕾加移动后仍可挖掘；点击挖掘时至少需要 100 点当前行动力。 |
+| 挖掘资格 | 保留原生地块、圣杯、坑洞和其他限制，但奥蕾加移动后仍可挖掘；点击挖掘时至少需要 200 点当前行动力。 |
 | 行动力结算 | 成功挖掘后仍由原生流程把剩余行动力清零，因此自然保持每天最多一次成功挖掘。 |
 | 方尖塔信息 | 每次成功挖掘会在地图真实存在、且本队尚未访问的方尖塔中等概率选择一座，并调用原生访问流程同步藏宝图、队伍访问状态、提示和窗口。 |
 | 方尖塔耗尽 | 没有未访问方尖塔时跳过该分支，但挖掘与奖励仍继续。 |
@@ -57,7 +57,7 @@
 | Item | Current release behavior |
 | --- | --- |
 | Specialty hero | Only Orega (hero ID 110) receives Treasure Hunt; the native Eagle Eye specialty type is disabled. |
-| Dig eligibility | Native terrain, Grail, hole, and other restrictions remain. Orega may dig after moving, provided she has at least 100 current movement points when Dig is used. |
+| Dig eligibility | Native terrain, Grail, hole, and other restrictions remain. Orega may dig after moving, provided she has at least 200 current movement points when Dig is used. |
 | Movement settlement | A successful dig still lets the native flow drain all remaining movement, naturally limiting successful digging to once per day. |
 | Obelisk information | Every successful dig selects uniformly from Obelisks that exist on the map and have not been visited by the current team, then uses the native visit flow to synchronize the puzzle map, team visit state, message, and window. |
 | Exhausted Obelisks | If none remain, the Obelisk branch is skipped while digging and the reward still resolves normally. |
@@ -81,7 +81,7 @@ See the complete icon gallery: [奖池详情](OLEGA_PRIZE_POOLS.md#prize-pool-ga
 | 项目 | 当前正式规则 |
 | --- | --- |
 | 专属英雄 | 仅阿萨泽尔（英雄 ID 63）获得本套战争机器规则。 |
-| 初始配置 | 地狱战士职业“大魔鬼”，初始四维 `2/2/1/1`，初级弹道术、初级炮术，携带弩车与补给车；无魔法书和初始法术。 |
+| 初始配置 | 地狱战士职业“大魔鬼”，初始四维 `2/2/1/1`，初级弹道术、初级炮术，携带弩车；无魔法书和初始法术。 |
 | 初始兵力 | 正常初始军队为一队 `4–5` 地狱猎犬；撤退或战败后按原生最低军队规则返回酒馆时为一队 `1` 小恶魔。静态选将预览可能仍显示未修改的默认模板，以进入游戏后的实际军队为准。 |
 | 额外射击 | 弩车、加农炮和投石车每次原生行动额外射击 1 次；额外射击属于同一次原生行动的扩展，不伪造速度、士气或 done 状态。 |
 | 战后修复 | 仅在胜利后按现有规则修复战前已经拥有、战斗中被摧毁的战争机器。失败、撤退和投降不触发专属修复；守城战中被摧毁的急救帐篷和补给车不恢复。守城弩车状态尚未确认，不从前述结果外推。 |
@@ -99,7 +99,7 @@ See the complete icon gallery: [奖池详情](OLEGA_PRIZE_POOLS.md#prize-pool-ga
 | Item | Current release behavior |
 | --- | --- |
 | Specialty hero | Only Azazel (hero ID 63) receives this war-machine rule set. |
-| Starting profile | Inferno might class Demoniac, `2/2/1/1` primary skills, Basic Ballistics and Basic Artillery, a Ballista and Ammo Cart, and no spell book or starting spell. |
+| Starting profile | Inferno might class Demoniac, `2/2/1/1` primary skills, Basic Ballistics and Basic Artillery, a Ballista, and no spell book or starting spell. |
 | Starting army | A normal new Azazel has one stack of `4–5` Hell Hounds. After defeat or retreat, the native minimum-army tavern return has one Imp. The unchanged static pre-game template may retain its inherited preview; the in-game army is authoritative. |
 | Extra shots | The Ballista, Cannon, and Catapult fire one additional shot during each native action. This extends the same action and does not fake Speed, Morale, or done-state values. |
 | Post-battle repair | Victory repairs pre-battle machines under the current implementation. Defeat, retreat, and surrender do not trigger specialty repair. A First Aid Tent or Ammo Cart destroyed while defending a siege is not restored. Defensive Ballista behavior has not been established and is not inferred from those results. |
@@ -116,6 +116,13 @@ See the complete icon gallery: [奖池详情](OLEGA_PRIZE_POOLS.md#prize-pool-ga
 
 ## 破灭重塑 / Ruinous Reforging
 
+### V1.61 骷髅余数 / Skeleton remainder
+
+骷髅兵和骷髅勇士每60只兑换1只骨龙，自动计算可兑换的最大骨龙数量。骨龙放回来源兵槽；余下的骷髅保留到空余部队栏。没有余数时无需空位；有余数但没有空位时，提示正常的部队已满，部队和资源不变。其他兵种的兑换比例和结算不变。
+
+Skeletons and Skeleton Warriors convert at 60 per Bone Dragon, using the maximum possible quantity. Bone Dragons occupy the source slot and leftover skeletons use a free army slot. Exact multiples need no extra slot. With a remainder and no free slot, the native army-full warning appears and the army and resources remain unchanged. Other creatures retain their existing conversion rates and settlement.
+
+
 ![献祭按钮 / Sacrifice button](../assets/ui/erebus-sacrifice.png)
 
 ### 中文规则
@@ -126,10 +133,10 @@ See the complete icon gallery: [奖池详情](OLEGA_PRIZE_POOLS.md#prize-pool-ga
 | 可用来源 | 墓园 1—6 级基础及升级兵种。 |
 | 禁止来源 | 骨龙、鬼龙及其他不在白名单中的生物。 |
 | 生命值口径 | 使用兵种数据库基础生命值；不计生命戒指、生命之戒、活力之戒、血瓶、急救术或其他临时加成。 |
-| 计算公式 | `骨龙数量 = floor(单支来源部队数量 × 该兵种基础生命值 ÷ (240 × 等级倍率))`。 |
+| 计算公式 | 骷髅兵与骷髅勇士按60:1；其他兵种使用 `骨龙数量 = floor(单支来源部队数量 × 该兵种基础生命值 ÷ (240 × 等级倍率))`。 |
 | 等级倍率 | 来源兵种 1—6 级依次为 `2.0 / 1.8 / 1.6 / 1.4 / 1.2 / 1.0`，对应生命门槛为 `480 / 432 / 384 / 336 / 288 / 240`。基础与升级形态使用同一等级倍率。 |
-| 余数处理 | 生命值余数不保留；玩家需要自行安排最合适的献祭数量。 |
-| 兵槽处理 | 骨龙生成在来源兵槽，不要求额外空位；七个兵槽全满时仍可使用；不会与其他骨龙自动合并。 |
+| 余数处理 | 骷髅兵和骷髅勇士每60只兑换1只骨龙，自动计算最大数量并保留余下骷髅；其他兵种维持原整队结算。 |
+| 兵槽处理 | 骨龙生成在来源兵槽。骷髅有余数时需要空余兵槽；没有空位则提示正常的部队已满且不结算。没有余数时无需空位。 |
 | 零结果/取消 | 计算结果为 0、来源不合格或取消确认时，部队不发生变化；不足 240 基础生命值时按钮显示为禁用态。 |
 | 界面与结算 | 按钮、右键说明、确认弹窗和结算均正常。 |
 | 普通升级 | 厄瑞玻斯的该按钮专用于献祭，不能同时承担城镇内普通升级；需要升级时请把部队交给其他英雄。 |
@@ -150,10 +157,10 @@ See the complete icon gallery: [奖池详情](OLEGA_PRIZE_POOLS.md#prize-pool-ga
 | Eligible sources | Necropolis tier 1–6 base and upgraded creatures. |
 | Ineligible sources | Bone Dragons, Ghost Dragons, and all other non-whitelisted creatures. |
 | HP source | Database base HP only; artifacts, First Aid, temporary bonuses, and similar effects are ignored. |
-| Formula | `Bone Dragons = floor(source stack count × base HP / (240 × tier multiplier))`. |
+| Formula | Skeletons and Skeleton Warriors use 60:1; other creatures use `Bone Dragons = floor(source stack count × base HP / (240 × tier multiplier))`. |
 | Tier multipliers | Source tiers 1–6 use `2.0 / 1.8 / 1.6 / 1.4 / 1.2 / 1.0`, producing HP thresholds of `480 / 432 / 384 / 336 / 288 / 240`. Base and upgraded forms share their tier multiplier. |
-| Remainder | Fractional HP is discarded. |
-| Slot behavior | The result replaces the source stack in the same slot, needs no empty slot, works with seven occupied slots, and never auto-merges. |
+| Remainder | Skeletons and Skeleton Warriors convert at 60 per Bone Dragon and retain leftover skeletons; other creatures retain their existing whole-stack settlement. |
+| Slot behavior | Bone Dragons replace the source stack. Leftover skeletons require a free slot; if none is free, conversion is rejected with the native army-full warning and no changes. Exact multiples need no extra slot. |
 | Zero/cancel | An ineligible source, a zero result, or canceling leaves the army unchanged; a sub-240 stack shows the disabled state. |
 | UI and settlement | The button, right-click help, confirmation dialog, and settlement all work normally. |
 | Normal upgrades | Erebus's one native button is dedicated to sacrifice; transfer a stack to another hero for an ordinary town upgrade. |
