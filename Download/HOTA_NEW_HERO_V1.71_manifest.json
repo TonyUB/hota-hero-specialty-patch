@@ -1,10 +1,10 @@
 {
-  "version": "1.62",
+  "version": "1.71",
   "release_date": "2026-11-17",
   "game": "HotA 1.8.0 Chinese HD",
   "parent_release": "v1.61",
-  "zip": "HOTA_NEW_HERO_V1.62.zip",
-  "sha256": "aa835b747019a47f084eebbdd7a5fb5124ed5c5448b2eb86e08f5a3704ec4a61",
+  "zip": "HOTA_NEW_HERO_V1.71.zip",
+  "sha256": "b5c7720ddfddad6b9f200dcd14a006b214814a190dd7f278ff5db57d6fb46686",
   "runtime_files": {
     "Data/CCHYDR.DEF": {
       "bytes": 538036,
@@ -170,7 +170,7 @@
     },
     "README.txt": {
       "bytes": 1033,
-      "sha256": "8795510e4494a67a026749db2c717ceb343c15f96c890011b0faa52602c8540d"
+      "sha256": "2e74c25389c1c7afeede0604f3b9b8152ea8f5916fd03e16e039607e884c29aa"
     }
   }
 }

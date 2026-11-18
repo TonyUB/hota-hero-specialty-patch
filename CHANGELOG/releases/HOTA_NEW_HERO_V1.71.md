@@ -1,4 +1,4 @@
-# HOTA_NEW_HERO_V1.62
+# HOTA_NEW_HERO_V1.71
 
 2026-11-17 · HotA 1.8.0 中文 HD 版
 
@@ -18,4 +18,4 @@
 
 Extract the ZIP to the root of Chinese HotA 1.8.0 and launch `h3hota HD.exe`.
 
-ZIP SHA-256：`aa835b747019a47f084eebbdd7a5fb5124ed5c5448b2eb86e08f5a3704ec4a61`
+ZIP SHA-256：`b5c7720ddfddad6b9f200dcd14a006b214814a190dd7f278ff5db57d6fb46686`

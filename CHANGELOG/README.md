@@ -1,10 +1,10 @@
 # 公开版本摘要
 
-## HOTA_NEW_HERO_V1.62
+## HOTA_NEW_HERO_V1.71
 
 2026-11-17 发布。新增姬嘉、寒冰之剑、凛冬裁决以及四个全局选项。
 
-[当前正式版](releases/HOTA_NEW_HERO_V1.62.md) · [全局按钮说明](../docs/GLOBAL_OPTIONS.md)
+[当前正式版](releases/HOTA_NEW_HERO_V1.71.md) · [全局按钮说明](../docs/GLOBAL_OPTIONS.md)
 
 ## HOTA_NEW_HERO_V1.61
 

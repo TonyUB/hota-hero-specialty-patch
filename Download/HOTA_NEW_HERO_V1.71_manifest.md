@@ -1,6 +1,6 @@
-# HOTA_NEW_HERO_V1.62 文件清单
+# HOTA_NEW_HERO_V1.71 文件清单
 
-ZIP SHA-256：`aa835b747019a47f084eebbdd7a5fb5124ed5c5448b2eb86e08f5a3704ec4a61`
+ZIP SHA-256：`b5c7720ddfddad6b9f200dcd14a006b214814a190dd7f278ff5db57d6fb46686`
 
 | 文件 | 字节 | SHA-256 |
 | --- | ---: | --- |
@@ -29,7 +29,7 @@ ZIP SHA-256：`aa835b747019a47f084eebbdd7a5fb5124ed5c5448b2eb86e08f5a3704ec4a61`
 | `HotA.dat` | 349099 | `f0996cfab3f2fba68476805f5d2171a544e33360a9abc3071eefcefc8db11210` |
 | `HotA.dll` | 2559488 | `ae19faeca6b76fd53d0090468d6914259282fd2023d966da310e94417131d921` |
 | `Licenses/WJWind_CC0.txt` | 996 | `c5d5a8f32bdbff79528ca72d7ed3bac1958bd9de5a20cb89963cf951f83e6df9` |
-| `README.txt` | 1033 | `8795510e4494a67a026749db2c717ceb343c15f96c890011b0faa52602c8540d` |
+| `README.txt` | 1033 | `2e74c25389c1c7afeede0604f3b9b8152ea8f5916fd03e16e039607e884c29aa` |
 | `_HD3_Data/Compability/#hota15/CCHYDR.DEF` | 538036 | `3597726f77ae554edc175b1502868cacea17a3c7c29ecf1475ae13b1356a19ea` |
 | `_HD3_Data/Compability/#hota15/CCHYDRA.DEF` | 538036 | `3597726f77ae554edc175b1502868cacea17a3c7c29ecf1475ae13b1356a19ea` |
 | `_HD3_Data/Compability/#hota15/CHYDRA.DEF` | 427804 | `3c0df5e1e8272663f8a6f944eefc2017af71a928bb7657a89c5f58ecff8e7d1f` |

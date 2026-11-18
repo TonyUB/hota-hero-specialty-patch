@@ -6,12 +6,12 @@
 
 <p align="center"><sub><a href="docs/EXPERIENCE_ACCESS.md">开发经验资料访问与借阅申请 / Development Experience Access Request</a></sub></p>
 
-<p align="center"><strong>当前版本 / Latest：1.62</strong> · <strong>历史版本 / History：</strong><a href="https://github.com/TonyUB/hota-hero-specialty-patch/blob/v1.61/README.md">1.61</a> · <a href="https://github.com/TonyUB/hota-hero-specialty-patch/blob/c128a71c34bf5cead40bd79e0adfae6cc6153eaa/README.md">1.6</a></p>
+<p align="center"><strong>当前版本 / Latest：1.71</strong> · <strong>历史版本 / History：</strong><a href="https://github.com/TonyUB/hota-hero-specialty-patch/blob/v1.61/README.md">1.61</a> · <a href="https://github.com/TonyUB/hota-hero-specialty-patch/blob/c128a71c34bf5cead40bd79e0adfae6cc6153eaa/README.md">1.6</a></p>
 
 <details name="section" open>
 <summary><strong>🔴 中文说明</strong></summary>
 
-**当前版本下载：** [HOTA_NEW_HERO_V1.62.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.62.zip)&nbsp;&nbsp;&nbsp;&nbsp;**手册下载：** [HOTA_NEW_HERO_V1.62_HERO_HANDBOOK.docx](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Manual/HOTA_NEW_HERO_V1.62_HERO_HANDBOOK.docx)
+**当前版本下载：** [HOTA_NEW_HERO_V1.71.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.71.zip)&nbsp;&nbsp;&nbsp;&nbsp;**手册下载：** [HOTA_NEW_HERO_V1.71_HERO_HANDBOOK.docx](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Manual/HOTA_NEW_HERO_V1.71_HERO_HANDBOOK.docx)
 
 [全局按钮说明](docs/GLOBAL_OPTIONS.md)
 
@@ -40,7 +40,7 @@
 #### 寒冰之剑使用说明
 
 - 装备寒冰之剑可施放凛冬裁决。这是消耗 24 点魔法值的 4 级水系战斗魔法，冻结可受影响的敌军 3 回合。冻结单位受到首次兵种物理攻击时，伤害增加 25%，随后解除冻结。
-- 姬嘉持剑时可随所学技能获得额外加成。技能及中、高级效果见[中英文英雄手册](Manual/HOTA_NEW_HERO_V1.62_HERO_HANDBOOK.docx)。
+- 姬嘉持剑时可随所学技能获得额外加成。技能及中、高级效果见[中英文英雄手册](Manual/HOTA_NEW_HERO_V1.71_HERO_HANDBOOK.docx)。
 
 ---
 ### 瓦伦
@@ -407,7 +407,7 @@ H = HotA 1.8.0 原生结算：每达到一个完整的 (8−n) 英雄等级区�
 <details name="section">
 <summary><strong>🔵 English Description</strong></summary>
 
-**Current version:** [Download HOTA_NEW_HERO_V1.62.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.62.zip)&nbsp;&nbsp;&nbsp;&nbsp;**Handbook:** [Download HOTA_NEW_HERO_V1.62_HERO_HANDBOOK.docx](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Manual/HOTA_NEW_HERO_V1.62_HERO_HANDBOOK.docx)
+**Current version:** [Download HOTA_NEW_HERO_V1.71.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.71.zip)&nbsp;&nbsp;&nbsp;&nbsp;**Handbook:** [Download HOTA_NEW_HERO_V1.71_HERO_HANDBOOK.docx](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Manual/HOTA_NEW_HERO_V1.71_HERO_HANDBOOK.docx)
 
 [Global Options Guide](docs/GLOBAL_OPTIONS.md#global-options)
 
@@ -436,7 +436,7 @@ H = HotA 1.8.0 原生结算：每达到一个完整的 (8−n) 英雄等级区�
 #### Sword of Frost Guide
 
 - Equipping the Sword of Frost grants Winter Judgment, a level-4 Water combat spell costing 24 spell points. It freezes eligible enemy stacks for 3 rounds. The first creature physical attack against a frozen stack deals 25% more damage and breaks the freeze.
-- Kija gains additional bonuses from her mastered skills while wielding the sword. The [bilingual hero handbook](Manual/HOTA_NEW_HERO_V1.62_HERO_HANDBOOK.docx) lists each skill and its bonuses.
+- Kija gains additional bonuses from her mastered skills while wielding the sword. The [bilingual hero handbook](Manual/HOTA_NEW_HERO_V1.71_HERO_HANDBOOK.docx) lists each skill and its bonuses.
 
 ---
 ### Valen
