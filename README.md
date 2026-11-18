@@ -6,15 +6,43 @@
 
 <p align="center"><sub><a href="docs/EXPERIENCE_ACCESS.md">开发经验资料访问与借阅申请 / Development Experience Access Request</a></sub></p>
 
-<p align="center"><strong>当前版本 / Latest：1.61</strong> · <strong>历史版本 / History：</strong><a href="https://github.com/TonyUB/hota-hero-specialty-patch/blob/c128a71c34bf5cead40bd79e0adfae6cc6153eaa/README.md">1.6</a></p>
+<p align="center"><strong>当前版本 / Latest：1.62</strong> · <strong>历史版本 / History：</strong><a href="https://github.com/TonyUB/hota-hero-specialty-patch/blob/v1.61/README.md">1.61</a> · <a href="https://github.com/TonyUB/hota-hero-specialty-patch/blob/c128a71c34bf5cead40bd79e0adfae6cc6153eaa/README.md">1.6</a></p>
 
 <details name="section" open>
 <summary><strong>🔴 中文说明</strong></summary>
 
-**当前版本下载：** [HOTA_NEW_HERO_V1.61.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.61.zip)&nbsp;&nbsp;&nbsp;&nbsp;**手册下载：** [HOTA_NEW_HERO_V1.61_HERO_HANDBOOK.docx](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Manual/HOTA_NEW_HERO_V1.61_HERO_HANDBOOK.docx)
+**当前版本下载：** [HOTA_NEW_HERO_V1.62.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.62.zip)&nbsp;&nbsp;&nbsp;&nbsp;**手册下载：** [HOTA_NEW_HERO_V1.62_HERO_HANDBOOK.docx](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Manual/HOTA_NEW_HERO_V1.62_HERO_HANDBOOK.docx)
+
+[全局按钮说明](docs/GLOBAL_OPTIONS.md)
 
 ## 第一大类  原创英雄
 
+### 姬嘉
+
+<p><img src="assets/portraits/kija.png" alt="头像" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/kija.png" alt="寒冰之剑特长图标" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spellbook/spellbook.png" alt="魔法书" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spells/ice-bolt.png" alt="冰弹" height="72"></p>
+
+**英雄简介：** 作为科尔格的第三任妻子，姬嘉为了巩固自己的地位，前往沃里夺取寒冰之剑。她在混战中被塔南击败并囚禁，但她很快就利用狡黠的手腕逃脱了监禁。最终，她将寒冰之剑连同末日的阴影一起带回了野蛮人的领地。
+
+**英雄阵营：** 棱堡阵营；替换原外交术英雄奥伊达娜。
+
+**特长效果：** 寒冰之剑——英雄初始携带寒冰之剑，并依据所掌握的技能解锁相应的额外加成。
+
+**初始兵力：** 20–30 狗头人 / 6–8 山羚 / 3–5 雪精灵。
+
+**职业：** 长老
+
+**四维：** 0/1/1/3
+
+**初始技能：** 初级智慧术 / 初级学习能力。
+
+**初始装备：** 寒冰之剑 / 魔法书（初始魔法为冰弹）。
+
+#### 寒冰之剑使用说明
+
+- 装备寒冰之剑可施放凛冬裁决。这是消耗 24 点魔法值的 4 级水系战斗魔法，冻结可受影响的敌军 3 回合。冻结单位受到首次兵种物理攻击时，伤害增加 25%，随后解除冻结。
+- 姬嘉持剑时可随所学技能获得额外加成。技能及中、高级效果见[中英文英雄手册](Manual/HOTA_NEW_HERO_V1.62_HERO_HANDBOOK.docx)。
+
+---
 ### 瓦伦
 
 <p><img src="assets/portraits/valen.png" alt="瓦伦 头像" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/valen.png" alt="瓦伦 特长图标" height="72"></p>
@@ -379,10 +407,38 @@ H = HotA 1.8.0 原生结算：每达到一个完整的 (8−n) 英雄等级区�
 <details name="section">
 <summary><strong>🔵 English Description</strong></summary>
 
-**Current version:** [Download HOTA_NEW_HERO_V1.61.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.61.zip)&nbsp;&nbsp;&nbsp;&nbsp;**Handbook:** [Download HOTA_NEW_HERO_V1.61_HERO_HANDBOOK.docx](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Manual/HOTA_NEW_HERO_V1.61_HERO_HANDBOOK.docx)
+**Current version:** [Download HOTA_NEW_HERO_V1.62.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.62.zip)&nbsp;&nbsp;&nbsp;&nbsp;**Handbook:** [Download HOTA_NEW_HERO_V1.62_HERO_HANDBOOK.docx](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Manual/HOTA_NEW_HERO_V1.62_HERO_HANDBOOK.docx)
+
+[Global Options Guide](docs/GLOBAL_OPTIONS.md#global-options)
 
 ## Category One  Original Heroes
 
+### Kija
+
+<p><img src="assets/portraits/kija.png" alt="Portrait" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/kija.png" alt="Sword of Frost specialty" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spellbook/spellbook.png" alt="Spellbook" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spells/ice-bolt.png" alt="Ice Bolt" height="72"></p>
+
+**Hero biography:** As Kilgor's third wife, Kija traveled to Vori to seize the Sword of Frost and secure her position. Tarnum defeated and imprisoned her during the conflict, but she soon escaped through her cunning. In the end, she brought the Sword of Frost, together with the shadow of doom, back to the barbarians' lands.
+
+**Hero faction:** Bulwark; replaces Oydana, the Diplomacy specialist.
+
+**Specialty effect:** Sword of Frost — The hero starts with the Sword of Frost and unlocks corresponding additional bonuses through the skills she has mastered.
+
+**Starting army:** 20–30 Kobolds / 6–8 Mountain Rams / 3–5 Snow Elves.
+
+**Class:** Elder
+
+**Primary stats:** 0/1/1/3
+
+**Starting skills:** Basic Wisdom / Basic Learning.
+
+**Starting equipment:** Sword of Frost / Spellbook with Ice Bolt.
+
+#### Sword of Frost Guide
+
+- Equipping the Sword of Frost grants Winter Judgment, a level-4 Water combat spell costing 24 spell points. It freezes eligible enemy stacks for 3 rounds. The first creature physical attack against a frozen stack deals 25% more damage and breaks the freeze.
+- Kija gains additional bonuses from her mastered skills while wielding the sword. The [bilingual hero handbook](Manual/HOTA_NEW_HERO_V1.62_HERO_HANDBOOK.docx) lists each skill and its bonuses.
+
+---
 ### Valen
 
 <p><img src="assets/portraits/valen.png" alt="Valen portrait" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/valen.png" alt="Valen specialty icon" height="72"></p>

@@ -1,11 +1,11 @@
 # Download
 
-当前正式版：[HOTA_NEW_HERO_V1.61.zip](HOTA_NEW_HERO_V1.61.zip)
+当前正式版：[HOTA_NEW_HERO_V1.62.zip](HOTA_NEW_HERO_V1.62.zip)
 
-SHA-256：`e40da0f200d3f70d595abab840770f89e756c8ad395f4bcd5a9e4ca9cce750fc`
+SHA-256：`aa835b747019a47f084eebbdd7a5fb5124ed5c5448b2eb86e08f5a3704ec4a61`
 
-[安装说明](HOTA_NEW_HERO_V1.61_README.md) · [文件清单](HOTA_NEW_HERO_V1.61_manifest.json) · [38页中英文手册](../Manual/HOTA_NEW_HERO_V1.61_HERO_HANDBOOK.docx)
+[安装说明](HOTA_NEW_HERO_V1.62_README.md) · [文件清单](HOTA_NEW_HERO_V1.62_manifest.json) · [中英文英雄手册](../Manual/HOTA_NEW_HERO_V1.62_HERO_HANDBOOK.docx) · [全局按钮说明](../docs/GLOBAL_OPTIONS.md)
 
-V1.61包含人马高级互转、骨龙60与自动余数、奥蕾加200行动力门槛、战争机器初始装备调整。
+V1.62 新增姬嘉、寒冰之剑、凛冬裁决和四个全局选项。
 
-[上一版V1.6门帘](https://github.com/TonyUB/hota-hero-specialty-patch/blob/c128a71c34bf5cead40bd79e0adfae6cc6153eaa/README.md)。独立娱乐包保持原有入口与适用范围。
+[V1.61 门帘](https://github.com/TonyUB/hota-hero-specialty-patch/blob/v1.61/README.md) · [V1.6 门帘](https://github.com/TonyUB/hota-hero-specialty-patch/blob/v1.6/README.md)
