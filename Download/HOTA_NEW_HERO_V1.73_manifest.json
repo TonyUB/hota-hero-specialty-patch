@@ -1,0 +1,188 @@
+{
+  "version": "1.73",
+  "release_date": "2026-11-25",
+  "game": "HotA 1.8.0 Chinese HD",
+  "parent_release": "v1.71",
+  "zip": "HOTA_NEW_HERO_V1.73.zip",
+  "sha256": "54356b4a1b6b52e4d6e7c331eda7a0dae0d1ec39182c8d45b6174ee34b30d7fe",
+  "runtime_files": {
+    "Data/CCHYDR.DEF": {
+      "bytes": 538036,
+      "sha256": "3597726f77ae554edc175b1502868cacea17a3c7c29ecf1475ae13b1356a19ea"
+    },
+    "Data/CCHYDRA.DEF": {
+      "bytes": 538036,
+      "sha256": "3597726f77ae554edc175b1502868cacea17a3c7c29ecf1475ae13b1356a19ea"
+    },
+    "Data/CHYDRA.DEF": {
+      "bytes": 427804,
+      "sha256": "3c0df5e1e8272663f8a6f944eefc2017af71a928bb7657a89c5f58ecff8e7d1f"
+    },
+    "Data/HPL005EL.PCX": {
+      "bytes": 5466,
+      "sha256": "6a3f6e6957b763cbc8c41935e6b4675cfd2cc07171296e35e03609e15acc60cd"
+    },
+    "Data/HPL028DR.PCX": {
+      "bytes": 5456,
+      "sha256": "fc9701d8d03220bfc706cd45ff502850a67d266686348428b897aba3bbece5c1"
+    },
+    "Data/HPL034AL.PCX": {
+      "bytes": 5365,
+      "sha256": "b9e0251de4b24ba26063eeab1f3ad95af405591d06c2266692d673fdb39cd084"
+    },
+    "Data/HPL063Dm.PCX": {
+      "bytes": 5634,
+      "sha256": "f94667a2c1e7566bc0a5f6489e1bd8690cfb426fb5778e5c33719dc5170c664c"
+    },
+    "Data/HPL064DK.PCX": {
+      "bytes": 5686,
+      "sha256": "cf309e8927532236ff8fd58eabcd1a4a13236fb28343cf509acf638ef50e4581"
+    },
+    "Data/HPL110BM.PCX": {
+      "bytes": 5557,
+      "sha256": "86d47d3a816808bfe2c2223407511a0dacbd2b14dee7ebe811c9f3f98b10168b"
+    },
+    "Data/HPL127WH.PCX": {
+      "bytes": 5570,
+      "sha256": "7a69136bd5435f1429cdc07bf8bbda265bb0d562752ad52912ef8f33e3ad211f"
+    },
+    "Data/HPL221.PCX": {
+      "bytes": 5460,
+      "sha256": "4318d5f2350a8a1a6762c6e7a9ceb42292e2b4c8673cbaff1cde88910ad80ab8"
+    },
+    "Data/HPS005EL.PCX": {
+      "bytes": 2790,
+      "sha256": "e8c1a4d872ce344c212b2df15b710d3bddece84eab0daa184668fa1c83858f91"
+    },
+    "Data/HPS028DR.PCX": {
+      "bytes": 2807,
+      "sha256": "8763166f29af7e25b8816d530f007ec5f07642cc1435d9974672e3a4cb9e184f"
+    },
+    "Data/HPS034AL.PCX": {
+      "bytes": 2792,
+      "sha256": "667879e5e5e0fbd89d4d3f8d9f10ee1a7c58c5b93d9d6c0741d050d48ccd57d0"
+    },
+    "Data/HPS063Dm.PCX": {
+      "bytes": 2880,
+      "sha256": "a20b6a1d1b56384a819bade2946bf678d50cee7bb779a6120d325a1096b131ca"
+    },
+    "Data/HPS064DK.PCX": {
+      "bytes": 2927,
+      "sha256": "43712d0dca21dd03e02829bb3525a3c863e2d24a879959146e661e24ef9d0005"
+    },
+    "Data/HPS110BM.PCX": {
+      "bytes": 2831,
+      "sha256": "a5124c80c1214f63a30147c50ffbe183473450fffb7e2205cb5fd9bcecbb8708"
+    },
+    "Data/HPS127WH.PCX": {
+      "bytes": 2845,
+      "sha256": "1b8c603167b4387d6f2a367ecde2cebc4be4ce487d8b4456da92ddca28eff3e8"
+    },
+    "Data/HPS221.PCX": {
+      "bytes": 2774,
+      "sha256": "08a91d5855735acff40cdcb330b6c10450f2a7bcf9060b17650fc2e39e32e520"
+    },
+    "Data/HotA.snd": {
+      "bytes": 12846504,
+      "sha256": "51b7698b4505153472a2c3b6412820d544336ba6d2993294d48b5a9d7b8459af"
+    },
+    "Data/HotA_ext.lod": {
+      "bytes": 13593651,
+      "sha256": "a390bd51a8918c85a8da88e781900043f9aff20715df9ae0461863bd240251fd"
+    },
+    "Data/HotA_l_ext.lod": {
+      "bytes": 8661673,
+      "sha256": "9c07aa7248e58abc467f0b2aab88f79bbf090cda2a8c896eeaabe30b7687a54a"
+    },
+    "Data/HotA_lng.lod": {
+      "bytes": 9024801,
+      "sha256": "521c80b51f11eb292a352775f39fe7532bf98964ba9168f03415029d4b26ca1f"
+    },
+    "HD_HOTA.dll": {
+      "bytes": 2913792,
+      "sha256": "3b16e4325cb492b43fcc8ebd76a7b8c920e81d6bb1c473c2168db985e8efe114"
+    },
+    "HotA.dat": {
+      "bytes": 349864,
+      "sha256": "28d99e02cdb442ac4647c22a0ea0b38ef02cd220b07e860b223d5e964eaebbaa"
+    },
+    "HotA.dll": {
+      "bytes": 2559488,
+      "sha256": "9b2227c81de44eca812399c0091350f30b98fcf181d65d0ce542a4fc9bd93c20"
+    },
+    "Licenses/WJWind_CC0.txt": {
+      "bytes": 996,
+      "sha256": "c5d5a8f32bdbff79528ca72d7ed3bac1958bd9de5a20cb89963cf951f83e6df9"
+    },
+    "_HD3_Data/Compability/#hota15/CCHYDR.DEF": {
+      "bytes": 538036,
+      "sha256": "3597726f77ae554edc175b1502868cacea17a3c7c29ecf1475ae13b1356a19ea"
+    },
+    "_HD3_Data/Compability/#hota15/CCHYDRA.DEF": {
+      "bytes": 538036,
+      "sha256": "3597726f77ae554edc175b1502868cacea17a3c7c29ecf1475ae13b1356a19ea"
+    },
+    "_HD3_Data/Compability/#hota15/CHYDRA.DEF": {
+      "bytes": 427804,
+      "sha256": "3c0df5e1e8272663f8a6f944eefc2017af71a928bb7657a89c5f58ecff8e7d1f"
+    },
+    "_HD3_Data/Compability/#hota15/E64IVCR.DEF": {
+      "bytes": 9852,
+      "sha256": "9573b3b7eeb4b56d34188d8bbadfaf0ce44deb68f7059e7455d0fc46aae7e742"
+    },
+    "_HD3_Data/Compability/#hota15/Files.ini": {
+      "bytes": 178,
+      "sha256": "d8e7c049f2e4c486cfe48f6c6a47e372c884acfde0b53b003dc96e77253cc9a9"
+    },
+    "_HD3_Data/Compability/#hota15/Pack.ini": {
+      "bytes": 136,
+      "sha256": "15db9fe45cd4f5ef9ddd5951e8a6772cf62e83226c269c92900f86c20edfe9de"
+    },
+    "_HD3_Data/Compability/#hota15/UN32.DEF": {
+      "bytes": 899511,
+      "sha256": "376a274db0b3fe1876cf043e476b65d84e0be9fd18c754cb523b98157e53b4d7"
+    },
+    "_HD3_Data/Compability/#hota15/UN44.DEF": {
+      "bytes": 1691127,
+      "sha256": "7d003b780ae8e858cccd279df4c7eb36c71e5f5f8bfe84d9e799e9ee554d3dfb"
+    },
+    "_HD3_Data/Packs/H3中文-基础资源/HCTRAITS.TXT": {
+      "bytes": 3459,
+      "sha256": "1a683af8f47888c324dcd16e7cae3d15aaa4a26163b8eeb293f0c950750e4058"
+    },
+    "_HD3_Data/Packs/H3中文-基础资源/HOTRAITS.TXT": {
+      "bytes": 8100,
+      "sha256": "d6fcf6a810d07c702eb76da9d7829671bbe2c12860266e1403ef60fdb8bd46e2"
+    },
+    "_HD3_Data/Packs/H3中文-基础资源/HeroBios.txt": {
+      "bytes": 20602,
+      "sha256": "e79c817f865c925b561689c69e72e733e5430d79b797178e0c79ec552bfaa8da"
+    },
+    "_HD3_Data/Packs/H3中文-基础资源/HeroSpec.txt": {
+      "bytes": 12319,
+      "sha256": "a37a874b45e0d67524a04f8bbe8a10a69d3baf907b798056a2593252d7b9d7a2"
+    },
+    "centaur_probe.dll": {
+      "bytes": 10240,
+      "sha256": "343e33468f5edb33b89c1cca601ebcc5c0e9180508709a39266ab92f1cfaa85c"
+    },
+    "h3hota HD.exe": {
+      "bytes": 3072000,
+      "sha256": "31308df82a6af17593c5b234193aa033090da9942940f0617c8300d151e84ae3"
+    },
+    "h3hota.exe": {
+      "bytes": 3010560,
+      "sha256": "a7aa42243a79325cdf084bdfca986f94684d74514f82ad9e3d508303d5900143"
+    }
+  },
+  "other_files": {
+    "README.txt": {
+      "bytes": 1253,
+      "sha256": "4bfec146d8a5bed9c340f8397dbf0ebb4bd827c0c1611d6c7546d8b81acf4ccf"
+    }
+  },
+  "handbook": {
+    "filename": "HOTA_NEW_HERO_V1.73_HERO_HANDBOOK.docx",
+    "sha256": "96db800ca75f49ff77e01ba5ae329f090515e04e3cae034d5eda7f6a78b9b59d"
+  }
+}

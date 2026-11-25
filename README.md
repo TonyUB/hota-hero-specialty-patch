@@ -6,12 +6,12 @@
 
 <p align="center"><sub><a href="docs/EXPERIENCE_ACCESS.md">开发经验资料访问与借阅申请 / Development Experience Access Request</a></sub></p>
 
-<p align="center"><strong>当前版本 / Latest：1.71</strong> · <strong>历史版本 / History：</strong><a href="https://github.com/TonyUB/hota-hero-specialty-patch/blob/v1.61/README.md">1.61</a> · <a href="https://github.com/TonyUB/hota-hero-specialty-patch/blob/c128a71c34bf5cead40bd79e0adfae6cc6153eaa/README.md">1.6</a></p>
+<p align="center"><strong>当前版本 / Latest：1.73</strong> · <strong>历史版本 / History：</strong><a href="https://github.com/TonyUB/hota-hero-specialty-patch/blob/v1.71/README.md">1.71</a> · <a href="https://github.com/TonyUB/hota-hero-specialty-patch/blob/v1.61/README.md">1.61</a> · <a href="https://github.com/TonyUB/hota-hero-specialty-patch/blob/c128a71c34bf5cead40bd79e0adfae6cc6153eaa/README.md">1.6</a></p>
 
 <details name="section" open>
 <summary><strong>🔴 中文说明</strong></summary>
 
-**当前版本下载：** [HOTA_NEW_HERO_V1.71.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.71.zip)&nbsp;&nbsp;&nbsp;&nbsp;**手册下载：** [HOTA_NEW_HERO_V1.71_HERO_HANDBOOK.docx](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Manual/HOTA_NEW_HERO_V1.71_HERO_HANDBOOK.docx)
+**当前版本下载：** [HOTA_NEW_HERO_V1.73.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.73.zip)&nbsp;&nbsp;&nbsp;&nbsp;**手册下载：** [HOTA_NEW_HERO_V1.73_HERO_HANDBOOK.docx](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Manual/HOTA_NEW_HERO_V1.73_HERO_HANDBOOK.docx)
 
 [全局按钮说明](docs/GLOBAL_OPTIONS.md)
 
@@ -40,7 +40,35 @@
 #### 寒冰之剑使用说明
 
 - 装备寒冰之剑可施放凛冬裁决。这是消耗 24 点魔法值的 4 级水系战斗魔法，冻结可受影响的敌军 3 回合。冻结单位受到首次兵种物理攻击时，伤害增加 25%，随后解除冻结。
-- 姬嘉持剑时可随所学技能获得额外加成。技能及中、高级效果见[中英文英雄手册](Manual/HOTA_NEW_HERO_V1.71_HERO_HANDBOOK.docx)。
+- 姬嘉持剑时可随所学技能获得额外加成。技能及中、高级效果见[中英文英雄手册](Manual/HOTA_NEW_HERO_V1.73_HERO_HANDBOOK.docx)。
+- 姬嘉持剑时，中级／高级符文术在开战时额外叠加 3／6 层符文。中级／高级气系魔法使己方部队速度 +1／+2。
+- 周一酒馆自然刷新时，姬嘉只保留原有的寒冰之剑。
+
+---
+### 烬
+
+<p><img src="assets/portraits/ash.png" alt="英雄头像" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/ash.png" alt="特长图标" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spellbook/spellbook.png" alt="魔法书" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spells/elemental-reconstruction.png" alt="初始魔法" height="72"></p>
+
+**英雄简介：** 烬原本只是一具供布拉卡达法师驱使的普通魔像，却在一场失控的炼金爆炸中意外诞生了灵智。从焦黑的工坊废墟中苏醒后，他以“烬”为名，凭着惊人的悟性钻研起造物主遗留的秘典。如今，他致力于重塑自己的同类，能将粗糙的石头人与铁人淬炼为无坚不摧的金人与钻石人。
+
+**英雄阵营：** 塔楼阵营；替换原石人特长英雄琼斯菲尔。
+
+**特长效果：** 傀儡——麾下四种魔像免疫减速且拥有[先制反击]特技；速度+1，石、铁魔像可升级为金或钻石魔像；每只金魔像每日产出50金币；钻石魔像受到的物理伤害降低40%；初始掌握源质重构，可永久复活己方魔像。麾下有非亡灵无生命体时，仅这些部队出战；否则全军出战。
+
+**初始兵力：** 30–40 小妖精 / 4–5 石人 / 4–5 石人。
+
+**职业：** 炼金术士
+
+**四维：** 1/1/2/2
+
+**初始技能：** 初级防御术 / 初级神秘术。
+
+**初始装备：** 魔法书（初始魔法为源质重构）。
+
+#### 傀儡使用说明
+
+- 石、铁、金和钻石魔像可在敌方近战攻击前反击一次，并消耗本次反击机会。若先制反击击杀来袭部队，其攻击取消。
+- 非亡灵无生命体包括 10 种元素、5 种魔像、两种塔楼石像鬼和工厂的四种机械兵。只要带有其中一队，其他普通部队留在场外；全军均不符合条件时，则照常出战。
 
 ---
 ### 瓦伦
@@ -407,7 +435,7 @@ H = HotA 1.8.0 原生结算：每达到一个完整的 (8−n) 英雄等级区�
 <details name="section">
 <summary><strong>🔵 English Description</strong></summary>
 
-**Current version:** [Download HOTA_NEW_HERO_V1.71.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.71.zip)&nbsp;&nbsp;&nbsp;&nbsp;**Handbook:** [Download HOTA_NEW_HERO_V1.71_HERO_HANDBOOK.docx](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Manual/HOTA_NEW_HERO_V1.71_HERO_HANDBOOK.docx)
+**Current version:** [Download HOTA_NEW_HERO_V1.73.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.73.zip)&nbsp;&nbsp;&nbsp;&nbsp;**Handbook:** [Download HOTA_NEW_HERO_V1.73_HERO_HANDBOOK.docx](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Manual/HOTA_NEW_HERO_V1.73_HERO_HANDBOOK.docx)
 
 [Global Options Guide](docs/GLOBAL_OPTIONS.md#global-options)
 
@@ -436,7 +464,35 @@ H = HotA 1.8.0 原生结算：每达到一个完整的 (8−n) 英雄等级区�
 #### Sword of Frost Guide
 
 - Equipping the Sword of Frost grants Winter Judgment, a level-4 Water combat spell costing 24 spell points. It freezes eligible enemy stacks for 3 rounds. The first creature physical attack against a frozen stack deals 25% more damage and breaks the freeze.
-- Kija gains additional bonuses from her mastered skills while wielding the sword. The [bilingual hero handbook](Manual/HOTA_NEW_HERO_V1.71_HERO_HANDBOOK.docx) lists each skill and its bonuses.
+- Kija gains additional bonuses from her mastered skills while wielding the sword. The [bilingual hero handbook](Manual/HOTA_NEW_HERO_V1.73_HERO_HANDBOOK.docx) lists each skill and its bonuses.
+- While wielding the sword, Advanced/Expert Runes adds 3/6 rune stacks at combat start, and Advanced/Expert Air Magic gives friendly creatures +1/+2 Speed.
+- The Monday tavern refresh no longer gives Kija a second Sword of Frost.
+
+---
+### Ash
+
+<p><img src="assets/portraits/ash.png" alt="Portrait" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/ash.png" alt="Specialty" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spellbook/spellbook.png" alt="Spellbook" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spells/elemental-reconstruction.png" alt="Starting spell" height="72"></p>
+
+**Hero biography:** Ash was once an ordinary golem in the service of Bracada’s mages, until a runaway alchemical explosion gave him a mind of his own. He awoke in the charred ruins of the workshop, took the name Ash, and turned his remarkable intellect to the tomes his creators had left behind. Now he devotes himself to reshaping his own kind, refining crude Stone and Iron Golems into indomitable Gold and Diamond Golems.
+
+**Hero faction:** Tower; replaces Josephine, the Stone Golem specialist.
+
+**Specialty effect:** Golems — His four golem types are immune to Slow and have [Preemptive Retaliation]. They gain +1 Speed, and Stone and Iron Golems can be upgraded to Gold or Diamond Golems. Each Gold Golem yields 50 gold per day. Diamond Golems take 40% less physical damage. Ash starts with Elemental Reconstruction, which permanently resurrects friendly golems. If his army has non-undead, non-living creatures, only they enter battle. Otherwise the entire army fights.
+
+**Starting army:** 30–40 Gremlins / 4–5 Stone Golems / 4–5 Stone Golems.
+
+**Class:** Alchemist
+
+**Primary stats:** 1/1/2/2
+
+**Starting skills:** Basic Armorer / Basic Mysticism.
+
+**Starting equipment:** Spellbook with Elemental Reconstruction.
+
+#### Golems Guide
+
+- Stone, Iron, Gold and Diamond Golems can retaliate before an enemy melee strike, spending a retaliation. If this kills the attacking stack, its strike is cancelled.
+- Eligible creatures include ten elementals, five golems, both Tower gargoyles, and four Factory mechanical creatures. If the army contains at least one eligible stack, the other ordinary stacks stay out of combat. If none qualify, the full army fights.
 
 ---
 ### Valen

@@ -1,10 +1,16 @@
 # 公开版本摘要
 
+## HOTA_NEW_HERO_V1.73
+
+2026-11-25 发布。新增塔楼英雄烬，更新姬嘉的持剑加成并修复酒馆双剑。
+
+[当前正式版](releases/HOTA_NEW_HERO_V1.73.md)
+
 ## HOTA_NEW_HERO_V1.71
 
 2026-11-17 发布。新增姬嘉、寒冰之剑、凛冬裁决以及四个全局选项。
 
-[当前正式版](releases/HOTA_NEW_HERO_V1.71.md) · [全局按钮说明](../docs/GLOBAL_OPTIONS.md)
+[V1.71 版本说明](releases/HOTA_NEW_HERO_V1.71.md) · [全局按钮说明](../docs/GLOBAL_OPTIONS.md)
 
 ## HOTA_NEW_HERO_V1.61
 
