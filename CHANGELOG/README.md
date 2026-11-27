@@ -1,10 +1,16 @@
 # 公开版本摘要
 
+## HOTA_NEW_HERO_V1.8
+
+2026-11-27 发布。城堡新增挽昼、三名专属兵种和十二个兵种法术。
+
+[当前正式版](releases/HOTA_NEW_HERO_V1.8.md)
+
 ## HOTA_NEW_HERO_V1.73
 
 2026-11-25 发布。新增塔楼英雄烬，更新姬嘉的持剑加成并修复酒馆双剑。
 
-[当前正式版](releases/HOTA_NEW_HERO_V1.73.md)
+[V1.73 版本说明](releases/HOTA_NEW_HERO_V1.73.md)
 
 ## HOTA_NEW_HERO_V1.71
 

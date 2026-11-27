@@ -6,17 +6,79 @@
 
 <p align="center"><sub><a href="docs/EXPERIENCE_ACCESS.md">开发经验资料访问与借阅申请 / Development Experience Access Request</a></sub></p>
 
-<p align="center"><strong>当前版本 / Latest：1.73</strong> · <strong>历史版本 / History：</strong><a href="https://github.com/TonyUB/hota-hero-specialty-patch/blob/v1.71/README.md">1.71</a> · <a href="https://github.com/TonyUB/hota-hero-specialty-patch/blob/v1.61/README.md">1.61</a> · <a href="https://github.com/TonyUB/hota-hero-specialty-patch/blob/c128a71c34bf5cead40bd79e0adfae6cc6153eaa/README.md">1.6</a></p>
+<p align="center"><strong>当前版本 / Latest：1.8</strong> · <strong>历史版本 / History：</strong><a href="https://github.com/TonyUB/hota-hero-specialty-patch/blob/v1.73/README.md">1.73</a> · <a href="https://github.com/TonyUB/hota-hero-specialty-patch/blob/v1.71/README.md">1.71</a> · <a href="https://github.com/TonyUB/hota-hero-specialty-patch/blob/v1.61/README.md">1.61</a> · <a href="https://github.com/TonyUB/hota-hero-specialty-patch/blob/c128a71c34bf5cead40bd79e0adfae6cc6153eaa/README.md">1.6</a></p>
 
 <details name="section" open>
 <summary><strong>🔴 中文说明</strong></summary>
 
-**当前版本下载：** [HOTA_NEW_HERO_V1.73.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.73.zip)&nbsp;&nbsp;&nbsp;&nbsp;**手册下载：** [HOTA_NEW_HERO_V1.73_HERO_HANDBOOK.docx](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Manual/HOTA_NEW_HERO_V1.73_HERO_HANDBOOK.docx)
+**当前版本下载：** [HOTA_NEW_HERO_V1.8.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.8.zip)&nbsp;&nbsp;&nbsp;&nbsp;**手册下载：** [HOTA_NEW_HERO_V1.8_HERO_HANDBOOK.docx](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Manual/HOTA_NEW_HERO_V1.8_HERO_HANDBOOK.docx)
 
 [全局按钮说明](docs/GLOBAL_OPTIONS.md)
 
 ## 第一大类  原创英雄
 
+### 挽昼
+
+<p><img src="assets/wanzhou/elda.png" height="72" alt="艾尔妲">&nbsp;&nbsp;<img src="assets/wanzhou/lind.png" height="72" alt="林德薇恩">&nbsp;&nbsp;<img src="assets/wanzhou/dray.png" height="72" alt="德蕾琪娜">&nbsp;&nbsp;<img src="assets/wanzhou/flag.png" height="72" alt="特长旗帜"></p>
+
+**英雄简介：** 当双剑相交的灭世阴影悄然笼罩恩洛斯时，三名自称“挽昼”的异界旅者穿越时空裂隙降临于此。尽管他们的装束与战法在世人眼中显得格外奇异，但其阻止毁灭降临的决心却毋庸置疑。为了改写这个世界注定崩塌的终局，三人并肩踏上了战火纷飞的征途，试图逆转恩洛斯覆灭的命运。
+
+**英雄阵营：** 城堡阵营；替换原狮鹫特长英雄艾得力克。
+
+**特长效果：** 挽昼——艾尔妲·挽昼、林德薇恩·挽昼和德蕾琪娜·挽昼加入英雄麾下作战。三人无法交换，其他兵种无法出战。随着英雄等级提升，三人的魔力上限提高，魔法减伤逐步提升至95%。艾尔妲与林德薇恩额外提升杀伤力，德蕾琪娜额外提升生命上限和防御力。
+
+**初始兵力：** 1 艾尔妲·挽昼 / 1 林德薇恩·挽昼 / 1 德蕾琪娜·挽昼。
+
+**职业：** 骑士
+
+**四维：** 2/2/1/1
+
+**初始技能：** 中级领导术。
+
+#### 战斗与成长
+
+三人均为中立 5 级兵，免疫心智魔法。1 级时各有 20 点魔力，受到的魔法伤害降低 5%。此后每升一级，魔力上限加 5，魔法减伤加 5 个百分点，19 级达到 95% 上限。
+
+- 德蕾琪娜防御后，敌人以近战、远程、箭塔或战争机器攻击同伴时，她会移到队友附近距自己最近的合法空格，以自己的防御和减伤承受攻击。新的来袭会重新选位。若队友被围得没有落脚点，攻击仍命中原目标。法术伤害不触发援护。
+
+- 普通攻击命中或造成负面效果时，给相应敌军附加 1 层残痕。扇形攻击逐队记录，双击逐击记录；攻击防御中的盾手或被她援护格挡的敌人也会获得残痕。残痕整场保留、无法驱散，仅供消耗。消耗残痕的技能不会补回层数。
+
+- 三人分别保留剩余生命和魔力。胜利后，倒下的成员以 1 点生命归队；三人全灭则战败。撤退后在酒馆重新雇用时保留状态。英雄界面的兵种信息可查看剩余生命。过夜行动力按林德薇恩的 9 速计算。
+
+- 三名本体阵亡后保留尸体。湮灭戒指、吞尸、招魔和深渊号角不能将其移除；牺牲也不能把她们当作祭品。即使对手装备湮灭戒指，仍可选中合法阵亡格复活。盾牌和大剑伸出格子的部分不占地，真正被其他部队占住的格子仍须先腾开。镜像遵循通常的消失规则。
+
+#### 三本兵种法术书
+
+轮到该成员行动时，点击金色指尖按钮打开她的法术书。左键施放，右键查看当前数值和费用，红色书签关闭。施法占用该成员本次行动，魔力从她自己的储备扣除。以下按书中左页从上到下、再右页从上到下排列。
+
+**艾尔妲·挽昼** · 远程射手，近战杀伤力不减。英雄每升一级，攻击、防御、最低与最高杀伤各加 1。
+
+| 图标 | 法术 | 消耗 | 效果 |
+|:--:|---|---|---|
+| <img src="assets/wanzhou/revive.png" width="64" alt="不灭热忱"> | 不灭热忱 | 16 魔力 | 按高级转世重生复活一队友军，恢复量随英雄力量提高。复活德蕾琪娜时，她立即防御并可援护。 |
+| <img src="assets/wanzhou/volley.png" width="64" alt="以挽昼之名"> | 以挽昼之名 | 15 魔力 | 本场战斗余下时间内，每次射击连续发出两箭。无距离或城墙惩罚，被贴身时也可射击。 |
+| <img src="assets/wanzhou/banner.png" width="64" alt="执旌"> | 执旌 | 12 魔力 | 为全体友军施加强化的高级祈祷。三位挽昼均为 5 级兵，攻击、防御和速度各提高 6 点。 |
+| <img src="assets/wanzhou/collapse.png" width="64" alt="重塑万象"> | 重塑万象 | 每队敌军各 3 层残痕 | 每个合格的存活敌军都须有足够残痕。逐队扣层后对敌军造成相当于当前英雄末日审判的伤害，战争机器除外。 |
+
+**林德薇恩·挽昼** · 可击中扇形区域内的所有敌军，敌人无法反击。每升一级杀伤加 10。双击时第二击也按扇形逐队结算。
+
+| 图标 | 法术 | 消耗 | 效果 |
+|:--:|---|---|---|
+| <img src="assets/wanzhou/assault.png" width="64" alt="斩棘"> | 斩棘 | 20 魔力 | 获得持续至本场战斗结束的双击能力。先斩棘、后召出的镜像也具有双击。 |
+| <img src="assets/wanzhou/clone.png" width="64" alt="同行"> | 同行 | 20 魔力 | 以高级镜像规则创造一个自身的镜像。与英雄的镜像法术共享限制，同一本体同时只能有一个镜像。 |
+| <img src="assets/wanzhou/dash.png" width="64" alt="虚空斩进"> | 虚空斩进 | 20 魔力 | 先选任意合法落脚格，再选邻格敌军，穿过裂隙发动普通攻击。可越过完好城墙；落点须能近战接触目标。 |
+| <img src="assets/wanzhou/eternal.png" width="64" alt="一体同心"> | 一体同心 | 单队全部残痕，至少 4 层 | 选择一队敌军，耗尽其所有残痕并消灭整队。目标没有 4 层时无法发动。 |
+
+**德蕾琪娜·挽昼** · 受到的物理伤害降低 40%，优先行动。每升一级，生命上限加 20，防御加 1。等待不会进入援护状态。
+
+| 图标 | 法术 | 消耗 | 效果 |
+|:--:|---|---|---|
+| <img src="assets/wanzhou/oath.png" width="64" alt="坚守之誓"> | 坚守之誓 | 10 魔力 | 对自己施加中级土系护体神盾，降低近战伤害，随即进入防御并可援护。 |
+| <img src="assets/wanzhou/bastion.png" width="64" alt="希望堡垒"> | 希望堡垒 | 10 魔力 | 对自己施加中级气系大气神盾，降低远程伤害，随即进入防御并可援护。 |
+| <img src="assets/wanzhou/bash.png" width="64" alt="盾牌猛击"> | 盾牌猛击 | 目标 2 层残痕 | 在移动范围内选择可近战接触的敌人。瞬移到它身旁，击晕 2 回合，随后防御。眩晕可由治疗或驱散解除；雪怪持续 1 回合。 |
+| <img src="assets/wanzhou/throw.png" width="64" alt="掷光"> | 掷光 | 目标 2 层残痕 | 掷出盾牌击中一队敌军后收回，造成该部队生命上限 25% 的伤害。 |
+
+---
 ### 姬嘉
 
 <p><img src="assets/portraits/kija.png" alt="头像" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/kija.png" alt="寒冰之剑特长图标" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spellbook/spellbook.png" alt="魔法书" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spells/ice-bolt.png" alt="冰弹" height="72"></p>
@@ -40,7 +102,7 @@
 #### 寒冰之剑使用说明
 
 - 装备寒冰之剑可施放凛冬裁决。这是消耗 24 点魔法值的 4 级水系战斗魔法，冻结可受影响的敌军 3 回合。冻结单位受到首次兵种物理攻击时，伤害增加 25%，随后解除冻结。
-- 姬嘉持剑时可随所学技能获得额外加成。技能及中、高级效果见[中英文英雄手册](Manual/HOTA_NEW_HERO_V1.73_HERO_HANDBOOK.docx)。
+- 姬嘉持剑时可随所学技能获得额外加成。技能及中、高级效果见[中英文英雄手册](Manual/HOTA_NEW_HERO_V1.8_HERO_HANDBOOK.docx)。
 - 姬嘉持剑时，中级／高级符文术在开战时额外叠加 3／6 层符文。中级／高级气系魔法使己方部队速度 +1／+2。
 - 周一酒馆自然刷新时，姬嘉只保留原有的寒冰之剑。
 
@@ -61,7 +123,7 @@
 
 **四维：** 1/1/2/2
 
-**初始技能：** 初级防御术 / 初级神秘术。
+**初始技能：** 初级火系魔法 / 初级神秘术。
 
 **初始装备：** 魔法书（初始魔法为源质重构）。
 
@@ -435,12 +497,74 @@ H = HotA 1.8.0 原生结算：每达到一个完整的 (8−n) 英雄等级区�
 <details name="section">
 <summary><strong>🔵 English Description</strong></summary>
 
-**Current version:** [Download HOTA_NEW_HERO_V1.73.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.73.zip)&nbsp;&nbsp;&nbsp;&nbsp;**Handbook:** [Download HOTA_NEW_HERO_V1.73_HERO_HANDBOOK.docx](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Manual/HOTA_NEW_HERO_V1.73_HERO_HANDBOOK.docx)
+**Current version:** [Download HOTA_NEW_HERO_V1.8.zip](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_NEW_HERO_V1.8.zip)&nbsp;&nbsp;&nbsp;&nbsp;**Handbook:** [Download HOTA_NEW_HERO_V1.8_HERO_HANDBOOK.docx](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Manual/HOTA_NEW_HERO_V1.8_HERO_HANDBOOK.docx)
 
 [Global Options Guide](docs/GLOBAL_OPTIONS.md#global-options)
 
 ## Category One  Original Heroes
 
+### Sunbringers
+
+<p><img src="assets/wanzhou/elda.png" height="72" alt="Elda">&nbsp;&nbsp;<img src="assets/wanzhou/lind.png" height="72" alt="Lindvein">&nbsp;&nbsp;<img src="assets/wanzhou/dray.png" height="72" alt="Draykina">&nbsp;&nbsp;<img src="assets/wanzhou/flag.png" height="72" alt="Specialty"></p>
+
+**Hero biography:** As the shadow of the world’s destruction fell over Enroth with the crossing of the two blades, three travelers calling themselves the Sunbringers arrived through a rift in space and time. Their dress and fighting arts seemed strange to the people of Enroth, but their resolve to avert its destruction was beyond doubt. The three set out together across a land at war, determined to change the fate of a world destined to fall.
+
+**Hero faction:** Castle; replaces Edric, the Griffin specialist.
+
+**Specialty effect:** Sunbringers — Elda, Lindvein and Draykina join the hero. The three cannot be traded, and other creatures cannot enter combat. As the hero gains levels, their maximum mana increases and their magic damage reduction rises to 95%. Elda and Lindvein also gain damage, and Draykina gains maximum health and Defense.
+
+**Starting army:** 1 Elda / 1 Lindvein / 1 Draykina.
+
+**Class:** Knight
+
+**Primary stats:** 2/2/1/1
+
+**Starting skills:** Advanced Leadership.
+
+#### Combat and growth
+
+All three are neutral tier-five creatures immune to mind spells. Each starts with 20 mana and 5% magic damage reduction. Each further hero level adds 5 maximum mana and five percentage points of reduction, reaching the 95% cap at level 19.
+
+- After defending, Draykina intercepts physical attacks against her companions, including missiles, towers and war machines. She moves to the nearest legal space beside the ally and takes the hit using her own defensive stats. Each attack is checked separately. A surrounded ally with no landing space takes the hit. Spell damage bypasses interception.
+
+- A damaging hit or hostile debuff adds one Scar to the affected stack. Sweeps count each target and double strikes count each hit. An attacker also gains a Scar when it strikes a defending Draykina directly or she intercepts it. Scars persist for the battle, cannot be dispelled and have no effect until spent. Spending Scars never adds a replacement stack.
+
+- Each fighter keeps her own health and mana. After victory, a fallen member returns with 1 HP. Losing all three costs the battle. Retreat and tavern rehiring preserve their condition. Inspect a creature on the adventure screen to see remaining health. Overnight movement uses Lindvein’s speed of 9.
+
+- The three original fighters leave recoverable bodies. The Ring of Oblivion, corpse consumption, demon raising and the Horn of the Abyss cannot remove them, and Sacrifice cannot use them as offerings. A free corpse hex remains a valid resurrection target even against the ring. Shield and sword artwork occupy no extra hex. A creature actually standing on the body must move first. Clones still disappear normally.
+
+#### Three creature spellbooks
+
+On the fighter’s turn, open her book with the gold fingertip button. Left-click to cast, right-click for current values and costs, or use the red bookmark to close. Casting uses her action and her own mana. Entries follow the left page from top to bottom, then the right page.
+
+**Elda** · A shooter with full melee damage. Each hero level gained adds 1 Attack, 1 Defense and 1 to both ends of her damage range.
+
+| Icon | Spell | Cost | Effect |
+|:--:|---|---|---|
+| <img src="assets/wanzhou/revive.png" width="64" alt="Undying Devotion"> | Undying Devotion | 16 mana | Resurrects an allied stack at Expert Resurrection strength. Health restored scales with hero Spell Power. A revived Draykina immediately defends and can intercept. |
+| <img src="assets/wanzhou/volley.png" width="64" alt="In the Sunbringers’ Name"> | In the Sunbringers’ Name | 15 mana | For the rest of the battle, fires twice with no range or wall penalty and can shoot while adjacent to an enemy. |
+| <img src="assets/wanzhou/banner.png" width="64" alt="Raise the Standard"> | Raise the Standard | 12 mana | Casts enhanced Expert Prayer on allied troops. Each tier-five Sunbringer gains 6 Attack, Defense and Speed. |
+| <img src="assets/wanzhou/collapse.png" width="64" alt="Remake the World"> | Remake the World | 3 Scars per enemy stack | Every eligible living enemy must meet the cost. Deals the hero’s Armageddon-equivalent damage to each enemy stack, excluding war machines. |
+
+**Lindvein** · Her melee swing hits all enemies in its forward fan without retaliation. Each level gained adds 10 damage. With double strike, both swings resolve separately against every enemy hit.
+
+| Icon | Spell | Cost | Effect |
+|:--:|---|---|---|
+| <img src="assets/wanzhou/assault.png" width="64" alt="Cut Through Thorns"> | Cut Through Thorns | 20 mana | Gains double strike for the rest of the battle. A clone created afterward inherits it. |
+| <img src="assets/wanzhou/clone.png" width="64" alt="Walk Together"> | Walk Together | 20 mana | Creates a clone of herself under Expert Clone rules. The hero’s Clone spell and this spell share the same one-clone limit. |
+| <img src="assets/wanzhou/dash.png" width="64" alt="Rift Slash"> | Rift Slash | 20 mana | Select a legal landing hex anywhere, then an adjacent enemy. Crosses a rift to make a normal melee attack. Intact siege walls may be crossed. |
+| <img src="assets/wanzhou/eternal.png" width="64" alt="One Heart"> | One Heart | All Scars on one target, minimum 4 | Consumes every Scar on the chosen enemy stack and destroys it. Requires at least four Scars on that stack. |
+
+**Draykina** · Takes 40% less physical damage and acts first. Each hero level gained adds 20 maximum HP and 1 Defense. Waiting does not activate interception.
+
+| Icon | Spell | Cost | Effect |
+|:--:|---|---|---|
+| <img src="assets/wanzhou/oath.png" width="64" alt="Oath of Vigilance"> | Oath of Vigilance | 10 mana | Casts Advanced Shield on herself to reduce melee damage, then defends and can intercept. |
+| <img src="assets/wanzhou/bastion.png" width="64" alt="Bastion of Hope"> | Bastion of Hope | 10 mana | Casts Advanced Air Shield on herself to reduce ranged damage, then defends and can intercept. |
+| <img src="assets/wanzhou/bash.png" width="64" alt="Shield Bash"> | Shield Bash | 2 Scars on the target | Teleports beside an enemy reachable in melee within her movement range, stuns it for two rounds, then defends. Cure or Dispel clears the stun. Against a Yeti the stun lasts one round. |
+| <img src="assets/wanzhou/throw.png" width="64" alt="Light Throw"> | Light Throw | 2 Scars on the target | Throws her shield at an enemy stack and catches it on return. Deals damage equal to 25% of the stack’s maximum health. |
+
+---
 ### Kija
 
 <p><img src="assets/portraits/kija.png" alt="Portrait" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/specialties/kija.png" alt="Sword of Frost specialty" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spellbook/spellbook.png" alt="Spellbook" height="72">&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/spells/ice-bolt.png" alt="Ice Bolt" height="72"></p>
@@ -464,7 +588,7 @@ H = HotA 1.8.0 原生结算：每达到一个完整的 (8−n) 英雄等级区�
 #### Sword of Frost Guide
 
 - Equipping the Sword of Frost grants Winter Judgment, a level-4 Water combat spell costing 24 spell points. It freezes eligible enemy stacks for 3 rounds. The first creature physical attack against a frozen stack deals 25% more damage and breaks the freeze.
-- Kija gains additional bonuses from her mastered skills while wielding the sword. The [bilingual hero handbook](Manual/HOTA_NEW_HERO_V1.73_HERO_HANDBOOK.docx) lists each skill and its bonuses.
+- Kija gains additional bonuses from her mastered skills while wielding the sword. The [bilingual hero handbook](Manual/HOTA_NEW_HERO_V1.8_HERO_HANDBOOK.docx) lists each skill and its bonuses.
 - While wielding the sword, Advanced/Expert Runes adds 3/6 rune stacks at combat start, and Advanced/Expert Air Magic gives friendly creatures +1/+2 Speed.
 - The Monday tavern refresh no longer gives Kija a second Sword of Frost.
 
@@ -485,7 +609,7 @@ H = HotA 1.8.0 原生结算：每达到一个完整的 (8−n) 英雄等级区�
 
 **Primary stats:** 1/1/2/2
 
-**Starting skills:** Basic Armorer / Basic Mysticism.
+**Starting skills:** Basic Fire Magic / Basic Mysticism.
 
 **Starting equipment:** Spellbook with Elemental Reconstruction.
 
