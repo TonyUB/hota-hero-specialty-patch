@@ -490,7 +490,7 @@ H = HotA 1.8.0 原生结算：每达到一个完整的 (8−n) 英雄等级区�
 
 原生辅助技能特长重构与双向英雄交互规则扩展。
 
-[娱乐包下载](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_ENTERTAINMENT_V0.1.zip)&nbsp;&nbsp;&nbsp;&nbsp;[下载芙莉莲独立补丁（纯净 1.8.0 HD）](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/FRIEREN_PIXIE_HOTA_180_HD.zip)&nbsp;&nbsp;&nbsp;&nbsp;[娱乐包将领说明](docs/ENTERTAINMENT_PACK_GENERALS.md#中文说明)
+[娱乐包下载](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_ENTERTAINMENT_V0.1.zip)&nbsp;&nbsp;&nbsp;&nbsp;[娱乐包将领说明](docs/ENTERTAINMENT_PACK_GENERALS.md#中文说明)&nbsp;&nbsp;&nbsp;&nbsp;[降灵特独立包下载](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/FRIEREN_PIXIE_HOTA_180_HD.zip)
 
 </details>
 
@@ -976,7 +976,7 @@ Fixed Luck, guaranteed Luck on every stack's first active attack, and compatibil
 
 Native secondary-skill specialty redesign and bidirectional hero-interaction rule expansion.
 
-[Entertainment Pack Download](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_ENTERTAINMENT_V0.1.zip)&nbsp;&nbsp;&nbsp;&nbsp;[Download Frieren Standalone Patch (clean 1.8.0 HD)](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/FRIEREN_PIXIE_HOTA_180_HD.zip)&nbsp;&nbsp;&nbsp;&nbsp;[Entertainment Pack Generals](docs/ENTERTAINMENT_PACK_GENERALS.md#english-description)
+[Entertainment Pack Download](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/HOTA_ENTERTAINMENT_V0.1.zip)&nbsp;&nbsp;&nbsp;&nbsp;[Entertainment Pack Generals](docs/ENTERTAINMENT_PACK_GENERALS.md#english-description)&nbsp;&nbsp;&nbsp;&nbsp;[Download Standalone Spirit Summoning Specialty Pack](https://github.com/TonyUB/hota-hero-specialty-patch/raw/refs/heads/main/Download/FRIEREN_PIXIE_HOTA_180_HD.zip)
 
 </details>
 
